@@ -13,7 +13,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './html/index.html'
+            template: './pug/index.pug'
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
@@ -25,6 +25,14 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader']
+            },
+            {
+                test: /\.s[ac]ss$/,
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.pug$/,
+                use: 'pug-loader?pretty=true'
             }
         ]
     }
