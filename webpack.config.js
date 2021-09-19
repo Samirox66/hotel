@@ -13,13 +13,16 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './pug/index.pug'
+            template: './pages/ui-kit/index.pug'
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: '[name].css',
         })
     ],
+    devServer: {
+        port: 4200
+    },
     module: {
         rules: [
             {

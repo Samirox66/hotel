@@ -1,0 +1,7 @@
+mixin color(textColor= 'white', hexColor= '#000000', background= 'color__example_background_green')
+    .color.color__body
+        div(class=background)
+        .color__description
+            b=textColor 
+            br
+            | #{hexColor}

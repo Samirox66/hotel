@@ -1,0 +1,5 @@
+@import 'color__example.scss';
+
+.color__example_background_dark-shade-5 {
+    @include color__example(#1F20410D);
+}

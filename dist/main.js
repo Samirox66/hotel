@@ -10,13 +10,123 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./styles/styles.scss":
-/*!****************************!*\
-  !*** ./styles/styles.scss ***!
-  \****************************/
+/***/ "./blocks/color/color.scss":
+/*!*********************************!*\
+  !*** ./blocks/color/color.scss ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./styles/styles.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./blocks/color/color.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color/color__body.scss":
+/*!***************************************!*\
+  !*** ./blocks/color/color__body.scss ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./blocks/color/color__body.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color/color__description.scss":
+/*!**********************************************!*\
+  !*** ./blocks/color/color__description.scss ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./blocks/color/color__description.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color/color__example_background_dark-shade-100.scss":
+/*!********************************************************************!*\
+  !*** ./blocks/color/color__example_background_dark-shade-100.scss ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./blocks/color/color__example_background_dark-shade-100.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color/color__example_background_dark-shade-25.scss":
+/*!*******************************************************************!*\
+  !*** ./blocks/color/color__example_background_dark-shade-25.scss ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./blocks/color/color__example_background_dark-shade-25.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color/color__example_background_dark-shade-5.scss":
+/*!******************************************************************!*\
+  !*** ./blocks/color/color__example_background_dark-shade-5.scss ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./blocks/color/color__example_background_dark-shade-5.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color/color__example_background_dark-shade-50.scss":
+/*!*******************************************************************!*\
+  !*** ./blocks/color/color__example_background_dark-shade-50.scss ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./blocks/color/color__example_background_dark-shade-50.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color/color__example_background_dark-shade-75.scss":
+/*!*******************************************************************!*\
+  !*** ./blocks/color/color__example_background_dark-shade-75.scss ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./blocks/color/color__example_background_dark-shade-75.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color/color__example_background_green.scss":
+/*!***********************************************************!*\
+  !*** ./blocks/color/color__example_background_green.scss ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./blocks/color/color__example_background_green.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color/color__example_background_purple.scss":
+/*!************************************************************!*\
+  !*** ./blocks/color/color__example_background_purple.scss ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./blocks/color/color__example_background_purple.scss?");
+
+/***/ }),
+
+/***/ "./blocks/column-colors/column-colors.scss":
+/*!*************************************************!*\
+  !*** ./blocks/column-colors/column-colors.scss ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./blocks/column-colors/column-colors.scss?");
+
+/***/ }),
+
+/***/ "./blocks/column-colors/column-colors__body.scss":
+/*!*******************************************************!*\
+  !*** ./blocks/column-colors/column-colors__body.scss ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./blocks/column-colors/column-colors__body.scss?");
 
 /***/ }),
 
@@ -26,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/styles.scss */ \"./styles/styles.scss\");\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _blocks_color_color_example_background_green_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./blocks/color/color__example_background_green.scss */ \"./blocks/color/color__example_background_green.scss\");\n/* harmony import */ var _blocks_color_color_example_background_purple_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/color/color__example_background_purple.scss */ \"./blocks/color/color__example_background_purple.scss\");\n/* harmony import */ var _blocks_color_color_example_background_dark_shade_100_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/color/color__example_background_dark-shade-100.scss */ \"./blocks/color/color__example_background_dark-shade-100.scss\");\n/* harmony import */ var _blocks_color_color_example_background_dark_shade_75_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/color/color__example_background_dark-shade-75.scss */ \"./blocks/color/color__example_background_dark-shade-75.scss\");\n/* harmony import */ var _blocks_color_color_example_background_dark_shade_50_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/color/color__example_background_dark-shade-50.scss */ \"./blocks/color/color__example_background_dark-shade-50.scss\");\n/* harmony import */ var _blocks_color_color_example_background_dark_shade_25_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/color/color__example_background_dark-shade-25.scss */ \"./blocks/color/color__example_background_dark-shade-25.scss\");\n/* harmony import */ var _blocks_color_color_example_background_dark_shade_5_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/color/color__example_background_dark-shade-5.scss */ \"./blocks/color/color__example_background_dark-shade-5.scss\");\n/* harmony import */ var _blocks_color_color_description_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/color/color__description.scss */ \"./blocks/color/color__description.scss\");\n/* harmony import */ var _blocks_color_color_body_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/color/color__body.scss */ \"./blocks/color/color__body.scss\");\n/* harmony import */ var _blocks_color_color_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/color/color.scss */ \"./blocks/color/color.scss\");\n/* harmony import */ var _blocks_column_colors_column_colors_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/column-colors/column-colors.scss */ \"./blocks/column-colors/column-colors.scss\");\n/* harmony import */ var _blocks_column_colors_column_colors_body_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./blocks/column-colors/column-colors__body.scss */ \"./blocks/column-colors/column-colors__body.scss\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ })
 
