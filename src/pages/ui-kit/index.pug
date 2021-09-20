@@ -1,15 +1,23 @@
 extends ../../pug/layouts/main.pug
 include ../../blocks/color/color.pug
+include ../../blocks/text/text.pug
 
 block content
     body.ui-kit.ui-kit__body
-        .column-colors.column-colors__body
-             +color('Dark Shade 100%', '#1F2041', 'color__example_background_dark-shade-100')
-             +color('Dark Shade 75%', '#1F2041', 'color__example_background_dark-shade-75')
-             +color('Dark Shade 50%', '#1F2041', 'color__example_background_dark-shade-50')
-             +color('Dark Shade 25%', '#1F2041', 'color__example_background_dark-shade-25')
-             +color('Dark Shade 5%', '#1F2041', 'color__example_background_dark-shade-5')
-             +color('Purple', '#BC9CFF', 'color__example_background_purple')
-             +color('Green', '#6FCF97', 'color__example_background_green')
+        .colors-and-type.colors-and-type__body
+            .column-colors.column-colors__body
+                +color('Dark Shade 100%', '#1F2041', 'color__example_background_dark-shade-100')
+                +color('Dark Shade 75%', '#1F2041', 'color__example_background_dark-shade-75')
+                +color('Dark Shade 50%', '#1F2041', 'color__example_background_dark-shade-50')
+                +color('Dark Shade 25%', '#1F2041', 'color__example_background_dark-shade-25')
+                +color('Dark Shade 5%', '#1F2041', 'color__example_background_dark-shade-5')
+                +color('Purple', '#BC9CFF', 'color__example_background_purple')
+                +color('Green', '#6FCF97', 'color__example_background_green')
+            .column-text.column-text__body 
+                +text('H1', 'This one is the sub-section or widget title', 'h1')
+                +text('H2', 'Next one is the item title inside widgets', 'h2')
+                +text('H3', 'This is a label or CTA text', 'h3')
+                +text('Body', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.', 'p')
+                
 
         
