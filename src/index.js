@@ -23,3 +23,16 @@ import './blocks/text/text.scss'
 import './blocks/text/text__body.scss'
 import './blocks/text/text__description.scss'
 import './blocks/text/text__example.scss'
+
+import './blocks/header/header.scss'
+import './blocks/header/header__body.scss'
+
+import './blocks/logo/logo.scss'
+import './blocks/logo/logo__body.scss'
+import './blocks/logo/logo__img.scss'
+import './blocks/logo/logo__text.scss'
+
+import './blocks/menu/menu.scss'
+import './blocks/menu/menu__list.scss'
+import './blocks/menu/menu__item.scss'
+import './blocks/menu/menu__link.scss'
