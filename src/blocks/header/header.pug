@@ -1,11 +1,31 @@
-header.header.header__body 
-    .logo.logo__body
-        img.logo__img(src="assets/img/logo__img.svg", alt="Toxin")
-        img.logo__text(src="assets/img/logo__text.svg", alt="Toxin")
-    .menu
-        ul.menu__list 
-            li.menu__item О нас
-            li.menu__item Услуги
-            li.menu__item Вакансии
-            li.menu__item Новости
-            li.menu__item Соглашения
+mixin header(hasUser, userName)
+    header.header.header__body 
+        +logo('logo__body')
+        .menu
+            ul.menu__list 
+                li.menu__item
+                    a.menu__link.menu__link_bold О нас
+                li.menu__item 
+                    a.menu__link Услуги
+                    include ../expand-more/expand-more.pug
+                li.menu__item 
+                    a.menu__link Вакансии
+                li.menu__item 
+                    a.menu__link Новости
+                li.menu__item 
+                    a.menu__link Соглашения
+                    include ../expand-more/expand-more.pug
+                if (hasUser)
+                    li.menu__item.menu__line
+                    li.menu__item.menu__user
+                        a.menu__link= userName
+                else
+                    li.menu__item
+                        +button('Войти', 'button_color_blue button_background-color_white button_border_blue button_width_small button_height_small')
+                    li.menu__item
+                        +button('Зарегистрироваться', 'button_color_white button_background-color_blue button_border_none button_width_medium button_height_small')
+
+
+
+
+

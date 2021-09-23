@@ -1,6 +1,9 @@
 extends ../../pug/layouts/main.pug
 include ../../blocks/color/color.pug
 include ../../blocks/text/text.pug
+include ../../blocks/header/header.pug
+include ../../blocks/button/button.pug
+include ../../blocks/logo/logo.pug
 
 block content
     .ui-kit
@@ -18,7 +21,9 @@ block content
                 +text('H2', 'Next one is the item title inside widgets', 'h2')
                 +text('H3', 'This is a label or CTA text', 'h3')
                 +text('Body', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.', 'p')
-        include ../../blocks/header/header.pug
+        +header(true, 'Юлий Цезарь')
+        +header(false)
+        include ../../blocks/footer2/footer2.pug
                 
 
         
