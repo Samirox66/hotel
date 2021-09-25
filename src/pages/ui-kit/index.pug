@@ -1,9 +1,11 @@
 extends ../../pug/layouts/main.pug
 include ../../blocks/color/color.pug
 include ../../blocks/text/text.pug
+include ../../blocks/input/input.pug
 include ../../blocks/header/header.pug
 include ../../blocks/button/button.pug
 include ../../blocks/logo/logo.pug
+include ../../blocks/contacts/contacts.pug
 
 block content
     .ui-kit
@@ -23,6 +25,7 @@ block content
                 +text('Body', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.', 'p')
         +header(true, 'Юлий Цезарь')
         +header(false)
+        include ../../blocks/footer1/footer1.pug
         include ../../blocks/footer2/footer2.pug
                 
 

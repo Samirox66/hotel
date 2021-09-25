@@ -56,6 +56,27 @@ import './blocks/button/button_height_small.scss'
 import './blocks/button/button_height_big.scss'
 
 import './blocks/footer1/footer1.scss'
+import './blocks/footer1/footer1__logo.scss'
+import './blocks/footer1/footer1__description.scss'
+import './blocks/footer1/footer1__nav-head.scss'
+import './blocks/footer1/footer1__nav-item.scss'
+import './blocks/footer1/footer1__top.scss'
+import './blocks/footer1/footer1__bottom.scss'
+import './blocks/footer1/footer1__nav_width_18.scss'
+import './blocks/footer1/footer1__nav-subscribe.scss'
+import './blocks/footer1/footer1__input.scss'
+import './blocks/footer1/footer1__nav.scss'
+import './blocks/footer1/footer1__rights.scss'
 
 import './blocks/footer2/footer2.scss'
 import './blocks/footer2/footer2__rights.scss'
+
+import './blocks/input/input.scss'
+import './blocks/input/input__text.scss'
+import './blocks/input/input__form.scss'
+import './blocks/input/input__submit.scss'
+
+import './blocks/arrow-forward/arrow-forward.scss'
+
+import './blocks/contacts/contacts.scss'
+import './blocks/contacts/contacts__margin.scss'

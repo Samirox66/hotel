@@ -22,6 +22,10 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, './src/blocks/contacts/img'),
                     to: path.resolve(__dirname, './dist/assets/img')
+                },
+                {
+                    from: path.resolve(__dirname, './src/blocks/arrow-forward/img'),
+                    to: path.resolve(__dirname, './dist/assets/img')
                 }
             ]
         }),
