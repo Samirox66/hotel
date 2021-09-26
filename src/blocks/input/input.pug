@@ -1,5 +1,12 @@
-mixin input
-    form.input.input__form(action="post") 
-        input.input__text(type="email", value="Email")
-        button.input__submit
-            img(src="assets/img/arrow_forward.svg", alt="Submit")
+mixin input(text, formType, hasSubcribe, hasState, titleText, stateText, inputClasses, hasDropdown)
+    .input(class="" + inputClasses)
+        if (!hasSubcribe)
+            .input__header
+                .input__title=titleText
+                if (hasState)
+                    .input__state=stateText
+        form.input__form(action="post") 
+            input.input__text(type=formType, value=text)
+            if (hasSubcribe)
+                button.input__submit
+                    img.arrow-forward(src="assets/img/arrow_forward.svg", alt="Submit")
