@@ -1,0 +1,13 @@
+mixin chose-button(button, types)
+    .chose-button__container
+        if (button.checked) 
+            input.chose-button__button(type=types id=button.id name=button.name value=button.value checked)
+        else 
+            input.chose-button__button(type=types id=button.id name=button.name value=button.value)
+        label.chose-button__label(for=id)=button.text
+
+mixin chose(buttons, types, choseButtonClasses, title)
+    .chose-button__title=title
+    form.chose-button(action='post' class='' + choseButtonClasses)
+        each button in buttons 
+            +chose-button(button, types)   

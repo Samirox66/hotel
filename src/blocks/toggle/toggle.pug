@@ -1,0 +1,9 @@
+mixin toggle(check, text)
+    .toggle
+        form.toggle__form(action='post')
+            .toggle__switch
+            if (check)
+                input.toggle__input(type='checkbox' checked)
+            else
+                input.toggle__input(type='checkbox')
+        .toggle__text=text

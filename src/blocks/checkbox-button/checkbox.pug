@@ -1,9 +1,0 @@
-mixin checkbox-button(button, types) 
-    form.checkbox-button 
-        input.checkbox-button__button(type=types id=button.id name=button.name value=button.value)
-        label.checkbox-button__label(for=id)=button.text
-
-mixin checkbox(buttons, types, title)
-    .checkbox-button__title=title
-    each button in buttons 
-        +checkbox-button(button, types)

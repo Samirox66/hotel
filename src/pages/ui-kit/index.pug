@@ -6,7 +6,8 @@ include ../../blocks/header/header.pug
 include ../../blocks/button/button.pug
 include ../../blocks/logo/logo.pug
 include ../../blocks/contacts/contacts.pug
-include ../../blocks/checkbox-button/checkbox.pug
+include ../../blocks/chose-button/chose.pug
+include ../../blocks/toggle/toggle.pug
 
 block content
     .ui-kit
@@ -41,8 +42,11 @@ block content
                     +input('19 авг - 23 авг', 'text', false, false, 'filter date dropdown', '', 'input__margin_top_20 input__width_medium', true)
                     +input('Email', 'email', false, false, 'subscription text field', '', 'input__margin_top_20 input__width_medium', true)
                 .form-elements__column    
-                    +checkbox([{'id':'isSmokingAllowed', 'text':'Можно курить', 'name':'isSmokingAllowed'}, {'id':'arePetAllowed', 'text':'Можно с питомцами', 'name':'arePetAllowed'}, {'id':'areGuestsAllowed', 'text':'Можно пригласить гостей (до 10 человек)', 'name':'areGuestsAllowed'}], 'checkbox', 'Checkbox Buttons')
-                    +checkbox([{'id':'man', 'text':'Мужчина' ,'name':'gender', 'value':'man'}, {'id':'woman', 'text':'Женщина', 'name':'gender', 'value':'woman'}], 'radio', 'Radio Buttons')
-                
+                    +chose([{'id':'isSmokingAllowed', 'text':'Можно курить', 'name':'isSmokingAllowed'}, {'id':'arePetAllowed', 'text':'Можно с питомцами', 'name':'arePetAllowed'}, {'id':'areGuestsAllowed', 'text':'Можно пригласить гостей (до 10 человек)', 'name':'areGuestsAllowed'}], 'checkbox', 'chose-button__flex-direction_column', 'Checkbox Buttons')
+                    +chose([{'id':'man', 'text':'Мужчина' ,'name':'gender', 'value':'man', 'checked': true}, {'id':'woman', 'text':'Женщина', 'name':'gender', 'value':'woman'}], 'radio', '', 'Radio Buttons')
+                    .form-elements__title Toggle
+                    +toggle(true, 'Получать спецпредложения')
+                    +toggle(false, 'Получать спецпредложения')
+block scripts
 
         
