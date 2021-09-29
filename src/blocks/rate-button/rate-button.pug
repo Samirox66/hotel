@@ -1,0 +1,11 @@
+mixin rate-button(rate, formClasses) 
+    form.rate-button(class='' + formClasses)
+        - for(var i = 0; i < rate; i++) 
+            +rate-button__button('material-icons__star', 'star')
+        - for(var i = 0; i < 5 - rate; i++)
+            +rate-button__button('material-icons__star-border', 'star_border')
+          
+
+mixin rate-button__button(iconState, star) 
+    button.rate-button__button(type='button')
+        .material-icons(class='' + iconState)=star

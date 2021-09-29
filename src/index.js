@@ -1,4 +1,6 @@
 import './blocks/toggle/toggle.js'
+import './blocks/like-button/like-button.js'
+import './blocks/range-slider/range-slider.js'
 
 import './blocks/color/color__example_background_green.scss'
 import './blocks/color/color__example_background_purple.scss'
@@ -96,6 +98,7 @@ import './blocks/form-elements/form-elements__block.scss'
 import './blocks/form-elements/form-elements__column.scss'
 import './blocks/form-elements/form-elements__date.scss'
 import './blocks/form-elements/form-elements__title.scss'
+import './blocks/form-elements/form-elements__flex.scss'
 
 import './blocks/chose-button/chose-button.scss'
 import './blocks/chose-button/chose-button__button.scss'
@@ -111,3 +114,26 @@ import './blocks/toggle/toggle__text.scss'
 import './blocks/toggle/toggle_active.scss'
 import './blocks/toggle/toggle__switch_active.scss'
 import './blocks/toggle/toggle__form.scss'
+
+import './fonts/fonts.scss'
+
+import './blocks/like-button/like-button.scss'
+import './blocks/like-button/like-button__button.scss'
+import './blocks/like-button/like-button__number.scss'
+import './blocks/like-button/like-button__button_active.scss'
+import './blocks/like-button/like-button__number_active.scss'
+
+import './blocks/material-icons/material-icons__favorite.scss'
+import './blocks/material-icons/material-icons__favorite-border.scss'
+import './blocks/material-icons/material-icons__star.scss'
+import './blocks/material-icons/material-icons__star-border.scss'
+
+import './blocks/rate-button/rate-button.scss'
+import './blocks/rate-button/rate-button__button.scss'
+import './blocks/rate-button/rate-button_margin-left_20.scss'
+
+import './blocks/range-slider/range-slider.scss'
+import './blocks/range-slider/range-slider__head.scss'
+import './blocks/range-slider/range-slider__title.scss'
+import './blocks/range-slider/range-slider__slider.scss'
+import './blocks/range-slider/range-slider__range.scss'

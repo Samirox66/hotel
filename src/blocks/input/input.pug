@@ -6,7 +6,7 @@ mixin input(text, formType, hasSubcribe, hasState, titleText, stateText, inputCl
                 if (hasState)
                     .input__state=stateText
         form.input__form(action="post") 
-            input.input__text(type=formType, value=text)
+            input.input__text(type=formType, placeholder=text)
             if (hasSubcribe)
                 button.input__submit
                     img.arrow-forward(src="assets/img/arrow_forward.svg", alt="Submit")

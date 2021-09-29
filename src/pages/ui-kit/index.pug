@@ -8,6 +8,9 @@ include ../../blocks/logo/logo.pug
 include ../../blocks/contacts/contacts.pug
 include ../../blocks/chose-button/chose.pug
 include ../../blocks/toggle/toggle.pug
+include ../../blocks/like-button/like-button.pug
+include ../../blocks/rate-button/rate-button.pug
+include ../../blocks/range-slider/range-slider.pug
 
 block content
     .ui-kit
@@ -47,6 +50,17 @@ block content
                     .form-elements__title Toggle
                     +toggle(true, 'Получать спецпредложения')
                     +toggle(false, 'Получать спецпредложения')
+                    .form-elements__title like button
+                    .form-elements__flex
+                        +like-button('material-icons__favorite-border', 'like-button__button', 'like-button__number', 2, 'favorite_border')
+                        +like-button('material-icons__favorite', 'like-button__button like-button__button_active', 'like-button__number like-button__number_active', 12, 'favorite')
+                    .form-elements__title rate button
+                    .form-elements__flex
+                        +rate-button(4)
+                        +rate-button(5, 'rate-button_margin-left_20')
+                .form-elements__column 
+                    +range-slider('Range Slider')
+
 block scripts
 
         
