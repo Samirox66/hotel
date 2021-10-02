@@ -77,7 +77,14 @@ block content
                     +title-block('pagination', 'title-block_margin-bottom_16px title-block_margin-top_40px')
                     +pagination(1)
             .form-elements__block 
-                .form-elements__column 
+                .form-elements__column
+                    .form-elements__flex
+                        +title-block('dropdown')
+                        p.form-elements__title-description default
+                    +dropdown
+                    .form-elements__flex
+                        +title-block('dropdown')
+                        p.form-elements__title-description expanded
                     +dropdown
 
 block scripts
