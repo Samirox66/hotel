@@ -1,2 +1,5 @@
-mixin button(text, classes)
-    button.button(class="" + classes)= text
+mixin button(text, classes, hasArrow)
+    button.button(class='' + classes)
+        .button__text=text
+        if (hasArrow)
+            .material-icons.material-icons__arrow-forward arrow_forward

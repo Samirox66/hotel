@@ -8,5 +8,6 @@ mixin input(text, formType, hasSubcribe, hasState, titleText, stateText, inputCl
         form.input__form(action="post") 
             input.input__text(type=formType, placeholder=text)
             if (hasSubcribe)
-                button.input__submit
-                    img.arrow-forward(src="assets/img/arrow_forward.svg", alt="Submit")
+                button(type='button')
+                    .material-icons.material-icons__arrow-forward arrow_forward
+                    

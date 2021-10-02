@@ -23,10 +23,6 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, './src/blocks/contacts/img'),
                     to: path.resolve(__dirname, './dist/assets/img')
-                },
-                {
-                    from: path.resolve(__dirname, './src/blocks/arrow-forward/img'),
-                    to: path.resolve(__dirname, './dist/assets/img')
                 }
             ]
         }),
@@ -62,7 +58,13 @@ module.exports = {
             },
             {
                 test: /\.(svg|png|jpg|gif|ttf|woff)$/,
-                use: 'file-loader'
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: '/assets/fonts'
+                    }
+                }]
             }
         ]
     }

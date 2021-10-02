@@ -11,6 +11,9 @@ include ../../blocks/toggle/toggle.pug
 include ../../blocks/like-button/like-button.pug
 include ../../blocks/rate-button/rate-button.pug
 include ../../blocks/range-slider/range-slider.pug
+include ../../blocks/title-block/title-block.pug
+include ../../blocks/pagination/pagination.pug
+include ../../blocks/dropdown/dropdown.pug
 
 block content
     .ui-kit
@@ -60,6 +63,22 @@ block content
                         +rate-button(5, 'rate-button_margin-left_20')
                 .form-elements__column 
                     +range-slider('Range Slider')
+                    +title-block('buttons', 'title-block_margin-bottom_16px title-block_margin-top_40px')
+                    .form-elements__flex
+                        +button('Click me', 'button_height_big button_width_small button_color_white button_background-color_blue button_border_none')
+                        +button('Click me', 'button_height_big button_width_small button_color_white button_background-color_blue button_border_none button_opacity_50per')
+                    .form-elements__flex
+                        +button('click me', 'button_height_big button_width_small button_color_blue button_background-color_white button_border_blue')
+                        +button('click me', 'button_height_big button_width_small button_color_blue button_background-color_white button_border_blue button_border-opacity_50per')
+                    .form-elements__flex
+                        +button('click me', 'button_color_blue button_border_none button_background-color_white')
+                        +button('click me', 'button_color_dark button_border_none button_background-color_white')
+                    +button('перейти к оплате', 'button_height_big button_width_big button_color_white button_border_none button_background-color_blue', true)
+                    +title-block('pagination', 'title-block_margin-bottom_16px title-block_margin-top_40px')
+                    +pagination(1)
+            .form-elements__block 
+                .form-elements__column 
+                    +dropdown
 
 block scripts
 

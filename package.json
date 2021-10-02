@@ -26,11 +26,13 @@
         "pug-loader": "^2.4.0",
         "sass-loader": "^12.1.0",
         "style-loader": "^3.2.1",
+        "url-loader": "^4.1.1",
         "webpack": "^5.53.0",
         "webpack-cli": "^4.8.0",
         "webpack-dev-server": "^4.2.1"
     },
     "dependencies": {
+        "item-quantity-dropdown": "^2.1.0",
         "jquery": "^3.6.0",
         "nouislider": "^15.4.0",
         "popper.js": "^1.16.1"

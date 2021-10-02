@@ -1,0 +1,19 @@
+mixin pagination(activeButton)
+    .pagination
+        form.pagination__form(action="#")
+            -for(var i = 1; i < 4; i++)
+                +pagination-button(false, i, activeButton)
+            +pagination-button(false, '...')
+            +pagination-button(false, 15)
+            +pagination-button(true)
+        .pagination__text 1 – 12 из 100+ вариантов аренды
+
+mixin pagination-button(next, text, activeButton)
+    if (next === true)
+        button.pagination__button.pagination__next-button 
+            .material-icons.material-icons__arrow-forward arrow_forward
+    else    
+        if (text === activeButton)
+            button.pagination__button.pagination__button_active(type='button')=text
+        else
+            button.pagination__button.pagination__button_inactive(type='button')=text
