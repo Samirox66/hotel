@@ -1,0 +1,9 @@
+mixin checkbox-list(buttons) 
+    .iqdropdown
+        .iqdropdown-selection
+            p.checkbox-list__text expandable checkbox list
+            .material-icons.material-icons__expand-more expand_more
+        .iqdropdown-menu
+            each button in buttons
+                .iqdropdown-menu-option(id=button.id) 
+                +chose-button(button, 'checkbox')

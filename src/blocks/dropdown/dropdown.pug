@@ -1,10 +1,9 @@
-mixin dropdown 
+mixin dropdown(hasSubmit, items) 
     .iqdropdown
-        .iqdropdown-selection 2 спальни, 2 кровати...
+        .iqdropdown-selection
+            p.dropdown__text 2 спальни, 2 кровати...
+            .material-icons.material-icons__expand-more expand_more
         .iqdropdown-menu 
-            .iqdropdown-menu-option(data-id='item1')
-                p.iqdropdown-item Item 1
-            .iqdropdown-menu-option(data-id='item2')
-                p.iqdropdown-item Item 2
-            .iqdropdown-menu-option(data-id='item3')
-                p.iqdropdown-item Item 3
+            each item in items
+                .iqdropdown-menu-option(id=item.id)
+                    p.iqdropdown-item=item.name

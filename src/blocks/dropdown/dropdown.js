@@ -4,24 +4,27 @@ document.addEventListener("DOMContentLoaded", function() {
         maxItems: Infinity,
         // min total items
         minItems: 0,
-        // text to show on the dropdown override data-selection-text attribute
-        selectionText: 'item',
-        // text to show for multiple items
-        textPlural: 'items',
-        // optionally can use setSelectionText function to override selectionText
-        setSelectionText: (itemCount, totalItems) => { /* return string */ },
         // buttons to increment/decrement
         controls: {
             position: 'right',
             displayCls: 'iqdropdown-item-display',
             controlsCls: 'iqdropdown-item-controls',
             counterCls: 'counter'
-        },
-        // fires when an item quantity changes
-        onChange: (id, count, totalItems) => {},
-        // return false to prevent an item decrement
-        beforeDecrement: (id, itemCount) => {},
-        // return false to prevent an item increment
-        beforeIncrement: (id, itemCount) => {}
+        }
     })
+    $(this).find('.icon-decrement').text('-')
+    $(this).find('.icon-increment').text('+')
+    $(this).find('.iqdropdown-selection::after').addClass('material-icons').addClass('material-icons__expand-more').text('expand_more')
+    $(this).find('#rooms .counter').text(2)
+    $(this).find('#bed .counter').text(2)
+})
+
+$('.button-increment').on('click', function() {
+    var increment = parseInt($(this).find('.counter').text()) + 1
+    $(this).find('.counter').text(increment)
+})
+
+$('.button-decrement').on('click', function(){
+    var decrement = parseInt($(this).find('.counter').text()) -1
+    $(this).find('.counter').text(decrement)
 })

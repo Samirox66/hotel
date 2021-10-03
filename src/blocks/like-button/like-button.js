@@ -1,6 +1,6 @@
 $('.like-button__button').on('click', function(){
     var text = $(this).find('.like-button__number').text()
-    var number = parseInt(text, 10);
+    var number = parseInt(text);
     if ($(this).hasClass('like-button__button_active')) {
         number -= 1;
         $(this).removeClass('like-button__button_active')
