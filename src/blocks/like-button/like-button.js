@@ -1,3 +1,9 @@
+import './like-button.scss'
+import './like-button__button.scss'
+import './like-button__number.scss'
+import './like-button__button_active.scss'
+import './like-button__number_active.scss'
+
 $('.like-button__button').on('click', function(){
     var text = $(this).find('.like-button__number').text()
     var number = parseInt(text);

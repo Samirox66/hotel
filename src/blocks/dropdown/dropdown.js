@@ -1,3 +1,5 @@
+import './dropdown.scss'
+
 document.addEventListener("DOMContentLoaded", function() {
     $('.iqdropdown').iqDropdown({
         // max total items

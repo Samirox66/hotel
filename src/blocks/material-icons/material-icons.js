@@ -1,0 +1,5 @@
+import './material-icons__favorite.scss'
+import './material-icons__favorite-border.scss'
+import './material-icons__star.scss'
+import './material-icons__star-border.scss'
+import './material-icons__arrow-forward.scss'

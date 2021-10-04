@@ -1,3 +1,11 @@
+import './toggle.scss'
+import './toggle__input.scss'
+import './toggle__switch.scss'
+import './toggle__text.scss'
+import './toggle_active.scss'
+import './toggle__switch_active.scss'
+import './toggle__form.scss'
+
 var callback = function(){
     $('.toggle__form').each(function(){
         if ($(this).find('.toggle__input').is(':checked')) {
