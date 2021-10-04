@@ -88,12 +88,12 @@ block content
                     .form-elements__flex
                         +title-block('dropdown')
                         p.form-elements__title-description default
-                    +dropdown(false, [{'name':'спальни', 'id': 'rooms'}, {'name':'кровати', 'id': 'bed'}, {'name':'ванные комнаты', 'id': 'baths'}])
+                    +dropdown(false, [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}])
                     .form-elements__flex
                         +title-block('dropdown')
                         p.form-elements__title-description expanded
-                    +dropdown(false, [{'name':'спальни', 'id': 'rooms'}, {'name':'кровати', 'id': 'bed'}, {'name':'ванные комнаты', 'id': 'baths'}])
-                    //+checkbox-list({'id': 'breakfast', 'text': 'завтрак', 'name': 'breakfast'})
+                    +dropdown(false, [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], true)
+                    +checkbox-list({'id': 'breakfast', 'text': 'завтрак', 'name': 'breakfast'})
 
 block scripts
 

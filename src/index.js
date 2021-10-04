@@ -1,5 +1,5 @@
 import './fonts/fonts.scss'
-import * as itemQuantityDropdown from '../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.js'
+import  '../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.js'
 import '../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.css'
 
 import './blocks/toggle/toggle.js'

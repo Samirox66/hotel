@@ -15,16 +15,4 @@ document.addEventListener("DOMContentLoaded", function() {
     $(this).find('.icon-decrement').text('-')
     $(this).find('.icon-increment').text('+')
     $(this).find('.iqdropdown-selection::after').addClass('material-icons').addClass('material-icons__expand-more').text('expand_more')
-    $(this).find('#rooms .counter').text(2)
-    $(this).find('#bed .counter').text(2)
-})
-
-$('.button-increment').on('click', function() {
-    var increment = parseInt($(this).find('.counter').text()) + 1
-    $(this).find('.counter').text(increment)
-})
-
-$('.button-decrement').on('click', function(){
-    var decrement = parseInt($(this).find('.counter').text()) -1
-    $(this).find('.counter').text(decrement)
 })
