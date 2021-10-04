@@ -14,7 +14,10 @@ document.addEventListener("DOMContentLoaded", function() {
             counterCls: 'counter'
         }
     })
-    $(this).find('.icon-decrement').text('-')
-    $(this).find('.icon-increment').text('+')
-    $(this).find('.iqdropdown-selection::after').addClass('material-icons').addClass('material-icons__expand-more').text('expand_more')
+    $('.icon-decrement').text('-')
+    $('.icon-increment').text('+')
+    $('.iqdropdown-selection::after').addClass('material-icons').addClass('material-icons__expand-more').text('expand_more')
+    if ($('.iqdropdown').attr('data-checked')) {
+        $('.iqdropdown').addClass('menu-open')
+    }
 })

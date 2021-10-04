@@ -15,6 +15,7 @@ include ../../blocks/title-block/title-block.pug
 include ../../blocks/pagination/pagination.pug
 include ../../blocks/dropdown/dropdown.pug
 include ../../blocks/checkbox-list/checkbox-list.pug
+include ../../blocks/rich-checkbox-button/rich-checkbox-button.pug
 
 block content
     .ui-kit
@@ -88,12 +89,25 @@ block content
                     .form-elements__flex
                         +title-block('dropdown')
                         p.form-elements__title-description default
-                    +dropdown(false, [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}])
+                    +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}])
+                    .ui-kit_margin-top_40px
                     .form-elements__flex
                         +title-block('dropdown')
                         p.form-elements__title-description expanded
-                    +dropdown(false, [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], true)
-                    +checkbox-list({'id': 'breakfast', 'text': 'завтрак', 'name': 'breakfast'})
+                    +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'menu-open')
+                .form-elements__column
+                    +title-block('dropdown')
+                    +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'menu-open')
+                .form-elements__column
+                    +title-block('dropdown')
+                    +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '1'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'menu-open')
+            .form-elements__block 
+                .form-elements__column
+                    +checkbox-list([{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast'}, {'id': 'write-table', 'text': 'Письменный стол', 'name': 'write-table', 'checked': true}, {'id': 'food-table', 'text': 'Стул для кормления', 'name': 'food-table', 'checked': true}, {'id': 'baby-bed', 'text': 'Кроватка', 'name': 'baby-bed', 'checked': true}, {'id': 'tv', 'text': 'Телевизор', 'name': 'tv'}, {'id': 'shampoo', 'text': 'Шампунь', 'name': 'shampoo'}, {'id': 'tv', 'text': 'Телевизор', 'name': 'tv'}, {'id': 'shampoo', 'text': 'Шампунь', 'name': 'shampoo'}])
+                    +checkbox-list([{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast'}, {'id': 'write-table', 'text': 'Письменный стол', 'name': 'write-table', 'checked': true}, {'id': 'food-table', 'text': 'Стул для кормления', 'name': 'food-table', 'checked': true}, {'id': 'baby-bed', 'text': 'Кроватка', 'name': 'baby-bed', 'checked': true}, {'id': 'tv', 'text': 'Телевизор', 'name': 'tv'}, {'id': 'shampoo', 'text': 'Шампунь', 'name': 'shampoo'}, {'id': 'tv', 'text': 'Телевизор', 'name': 'tv'}, {'id': 'shampoo', 'text': 'Шампунь', 'name': 'shampoo'}], 'menu-open')
+                .form-elements__column
+                    +title-block('rich checkbox button')
+                    +rich-checkbox-button([{'id': 'wide-hall', 'text': 'Широкий коридор', 'name': 'wide-hall', 'description': 'Ширина коридоров в номере не менее 91 см.', 'labelClasses': 'chose-button__title'}, {'id': 'invalid-helper', 'text': 'Помощник для инвалидов', 'name': 'wide-hall', 'description': 'На 1 этаже вас встретит специалист  и проводит до номера.', 'labelClasses': 'chose-button__title'}])
 
 block scripts
 

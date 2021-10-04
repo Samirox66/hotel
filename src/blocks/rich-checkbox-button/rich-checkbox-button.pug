@@ -1,0 +1,5 @@
+mixin rich-checkbox-button(buttons)
+    .rich-checkbox-button
+        each button in buttons
+            +chose-button(button, 'checkbox')
+            .rich-checkbox-button__description=button.description

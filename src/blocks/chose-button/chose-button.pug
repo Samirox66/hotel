@@ -4,4 +4,4 @@ mixin chose-button(button, types)
             input.chose-button__button(type=types id=button.id name=button.name value=button.value checked)
         else 
             input.chose-button__button(type=types id=button.id name=button.name value=button.value)
-        label.chose-button__label(for=id)=button.text  
+        label.chose-button__label(for=id class='' + button.labelClasses)=button.text  
