@@ -1,0 +1,10 @@
+mixin review(reviewText, personName, personInfo) 
+    .review
+        .review__person
+            img.review__person-avatar(src="assets/img/avatar.png", alt="Мурад Сарафанов") 
+            .review__person-about 
+                p.review__person-name=personName 
+                p.review__person-info=personInfo
+        .review__review 
+            +like-button('material-icons__favorite', 'like-button__button like-button__button_active', 'like-button__number like-button__number_active', 12, 'favorite')
+            p.review__text=reviewText
