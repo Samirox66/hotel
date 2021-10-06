@@ -5,4 +5,5 @@ mixin checkbox-list(buttons, menuOpen)
             .material-icons.material-icons__expand-more expand_more
         .iqdropdown-menu.checkbox-list_border_none
             each button in buttons
-                +chose-button(button, 'checkbox')
+                .iqdropdown-menu-option
+                    +chose-button(button, 'checkbox')

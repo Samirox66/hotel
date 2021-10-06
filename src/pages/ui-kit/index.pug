@@ -19,6 +19,7 @@ include ../../blocks/rich-checkbox-button/rich-checkbox-button.pug
 include ../../blocks/bullet-list/bullet-list.pug
 include ../../blocks/advantage/advantage.pug
 include ../../blocks/review/review.pug
+include ../../blocks/date-dropdown/date-dropdown.pug
 
 block content
     .ui-kit
@@ -47,10 +48,13 @@ block content
                     +input('This is pretty awesome', 'text', false, true, 'text field', 'hover/focus', 'input_margin_top_20 inpu_width_320px')
                     +input('Сколько гостей', 'number', false, false, 'Dropdown', '', 'input_margin_top_20 input_width_320px', true)
                     +input('ДД.ММ.ГГГГ', 'date', false, false, 'masked text field', '', 'input_margin_top_20 input_width_320px')
-                    .form-elements__date.input__margin_top_20 
-                        +input('ДД.ММ.ГГГГ', 'date', false, false, 'date Dropdown', '', 'input_width_150px', true)
-                        +input('19.08.2019', 'date', false, false, 'date Dropdown', '', 'input_margin_left_20 input_width_150px', true)
-                    +input('19 авг - 23 авг', 'text', false, false, 'filter date dropdown', '', 'input_margin_top_20 input_width_266px', true)
+                    .form-elements__date.input__margin_top_20
+                        +title-block('date dropdown', 'title-block_margin-bottom_16px title-block_margin-top_40px')
+                        +date-dropdown
+                        +title-block('date dropdown', 'title-block_margin-bottom_16px title-block_margin-top_40px')
+                        +date-dropdown
+                    +title-block('filter date dropdown', 'title-block_margin-bottom_16px title-block_margin-top_40px')
+                    +date-dropdown
                     +input('Email', 'email', false, false, 'subscription text field', '', 'input_margin_top_20 input_width_266px', true)
                 .form-elements__column 
                     +title-block('Checkbox Buttons')

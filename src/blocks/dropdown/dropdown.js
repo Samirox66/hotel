@@ -17,7 +17,5 @@ document.addEventListener("DOMContentLoaded", function() {
     $('.icon-decrement').text('-')
     $('.icon-increment').text('+')
     $('.iqdropdown-selection::after').addClass('material-icons').addClass('material-icons__expand-more').text('expand_more')
-    if ($('.iqdropdown').attr('data-checked')) {
-        $('.iqdropdown').addClass('menu-open')
-    }
+    $('.iqdropdown.iqdropdown__checkbox-list').find('.iqdropdown-item-controls').addClass('checkbox-list__controls')
 })

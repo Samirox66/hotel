@@ -1,6 +1,7 @@
 import './fonts/fonts.scss'
 import  '../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.js'
 import '../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.css'
+import '../node_modules/air-datepicker/air-datepicker.css'
 
 import './blocks/toggle/toggle.js'
 import './blocks/like-button/like-button.js'
@@ -25,6 +26,7 @@ import './blocks/rich-checkbox-button/rich-checkbox-button.js'
 import './blocks/bullet-list/bullet-list.js'
 import './blocks/advantage/advantage.js'
 import './blocks/review/review.js'
+import './blocks/date-dropdown/date-dropdown.js'
 
 import './blocks/column-colors/column-colors.scss'
 import './blocks/column-colors/column-colors__body.scss'
