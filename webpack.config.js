@@ -11,7 +11,8 @@ module.exports = {
     entry: './index.js',
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        assetModuleFilename: 'assets/[name][ext]'
     },
     plugins: [
         new CopyWebpackPlugin({
@@ -22,10 +23,6 @@ module.exports = {
                 },
                 {
                     from: path.resolve(__dirname, './src/blocks/contacts/img'),
-                    to: path.resolve(__dirname, './dist/assets/img')
-                },
-                {
-                    from: path.resolve(__dirname, './src/blocks/review/img'),
                     to: path.resolve(__dirname, './dist/assets/img')
                 }
             ]
@@ -50,25 +47,39 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader']
+                use:  [{
+                    loader: MiniCssExtractPlugin.loader,
+                    options: { publicPath: '' }
+                },
+                'css-loader']
             },
             {
                 test: /\.s[ac]ss$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: { publicPath: '' }
+                    },
+                    'css-loader',
+                    'sass-loader']
             },
             {
                 test: /\.pug$/,
                 use: 'pug-loader?pretty=true'
             },
             {
-                test: /\.(svg|png|jpg|gif|ttf|woff)$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        name: '[name].[ext]',
-                        outputPath: '/assets/fonts'
-                    }
-                }]
+                test: /\.(png|jpe?g|gif)$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/img/[name][ext]'
+                }
+            },
+            {
+                test: /\.(svg|ttf|woff)$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/fonts/[name][ext]'
+                }
             }
         ]
     }

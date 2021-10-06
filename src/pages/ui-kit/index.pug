@@ -43,15 +43,15 @@ block content
         .form-elements
             .form-elements__block 
                 .form-elements__column
-                    +input('Email', 'text', false, true, 'text field', 'default', 'input__width_big')
-                    +input('This is pretty awesome', 'text', false, true, 'text field', 'hover/focus', 'input__margin_top_20 input__width_big')
-                    +input('Сколько гостей', 'number', false, false, 'Dropdown', '', 'input__margin_top_20 input__width_big', true)
-                    +input('ДД.ММ.ГГГГ', 'date', false, false, 'masked text field', '', 'input__margin_top_20 input__width_big')
+                    +input('Email', 'text', false, true, 'text field', 'default', 'input_width_320px')
+                    +input('This is pretty awesome', 'text', false, true, 'text field', 'hover/focus', 'input_margin_top_20 inpu_width_320px')
+                    +input('Сколько гостей', 'number', false, false, 'Dropdown', '', 'input_margin_top_20 input_width_320px', true)
+                    +input('ДД.ММ.ГГГГ', 'date', false, false, 'masked text field', '', 'input_margin_top_20 input_width_320px')
                     .form-elements__date.input__margin_top_20 
-                        +input('ДД.ММ.ГГГГ', 'date', false, false, 'date Dropdown', '', 'input__width_small', true)
-                        +input('19.08.2019', 'date', false, false, 'date Dropdown', '', 'input__margin_left_20 input__width_small', true)
-                    +input('19 авг - 23 авг', 'text', false, false, 'filter date dropdown', '', 'input__margin_top_20 input__width_medium', true)
-                    +input('Email', 'email', false, false, 'subscription text field', '', 'input__margin_top_20 input__width_medium', true)
+                        +input('ДД.ММ.ГГГГ', 'date', false, false, 'date Dropdown', '', 'input_width_150px', true)
+                        +input('19.08.2019', 'date', false, false, 'date Dropdown', '', 'input_margin_left_20 input_width_150px', true)
+                    +input('19 авг - 23 авг', 'text', false, false, 'filter date dropdown', '', 'input_margin_top_20 input_width_266px', true)
+                    +input('Email', 'email', false, false, 'subscription text field', '', 'input_margin_top_20 input_width_266px', true)
                 .form-elements__column 
                     +title-block('Checkbox Buttons')
                     +chose-button({'id':'isSmokingAllowed', 'text':'Можно курить', 'name':'isSmokingAllowed'}, 'checkbox')
@@ -76,15 +76,15 @@ block content
                     +range-slider('Range Slider')
                     +title-block('buttons', 'title-block_margin-bottom_16px title-block_margin-top_40px')
                     .form-elements__flex
-                        +button('Click me', 'button_height_big button_width_small button_color_white button_background-color_blue button_border_none')
-                        +button('Click me', 'button_height_big button_width_small button_color_white button_background-color_blue button_border_none button_opacity_50per')
+                        +button('Click me', 'button_height_44px button_width_99px button_color_white button_background-color_blue button_border_none')
+                        +button('Click me', 'button_height_44px button_width_99px button_color_white button_background-color_blue button_border_none button_opacity_50per')
                     .form-elements__flex
-                        +button('click me', 'button_height_big button_width_small button_color_blue button_background-color_white button_border_blue')
-                        +button('click me', 'button_height_big button_width_small button_color_blue button_background-color_white button_border_blue button_border-opacity_50per')
+                        +button('click me', 'button_height_44px button_width_99px button_color_blue button_background-color_white button_border_blue')
+                        +button('click me', 'button_height_44px button_width_99px button_color_blue button_background-color_white button_border_blue button_border-opacity_50per')
                     .form-elements__flex
                         +button('click me', 'button_color_blue button_border_none button_background-color_white')
                         +button('click me', 'button_color_dark button_border_none button_background-color_white')
-                    +button('перейти к оплате', 'button_height_big button_width_big button_color_white button_border_none button_background-color_blue', true)
+                    +button('перейти к оплате', 'button_height_44px button_width_320px button_color_white button_border_none button_background-color_blue', true)
                     +title-block('pagination', 'title-block_margin-bottom_16px title-block_margin-top_40px')
                     +pagination(1)
             .form-elements__block 

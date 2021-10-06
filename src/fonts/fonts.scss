@@ -11,3 +11,28 @@
         url('Montserrat-Regular.woff') format('woff'),
         url('Montserrat-Regular.svg') format('svg');
 }
+
+@font-face {
+    font-family: 'Quicksand';
+    src:url('Quicksand-Bold.ttf') format('truetype'),
+        url('Quicksand-Bold.woff') format('woff'),
+        url('Quicksand-Bold.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src:url('Quicksand-Regular.ttf') format('truetype'),
+        url('Quicksand-Regular.woff') format('woff'),
+        url('Quicksand-Regular.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url('MaterialIcons-Regular.svg') format('woff2'),
+      url('MaterialIcons-Regular.woff') format('woff'),
+      url('MaterialIcons-Regular.ttf') format('truetype');
+}
