@@ -20,6 +20,7 @@ include ../../blocks/bullet-list/bullet-list.pug
 include ../../blocks/advantage/advantage.pug
 include ../../blocks/review/review.pug
 include ../../blocks/date-dropdown/date-dropdown.pug
+include ../../blocks/find-room/find-room.pug
 
 block content
     .ui-kit
@@ -42,25 +43,35 @@ block content
         include ../../blocks/footer1/footer1.pug
         include ../../blocks/footer2/footer2.pug
         .form-elements
-            .form-elements__block 
-                .form-elements__column
+            .form-elements__block.form-elements_margin-top_70px.form-elements_70px
+                .form-elements__column.form-elements_margin-left_130px
                     +input('Email', 'text', false, true, 'text field', 'default', 'input_width_320px')
                     +input('This is pretty awesome', 'text', false, true, 'text field', 'hover/focus', 'input_margin_top_20 inpu_width_320px')
-                    +input('Сколько гостей', 'number', false, false, 'Dropdown', '', 'input_margin_top_20 input_width_320px', true)
-                    +input('ДД.ММ.ГГГГ', 'date', false, false, 'masked text field', '', 'input_margin_top_20 input_width_320px')
-                    .form-elements__date.input__margin_top_20
-                        +title-block('date dropdown', 'title-block_margin-bottom_16px title-block_margin-top_40px')
-                        +date-dropdown
-                        +title-block('date dropdown', 'title-block_margin-bottom_16px title-block_margin-top_40px')
-                        +date-dropdown
-                    +title-block('filter date dropdown', 'title-block_margin-bottom_16px title-block_margin-top_40px')
-                    +date-dropdown
+                    +title-block('dropdown', 'title-block_margin-top_40px')
+                    +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}])
+                    +input('ДД.ММ.ГГГГ', 'text', false, false, 'masked text field', '', 'input_margin_top_20 input_width_320px')
+                    .form-elements__block
+                        .form-elements__column
+                            +title-block('date dropdown', 'title-block_margin-top_40px')
+                            +date-dropdown('date-dropdown-ui-kit1', 'ДД.ММ.ГГГГ', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_width_103px date-dropdown__input_height_24px')
+                        .form-elements__column
+                            +title-block('date dropdown', 'title-block_margin-top_40px')
+                            +date-dropdown('date-dropdown-ui-kit2', '', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_width_103px date-dropdown__input_height_24px')
+                    +title-block('filter date dropdown', 'title-block_margin-top_40px')
+                    +date-dropdown('filter-date-dropdown-ui-kit', '', 'date-dropdown__label_width_266px date-dropdown__label_height_44px', 'date-dropdown__input_width_103px date-dropdown__input_height_24px')
                     +input('Email', 'email', false, false, 'subscription text field', '', 'input_margin_top_20 input_width_266px', true)
-                .form-elements__column 
+                .form-elements__column.form-elements_margin-left_130px 
                     +title-block('Checkbox Buttons')
                     +chose-button({'id':'isSmokingAllowed', 'text':'Можно курить', 'name':'isSmokingAllowed'}, 'checkbox')
                     +chose-button({'id':'arePetAllowed', 'text':'Можно с питомцами', 'name':'arePetAllowed', 'checked': true}, 'checkbox')   
-                    +chose-button({'id':'areGuestsAllowed', 'text':'Можно пригласить гостей (до 10 человек)', 'name':'areGuestsAllowed', 'checked': true}, 'checkbox')
+                    +chose-button(
+                        {
+                            'id':'areGuestsAllowed',
+                            'text':'Можно пригласить гостей (до 10 человек)',
+                            'name':'areGuestsAllowed',
+                            'checked': true
+                        },
+                        'checkbox')
                     +title-block('radio buttons')
                     .chose-button__container
                         +chose-button({'id':'man', 'text':'Мужчина' ,'name':'gender', 'value':'man', 'checked': true}, 'radio')
@@ -76,7 +87,7 @@ block content
                     .form-elements__flex
                         +rate-button(4)
                         +rate-button(5, 'rate-button_margin-left_20')
-                .form-elements__column 
+                .form-elements__column.form-elements_margin-left_130px 
                     +range-slider('Range Slider')
                     +title-block('buttons', 'title-block_margin-bottom_16px title-block_margin-top_40px')
                     .form-elements__flex
@@ -91,8 +102,8 @@ block content
                     +button('перейти к оплате', 'button_height_44px button_width_320px button_color_white button_border_none button_background-color_blue', true)
                     +title-block('pagination', 'title-block_margin-bottom_16px title-block_margin-top_40px')
                     +pagination(1)
-            .form-elements__block 
-                .form-elements__column
+            .form-elements__block.form-elements_margin-top_70px.form-elements_70px
+                .form-elements__column.form-elements_margin-left_130px
                     .form-elements__flex
                         +title-block('dropdown')
                         p.form-elements__title-description default
@@ -102,30 +113,34 @@ block content
                         +title-block('dropdown')
                         p.form-elements__title-description expanded
                     +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'menu-open')
-                .form-elements__column
+                .form-elements__column.form-elements_margin-left_130px
                     +title-block('dropdown')
                     +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'menu-open')
-                .form-elements__column
+                .form-elements__column.form-elements_margin-left_130px
                     +title-block('dropdown')
                     +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '1'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'menu-open')
-            .form-elements__block 
-                .form-elements__column
+            .form-elements__block.form-elements_margin-top_70px.form-elements_70px 
+                .form-elements__column.form-elements_margin-left_130px
                     +checkbox-list([{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast'}, {'id': 'write-table', 'text': 'Письменный стол', 'name': 'write-table', 'checked': true}, {'id': 'food-table', 'text': 'Стул для кормления', 'name': 'food-table', 'checked': true}, {'id': 'baby-bed', 'text': 'Кроватка', 'name': 'baby-bed', 'checked': true}, {'id': 'tv', 'text': 'Телевизор', 'name': 'tv'}, {'id': 'shampoo', 'text': 'Шампунь', 'name': 'shampoo'}, {'id': 'tv', 'text': 'Телевизор', 'name': 'tv'}, {'id': 'shampoo', 'text': 'Шампунь', 'name': 'shampoo'}])
                     +checkbox-list([{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast'}, {'id': 'write-table', 'text': 'Письменный стол', 'name': 'write-table', 'checked': true}, {'id': 'food-table', 'text': 'Стул для кормления', 'name': 'food-table', 'checked': true}, {'id': 'baby-bed', 'text': 'Кроватка', 'name': 'baby-bed', 'checked': true}, {'id': 'tv', 'text': 'Телевизор', 'name': 'tv'}, {'id': 'shampoo', 'text': 'Шампунь', 'name': 'shampoo'}, {'id': 'tv', 'text': 'Телевизор', 'name': 'tv'}, {'id': 'shampoo', 'text': 'Шампунь', 'name': 'shampoo'}], 'menu-open')
-                .form-elements__column
+                .form-elements__column.form-elements_margin-left_130px
                     +title-block('rich checkbox button')
                     +rich-checkbox-button([{'id': 'wide-hall', 'text': 'Широкий коридор', 'name': 'wide-hall', 'description': 'Ширина коридоров в номере не менее 91 см.', 'labelClasses': 'chose-button__title'}, {'id': 'invalid-helper', 'text': 'Помощник для инвалидов', 'name': 'wide-hall', 'description': 'На 1 этаже вас встретит специалист  и проводит до номера.', 'labelClasses': 'chose-button__title'}])
-                .form-elements__column
+                .form-elements__column.form-elements_margin-left_130px
                     +title-block('bullet list')
                     +bullet-list('Нельзя с питомцами')
                     +bullet-list('Без вечеринок и мероприятий')
                     +bullet-list('Время прибытия — после 13:00, а выезд до 12:00')
-            .form-elements__block 
-                .form-elements__column
+            .form-elements__block.form-elements_margin-top_70px.form-elements_70px 
+                .form-elements__column.form-elements_margin-left_130px
                     +advantage('insert_emoticon', 'material-icons__insert-emoticon', 'Комфорт', 'Шумопоглощающие стены', false)
                     +advantage('location_city', 'material-icons__location-city', 'Удобство', 'Окно в каждой из спален', true)
-                .form-elements__column 
+                .form-elements__column.form-elements_margin-left_130px 
                     +review('Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.', 'Мурад Сарафанов', '5 дней назад')
+        .cards
+            .cards__block 
+                .cards__column
+                    +find-room
 
 block scripts
 

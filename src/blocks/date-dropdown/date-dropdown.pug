@@ -1,4 +1,5 @@
-mixin date-dropdown
-    form.filer-date-dropdown
-        label.filter-date-dropdown__label
-            input(id="my-element" type="text") 
+mixin date-dropdown(dateId, value, labelClasses, inputClasses)
+    form.date-dropdown
+        label.date-dropdown__label(class="" + labelClasses)
+            input.date-dropdown__input(class="" + inputClasses id=dateId type="text" value=value)
+            .material-icons.material-icons__expand-more expand_more  

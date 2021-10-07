@@ -27,6 +27,8 @@ import './blocks/bullet-list/bullet-list.js'
 import './blocks/advantage/advantage.js'
 import './blocks/review/review.js'
 import './blocks/date-dropdown/date-dropdown.js'
+import './blocks/find-room/find-room.js'
+import './blocks/cards/cards.js'
 
 import './blocks/column-colors/column-colors.scss'
 import './blocks/column-colors/column-colors__body.scss'
