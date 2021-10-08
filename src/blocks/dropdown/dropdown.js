@@ -1,4 +1,8 @@
 import './dropdown.scss'
+import './dropdown_width_320px.scss'
+import './dropdown_width_266px.scss'
+import './dropdown.scss'
+import './iqdropdown.scss'
 
 document.addEventListener("DOMContentLoaded", function() {
     $('.iqdropdown').iqDropdown({

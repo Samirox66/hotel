@@ -1,7 +1,8 @@
 .button {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    position: relative;
     border-radius: 22px;
     font-size: 12px;
     cursor: pointer;
@@ -9,5 +10,4 @@
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
-    margin: 0 auto;
 }

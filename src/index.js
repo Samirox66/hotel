@@ -29,14 +29,7 @@ import './blocks/review/review.js'
 import './blocks/date-dropdown/date-dropdown.js'
 import './blocks/find-room/find-room.js'
 import './blocks/cards/cards.js'
-
-import './blocks/column-colors/column-colors.scss'
-import './blocks/column-colors/column-colors__body.scss'
-
-import './blocks/column-text/column-text.scss'
-import './blocks/column-text/column-text__body.scss'
-
-import './blocks/colors-and-type/colors-and-type.scss'
+import './blocks/colors-and-type/colors-and-type.js'
 
 import './blocks/header/header.scss'
 

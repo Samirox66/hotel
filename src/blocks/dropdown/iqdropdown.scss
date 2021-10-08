@@ -1,0 +1,102 @@
+.iqdropdown {
+    background-color: white;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: 2px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    .iqdropdown-menu {
+        padding-bottom: 7px;
+        height: auto;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        box-shadow: none;
+    }
+
+    .iqdropdown-selection {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: none;
+            color: rgba(31, 32, 65, 0.75);
+        }
+
+        &::after {
+            height: 0px;
+        }
+    }
+
+    p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1F2041;
+    }
+
+    .icon-decrement {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        color: rgba(31, 32, 65, 0.5);
+        &::after {
+            height: 0;
+        }
+    }
+
+    .icon-decrement.icon-increment {
+        &::before {
+            height: 0;
+        }
+    }
+
+    .iqdropdown-menu-option {
+        justify-content: space-between;
+        height: auto;
+        padding-top: 7px;
+    }
+
+    .iqdropdown-item-controls {
+        align-items: center;
+        margin-right: -8px;
+        height: 30px;
+
+        .counter {
+            border: none;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #1F2041;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        button.button-increment {
+            width: 30px;
+            height: 30px;
+            padding: 0;
+            border-radius: 50%;
+        }
+
+        button.button-decrement {
+            width: 30px;
+            height: 30px;
+            padding: 0;
+            border-radius: 50%;
+        }
+    }
+}

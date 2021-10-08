@@ -25,7 +25,7 @@ include ../../blocks/find-room/find-room.pug
 block content
     .ui-kit
         .colors-and-type
-            .column-colors.column-colors__body
+            .colors-and-type__colors
                 +color('Dark Shade 100%', '#1F2041', 'color__example_background_dark-shade-100')
                 +color('Dark Shade 75%', '#1F2041', 'color__example_background_dark-shade-75')
                 +color('Dark Shade 50%', '#1F2041', 'color__example_background_dark-shade-50')
@@ -33,11 +33,19 @@ block content
                 +color('Dark Shade 5%', '#1F2041', 'color__example_background_dark-shade-5')
                 +color('Purple', '#BC9CFF', 'color__example_background_purple')
                 +color('Green', '#6FCF97', 'color__example_background_green')
-            .column-text.column-text__body 
-                +text('H1', 'This one is the sub-section or widget title', 'h1')
-                +text('H2', 'Next one is the item title inside widgets', 'h2')
-                +text('H3', 'This is a label or CTA text', 'h3')
-                +text('Body', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.', 'p')
+            .colors-and-type__type
+                .colors-and-type__row
+                    +text('H1', 'h1', 'text__h1 text_color-opacity_25per text_font-weight_normal')
+                    +text('This one is the sub-section or widget title', 'h1', 'text__h1 text_margin-left_30px')
+                .colors-and-type__row
+                    +text('H2', 'h2', 'text__h2 text_color-opacity_25per text_font-weight_normal')
+                    +text('Next one is the item title inside widgets', 'h2', 'text__h2 text_margin-left_30px')
+                .colors-and-type__row
+                    +text('H3', 'h3', 'text__h3 text_color-opacity_25per text_font-weight_normal')
+                    +text('This is a label or CTA text', 'h3', 'text__h3 text_margin-left_30px')
+                .colors-and-type__row
+                    +text('body', 'p', 'text__p text_color-opacity_25per')
+                    +text('This is the body text which is used for most of the design, like paragraphs, lists, etc.', 'p', 'text__p text_margin-left_30px')
         +header(true, 'Юлий Цезарь')
         +header(false)
         include ../../blocks/footer1/footer1.pug
@@ -48,7 +56,7 @@ block content
                     +input('Email', 'text', false, true, 'text field', 'default', 'input_width_320px')
                     +input('This is pretty awesome', 'text', false, true, 'text field', 'hover/focus', 'input_margin_top_20 inpu_width_320px')
                     +title-block('dropdown', 'title-block_margin-top_40px')
-                    +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}])
+                    +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px')
                     +input('ДД.ММ.ГГГГ', 'text', false, false, 'masked text field', '', 'input_margin_top_20 input_width_320px')
                     .form-elements__block
                         .form-elements__column
@@ -107,18 +115,18 @@ block content
                     .form-elements__flex
                         +title-block('dropdown')
                         p.form-elements__title-description default
-                    +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}])
+                    +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'dropdown_width_266px')
                     .ui-kit_margin-top_40px
                     .form-elements__flex
                         +title-block('dropdown')
                         p.form-elements__title-description expanded
-                    +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'menu-open')
+                    +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'dropdown_width_266px', 'menu-open')
                 .form-elements__column.form-elements_margin-left_130px
                     +title-block('dropdown')
-                    +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'menu-open')
+                    +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'menu-open')
                 .form-elements__column.form-elements_margin-left_130px
                     +title-block('dropdown')
-                    +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '1'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'menu-open')
+                    +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '1'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'menu-open')
             .form-elements__block.form-elements_margin-top_70px.form-elements_70px 
                 .form-elements__column.form-elements_margin-left_130px
                     +checkbox-list([{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast'}, {'id': 'write-table', 'text': 'Письменный стол', 'name': 'write-table', 'checked': true}, {'id': 'food-table', 'text': 'Стул для кормления', 'name': 'food-table', 'checked': true}, {'id': 'baby-bed', 'text': 'Кроватка', 'name': 'baby-bed', 'checked': true}, {'id': 'tv', 'text': 'Телевизор', 'name': 'tv'}, {'id': 'shampoo', 'text': 'Шампунь', 'name': 'shampoo'}, {'id': 'tv', 'text': 'Телевизор', 'name': 'tv'}, {'id': 'shampoo', 'text': 'Шампунь', 'name': 'shampoo'}])
@@ -139,7 +147,7 @@ block content
                     +review('Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.', 'Мурад Сарафанов', '5 дней назад')
         .cards
             .cards__block 
-                .cards__column
+                .cards__column.cards_margin-left_140px
                     +find-room
 
 block scripts

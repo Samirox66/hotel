@@ -1,6 +1,4 @@
-mixin text(textExample, textDescription, tag)
-    .text.text__body 
-        #{tag}.text__example= textExample 
-        #{tag}.text__description= textDescription
+mixin text(text, tag, textClasses) 
+    #{tag}.text(class="" + textClasses)= text
  
     

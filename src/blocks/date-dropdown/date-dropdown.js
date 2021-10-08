@@ -17,3 +17,5 @@ new AirDatepicker("#filter-date-dropdown-ui-kit", {
     multipleDatesSeparator: " - ",
     selectedDates: [new Date("19 авг"), new Date("23 авг")]
 })
+new AirDatepicker("#date-dropdown-ui-kit-cards1")
+new AirDatepicker("#date-dropdown-ui-kit-cards2")

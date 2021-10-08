@@ -1,9 +1,10 @@
-mixin dropdown(hasSubmit, defaultText, items, menuOpen) 
-    .iqdropdown(class='' + menuOpen)
-        .iqdropdown-selection
-            p.dropdown__text=defaultText
-            .material-icons.material-icons__expand-more expand_more
-        .iqdropdown-menu 
-            each item in items
-                .iqdropdown-menu-option(id=item.id data-defaultcount=item.default)
-                    p.iqdropdown-item=item.name
+mixin dropdown(hasSubmit, defaultText, items, width, menuOpen) 
+    .dropdown(class="" + width)
+        .iqdropdown(class="" + menuOpen)
+            .iqdropdown-selection
+                p.dropdown__text=defaultText
+                .material-icons.material-icons__expand-more expand_more
+            .iqdropdown-menu 
+                each item in items
+                    .iqdropdown-menu-option(id=item.id data-defaultcount=item.default)
+                        p.iqdropdown-item=item.name
