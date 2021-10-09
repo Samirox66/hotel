@@ -1,13 +1,7 @@
-mixin input(text, formType, hasSubcribe, hasState, titleText, stateText, inputClasses, hasDropdown)
-    .input(class="" + inputClasses)
-        if (!hasSubcribe)
-            .input__header
-                .input__title=titleText
-                if (hasState)
-                    .input__state=stateText
-        form.input__form(action="post") 
-            input.input__text(type=formType, placeholder=text)
-            if (hasSubcribe)
-                button(type='button')
-                    .material-icons.material-icons__arrow-forward arrow_forward
+mixin input(formType, inputClasses, text, hasArrow)
+    form.input(class="" + inputClasses)
+        input.input__input(type=formType placeholder=text)
+        if (hasArrow)
+                button(type='button').input__arrow-forward
+                    .material-icons.material-icons__arrow-forward.input__arrow-forward_color_blue arrow_forward
                     

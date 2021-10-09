@@ -30,6 +30,10 @@ import './blocks/date-dropdown/date-dropdown.js'
 import './blocks/find-room/find-room.js'
 import './blocks/cards/cards.js'
 import './blocks/colors-and-type/colors-and-type.js'
+import './blocks/sign-up/sign-up.js'
+import './blocks/room/room.js'
+import './blocks/sign-in/sign-in.js'
+import './blocks/choose-room/choose-room.js'
 
 import './blocks/header/header.scss'
 

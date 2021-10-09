@@ -6,4 +6,5 @@ mixin toggle(check, text)
                 input.toggle__input(type='checkbox' checked)
             else
                 input.toggle__input(type='checkbox')
-        .toggle__text=text
+        .toggle__text
+            +text(text, 'p', 'text__p')

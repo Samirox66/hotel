@@ -1,0 +1,14 @@
+.input__input {
+    border: none;
+    width: 100%;
+    &:hover, &:focus {
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+    }
+    &::placeholder {
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.25);
+    }
+}

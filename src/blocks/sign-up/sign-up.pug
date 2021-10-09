@@ -1,0 +1,29 @@
+mixin sign-up 
+    .sign-up
+        .sign-up__row.sign-up__row_margin-top_40px 
+            +text('Регистрация аккаунта', 'h1', 'text__h1')
+        .sign-up__row.sign-up__row_margin-top_20px
+            +input('text', 'input_width_320px input_height_44px', 'Имя')
+        .sign-up__row.sign-up__row_margin-top_10px
+            +input('text', 'input_width_320px input_height_44px', 'Фамилия')
+        .sign-up__row.sign-up__row_margin-top_10px.sign-up__row_width_320px.sign-up__row_height_25px
+            +chose-button({'id':'man', 'text':'Мужчина' ,'name':'gender', 'value':'man', 'checked': true}, 'radio')
+            +chose-button({'id':'woman', 'text':'Женщина', 'name':'gender', 'value':'woman'}, 'radio', 'chose-button_margin-left_20px')
+        .sign-up__row.sign-up__row_margin-top_20px
+            .sign-up__column 
+                +text('дата рождения', 'h3', 'text__h3 text__h3_margin-bottom_5px')
+                +input('text', 'input_width_320px input_height_44px', 'ДД.ММ.ГГГГ')
+        .sign-up__row.sign-up__row_margin-top_20px
+            .sign-up__column
+                +text('данные для входа в сервис', 'h3', 'text__h3 text__h3_margin-bottom_5px')
+                +input('email', 'input_width_320px input_height_44px', 'Email')
+        .sign-up__row.sign-up__row_margin-top_10px
+            +input('password', 'input_width_320px input_height_44px', 'Пароль')
+        .sign-up__row.sign-up__row_margin-top_10px.sign-up__row_width_320px 
+            +toggle(false, 'Получать спецпредложения')
+        .sign-up__row.sign-up__row_margin-top_20px
+            +button('перейти к оплате', 'button_height_44px button_width_320px button_color_white button_border_none button_background-color_blue', true)
+        .sign-up__row.sign-up__row_margin-top_30px.sign-up__row_width_320px
+            +text('Уже есть аккаунт на Toxin', 'p', 'text__p')
+            +button('войти', 'button_height_44px button_width_99px button_color_blue button_border_blue button_background-color_white button_margin-left_35px')
+        

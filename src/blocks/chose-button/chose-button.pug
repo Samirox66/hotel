@@ -1,5 +1,5 @@
-mixin chose-button(button, types)
-    .chose-button__container
+mixin chose-button(button, types, choseButtonClasses)
+    .chose-button__container(class="" + choseButtonClasses)
         if (button.checked) 
             input.chose-button__button(type=types id=button.id name=button.name value=button.value checked)
         else 
