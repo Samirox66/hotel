@@ -43,3 +43,11 @@ new AirDatepicker('#static-date', {
     buttons: ['clear', submitButton],
     classes: ''
 })
+new AirDatepicker("#date-dropdown-ui-kit-cards3", {
+    buttons: ['clear', submitButton],
+    selectedDates: [new Date(2019, 7, 19)]
+})
+new AirDatepicker("#date-dropdown-ui-kit-cards4", {
+    buttons: ['clear', submitButton],
+    selectedDates: [new Date(2019, 7, 23)]
+})
