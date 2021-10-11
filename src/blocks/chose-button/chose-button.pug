@@ -1,7 +1,6 @@
 mixin chose-button(button, types, choseButtonClasses)
-    .chose-button__container(class="" + choseButtonClasses)
-        if (button.checked) 
-            input.chose-button__button(type=types id=button.id name=button.name value=button.value checked)
-        else 
-            input.chose-button__button(type=types id=button.id name=button.name value=button.value)
-        label.chose-button__label(for=id class='' + button.labelClasses)=button.text  
+    label.chose-button(for=button.id) 
+        input.chose-button__button(type=types id=button.id name=button.name value=button.value checked=button.checked)
+        span.chose-button__fake-button(class='' + button.labelClasses)
+        span.chose-button__label=button.text  
+        

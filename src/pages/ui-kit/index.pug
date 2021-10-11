@@ -82,20 +82,43 @@ block content
                     +input('email', 'input_width_266px input_height_44px', 'Email', true)
                 .form-elements__column.form-elements_margin-left_130px 
                     +title-block('Checkbox Buttons')
-                    +chose-button({'id':'isSmokingAllowed', 'text':'Можно курить', 'name':'isSmokingAllowed'}, 'checkbox')
-                    +chose-button({'id':'arePetAllowed', 'text':'Можно с питомцами', 'name':'arePetAllowed', 'checked': true}, 'checkbox')   
-                    +chose-button(
-                        {
-                            'id':'areGuestsAllowed',
-                            'text':'Можно пригласить гостей (до 10 человек)',
-                            'name':'areGuestsAllowed',
-                            'checked': true
-                        },
-                        'checkbox')
+                    +chose-button({
+                        'id':'isSmokingAllowed',
+                        'text':'Можно курить',
+                        'name':'isSmokingAllowed',
+                        'labelClasses':'chose-button__fake-checkbox'
+                        }, 'checkbox')
+                    +chose-button({
+                        'id':'arePetAllowed',
+                        'text':'Можно с питомцами',
+                        'name':'arePetAllowed',
+                        'labelClasses':'chose-button__fake-checkbox',
+                        'checked': true
+                        }, 'checkbox')   
+                    +chose-button({
+                        'id':'areGuestsAllowed',
+                        'text':'Можно пригласить гостей (до 10 человек)',
+                        'name':'areGuestsAllowed',
+                        'checked': true,
+                        'labelClasses': 'chose-button__fake-checkbox'
+                        }, 'checkbox')
                     +title-block('radio buttons')
                     .chose-button__container
-                        +chose-button({'id':'man', 'text':'Мужчина' ,'name':'gender', 'value':'man', 'checked': true}, 'radio')
-                        +chose-button({'id':'woman', 'text':'Женщина', 'name':'gender', 'value':'woman'}, 'radio')
+                        +chose-button({
+                            'id':'man',
+                            'text':'Мужчина',
+                            'name':'gender',
+                            'value':'man',
+                            'checked': true,
+                            'labelClasses':'chose-button__fake-radio'
+                            }, 'radio')
+                        +chose-button({
+                            'id':'woman',
+                            'text':'Женщина',
+                            'name':'gender',
+                            'value':'woman',
+                            'labelClasses':'chose-button__fake-radio'
+                            }, 'radio')
                     .form-elements__title Toggle
                     +toggle(true, 'Получать спецпредложения')
                     +toggle(false, 'Получать спецпредложения')

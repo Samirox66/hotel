@@ -1,0 +1,17 @@
+.chose-button__fake-button {
+    color: #000;
+    display: inline-block;
+    margin-right: 9.74px;
+    position: relative;
+    text-align: center;
+    text-indent: 0px;
+    width: 20px;
+    height: 20px;
+    background: #FFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    vertical-align: middle;
+    .chose-button__button:checked + & {
+        border: 1px solid #BC9CFF;
+    }
+}

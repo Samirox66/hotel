@@ -1,0 +1,25 @@
+.chose-button__fake-checkbox {
+   border-radius: 4px;
+   .chose-button__button:checked + &::before {
+        content: '';
+        display: inline-block;
+        position: relative;
+        width: 6px;
+        height: 2px;
+        right: 1px;
+        bottom: 4px;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        transform: rotate(45deg);
+    }
+    .chose-button__button:checked + &::after {
+        content: '';
+        display: inline-block;
+        position: relative;
+        width: 2px;
+        height: 8px;
+        right: 1px;
+        bottom: 2px;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        transform: rotate(45deg);
+    }
+}
