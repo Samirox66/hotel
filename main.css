@@ -1853,6 +1853,18 @@ html{box-sizing:border-box}html *{box-sizing:inherit}html *::after,html *::befor
 .find-room__column_margin-left_20px {
   margin-left: 20px; }
 
+/*!********************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/find-room/find-room_margin-top_70px.scss ***!
+  \********************************************************************************************************************************************/
+.find-room_margin-top_70px {
+  margin-top: 70px; }
+
+/*!**********************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/find-room/find-room_margin-left_140px.scss ***!
+  \**********************************************************************************************************************************************/
+.find-room_margin-left_140px {
+  margin-left: 140px; }
+
 /*!********************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/cards/cards.scss ***!
   \********************************************************************************************************************/
@@ -2322,6 +2334,20 @@ html{box-sizing:border-box}html *{box-sizing:inherit}html *::after,html *::befor
   \****************************************************************************************************************************************/
 .choose-room__review {
   font-weight: normal; }
+
+/*!**********************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/landing-page/landing-page.scss ***!
+  \**********************************************************************************************************************************/
+.landing-page {
+  width: 1440px; }
+
+/*!**************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/landing-page/landing-page__background-img.scss ***!
+  \**************************************************************************************************************************************************/
+.landing-page__background-img {
+  background-image: url(assets/img/landing-page__background-img.png);
+  width: 100%;
+  height: 830px; }
 
 /*!**********************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/header/header.scss ***!
