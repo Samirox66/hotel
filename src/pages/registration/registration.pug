@@ -1,0 +1,21 @@
+extends ../../pug/layouts/main.pug
+include ../../blocks/header/header.pug
+include ../../blocks/logo/logo.pug
+include ../../blocks/button/button.pug
+include ../../blocks/text/text.pug
+include ../../blocks/input/input.pug
+include ../../blocks/chose-button/chose-button.pug
+include ../../blocks/toggle/toggle.pug
+include ../../blocks/contacts/contacts.pug
+include ../../blocks/sign-up/sign-up.pug
+
+block variables 
+    - var titlePage = registration
+
+block content 
+    .registration 
+        +header(false)
+        main.registration-page__background-img
+            +sign-up
+        include ../../blocks/footer1/footer1.pug
+

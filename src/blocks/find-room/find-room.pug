@@ -1,5 +1,5 @@
-mixin find-room 
-    .find-room
+mixin find-room(findRoomClasses)
+    .find-room(class="" + findRoomClasses)
         .find-room__row.find-room__row_margin-top_40px
             +text('Найдём номера под ваши пожелания', 'h1', 'text__h1')
         .find-room__row.find-room__row_margin-top_21px
@@ -14,5 +14,5 @@ mixin find-room
                 +text('гости', 'h3', 'text__h3 text__h3_margin-bottom_5px')
                 +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px')
         .find-room__row.find-room__row_margin-top_31px 
-            +button('подобрать номер', 'button_height_44px button_width_320px button_color_white button_border_none button_background-color_blue', true)
+            +button('подобрать номер', 'button_height_44px button_width_320px button_border_none button_background-color_blue', 'button_color_white', '', true)
 

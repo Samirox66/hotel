@@ -28,7 +28,16 @@ module.exports = {
             ]
         }),
         new HtmlWebpackPlugin({
-            template: './pages/ui-kit/index.pug'
+            filename: 'ui-kit.html',
+            template: './pages/ui-kit/ui-kit.pug'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'landing-page.html',
+            template: './pages/landing-page/landing-page.pug'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'registration.html',
+            template: './pages/registration/registration.pug'
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({

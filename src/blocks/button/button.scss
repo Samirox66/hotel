@@ -2,12 +2,5 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    position: relative;
-    border-radius: 22px;
-    font-size: 12px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    box-sizing: border-box;
 }

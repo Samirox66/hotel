@@ -1,5 +1,9 @@
 .button__text {
-    position: absolute;            
-    left: 50%;
-    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: absolute;
 }

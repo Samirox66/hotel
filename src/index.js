@@ -34,6 +34,8 @@ import './blocks/sign-up/sign-up.js'
 import './blocks/room/room.js'
 import './blocks/sign-in/sign-in.js'
 import './blocks/choose-room/choose-room.js'
+import './blocks/landing-page/landing-page.js'
+import './blocks/registration-page/registration-page.js'
 
 import './blocks/header/header.scss'
 

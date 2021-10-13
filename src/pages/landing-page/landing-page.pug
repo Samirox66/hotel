@@ -1,0 +1,22 @@
+extends ../../pug/layouts/main.pug
+include ../../blocks/header/header.pug
+include ../../blocks/logo/logo.pug
+include ../../blocks/button/button.pug
+include ../../blocks/text/text.pug
+include ../../blocks/date-dropdown/date-dropdown.pug
+include ../../blocks/dropdown/dropdown.pug
+include ../../blocks/find-room/find-room.pug
+include ../../blocks/logo/logo.pug
+include ../../blocks/input/input.pug
+include ../../blocks/contacts/contacts.pug
+
+block variables 
+    - var titlePage = "Landing page"
+
+block content
+    .landing-page
+        +header(false)
+        main.landing-page__background-img
+            +find-room("find-room_margin-top_70px find-room_margin-left_140px")
+        include ../../blocks/footer1/footer1.pug
+            

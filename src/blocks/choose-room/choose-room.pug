@@ -1,2 +1,17 @@
-mixin choose-room 
+mixin choose-room(room, reviewNumber, price)
     .choose-room
+        .choose-room__img(class="" + room.img)
+        .choose-room__row.choose-room__row_margin-top_20px
+            p.choose-room__sign-number № 
+                span.choose-room__number 888
+            if (room.isLux)
+                .choose-room__lux
+                    +text('люкс', 'h3', 'text__h3 text_color_blue')
+            p.choose-room__money=price 
+                span.choose-room__in-day в сутки
+        .choose-room__row.choose-room__row_margin-top_10px
+            .choose-room__line
+        .choose-room__row.choose-room__row_margin-top_8px
+            +rate-button(room.rate)
+            p.choose-room__review-number=reviewNumber
+                span.choose-room__review  Отзывов
