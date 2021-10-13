@@ -1,35 +1,6 @@
-/*!*************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./fonts/fonts.scss ***!
-  \*************************************************************************************************************/
-@font-face {
-  font-family: 'Montserrat';
-  src: url(assets/fonts/Montserrat-Bold.ttf) format("truetype"), url(assets/fonts/Montserrat-Bold.woff) format("woff"), url(assets/fonts/Montserrat-Bold.svg) format("svg"); }
+@font-face{font-family:'Montserrat';src:url(assets/fonts/Montserrat-Bold.ttf) format("truetype"),url(assets/fonts/Montserrat-Bold.woff) format("woff"),url(assets/fonts/Montserrat-Bold.svg) format("svg")}@font-face{font-family:'Montserrat';src:url(assets/fonts/Montserrat-Regular.ttf) format("truetype"),url(assets/fonts/Montserrat-Regular.woff) format("woff"),url(assets/fonts/Montserrat-Regular.svg) format("svg")}@font-face{font-family:'Quicksand';src:url(assets/fonts/Quicksand-Bold.ttf) format("truetype"),url(assets/fonts/Quicksand-Bold.woff) format("woff"),url(assets/fonts/Quicksand-Bold.svg) format("svg")}@font-face{font-family:'Quicksand';src:url(assets/fonts/Quicksand-Regular.ttf) format("truetype"),url(assets/fonts/Quicksand-Regular.woff) format("woff"),url(assets/fonts/Quicksand-Regular.svg) format("svg")}@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:local("Material Icons"),local("MaterialIcons-Regular"),url(assets/fonts/MaterialIcons-Regular.svg) format("woff2"),url(assets/fonts/MaterialIcons-Regular.woff) format("woff"),url(assets/fonts/MaterialIcons-Regular.ttf) format("truetype")}
 
-@font-face {
-  font-family: 'Montserrat';
-  src: url(assets/fonts/Montserrat-Regular.ttf) format("truetype"), url(assets/fonts/Montserrat-Regular.woff) format("woff"), url(assets/fonts/Montserrat-Regular.svg) format("svg"); }
-
-@font-face {
-  font-family: 'Quicksand';
-  src: url(assets/fonts/Quicksand-Bold.ttf) format("truetype"), url(assets/fonts/Quicksand-Bold.woff) format("woff"), url(assets/fonts/Quicksand-Bold.svg) format("svg"); }
-
-@font-face {
-  font-family: 'Quicksand';
-  src: url(assets/fonts/Quicksand-Regular.ttf) format("truetype"), url(assets/fonts/Quicksand-Regular.woff) format("woff"), url(assets/fonts/Quicksand-Regular.svg) format("svg"); }
-
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(assets/fonts/MaterialIcons-Regular.svg) format("woff2"), url(assets/fonts/MaterialIcons-Regular.woff) format("woff"), url(assets/fonts/MaterialIcons-Regular.ttf) format("truetype"); }
-
-/*!****************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.css ***!
-  \****************************************************************************************************************************/
 html{box-sizing:border-box}html *{box-sizing:inherit}html *::after,html *::before{box-sizing:inherit}body{margin:0;position:inherit}.iqdropdown{-webkit-tap-highlight-color:transparent;box-sizing:border-box}.iqdropdown *{-webkit-tap-highlight-color:transparent;box-sizing:border-box}.iqdropdown *::after,.iqdropdown *::before{box-sizing:inherit}.iqdropdown *:not(input){-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.iqdropdown *:focus{outline:none}.iqdropdown h1,.iqdropdown h2,.iqdropdown h3,.iqdropdown h4,.iqdropdown h5,.iqdropdown h6{margin:0}.iqdropdown p{margin:0}.iqdropdown ul,.iqdropdown ol{list-style-type:none;margin:0;padding:0}.iqdropdown a{cursor:pointer}.iqdropdown button{-webkit-appearance:none;-moz-appearance:none;appearance:none;background:none;border:0;cursor:pointer;margin:0;padding:0}.iqdropdown select::-ms-expand{display:none}.iqdropdown input::-ms-clear{display:none;height:0;width:0}.iqdropdown .icon-decrement{display:inline-block;height:15px;margin:auto;min-width:15px;position:relative;width:15px}.iqdropdown .icon-decrement::after{background:#002674;content:'';display:block;height:3px;position:absolute;top:6px;transition:-webkit-transform 0.25s ease-in-out;transition:transform 0.25s ease-in-out;transition:transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;width:15px}.iqdropdown .icon-decrement.icon-increment::before{background:#002674;content:'';display:block;height:3px;position:absolute;top:6px;-webkit-transform:rotate(90deg);transform:rotate(90deg);transition:-webkit-transform 0.25s ease-in-out;transition:transform 0.25s ease-in-out;transition:transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;width:15px}.iqdropdown .iqdropdown-menu{background-color:#FFFFFF;box-shadow:0 0 10px rgba(0,0,0,0.2);cursor:default;display:none;left:0;margin:-2px -1px -1px;position:absolute;right:0;top:50px;transition:all 0.2s ease-in-out;z-index:99999}.iqdropdown .iqdropdown-menu-option{align-items:center;display:flex;height:75px;padding:0 15px}.iqdropdown .iqdropdown-menu-option:last-child{border:0}.iqdropdown .iqdropdown-menu-close{color:#002674;font-family:"OpenSans",sans-serif;font-size:14px;font-weight:600;height:20px;margin:20px 0;padding:0 15px;text-align:right;width:100%}.iqdropdown.menu-open .iqdropdown-menu{display:block}@media only screen and (max-width: 640px){.iqdropdown .iqdropdown-menu.mobile-top-menu{top:-285px}}.iqdropdown-content{flex:1;padding-right:10px}.iqdropdown-item{color:#000;font-family:"OpenSans",sans-serif;font-size:17px;font-weight:400}.iqdropdown p.iqdropdown-description{color:#4A4A4A;font-family:"OpenSans",sans-serif;font-size:14px;font-weight:400;margin-top:5px}.iqdropdown .iqdropdown-item-controls{display:flex;height:45px}.iqdropdown .iqdropdown-item-controls .counter{color:#4A4A4A;font-family:"OpenSans",sans-serif;font-size:17px;font-weight:400;border-bottom:1px solid #E2E2E2;border-top:1px solid #E2E2E2;padding:11px 20px}.iqdropdown .iqdropdown-item-controls button{align-items:center;border:1px solid #E2E2E2;display:flex;height:45px;padding:0 20px;transition:all 0.2s ease-in-out}.iqdropdown .iqdropdown-item-controls button:hover{background-color:#eee}.iqdropdown .iqdropdown-item-controls button.button-decrement{border-bottom-left-radius:25px;border-top-left-radius:25px}.iqdropdown .iqdropdown-item-controls button.button-increment{border-bottom-right-radius:25px;border-top-right-radius:25px}.iqdropdown{align-items:center;border:1px solid #E2E2E2;border-radius:4px;cursor:pointer;display:flex;height:50px;justify-content:space-between;padding:0 15px;position:relative;width:100%}.iqdropdown .iqdropdown-selection{color:#4A4A4A;font-family:"OpenSans",sans-serif;font-size:17px;font-weight:400;flex:1;position:relative}.iqdropdown .iqdropdown-selection::after{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAMCAMAAABGBS09AAAAeFBMVEVMaXGVlZWRkZGRkZH///+UlJSRkZGQkJCRkZGZmZmRkZGRkZGSkpKRkZGVlZWQkJCdnZ2QkJCVlZWUlJSQkJCXl5eRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGQkJCQkJCRkZGSkpKQkJCRkZGTk5OSkpKRkZGQkJAWlBl2AAAAJ3RSTlMAHcnXATdy+f4FzLJg5ySKDYgMJuYbSm61XtmUmcc1qkiq9fVHWVidqGmEAAAAhUlEQVR42o2O5w7CYAhF6e7XvfdwtN73f0OhatLUxnj+wMklAP2mHGpFX6h6KLn0QFcds6oDeq6rC6DJ91HeAHAf0k4jACdOPlESOwDG6WVmW7CFgblJELIULcubLJVh3SKydFmTZrQn8uXMdZYH/IiOXAxsGAudoOwbcLcVnaN5nkb/8gRapQtVGGewNQAAAABJRU5ErkJggg==);background-position:center;background-repeat:no-repeat;background-size:contain;content:'';display:inline-block;height:5px;width:12px;position:absolute;right:0;top:40%}.iqdropdown.menu-open{border-color:#002674}.iqdropdown.menu-open .iqdropdown-selection::after{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAMCAMAAABGBS09AAAAe1BMVEVMaXH///+ZmZmqqqqVlZWdnZ2Xl5eVlZWVlZWUlJSQkJCUlJSTk5ORkZGRkZGRkZGSkpKRkZGSkpKSkpKRkZGQkJCRkZGRkZGRkZGQkJCSkpKRkZGRkZGRkZGRkZGRkZGRkZGRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJAwdLQhAAAAKHRSTlMAAQUGDA0bHSQmNTdHSEpYWV1gbnKIi5SZqqqytcfJzNfZ5uf19fn+jEECQQAAAIhJREFUeNqNj+cSwkAIhLn0Znoz7dLD+z9hII6OJTruH5b9mDuAv2VKaX5BSjojLqlyxi49Huq9D2TVlG/VdaNSWy9Iy1YKOxfA7cismfZAIhopmWJxNPFEzRiJG3NaHs71+6ye8zOtwz7kbxobnmQ3vEBArkAcfHiTPyAWVI0yOTlNTUoDfmoHOBIMkOONx34AAAAASUVORK5CYII=)}
-/*!****************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/air-datepicker/air-datepicker.css ***!
-  \****************************************************************************************************/
 .air-datepicker-cell.-day-.-other-month-,.air-datepicker-cell.-year-.-other-decade-{color:var(--adp-color-other-month)}.air-datepicker-cell.-day-.-other-month-:hover,.air-datepicker-cell.-year-.-other-decade-:hover{color:var(--adp-color-other-month-hover)}.-disabled-.-focus-.air-datepicker-cell.-day-.-other-month-,.-disabled-.-focus-.air-datepicker-cell.-year-.-other-decade-{color:var(--adp-color-other-month)}.-selected-.air-datepicker-cell.-day-.-other-month-,.-selected-.air-datepicker-cell.-year-.-other-decade-{color:#fff;background:var(--adp-background-color-selected-other-month)}.-selected-.-focus-.air-datepicker-cell.-day-.-other-month-,.-selected-.-focus-.air-datepicker-cell.-year-.-other-decade-{background:var(--adp-background-color-selected-other-month-focused)}.-in-range-.air-datepicker-cell.-day-.-other-month-,.-in-range-.air-datepicker-cell.-year-.-other-decade-{background-color:var(--adp-background-color-in-range);color:var(--adp-color)}.-in-range-.-focus-.air-datepicker-cell.-day-.-other-month-,.-in-range-.-focus-.air-datepicker-cell.-year-.-other-decade-{background-color:var(--adp-background-color-in-range-focused)}.air-datepicker-cell.-day-.-other-month-:empty,.air-datepicker-cell.-year-.-other-decade-:empty{background:none;border:none}.air-datepicker-cell{border-radius:var(--adp-cell-border-radius);box-sizing:border-box;cursor:pointer;display:-ms-flexbox;display:flex;position:relative;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;z-index:1}.air-datepicker-cell.-focus-{background:var(--adp-background-color-hover)}.air-datepicker-cell.-current-{color:var(--adp-color-current-date)}.air-datepicker-cell.-current-.-focus-{color:var(--adp-color)}.air-datepicker-cell.-current-.-in-range-{color:var(--adp-color-current-date)}.air-datepicker-cell.-disabled-{cursor:default;color:var(--adp-color-disabled)}.air-datepicker-cell.-disabled-.-focus-{color:var(--adp-color-disabled)}.air-datepicker-cell.-disabled-.-in-range-{color:var(--adp-color-disabled-in-range)}.air-datepicker-cell.-disabled-.-current-.-focus-{color:var(--adp-color-disabled)}.air-datepicker-cell.-in-range-{background:var(--adp-cell-background-color-in-range);border-radius:0}.air-datepicker-cell.-in-range-:hover{background:var(--adp-cell-background-color-in-range-hover)}.air-datepicker-cell.-range-from-{border:1px solid var(--adp-cell-border-color-in-range);background-color:var(--adp-cell-background-color-in-range);border-radius:var(--adp-cell-border-radius) 0 0 var(--adp-cell-border-radius)}.air-datepicker-cell.-range-to-{border:1px solid var(--adp-cell-border-color-in-range);background-color:var(--adp-cell-background-color-in-range);border-radius:0 var(--adp-cell-border-radius) var(--adp-cell-border-radius) 0}.air-datepicker-cell.-range-to-.-range-from-{border-radius:var(--adp-cell-border-radius)}.air-datepicker-cell.-selected-{color:#fff;border:none;background:var(--adp-cell-background-color-selected)}.air-datepicker-cell.-selected-.-current-{color:#fff;background:var(--adp-cell-background-color-selected)}.air-datepicker-cell.-selected-.-focus-{background:var(--adp-cell-background-color-selected-hover)}
 
 .air-datepicker-body{transition:all var(--adp-transition-duration) var(--adp-transition-ease)}.air-datepicker-body.-hidden-{display:none}.air-datepicker-body--day-names{display:-ms-grid;display:grid;-ms-grid-columns:(var(--adp-day-cell-width))[7];grid-template-columns:repeat(7, var(--adp-day-cell-width));margin:8px 0 3px}.air-datepicker-body--day-name{color:var(--adp-day-name-color);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;-ms-flex:1;flex:1;text-align:center;text-transform:uppercase;font-size:.8em}.air-datepicker-body--cells{display:-ms-grid;display:grid}.air-datepicker-body--cells.-days-{-ms-grid-columns:(var(--adp-day-cell-width))[7];grid-template-columns:repeat(7, var(--adp-day-cell-width));grid-auto-rows:var(--adp-day-cell-height)}.air-datepicker-body--cells.-months-{-ms-grid-columns:(1fr)[3];grid-template-columns:repeat(3, 1fr);grid-auto-rows:var(--adp-month-cell-height)}.air-datepicker-body--cells.-years-{-ms-grid-columns:(1fr)[4];grid-template-columns:repeat(4, 1fr);grid-auto-rows:var(--adp-year-cell-height)}
@@ -49,104 +20,29 @@ html{box-sizing:border-box}html *{box-sizing:inherit}html *::after,html *::befor
 .air-datepicker{background:var(--adp-background-color);border:1px solid var(--adp-border-color);box-shadow:0 4px 12px rgba(0,0,0,0.15);border-radius:var(--adp-border-radius);box-sizing:content-box;display:-ms-grid;display:grid;-ms-grid-columns:1fr;grid-template-columns:1fr;-ms-grid-rows:(max-content)[4];grid-template-rows:repeat(4, max-content);grid-template-areas:var(--adp-grid-areas);font-family:var(--adp-font-family),sans-serif;font-size:var(--adp-font-size);color:var(--adp-color);width:var(--adp-width);position:absolute;left:-100000px;opacity:0;transition:opacity var(--adp-transition-duration) var(--adp-transition-ease),transform var(--adp-transition-duration) var(--adp-transition-ease),left 0s var(--adp-transition-duration);z-index:var(--adp-z-index)}.air-datepicker.-from-top-{transform:translateY(calc(var(--adp-transition-offset) * -1))}.air-datepicker.-from-right-{transform:translateX(var(--adp-transition-offset))}.air-datepicker.-from-bottom-{transform:translateY(var(--adp-transition-offset))}.air-datepicker.-from-left-{transform:translateX(calc(var(--adp-transition-offset) * -1))}.air-datepicker.-active-{opacity:1;transform:translate(0);transition:opacity var(--adp-transition-duration) var(--adp-transition-ease),transform var(--adp-transition-duration) var(--adp-transition-ease),left 0s 0s}.air-datepicker.-inline-{border-color:var(--adp-border-color-inline);box-shadow:none;position:static;left:auto;right:auto;opacity:1;transform:none}.air-datepicker.-inline- .air-datepicker--pointer{display:none}.air-datepicker-global-container{position:absolute;left:0;top:0}.air-datepicker--pointer{--pointer-half-size: calc(var(--adp-pointer-size) / 2);position:absolute;background:#fff;border-top:1px solid var(--adp-border-color-inline);border-right:1px solid var(--adp-border-color-inline);width:var(--adp-pointer-size);height:var(--adp-pointer-size);z-index:-1}.-top-left- .air-datepicker--pointer,.-top-center- .air-datepicker--pointer,.-top-right- .air-datepicker--pointer{top:calc(100% - var(--pointer-half-size));transform:rotate(135deg)}.-right-top- .air-datepicker--pointer,.-right-center- .air-datepicker--pointer,.-right-bottom- .air-datepicker--pointer{right:calc(100% - var(--pointer-half-size));transform:rotate(225deg)}.-bottom-left- .air-datepicker--pointer,.-bottom-center- .air-datepicker--pointer,.-bottom-right- .air-datepicker--pointer{bottom:calc(100% - var(--pointer-half-size));transform:rotate(315deg)}.-left-top- .air-datepicker--pointer,.-left-center- .air-datepicker--pointer,.-left-bottom- .air-datepicker--pointer{left:calc(100% - var(--pointer-half-size));transform:rotate(45deg)}.-top-left- .air-datepicker--pointer,.-bottom-left- .air-datepicker--pointer{left:var(--adp-pointer-offset)}.-top-right- .air-datepicker--pointer,.-bottom-right- .air-datepicker--pointer{right:var(--adp-pointer-offset)}.-top-center- .air-datepicker--pointer,.-bottom-center- .air-datepicker--pointer{left:calc(50% - var(--adp-pointer-size) / 2)}.-left-top- .air-datepicker--pointer,.-right-top- .air-datepicker--pointer{top:var(--adp-pointer-offset)}.-left-bottom- .air-datepicker--pointer,.-right-bottom- .air-datepicker--pointer{bottom:var(--adp-pointer-offset)}.-left-center- .air-datepicker--pointer,.-right-center- .air-datepicker--pointer{top:calc(50% - var(--adp-pointer-size) / 2)}.air-datepicker--navigation{grid-area:nav}.air-datepicker--content{box-sizing:content-box;padding:var(--adp-padding);grid-area:body}.-only-timepicker- .air-datepicker--content{display:none}.air-datepicker--time{grid-area:timepicker}.air-datepicker--buttons{grid-area:buttons}.air-datepicker--buttons,.air-datepicker--time{padding:var(--adp-padding);border-top:1px solid var(--adp-border-color-inner)}
 
 
-/*!**********************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/toggle/toggle.scss ***!
-  \**********************************************************************************************************************/
-.toggle {
-  display: flex;
-  align-items: center; }
+.toggle{display:flex;align-items:center}
 
-/*!*****************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/toggle/toggle__input.scss ***!
-  \*****************************************************************************************************************************/
-.toggle__input {
-  display: none; }
+.toggle__input{display:none}
 
-/*!******************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/toggle/toggle__switch.scss ***!
-  \******************************************************************************************************************************/
-.toggle__switch {
-  background: #1F204140;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  transition: 0.4s; }
+.toggle__switch{background:#1F204140;width:12px;height:12px;border-radius:50%;transition:0.4s}
 
-/*!****************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/toggle/toggle__text.scss ***!
-  \****************************************************************************************************************************/
-.toggle__text {
-  margin-left: 10px; }
+.toggle__text{margin-left:10px}
 
-/*!*****************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/toggle/toggle_active.scss ***!
-  \*****************************************************************************************************************************/
-.toggle_active {
-  border: 1px solid #BC9CFF; }
+.toggle_active{border:1px solid #BC9CFF}
 
-/*!*************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/toggle/toggle__switch_active.scss ***!
-  \*************************************************************************************************************************************/
-.toggle__switch_active {
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+.toggle__switch_active{background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)}
 
-/*!****************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/toggle/toggle__form.scss ***!
-  \****************************************************************************************************************************/
-.toggle__form {
-  height: 20px;
-  width: 40px;
-  background: #fff;
-  box-sizing: border-box;
-  padding: 3px;
-  border-radius: 10px;
-  transition: 0.4s;
-  cursor: pointer;
-  border: 1px solid rgba(31, 32, 65, 0.25); }
+.toggle__form{height:20px;width:40px;background:#fff;box-sizing:border-box;padding:3px;border-radius:10px;transition:0.4s;cursor:pointer;border:1px solid rgba(31,32,65,0.25)}
 
-/*!********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/like-button/like-button.scss ***!
-  \********************************************************************************************************************************/
 
-/*!****************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/like-button/like-button__button.scss ***!
-  \****************************************************************************************************************************************/
-.like-button__button {
-  display: flex;
-  align-items: center;
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 10px;
-  width: 40px;
-  height: 20px;
-  cursor: pointer; }
+.like-button__button{display:flex;align-items:center;background:#FFFFFF;border:1px solid rgba(31,32,65,0.25);box-sizing:border-box;border-radius:10px;width:40px;height:20px;cursor:pointer}
 
-/*!****************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/like-button/like-button__number.scss ***!
-  \****************************************************************************************************************************************/
-.like-button__number {
-  margin-left: 5px;
-  font-size: 10px;
-  line-height: 12px;
-  text-align: center;
-  color: rgba(31, 32, 65, 0.25); }
+.like-button__number{margin-left:5px;font-size:10px;line-height:12px;text-align:center;color:rgba(31,32,65,0.25)}
 
-/*!***********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/like-button/like-button__button_active.scss ***!
-  \***********************************************************************************************************************************************/
-.like-button__button_active {
-  border: 1px solid #BC9CFF; }
+.like-button__button_active{border:1px solid #BC9CFF}
 
-/*!***********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/like-button/like-button__number_active.scss ***!
-  \***********************************************************************************************************************************************/
-.like-button__number_active {
-  color: #BC9CFF; }
+.like-button__number_active{color:#BC9CFF}
 
-/*!*************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/nouislider/dist/nouislider.css ***!
-  \*************************************************************************************************/
 /* Functional styling;
  * These styles are required for noUiSlider to function.
  * You don't need to change these rules to apply your design.
@@ -457,1959 +353,463 @@ html{box-sizing:border-box}html *{box-sizing:inherit}html *::after,html *::befor
   right: 28px;
 }
 
-/*!**********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/range-slider/range-slider.scss ***!
-  \**********************************************************************************************************************************/
-.noUi-connect {
-  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); }
-
-.noUi-handle {
-  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-  border: 2px solid #FFFFFF;
-  border-radius: 10px;
-  box-shadow: none;
-  left: 20px; }
-  .noUi-handle::before, .noUi-handle::after {
-    display: none; }
-
-.noUi-horizontal .noUi-handle {
-  width: 12px;
-  height: 12px;
-  top: -4px; }
-
-.noUi-target {
-  background: white;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 3px;
-  box-sizing: border-box;
-  box-shadow: none;
-  height: 6px;
-  color: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); }
-
-/*!****************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/range-slider/range-slider__head.scss ***!
-  \****************************************************************************************************************************************/
-.range-slider__head {
-  display: flex;
-  justify-content: space-between; }
-
-/*!*****************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/range-slider/range-slider__title.scss ***!
-  \*****************************************************************************************************************************************/
-.range-slider__title {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1F2041; }
-
-/*!******************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/range-slider/range-slider__slider.scss ***!
-  \******************************************************************************************************************************************/
-.range-slider__slider {
-  margin-top: 20px;
-  width: 266px; }
-
-/*!*****************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/range-slider/range-slider__range.scss ***!
-  \*****************************************************************************************************************************************/
-.range-slider__range {
-  font-size: 12px;
-  line-height: 15px;
-  text-align: right;
-  text-transform: uppercase;
-  color: rgba(31, 32, 65, 0.5); }
-
-/*!**************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/dropdown/dropdown.scss ***!
-  \**************************************************************************************************************************/
-
-/*!**************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/dropdown/dropdown_width_320px.scss ***!
-  \**************************************************************************************************************************************/
-.dropdown_width_320px {
-  width: 320px; }
-
-/*!**************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/dropdown/dropdown_width_266px.scss ***!
-  \**************************************************************************************************************************************/
-.dropdown_width_266px {
-  width: 266px; }
-
-/*!****************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/dropdown/iqdropdown.scss ***!
-  \****************************************************************************************************************************/
-.iqdropdown {
-  background-color: white;
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  border-radius: 2px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px; }
-  .iqdropdown .iqdropdown-menu {
-    padding-bottom: 7px;
-    height: auto;
-    border: 1px solid rgba(31, 32, 65, 0.5);
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    box-shadow: none; }
-  .iqdropdown .iqdropdown-selection {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-    .iqdropdown .iqdropdown-selection p {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 24px;
-      text-transform: none;
-      color: rgba(31, 32, 65, 0.75); }
-    .iqdropdown .iqdropdown-selection::after {
-      height: 0px; }
-  .iqdropdown p {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #1F2041; }
-  .iqdropdown .icon-decrement {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    color: rgba(31, 32, 65, 0.5); }
-    .iqdropdown .icon-decrement::after {
-      height: 0; }
-  .iqdropdown .icon-decrement.icon-increment::before {
-    height: 0; }
-  .iqdropdown .iqdropdown-menu-option {
-    justify-content: space-between;
-    height: auto;
-    padding-top: 7px; }
-  .iqdropdown .iqdropdown-item-controls {
-    align-items: center;
-    margin-right: -8px;
-    height: 30px; }
-    .iqdropdown .iqdropdown-item-controls .counter {
-      border: none;
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 15px;
-      text-align: center;
-      text-transform: uppercase;
-      color: #1F2041;
-      padding-left: 10px;
-      padding-right: 10px; }
-    .iqdropdown .iqdropdown-item-controls button.button-increment {
-      width: 30px;
-      height: 30px;
-      padding: 0;
-      border-radius: 50%; }
-    .iqdropdown .iqdropdown-item-controls button.button-decrement {
-      width: 30px;
-      height: 30px;
-      padding: 0;
-      border-radius: 50%; }
-
-/*!************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/checkbox-list/checkbox-list.scss ***!
-  \************************************************************************************************************************************/
-.iqdropdown.iqdropdown__checkbox-list {
-  border: none;
-  padding-left: 0; }
-  .iqdropdown.iqdropdown__checkbox-list .iqdropdown-menu.checkbox-list_border_none {
-    border: none; }
-
-.iqdropdown .iqdropdown-selection p.checkbox-list__text {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1F2041; }
-
-.iqdropdown .iqdropdown-item-controls.checkbox-list__controls {
-  display: none; }
-
-/*!**********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/color/color__example_background_green.scss ***!
-  \**********************************************************************************************************************************************/
-.color__example_background_green {
-  background: #6FCF97;
-  border-radius: 6px;
-  width: 70px;
-  height: 70px; }
-
-/*!***********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/color/color__example_background_purple.scss ***!
-  \***********************************************************************************************************************************************/
-.color__example_background_purple {
-  background: #BC9CFF;
-  border-radius: 6px;
-  width: 70px;
-  height: 70px; }
-
-/*!*******************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/color/color__example_background_dark-shade-100.scss ***!
-  \*******************************************************************************************************************************************************/
-.color__example_background_dark-shade-5 {
-  background: #1F20410D;
-  border-radius: 6px;
-  width: 70px;
-  height: 70px; }
-
-/*!******************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/color/color__example_background_dark-shade-75.scss ***!
-  \******************************************************************************************************************************************************/
-.color__example_background_dark-shade-25 {
-  background: #1F204140;
-  border-radius: 6px;
-  width: 70px;
-  height: 70px; }
-
-/*!******************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/color/color__example_background_dark-shade-50.scss ***!
-  \******************************************************************************************************************************************************/
-.color__example_background_dark-shade-50 {
-  background: #1F204180;
-  border-radius: 6px;
-  width: 70px;
-  height: 70px; }
-
-/*!******************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/color/color__example_background_dark-shade-25.scss ***!
-  \******************************************************************************************************************************************************/
-.color__example_background_dark-shade-75 {
-  background: #1F2041BF;
-  border-radius: 6px;
-  width: 70px;
-  height: 70px; }
-
-/*!*****************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/color/color__example_background_dark-shade-5.scss ***!
-  \*****************************************************************************************************************************************************/
-.color__example_background_dark-shade-100 {
-  background: #1F2041;
-  border-radius: 6px;
-  width: 70px;
-  height: 70px; }
-
-/*!*********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/color/color__description.scss ***!
-  \*********************************************************************************************************************************/
-.color__description {
-  font-size: 19px;
-  line-height: 28px;
-  padding-left: 40px;
-  align-self: center;
-  color: #1F2041; }
-
-/*!**************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/color/color__body.scss ***!
-  \**************************************************************************************************************************/
-.color__body {
-  padding-bottom: 20px; }
-
-/*!**************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/color/color__text.scss ***!
-  \**************************************************************************************************************************/
-.color__text {
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 27.79px; }
-
-/*!*************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/color/color__hex.scss ***!
-  \*************************************************************************************************************************/
-
-/*!********************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/color/color.scss ***!
-  \********************************************************************************************************************/
-.color {
-  display: flex; }
-
-/*!************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/form-elements/form-elements.scss ***!
-  \************************************************************************************************************************************/
-.form-elements {
-  display: flex;
-  flex-direction: column; }
-
-/*!*******************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/form-elements/form-elements__block.scss ***!
-  \*******************************************************************************************************************************************/
-.form-elements__block {
-  display: flex; }
-
-/*!********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/form-elements/form-elements__column.scss ***!
-  \********************************************************************************************************************************************/
-.form-elements__column {
-  display: flex;
-  flex-direction: column; }
-
-/*!******************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/form-elements/form-elements__date.scss ***!
-  \******************************************************************************************************************************************/
-.form-elements__date {
-  display: flex; }
-
-/*!*******************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/form-elements/form-elements__title.scss ***!
-  \*******************************************************************************************************************************************/
-.form-elements__title {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1F2041; }
-
-/*!******************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/form-elements/form-elements__flex.scss ***!
-  \******************************************************************************************************************************************/
-.form-elements__flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-
-/*!*******************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/form-elements/form-elements__title-description.scss ***!
-  \*******************************************************************************************************************************************************/
-.form-elements__title-description {
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: rgba(31, 32, 65, 0.5);
-  margin-top: 0;
-  margin-bottom: 0; }
-
-/*!****************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/form-elements/form-elements_margin-top_70px.scss ***!
-  \****************************************************************************************************************************************************/
-.form-elements_margin-top_70px {
-  margin-top: 70px; }
-
-/*!*******************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/form-elements/form-elements_margin-bottom_70px.scss ***!
-  \*******************************************************************************************************************************************************/
-.form-elements_margin-bottom_70px {
-  margin-bottom: 70px; }
-
-/*!******************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/form-elements/form-elements_margin-left_130px.scss ***!
-  \******************************************************************************************************************************************************/
-.form-elements_margin-left_130px {
-  margin-left: 130px; }
-
-/*!*************************************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/form-elements/form-elements__block_justify-content_space-between.scss ***!
-  \*************************************************************************************************************************************************************************/
-.form-elements__block_justify-content_space-between {
-  justify-content: space-between; }
-
-/*!****************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/form-elements/form-elements_margin-top_30px.scss ***!
-  \****************************************************************************************************************************************************/
-.form-elements_margin-top_30px {
-  margin-top: 30px; }
-
-/*!********************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/input/input.scss ***!
-  \********************************************************************************************************************/
-.input {
-  display: flex;
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px; }
-
-/*!***************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/input/input__input.scss ***!
-  \***************************************************************************************************************************/
-.input__input {
-  border: none;
-  width: 100%; }
-  .input__input:hover, .input__input:focus {
-    font-size: 14px;
-    line-height: 24px;
-    color: rgba(31, 32, 65, 0.75); }
-  .input__input::placeholder {
-    font-size: 14px;
-    line-height: 18px;
-    color: rgba(31, 32, 65, 0.25); }
-
-/*!********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/input/input_height_44px.scss ***!
-  \********************************************************************************************************************************/
-.input_height_44px {
-  height: 44px; }
-
-/*!********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/input/input_width_150px.scss ***!
-  \********************************************************************************************************************************/
-.input_width_150px {
-  width: 150px; }
-
-/*!********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/input/input_width_266px.scss ***!
-  \********************************************************************************************************************************/
-.input_width_266px {
-  width: 266px; }
-
-/*!********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/input/input_width_320px.scss ***!
-  \********************************************************************************************************************************/
-.input_width_320px {
-  width: 320px; }
-
-/*!***********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/input/input__arrow-forward.scss ***!
-  \***********************************************************************************************************************************/
-.input__arrow-forward {
-  background: white;
-  border: none;
-  width: 44px; }
-
-/*!**********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/input/input__arrow-forward_color_blue.scss ***!
-  \**********************************************************************************************************************************************/
-.material-icons.material-icons__arrow-forward.input__arrow-forward_color_blue {
-  color: #8BA4F9; }
-
-/*!**********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/chose-button/chose-button.scss ***!
-  \**********************************************************************************************************************************/
-.chose-button {
-  display: flex;
-  align-items: center; }
-
-/*!******************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/chose-button/chose-button__button.scss ***!
-  \******************************************************************************************************************************************/
-.chose-button__button {
-  display: none; }
-
-/*!*****************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/chose-button/chose-button__label.scss ***!
-  \*****************************************************************************************************************************************/
-.chose-button__label {
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.5);
-  font-weight: normal;
-  cursor: default;
-  line-height: 30px;
-  vertical-align: middle; }
-
-/*!*********************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/chose-button/chose-button__flex-direction_column.scss ***!
-  \*********************************************************************************************************************************************************/
-.chose-button__flex-direction_column {
-  flex-direction: column; }
-
-/*!*********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/chose-button/chose-button__container.scss ***!
-  \*********************************************************************************************************************************************/
-.chose-button__container {
-  display: flex;
-  align-items: center; }
-
-/*!***************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/chose-button/chose-button_margin-left_20px.scss ***!
-  \***************************************************************************************************************************************************/
-.chose-button_margin-left_20px {
-  margin-left: 20px; }
-
-/*!*************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/chose-button/chose-button__fake-checkbox.scss ***!
-  \*************************************************************************************************************************************************/
-.chose-button__fake-checkbox {
-  border-radius: 4px; }
-  .chose-button__button:checked + .chose-button__fake-checkbox::before {
-    content: '';
-    display: inline-block;
-    position: relative;
-    width: 6px;
-    height: 2px;
-    right: 1px;
-    bottom: 4px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    transform: rotate(45deg); }
-  .chose-button__button:checked + .chose-button__fake-checkbox::after {
-    content: '';
-    display: inline-block;
-    position: relative;
-    width: 2px;
-    height: 8px;
-    right: 1px;
-    bottom: 2px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    transform: rotate(45deg); }
-
-/*!**********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/chose-button/chose-button__fake-radio.scss ***!
-  \**********************************************************************************************************************************************/
-.chose-button__fake-radio {
-  border-radius: 50%; }
-  .chose-button__button:checked + .chose-button__fake-radio::before {
-    content: '';
-    color: #000;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    text-indent: 0px;
-    width: 12px;
-    height: 12px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    box-sizing: border-box;
-    border-radius: 50%; }
-
-/*!***********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/chose-button/chose-button__fake-button.scss ***!
-  \***********************************************************************************************************************************************/
-.chose-button__fake-button {
-  color: #000;
-  display: inline-block;
-  margin-right: 9.74px;
-  position: relative;
-  text-align: center;
-  text-indent: 0px;
-  width: 20px;
-  height: 20px;
-  background: #FFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  vertical-align: middle; }
-  .chose-button__button:checked + .chose-button__fake-button {
-    border: 1px solid #BC9CFF; }
-
-/*!**********************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button.scss ***!
-  \**********************************************************************************************************************/
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  box-sizing: border-box; }
-
-/*!**********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button_color_white.scss ***!
-  \**********************************************************************************************************************************/
-.button_color_white {
-  color: white; }
-
-/*!*********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button_color_blue.scss ***!
-  \*********************************************************************************************************************************/
-.button_color_blue {
-  color: #BC9CFF; }
-
-/*!*********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button_background-color_white.scss ***!
-  \*********************************************************************************************************************************************/
-.button_background-color_white {
-  background-color: white; }
-
-/*!********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button_background-color_blue.scss ***!
-  \********************************************************************************************************************************************/
-.button_background-color_blue {
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
-
-/*!**********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button_border_blue.scss ***!
-  \**********************************************************************************************************************************/
-.button_border_blue {
-  border: 2px solid #BC9CFF; }
-
-/*!**********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button_border_none.scss ***!
-  \**********************************************************************************************************************************/
-.button_border_none {
-  border: none; }
-
-/*!*********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button_width_61px.scss ***!
-  \*********************************************************************************************************************************/
-.button_width_61px {
-  width: 61px; }
-
-/*!*********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button_width_87px.scss ***!
-  \*********************************************************************************************************************************/
-.button_width_87px {
-  width: 87px; }
-
-/*!*********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button_width_99px.scss ***!
-  \*********************************************************************************************************************************/
-.button_width_99px {
-  width: 99px; }
-
-/*!**********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button_width_196px.scss ***!
-  \**********************************************************************************************************************************/
-.button_width_196px {
-  width: 196px; }
-
-/*!**********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button_width_320px.scss ***!
-  \**********************************************************************************************************************************/
-.button_width_320px {
-  width: 320px; }
-
-/*!**********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button_height_15px.scss ***!
-  \**********************************************************************************************************************************/
-.button_height_15px {
-  height: 15px; }
-
-/*!**********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button_height_34px.scss ***!
-  \**********************************************************************************************************************************/
-.button_height_34px {
-  height: 34px; }
-
-/*!**********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button_height_44px.scss ***!
-  \**********************************************************************************************************************************/
-.button_height_44px {
-  height: 44px; }
-
-/*!************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button_opacity_50per.scss ***!
-  \************************************************************************************************************************************/
-.button_opacity_50per {
-  opacity: 0.5; }
-
-/*!*******************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button_border-opacity_50per.scss ***!
-  \*******************************************************************************************************************************************/
-.button_border-opacity_50per {
-  border: 2px solid rgba(188, 156, 255, 0.5); }
-
-/*!*********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button_color_dark.scss ***!
-  \*********************************************************************************************************************************/
-.button_color_dark {
-  color: rgba(31, 32, 65, 0.5); }
-
-/*!****************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button__text.scss ***!
-  \****************************************************************************************************************************/
-.button__text {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  position: absolute; }
-
-/*!******************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/button/button__button.scss ***!
-  \******************************************************************************************************************************/
-.button__button {
-  cursor: pointer;
-  padding: 0;
-  display: flex;
-  border-radius: 22px;
-  align-items: center;
-  justify-content: center;
-  position: relative; }
-
-/*!************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/footer1/footer1.scss ***!
-  \************************************************************************************************************************/
-.footer1 {
-  display: flex;
-  flex-direction: column; }
-
-/*!******************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/footer1/footer1__logo.scss ***!
-  \******************************************************************************************************************************/
-.footer1__logo {
-  display: flex;
-  flex-direction: column;
-  width: 18%;
-  margin-top: 100px; }
-
-/*!*************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/footer1/footer1__description.scss ***!
-  \*************************************************************************************************************************************/
-.footer1__description {
-  font-size: 14px;
-  line-height: 24px;
-  color: #1F2041BF; }
-
-/*!**********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/footer1/footer1__nav-head.scss ***!
-  \**********************************************************************************************************************************/
-.footer1__nav-head {
-  list-style-type: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  margin-bottom: 21px;
-  color: #1F2041; }
-
-/*!**********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/footer1/footer1__nav-item.scss ***!
-  \**********************************************************************************************************************************/
-.footer1__nav-item {
-  list-style-type: none;
-  margin-bottom: 20px;
-  color: #1F204180;
-  font-size: 14px;
-  line-height: 17px; }
-
-/*!*****************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/footer1/footer1__top.scss ***!
-  \*****************************************************************************************************************************/
-.footer1__top {
-  display: flex;
-  height: 372px;
-  justify-content: center;
-  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1); }
-
-/*!********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/footer1/footer1__bottom.scss ***!
-  \********************************************************************************************************************************/
-.footer1__bottom {
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0px 10px 20px 0px #1F20410D; }
-
-/*!**************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/footer1/footer1__nav_width_18.scss ***!
-  \**************************************************************************************************************************************/
-.footer1__nav_width_18 {
-  width: 18%; }
-
-/*!***************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/footer1/footer1__nav-subscribe.scss ***!
-  \***************************************************************************************************************************************/
-.footer1__nav-subscribe {
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  list-style-type: none;
-  margin-bottom: 20px; }
-
-/*!*******************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/footer1/footer1__input.scss ***!
-  \*******************************************************************************************************************************/
-.footer1__input {
-  list-style-type: none; }
-
-/*!*****************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/footer1/footer1__nav.scss ***!
-  \*****************************************************************************************************************************/
-.footer1__nav {
-  margin-top: 104px; }
-
-/*!********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/footer1/footer1__rights.scss ***!
-  \********************************************************************************************************************************/
-.footer1__rights {
-  font-size: 14px;
-  line-height: 17px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-left: 140px; }
-
-/*!************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/material-icons/material-icons__favorite.scss ***!
-  \************************************************************************************************************************************************/
-.material-icons.material-icons__favorite {
-  font-size: 10px;
-  color: #BC9CFF;
-  line-height: 9px; }
-
-/*!*******************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/material-icons/material-icons__favorite-border.scss ***!
-  \*******************************************************************************************************************************************************/
-.material-icons.material-icons__favorite-border {
-  font-size: 10px;
-  line-height: 9px;
-  color: #1F204140; }
-
-/*!********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/material-icons/material-icons__star.scss ***!
-  \********************************************************************************************************************************************/
-.material-icons__star {
-  font-size: 24px;
-  line-height: 20px;
-  color: #BC9CFF;
-  position: absolute;
-  bottom: 0px;
-  left: -2px; }
-
-/*!***************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/material-icons/material-icons__star-border.scss ***!
-  \***************************************************************************************************************************************************/
-.material-icons__star-border {
-  font-size: 24px;
-  line-height: 20px;
-  color: #BC9CFF;
-  position: absolute;
-  bottom: 0px;
-  left: -2px; }
-
-/*!*****************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/material-icons/material-icons__arrow-forward.scss ***!
-  \*****************************************************************************************************************************************************/
-.material-icons.material-icons__arrow-forward {
-  font-size: 24px;
-  line-height: 24px;
-  width: 40px;
-  color: white;
-  margin-left: auto; }
-
-/*!*******************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/material-icons/material-icons__insert-emoticon.scss ***!
-  \*******************************************************************************************************************************************************/
-.material-icons__insert-emoticon {
-  font-size: 48px;
-  line-height: 41px;
-  color: #8BA4F9; }
-
-/*!*****************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/material-icons/material-icons__location-city.scss ***!
-  \*****************************************************************************************************************************************************/
-.material-icons__location-city {
-  font-size: 48px;
-  line-height: 41px;
-  color: #8BA4F9; }
-
-/*!***************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/material-icons/material-icons__expand-more.scss ***!
-  \***************************************************************************************************************************************************/
-.material-icons__expand-more {
-  width: 44px;
-  text-align: center; }
-
-/*!**************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/material-icons/material-icons.scss ***!
-  \**************************************************************************************************************************************/
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: 'liga'; }
-
-/*!******************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/logo/logo.scss ***!
-  \******************************************************************************************************************/
-.logo {
-  display: flex;
-  align-items: center; }
-
-/*!************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/logo/logo__body.scss ***!
-  \************************************************************************************************************************/
-.logo__body {
-  margin-left: 140px; }
-
-/*!***********************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/logo/logo__img.scss ***!
-  \***********************************************************************************************************************/
-
-/*!************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/logo/logo__text.scss ***!
-  \************************************************************************************************************************/
-.logo__text {
-  margin-left: 12.5px; }
-
-/*!******************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/menu/menu.scss ***!
-  \******************************************************************************************************************/
-.menu {
-  margin-right: 140px; }
-
-/*!************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/menu/menu__list.scss ***!
-  \************************************************************************************************************************/
-.menu__list {
-  display: flex; }
-
-/*!************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/menu/menu__item.scss ***!
-  \************************************************************************************************************************/
-.menu__item {
-  margin-right: 20px;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-/*!************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/menu/menu__link.scss ***!
-  \************************************************************************************************************************/
-.menu__link {
-  color: rgba(31, 32, 65, 0.5);
-  font-size: 14px;
-  line-height: 17px;
-  text-decoration: none;
-  display: table-cell;
-  vertical-align: middle; }
-
-/*!************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/menu/menu__line.scss ***!
-  \************************************************************************************************************************/
-.menu__line {
-  border-left: 1px solid #1F20411A;
-  height: 30px; }
-
-/*!*****************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/menu/menu__link_bold.scss ***!
-  \*****************************************************************************************************************************/
-.menu__link_bold {
-  font-weight: bold;
-  color: #1F2041BF; }
-
-/*!********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/rate-button/rate-button.scss ***!
-  \********************************************************************************************************************************/
-.rate-button {
-  display: flex; }
-
-/*!****************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/rate-button/rate-button__button.scss ***!
-  \****************************************************************************************************************************************/
-.rate-button__button {
-  background-color: white;
-  border: none;
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  position: relative; }
-
-/*!***********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/rate-button/rate-button_margin-left_20.scss ***!
-  \***********************************************************************************************************************************************/
-.rate-button_margin-left_20 {
-  margin-left: 20px; }
-
-/*!******************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/text/text.scss ***!
-  \******************************************************************************************************************/
-.text {
-  display: flex; }
-
-/*!**********************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/text/text__h1.scss ***!
-  \**********************************************************************************************************************/
-.text__h1 {
-  font-size: 24px;
-  line-height: 29px;
-  color: #1F2041;
-  margin-top: 0px;
-  margin-bottom: 0px; }
-
-/*!**********************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/text/text__h2.scss ***!
-  \**********************************************************************************************************************/
-.text__h2 {
-  font-size: 19px;
-  line-height: 23px;
-  color: #1F2041;
-  margin-top: 0px;
-  margin-bottom: 0px; }
-
-/*!**********************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/text/text__h3.scss ***!
-  \**********************************************************************************************************************/
-.text__h3 {
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1F2041;
-  margin-top: 0px;
-  margin-bottom: 0px; }
-
-/*!*********************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/text/text__p.scss ***!
-  \*********************************************************************************************************************/
-.text__p {
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-top: 0px;
-  margin-bottom: 0px; }
-
-/*!**************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/text/text_color-opacity_25per.scss ***!
-  \**************************************************************************************************************************************/
-.text_color-opacity_25per {
-  color: rgba(31, 32, 65, 0.25); }
-
-/*!*************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/text/text_font-weight_normal.scss ***!
-  \*************************************************************************************************************************************/
-.text_font-weight_normal {
-  font-weight: normal; }
-
-/*!***********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/text/text_margin-left_30px.scss ***!
-  \***********************************************************************************************************************************/
-.text_margin-left_30px {
-  margin-left: 30px; }
-
-/*!****************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/text/text__h3_margin-bottom_5px.scss ***!
-  \****************************************************************************************************************************************/
-.text__h3_margin-bottom_5px {
-  margin-bottom: 5px; }
-
-/*!******************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/text/text_width_214px.scss ***!
-  \******************************************************************************************************************************/
-.text_width_214px {
-  width: 214px; }
-
-/*!****************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/text/text_align-self_flex-start.scss ***!
-  \****************************************************************************************************************************************/
-.text_align-self_flex-start {
-  align-self: flex-start; }
-
-/*!*****************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/text/text_color_blue.scss ***!
-  \*****************************************************************************************************************************/
-.text_color_blue {
-  color: #bc9cff; }
-
-/*!********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/title-block/title-block.scss ***!
-  \********************************************************************************************************************************/
-.title-block {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1F2041; }
-
-/*!***************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/title-block/title-block_margin-bottom_16px.scss ***!
-  \***************************************************************************************************************************************************/
-.title-block_margin-bottom_16px {
-  margin-bottom: 16px; }
-
-/*!************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/title-block/title-block_margin-top_40px.scss ***!
-  \************************************************************************************************************************************************/
-.title-block_margin-top_40px {
-  margin-top: 40px; }
-
-/*!******************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/pagination/pagination.scss ***!
-  \******************************************************************************************************************************/
-.pagination {
-  display: flex;
-  flex-direction: column; }
-
-/*!**************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/pagination/pagination__button.scss ***!
-  \**************************************************************************************************************************************/
-.pagination__button {
-  width: 40px;
-  height: 40px;
-  background: white;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer; }
-
-/*!*********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/pagination/pagination__button_active.scss ***!
-  \*********************************************************************************************************************************************/
-.pagination__button_active {
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  color: white; }
-
-/*!*******************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/pagination/pagination__next-button.scss ***!
-  \*******************************************************************************************************************************************/
-.pagination__next-button {
-  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); }
-
-/*!************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/pagination/pagination__text.scss ***!
-  \************************************************************************************************************************************/
-.pagination__text {
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-left: 6px; }
-
-/*!************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/pagination/pagination__form.scss ***!
-  \************************************************************************************************************************************/
-.pagination__form {
-  display: flex;
-  align-items: center; }
-
-/*!***********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/pagination/pagination__button_inactive.scss ***!
-  \***********************************************************************************************************************************************/
-.pagination__button_inactive {
-  font-size: 12px;
-  line-height: 15px;
-  color: rgba(31, 32, 65, 0.5); }
-
-/*!**************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/ui-kit/ui-kit_margin-top_40px.scss ***!
-  \**************************************************************************************************************************************/
-.ui-kit_margin-top_40px {
-  margin-top: 40px; }
-
-/*!**********************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/ui-kit/ui-kit.scss ***!
-  \**********************************************************************************************************************/
-.ui-kit {
-  width: 1440px;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: normal; }
-
-/*!**************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/rich-checkbox-button/rich-checkbox-button.scss ***!
-  \**************************************************************************************************************************************************/
-
-/*!***************************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/rich-checkbox-button/rich-checkbox-button__description.scss ***!
-  \***************************************************************************************************************************************************************/
-.rich-checkbox-button__description {
-  margin-left: 38px;
-  width: 203px;
-  font-size: 12px;
-  line-height: 14px;
-  color: rgba(31, 32, 65, 0.5); }
-
-/*!********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/bullet-list/bullet-list.scss ***!
-  \********************************************************************************************************************************/
-.bullet-list {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px; }
-
-/*!****************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/bullet-list/bullet-list__bullet.scss ***!
-  \****************************************************************************************************************************************/
-.bullet-list__bullet {
-  width: 10.43px;
-  height: 10px;
-  background: rgba(31, 32, 65, 0.25);
-  border-radius: 50%;
-  margin-right: 10.43px; }
-
-/*!**************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/bullet-list/bullet-list__text.scss ***!
-  \**************************************************************************************************************************************/
-.bullet-list__text {
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-top: 0;
-  margin-bottom: 0; }
-
-/*!****************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/advantage/advantage.scss ***!
-  \****************************************************************************************************************************/
-.advantage {
-  display: flex;
-  align-items: center; }
-
-/*!***********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/advantage/advantage__title.scss ***!
-  \***********************************************************************************************************************************/
-.advantage__title {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-top: 0px;
-  margin-bottom: 0px; }
-
-/*!*****************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/advantage/advantage__description.scss ***!
-  \*****************************************************************************************************************************************/
-.advantage__description {
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-top: 0px;
-  margin-bottom: 0px; }
-
-/*!**********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/advantage/advantage__text.scss ***!
-  \**********************************************************************************************************************************/
-.advantage__text {
-  display: flex;
-  flex-direction: column;
-  width: 233px;
-  margin-left: 10px; }
-
-/*!**********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/advantage/advantage__line.scss ***!
-  \**********************************************************************************************************************************/
-.advantage__line {
-  background: rgba(31, 32, 65, 0.1);
-  height: 1px;
-  margin-top: 17px;
-  margin-bottom: 20px;
-  width: 280px; }
-
-/*!**********************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/review/review.scss ***!
-  \**********************************************************************************************************************/
-.review {
-  display: flex;
-  flex-direction: column; }
-
-/*!******************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/review/review__person.scss ***!
-  \******************************************************************************************************************************/
-.review__person {
-  display: flex;
-  align-items: center; }
-
-/*!*************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/review/review__person-avatar.scss ***!
-  \*************************************************************************************************************************************/
-.review__person-avatar {
-  background-image: url(assets/img/avatar.png);
-  background-size: cover;
-  width: 48px;
-  height: 48px; }
-
-/*!************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/review/review__person-about.scss ***!
-  \************************************************************************************************************************************/
-
-/*!***********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/review/review__person-name.scss ***!
-  \***********************************************************************************************************************************/
-.review__person-name {
-  margin-bottom: 0px;
-  margin-top: 0px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px; }
-
-/*!***********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/review/review__person-info.scss ***!
-  \***********************************************************************************************************************************/
-.review__person-info {
-  margin-bottom: 0px;
-  margin-top: 0px;
-  font-size: 14px;
-  line-height: 24px; }
-
-/*!******************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/review/review__review.scss ***!
-  \******************************************************************************************************************************/
-.review__review {
-  display: flex;
-  align-items: center; }
-
-/*!****************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/review/review__text.scss ***!
-  \****************************************************************************************************************************/
-.review__text {
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75); }
-
-/*!************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/date-dropdown/date-dropdown.scss ***!
-  \************************************************************************************************************************************/
-
-/*!*******************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/date-dropdown/date-dropdown__label.scss ***!
-  \*******************************************************************************************************************************************/
-.date-dropdown__label {
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.75);
-  display: flex;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
-  align-items: center;
-  justify-content: space-between; }
-
-/*!*******************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/date-dropdown/date-dropdown__label_height_44px.scss ***!
-  \*******************************************************************************************************************************************************/
-.date-dropdown__label_height_44px {
-  height: 44px; }
-
-/*!*******************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/date-dropdown/date-dropdown__label_width_150px.scss ***!
-  \*******************************************************************************************************************************************************/
-.date-dropdown__label_width_150px {
-  width: 150px; }
-
-/*!*******************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/date-dropdown/date-dropdown__label_width_266px.scss ***!
-  \*******************************************************************************************************************************************************/
-.date-dropdown__label_width_266px {
-  width: 266px; }
-
-/*!*******************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/date-dropdown/date-dropdown__input.scss ***!
-  \*******************************************************************************************************************************************/
-.date-dropdown__input {
-  font-weight: normal;
-  border: none; }
-
-/*!*******************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/date-dropdown/date-dropdown__input_width_103px.scss ***!
-  \*******************************************************************************************************************************************************/
-.date-dropdown__input_width_103px {
-  width: 103px; }
-
-/*!*******************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/date-dropdown/date-dropdown__input_height_24px.scss ***!
-  \*******************************************************************************************************************************************************/
-.date-dropdown__input_height_24px {
-  height: 24px; }
-
-/*!****************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/find-room/find-room.scss ***!
-  \****************************************************************************************************************************/
-.find-room {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 380px;
-  height: 374px;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px; }
-
-/*!*********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/find-room/find-room__row.scss ***!
-  \*********************************************************************************************************************************/
-.find-room__row {
-  display: flex;
-  width: 320px; }
-
-/*!*************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/find-room/find-room__row_margin-top_40px.scss ***!
-  \*************************************************************************************************************************************************/
-.find-room__row_margin-top_40px {
-  margin-top: 40px; }
-
-/*!*************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/find-room/find-room__row_margin-top_31px.scss ***!
-  \*************************************************************************************************************************************************/
-.find-room__row_margin-top_31px {
-  margin-top: 40px; }
-
-/*!*************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/find-room/find-room__row_margin-top_21px.scss ***!
-  \*************************************************************************************************************************************************/
-.find-room__row_margin-top_21px {
-  margin-top: 21px; }
-
-/*!************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/find-room/find-room__column.scss ***!
-  \************************************************************************************************************************************/
-.find-room__column {
-  display: flex;
-  flex-direction: column; }
-
-/*!*****************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/find-room/find-room__column_margin-left_20px.scss ***!
-  \*****************************************************************************************************************************************************/
-.find-room__column_margin-left_20px {
-  margin-left: 20px; }
-
-/*!********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/find-room/find-room_margin-top_70px.scss ***!
-  \********************************************************************************************************************************************/
-.find-room_margin-top_70px {
-  margin-top: 70px; }
-
-/*!**********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/find-room/find-room_margin-left_140px.scss ***!
-  \**********************************************************************************************************************************************/
-.find-room_margin-left_140px {
-  margin-left: 140px; }
-
-/*!********************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/cards/cards.scss ***!
-  \********************************************************************************************************************/
-.cards {
-  display: flex;
-  margin-top: 150px;
-  height: 1350px; }
-
-/*!****************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/cards/cards__column.scss ***!
-  \****************************************************************************************************************************/
-.cards__column {
-  display: flex;
-  flex-direction: column; }
-
-/*!**************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/cards/cards_margin-left_140px.scss ***!
-  \**************************************************************************************************************************************/
-.cards_margin-left_140px {
-  margin-left: 140px; }
-
-/*!************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/cards/cards_margin-top_40px.scss ***!
-  \************************************************************************************************************************************/
-.cards_margin-top_40px {
-  margin-top: 40px; }
-
-/*!*************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/cards/cards_margin-left_40px.scss ***!
-  \*************************************************************************************************************************************/
-.cards_margin-left_40px {
-  margin-left: 40px; }
-
-/*!****************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/colors-and-type/colors-and-type.scss ***!
-  \****************************************************************************************************************************************/
-.colors-and-type {
-  display: flex;
-  margin-bottom: 200px;
-  margin-top: 145px; }
-
-/*!*********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/colors-and-type/colors-and-type__row.scss ***!
-  \*********************************************************************************************************************************************/
-.colors-and-type__row {
-  display: flex;
-  margin-bottom: 50px;
-  width: 320px; }
-
-/*!************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/colors-and-type/colors-and-type__colors.scss ***!
-  \************************************************************************************************************************************************/
-.colors-and-type__colors {
-  margin-left: 150px; }
-
-/*!**********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/colors-and-type/colors-and-type__type.scss ***!
-  \**********************************************************************************************************************************************/
-.colors-and-type__type {
-  margin-left: 415px;
-  width: 436px; }
-
-/*!************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/sign-up/sign-up.scss ***!
-  \************************************************************************************************************************/
-.sign-up {
-  width: 380px;
-  height: 646px;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-/*!*****************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/sign-up/sign-up__row.scss ***!
-  \*****************************************************************************************************************************/
-.sign-up__row {
-  display: flex;
-  align-items: center;
-  width: 320px;
-  justify-content: space-between; }
-
-/*!********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/sign-up/sign-up__column.scss ***!
-  \********************************************************************************************************************************/
-.sign-up__column {
-  display: flex;
-  flex-direction: column; }
-
-/*!*********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/sign-up/sign-up__row_margin-top_40px.scss ***!
-  \*********************************************************************************************************************************************/
-.sign-up__row_margin-top_40px {
-  margin-top: 40px; }
-
-/*!*********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/sign-up/sign-up__row_margin-top_30px.scss ***!
-  \*********************************************************************************************************************************************/
-.sign-up__row_margin-top_30px {
-  margin-top: 30px; }
-
-/*!*********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/sign-up/sign-up__row_margin-top_20px.scss ***!
-  \*********************************************************************************************************************************************/
-.sign-up__row_margin-top_20px {
-  margin-top: 20px; }
-
-/*!*********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/sign-up/sign-up__row_margin-top_10px.scss ***!
-  \*********************************************************************************************************************************************/
-.sign-up__row_margin-top_10px {
-  margin-top: 10px; }
-
-/*!*****************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/sign-up/sign-up__row_width_320px.scss ***!
-  \*****************************************************************************************************************************************/
-.sign-up__row_width_320px {
-  width: 320px; }
-
-/*!*****************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/sign-up/sign-up__row_height_25px.scss ***!
-  \*****************************************************************************************************************************************/
-.sign-up__row_height_25px {
-  height: 25px; }
-
-/*!******************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/room/room.scss ***!
-  \******************************************************************************************************************/
-.room {
-  width: 380px;
-  height: 512px;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-/*!***********************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/room/room__row.scss ***!
-  \***********************************************************************************************************************/
-.room__row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 320px; }
-
-/*!**************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/room/room__column.scss ***!
-  \**************************************************************************************************************************/
-.room__column {
-  display: flex;
-  flex-direction: column; }
-
-/*!***************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/room/room__row_margin-top_10px.scss ***!
-  \***************************************************************************************************************************************/
-.room__row_margin-top_10px {
-  margin-top: 10px; }
-
-/*!***************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/room/room__row_margin-top_20px.scss ***!
-  \***************************************************************************************************************************************/
-.room__row_margin-top_20px {
-  margin-top: 20px; }
-
-/*!***************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/room/room__row_margin-top_30px.scss ***!
-  \***************************************************************************************************************************************/
-.room__row_margin-top_30px {
-  margin-top: 30px; }
-
-/*!***************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/room/room__row_margin-top_40px.scss ***!
-  \***************************************************************************************************************************************/
-.room__row_margin-top_40px {
-  margin-top: 40px; }
-
-/*!*******************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/room/room__dashed-line.scss ***!
-  \*******************************************************************************************************************************/
-.room__dashed-line {
-  width: 182px;
-  height: 1px;
-  border: 1px dashed rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  align-self: flex-end;
-  margin-bottom: 5px; }
-
-/*!************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/room/room__info.scss ***!
-  \************************************************************************************************************************/
-.room__info {
-  position: relative;
-  margin-right: auto;
-  left: 5px; }
-
-/*!**************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/room/room__circle.scss ***!
-  \**************************************************************************************************************************/
-.room__circle {
-  width: 20px;
-  height: 20px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 50%;
-  position: relative; }
-
-/*!*********************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/room/room__i.scss ***!
-  \*********************************************************************************************************************/
-.room__i {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 14px;
-  color: rgba(31, 32, 65, 0.25);
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%); }
-
-/*!**********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/room/room__info_align-self_flex-start.scss ***!
-  \**********************************************************************************************************************************************/
-.room__info_align-self_flex-start {
-  align-self: flex-start; }
-
-/*!***********************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/room/room__lux.scss ***!
-  \***********************************************************************************************************************/
-.room__lux {
-  margin-right: auto;
-  margin-left: 8px;
-  align-self: flex-end;
-  margin-bottom: 3px; }
-
-/*!**************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/room/room__number.scss ***!
-  \**************************************************************************************************************************/
-.room__number {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  color: #1F2041;
-  margin-top: 0px;
-  margin-bottom: 0px; }
-
-/*!*******************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/room/room__sign-number.scss ***!
-  \*******************************************************************************************************************************/
-.room__sign-number {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  color: #1F2041;
-  margin-top: 0px;
-  margin-bottom: 0px; }
-
-/*!*************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/room/room__money.scss ***!
-  \*************************************************************************************************************************/
-.room__money {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.5);
-  margin-top: 0px;
-  margin-bottom: 0px;
-  align-self: flex-end; }
-
-/*!**************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/room/room__in-day.scss ***!
-  \**************************************************************************************************************************/
-.room__in-day {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.5);
-  margin-top: 0px;
-  margin-bottom: 0px; }
-
-/*!************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/sign-in/sign-in.scss ***!
-  \************************************************************************************************************************/
-.sign-in {
-  width: 380px;
-  height: 358px;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  flex-direction: column; }
-
-/*!*****************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/sign-in/sign-in__row.scss ***!
-  \*****************************************************************************************************************************/
-.sign-in__row {
-  display: flex;
-  width: 320px;
-  align-items: center;
-  justify-content: space-between; }
-
-/*!********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/sign-in/sign-in__column.scss ***!
-  \********************************************************************************************************************************/
-.sign-in__column {
-  display: flex;
-  flex-direction: column; }
-
-/*!*********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/sign-in/sign-in__row_margin-top_40px.scss ***!
-  \*********************************************************************************************************************************************/
-.sign-in__row_margin-top_40px {
-  margin-top: 40px; }
-
-/*!*********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/sign-in/sign-in__row_margin-top_30px.scss ***!
-  \*********************************************************************************************************************************************/
-.sign-in__row_margin-top_30px {
-  margin-top: 30px; }
-
-/*!*********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/sign-in/sign-in__row_margin-top_20px.scss ***!
-  \*********************************************************************************************************************************************/
-.sign-in__row_margin-top_20px {
-  margin-top: 20px; }
-
-/*!*********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/sign-in/sign-in__row_margin-top_10px.scss ***!
-  \*********************************************************************************************************************************************/
-.sign-in__row_margin-top_10px {
-  margin-top: 10px; }
-
-/*!********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/choose-room/choose-room.scss ***!
-  \********************************************************************************************************************************/
-.choose-room {
-  width: 270px;
-  height: 257px;
-  background: #FFFFFF;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-/*!*************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/choose-room/choose-room__row.scss ***!
-  \*************************************************************************************************************************************/
-.choose-room__row {
-  display: flex;
-  width: 234px;
-  align-items: center;
-  justify-content: space-between; }
-
-/*!**************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/choose-room/choose-room__line.scss ***!
-  \**************************************************************************************************************************************/
-.choose-room__line {
-  background: rgba(31, 32, 65, 0.1);
-  height: 1px;
-  width: 230px; }
-
-/*!*************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/choose-room/choose-room__img.scss ***!
-  \*************************************************************************************************************************************/
-.choose-room__img {
-  width: 100%;
-  height: 150px; }
-
-/*!********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/choose-room/choose-room__img888-lux.scss ***!
-  \********************************************************************************************************************************************/
-.choose-room__img888-lux {
-  background-image: url(assets/img/room888-lux.png); }
-
-/*!****************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/choose-room/choose-room__img840.scss ***!
-  \****************************************************************************************************************************************/
-.choose-room__img840 {
-  background-image: url(assets/img/room840.png); }
-
-/*!*****************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/choose-room/choose-room__row_margin-top_20px.scss ***!
-  \*****************************************************************************************************************************************************/
-.choose-room__row_margin-top_20px {
-  margin-top: 20px; }
-
-/*!*****************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/choose-room/choose-room__row_margin-top_10px.scss ***!
-  \*****************************************************************************************************************************************************/
-.choose-room__row_margin-top_10px {
-  margin-top: 10px; }
-
-/*!****************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/choose-room/choose-room__row_margin-top_8px.scss ***!
-  \****************************************************************************************************************************************************/
-.choose-room__row_margin-top_8px {
-  margin-top: 8px; }
-
-/*!****************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/choose-room/choose-room__number.scss ***!
-  \****************************************************************************************************************************************/
-.choose-room__number {
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 23px;
-  color: #1F2041; }
-
-/*!*********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/choose-room/choose-room__sign-number.scss ***!
-  \*********************************************************************************************************************************************/
-.choose-room__sign-number {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  color: #1F2041;
-  margin-top: 0px;
-  margin-bottom: 0px; }
-
-/*!***************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/choose-room/choose-room__money.scss ***!
-  \***************************************************************************************************************************************/
-.choose-room__money {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.5); }
-
-/*!****************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/choose-room/choose-room__in-day.scss ***!
-  \****************************************************************************************************************************************/
-.choose-room__in-day {
-  font-weight: normal;
-  font-size: 12px; }
-
-/*!*************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/choose-room/choose-room__lux.scss ***!
-  \*************************************************************************************************************************************/
-.choose-room__lux {
-  margin-right: auto;
-  margin-left: 8px;
-  align-self: flex-end;
-  margin-bottom: 3px; }
-
-/*!***********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/choose-room/choose-room__review-number.scss ***!
-  \***********************************************************************************************************************************************/
-.choose-room__review-number {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.5); }
-
-/*!****************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/choose-room/choose-room__review.scss ***!
-  \****************************************************************************************************************************************/
-.choose-room__review {
-  font-weight: normal; }
-
-/*!**********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/landing-page/landing-page.scss ***!
-  \**********************************************************************************************************************************/
-.landing-page {
-  width: 1440px; }
-
-/*!**************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/landing-page/landing-page__background-img.scss ***!
-  \**************************************************************************************************************************************************/
-.landing-page__background-img {
-  background-image: url(assets/img/landing-page__background-img.png);
-  width: 100%;
-  height: 830px; }
-
-/*!**********************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/header/header.scss ***!
-  \**********************************************************************************************************************/
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0px 10px 20px 0px #1F20410D; }
-
-/*!********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/expand-more/expand-more.scss ***!
-  \********************************************************************************************************************************/
-.expand-more {
-  border: solid #1F204180;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background-color: white; }
-
-/*!*********************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/expand-more/expand-more__margin-left.scss ***!
-  \*********************************************************************************************************************************************/
-.expand-more__margin-left {
-  margin-left: 8px; }
-
-/*!************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/footer2/footer2.scss ***!
-  \************************************************************************************************************************/
-.footer2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 53.33%;
-  height: 367px;
-  margin-left: 25%;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
-
-/*!********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/footer2/footer2__rights.scss ***!
-  \********************************************************************************************************************************/
-.footer2__rights {
-  margin-top: 20px;
-  margin-bottom: 25px;
-  font-size: 14px;
-  line-height: 17px;
-  color: rgba(31, 32, 65, 0.75); }
-
-/*!**************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/contacts/contacts.scss ***!
-  \**************************************************************************************************************************/
-.contacts {
-  display: flex;
-  justify-content: space-between;
-  width: 112px; }
-
-/*!**********************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./blocks/contacts/contacts__margin.scss ***!
-  \**********************************************************************************************************************************/
-.contacts__margin {
-  margin-right: 140px; }
+.noUi-connect{background:linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)}.noUi-handle{background:linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);border:2px solid #FFFFFF;border-radius:10px;box-shadow:none;left:20px}.noUi-handle::before,.noUi-handle::after{display:none}.noUi-horizontal .noUi-handle{width:12px;height:12px;top:-4px}.noUi-target{background:white;border:1px solid rgba(31,32,65,0.25);border-radius:3px;box-sizing:border-box;box-shadow:none;height:6px;color:linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)}
+
+.range-slider__head{display:flex;justify-content:space-between}
+
+.range-slider__title{font-weight:bold;font-size:12px;line-height:15px;text-transform:uppercase;color:#1F2041}
+
+.range-slider__slider{margin-top:20px;width:266px}
+
+.range-slider__range{font-size:12px;line-height:15px;text-align:right;text-transform:uppercase;color:rgba(31,32,65,0.5)}
+
+
+.dropdown_width_320px{width:320px}
+
+.dropdown_width_266px{width:266px}
+
+.iqdropdown{background-color:white;border:1px solid rgba(31,32,65,0.5);border-radius:2px;border-bottom-left-radius:0px;border-bottom-right-radius:0px}.iqdropdown .iqdropdown-menu{padding-bottom:7px;height:auto;border:1px solid rgba(31,32,65,0.5);border-bottom-left-radius:2px;border-bottom-right-radius:2px;box-shadow:none}.iqdropdown .iqdropdown-selection{display:flex;align-items:center;justify-content:space-between}.iqdropdown .iqdropdown-selection p{font-family:'Montserrat', sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:24px;text-transform:none;color:rgba(31,32,65,0.75)}.iqdropdown .iqdropdown-selection::after{height:0px}.iqdropdown p{font-family:Montserrat;font-style:normal;font-weight:bold;font-size:12px;line-height:15px;text-transform:uppercase;color:#1F2041}.iqdropdown .icon-decrement{font-family:Montserrat;font-style:normal;font-weight:normal;color:rgba(31,32,65,0.5)}.iqdropdown .icon-decrement::after{height:0}.iqdropdown .icon-decrement.icon-increment::before{height:0}.iqdropdown .iqdropdown-menu-option{justify-content:space-between;height:auto;padding-top:7px}.iqdropdown .iqdropdown-item-controls{align-items:center;margin-right:-8px;height:30px}.iqdropdown .iqdropdown-item-controls .counter{border:none;font-family:Montserrat;font-style:normal;font-weight:bold;font-size:12px;line-height:15px;text-align:center;text-transform:uppercase;color:#1F2041;padding-left:10px;padding-right:10px}.iqdropdown .iqdropdown-item-controls button.button-increment{width:30px;height:30px;padding:0;border-radius:50%}.iqdropdown .iqdropdown-item-controls button.button-decrement{width:30px;height:30px;padding:0;border-radius:50%}
+
+.iqdropdown.iqdropdown__checkbox-list{border:none;padding-left:0}.iqdropdown.iqdropdown__checkbox-list .iqdropdown-menu.checkbox-list_border_none{border:none}.iqdropdown .iqdropdown-selection p.checkbox-list__text{font-family:'Montserrat', sans-serif;font-style:normal;font-weight:bold;font-size:12px;line-height:15px;text-transform:uppercase;color:#1F2041}.iqdropdown .iqdropdown-item-controls.checkbox-list__controls{display:none}
+
+.color__example_background_green{background:#6FCF97;border-radius:6px;width:70px;height:70px}
+
+.color__example_background_purple{background:#BC9CFF;border-radius:6px;width:70px;height:70px}
+
+.color__example_background_dark-shade-5{background:rgba(31,32,65,0.0509804);border-radius:6px;width:70px;height:70px}
+
+.color__example_background_dark-shade-25{background:rgba(31,32,65,0.25098);border-radius:6px;width:70px;height:70px}
+
+.color__example_background_dark-shade-50{background:rgba(31,32,65,0.501961);border-radius:6px;width:70px;height:70px}
+
+.color__example_background_dark-shade-75{background:rgba(31,32,65,0.74902);border-radius:6px;width:70px;height:70px}
+
+.color__example_background_dark-shade-100{background:#1F2041;border-radius:6px;width:70px;height:70px}
+
+.color__description{font-size:19px;line-height:28px;padding-left:40px;align-self:center;color:#1F2041}
+
+.color__body{padding-bottom:20px}
+
+.color__text{font-weight:bold;font-size:19px;line-height:27.79px}
+
+
+.color{display:flex}
+
+.form-elements{display:flex;flex-direction:column}
+
+.form-elements__block{display:flex}
+
+.form-elements__column{display:flex;flex-direction:column}
+
+.form-elements__date{display:flex}
+
+.form-elements__title{margin-top:40px;margin-bottom:20px;font-weight:bold;font-size:12px;line-height:15px;text-transform:uppercase;color:#1F2041}
+
+.form-elements__flex{display:flex;align-items:center;justify-content:space-between}
+
+.form-elements__title-description{font-size:12px;line-height:15px;text-transform:uppercase;color:rgba(31,32,65,0.5);margin-top:0;margin-bottom:0}
+
+.form-elements_margin-top_70px{margin-top:70px}
+
+.form-elements_margin-bottom_70px{margin-bottom:70px}
+
+.form-elements_margin-left_130px{margin-left:130px}
+
+.form-elements__block_justify-content_space-between{justify-content:space-between}
+
+.form-elements_margin-top_30px{margin-top:30px}
+
+.input{display:flex;background:#FFFFFF;border:1px solid rgba(31,32,65,0.25);box-sizing:border-box;border-radius:4px}
+
+.input__input{border:none;width:100%}.input__input:hover,.input__input:focus{font-size:14px;line-height:24px;color:rgba(31,32,65,0.75)}.input__input::placeholder{font-size:14px;line-height:18px;color:rgba(31,32,65,0.25)}
+
+.input_height_44px{height:44px}
+
+.input_width_150px{width:150px}
+
+.input_width_266px{width:266px}
+
+.input_width_320px{width:320px}
+
+.input__arrow-forward{background:white;border:none;width:44px}
+
+.material-icons.material-icons__arrow-forward.input__arrow-forward_color_blue{color:#8BA4F9}
+
+.chose-button{display:flex;align-items:center}
+
+.chose-button__button{display:none}
+
+.chose-button__label{font-size:14px;line-height:18px;color:rgba(31,32,65,0.5);font-weight:normal;cursor:default;line-height:30px;vertical-align:middle}
+
+.chose-button__flex-direction_column{flex-direction:column}
+
+.chose-button__container{display:flex;align-items:center}
+
+.chose-button_margin-left_20px{margin-left:20px}
+
+.chose-button__fake-checkbox{border-radius:4px}.chose-button__button:checked+.chose-button__fake-checkbox::before{content:'';display:inline-block;position:relative;width:6px;height:2px;right:1px;bottom:4px;background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);transform:rotate(45deg)}.chose-button__button:checked+.chose-button__fake-checkbox::after{content:'';display:inline-block;position:relative;width:2px;height:8px;right:1px;bottom:2px;background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);transform:rotate(45deg)}
+
+.chose-button__fake-radio{border-radius:50%}.chose-button__button:checked+.chose-button__fake-radio::before{content:'';color:#000;display:inline-block;position:relative;text-align:center;text-indent:0px;width:12px;height:12px;background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);box-sizing:border-box;border-radius:50%}
+
+.chose-button__fake-button{color:#000;display:inline-block;margin-right:9.74px;position:relative;text-align:center;text-indent:0px;width:20px;height:20px;background:#FFF;border:1px solid rgba(31,32,65,0.25);box-sizing:border-box;vertical-align:middle}.chose-button__button:checked+.chose-button__fake-button{border:1px solid #BC9CFF}
+
+.button{display:flex;align-items:center;justify-content:flex-start;box-sizing:border-box}
+
+.button_color_white{color:white}
+
+.button_color_blue{color:#BC9CFF}
+
+.button_background-color_white{background-color:white}
+
+.button_background-color_blue{background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)}
+
+.button_border_blue{border:2px solid #BC9CFF}
+
+.button_border_none{border:none}
+
+.button_width_61px{width:61px}
+
+.button_width_87px{width:87px}
+
+.button_width_99px{width:99px}
+
+.button_width_196px{width:196px}
+
+.button_width_320px{width:320px}
+
+.button_height_15px{height:15px}
+
+.button_height_34px{height:34px}
+
+.button_height_44px{height:44px}
+
+.button_opacity_50per{opacity:0.5}
+
+.button_border-opacity_50per{border:2px solid rgba(188,156,255,0.5)}
+
+.button_color_dark{color:rgba(31,32,65,0.5)}
+
+.button__text{font-weight:bold;font-size:12px;line-height:15px;text-transform:uppercase;margin-top:0px;margin-bottom:0px;position:absolute}
+
+.button__button{cursor:pointer;padding:0;display:flex;border-radius:22px;align-items:center;justify-content:center;position:relative}
+
+.footer1{display:flex;flex-direction:column}
+
+.footer1__logo{display:flex;flex-direction:column;width:18%;margin-top:100px}
+
+.footer1__description{font-size:14px;line-height:24px;color:#1F2041BF}
+
+.footer1__nav-head{list-style-type:none;text-transform:uppercase;font-weight:bold;font-size:12px;line-height:15px;margin-bottom:21px;color:#1F2041}
+
+.footer1__nav-item{list-style-type:none;margin-bottom:20px;color:#1F204180;font-size:14px;line-height:17px}
+
+.footer1__top{display:flex;height:372px;justify-content:center;box-shadow:0px 1px 0px rgba(31,32,65,0.1)}
+
+.footer1__bottom{height:70px;display:flex;align-items:center;justify-content:space-between;box-shadow:0px 10px 20px 0px #1F20410D}
+
+.footer1__nav_width_18{width:18%}
+
+.footer1__nav-subscribe{font-size:14px;line-height:24px;color:rgba(31,32,65,0.75);list-style-type:none;margin-bottom:20px}
+
+.footer1__input{list-style-type:none}
+
+.footer1__nav{margin-top:104px}
+
+.footer1__rights{font-size:14px;line-height:17px;color:rgba(31,32,65,0.75);margin-left:140px}
+
+.material-icons.material-icons__favorite{font-size:10px;color:#BC9CFF;line-height:9px}
+
+.material-icons.material-icons__favorite-border{font-size:10px;line-height:9px;color:#1F204140}
+
+.material-icons__star{font-size:24px;line-height:20px;color:#BC9CFF;position:absolute;bottom:0px;left:-2px}
+
+.material-icons__star-border{font-size:24px;line-height:20px;color:#BC9CFF;position:absolute;bottom:0px;left:-2px}
+
+.material-icons.material-icons__arrow-forward{font-size:24px;line-height:24px;width:40px;color:white;margin-left:auto}
+
+.material-icons__insert-emoticon{font-size:48px;line-height:41px;color:#8BA4F9}
+
+.material-icons__location-city{font-size:48px;line-height:41px;color:#8BA4F9}
+
+.material-icons__expand-more{width:44px;text-align:center}
+
+.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;display:inline-block;line-height:1;text-transform:none;letter-spacing:normal;word-wrap:normal;white-space:nowrap;direction:ltr;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;font-feature-settings:'liga'}
+
+.logo{display:flex;align-items:center}
+
+.logo__body{margin-left:140px}
+
+
+.logo__text{margin-left:12.5px}
+
+.menu{margin-right:140px}
+
+.menu__list{display:flex}
+
+.menu__item{margin-right:20px;list-style-type:none;display:flex;justify-content:center;align-items:center}
+
+.menu__link{color:rgba(31,32,65,0.5);font-size:14px;line-height:17px;text-decoration:none;display:table-cell;vertical-align:middle}
+
+.menu__line{border-left:1px solid #1F20411A;height:30px}
+
+.menu__link_bold{font-weight:bold;color:#1F2041BF}
+
+.rate-button{display:flex}
+
+.rate-button__button{background-color:white;border:none;cursor:pointer;width:24px;height:24px;position:relative}
+
+.rate-button_margin-left_20{margin-left:20px}
+
+.text{display:flex}
+
+.text__h1{font-size:24px;line-height:29px;color:#1F2041;margin-top:0px;margin-bottom:0px}
+
+.text__h2{font-size:19px;line-height:23px;color:#1F2041;margin-top:0px;margin-bottom:0px}
+
+.text__h3{font-size:12px;line-height:15px;text-transform:uppercase;color:#1F2041;margin-top:0px;margin-bottom:0px}
+
+.text__p{font-size:14px;line-height:24px;color:rgba(31,32,65,0.75);margin-top:0px;margin-bottom:0px}
+
+.text_color-opacity_25per{color:rgba(31,32,65,0.25)}
+
+.text_font-weight_normal{font-weight:normal}
+
+.text_margin-left_30px{margin-left:30px}
+
+.text__h3_margin-bottom_5px{margin-bottom:5px}
+
+.text_width_214px{width:214px}
+
+.text_align-self_flex-start{align-self:flex-start}
+
+.text_color_blue{color:#bc9cff}
+
+.title-block{font-weight:bold;font-size:12px;line-height:15px;text-transform:uppercase;color:#1F2041}
+
+.title-block_margin-bottom_16px{margin-bottom:16px}
+
+.title-block_margin-top_40px{margin-top:40px}
+
+.pagination{display:flex;flex-direction:column}
+
+.pagination__button{width:40px;height:40px;background:white;border-radius:50%;border:none;cursor:pointer}
+
+.pagination__button_active{background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);color:white}
+
+.pagination__next-button{background:linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)}
+
+.pagination__text{font-size:14px;line-height:24px;color:rgba(31,32,65,0.75);margin-left:6px}
+
+.pagination__form{display:flex;align-items:center}
+
+.pagination__button_inactive{font-size:12px;line-height:15px;color:rgba(31,32,65,0.5)}
+
+.ui-kit_margin-top_40px{margin-top:40px}
+
+.ui-kit{width:1440px;font-family:'Montserrat', sans-serif;font-style:normal;font-weight:normal}
+
+
+.rich-checkbox-button__description{margin-left:38px;width:203px;font-size:12px;line-height:14px;color:rgba(31,32,65,0.5)}
+
+.bullet-list{display:flex;align-items:center;margin-bottom:10px}
+
+.bullet-list__bullet{width:10.43px;height:10px;background:rgba(31,32,65,0.25);border-radius:50%;margin-right:10.43px}
+
+.bullet-list__text{font-size:14px;line-height:24px;color:rgba(31,32,65,0.75);margin-top:0;margin-bottom:0}
+
+.advantage{display:flex;align-items:center}
+
+.advantage__title{font-weight:bold;font-size:14px;line-height:24px;color:rgba(31,32,65,0.75);margin-top:0px;margin-bottom:0px}
+
+.advantage__description{font-size:14px;line-height:24px;color:rgba(31,32,65,0.75);margin-top:0px;margin-bottom:0px}
+
+.advantage__text{display:flex;flex-direction:column;width:233px;margin-left:10px}
+
+.advantage__line{background:rgba(31,32,65,0.1);height:1px;margin-top:17px;margin-bottom:20px;width:280px}
+
+.review{display:flex;flex-direction:column}
+
+.review__person{display:flex;align-items:center}
+
+.review__person-avatar{background-image:url(assets/img/avatar.png);background-size:cover;width:48px;height:48px}
+
+
+.review__person-name{margin-bottom:0px;margin-top:0px;font-weight:bold;font-size:14px;line-height:24px}
+
+.review__person-info{margin-bottom:0px;margin-top:0px;font-size:14px;line-height:24px}
+
+.review__review{display:flex;align-items:center}
+
+.review__text{font-size:14px;line-height:24px;color:rgba(31,32,65,0.75)}
+
+
+.date-dropdown__label{font-size:14px;line-height:18px;color:rgba(31,32,65,0.75);display:flex;border:1px solid rgba(31,32,65,0.25);border-radius:4px;align-items:center;justify-content:space-between}
+
+.date-dropdown__label_height_44px{height:44px}
+
+.date-dropdown__label_width_150px{width:150px}
+
+.date-dropdown__label_width_266px{width:266px}
+
+.date-dropdown__input{font-weight:normal;border:none}
+
+.date-dropdown__input_width_103px{width:103px}
+
+.date-dropdown__input_height_24px{height:24px}
+
+.find-room{display:flex;flex-direction:column;align-items:center;width:380px;height:374px;background:#FFFFFF;border:1px solid rgba(0,0,0,0.12);box-sizing:border-box;box-shadow:0px 0px 25px rgba(0,0,0,0.2);border-radius:4px}
+
+.find-room__row{display:flex;width:320px}
+
+.find-room__row_margin-top_40px{margin-top:40px}
+
+.find-room__row_margin-top_31px{margin-top:40px}
+
+.find-room__row_margin-top_21px{margin-top:21px}
+
+.find-room__column{display:flex;flex-direction:column}
+
+.find-room__column_margin-left_20px{margin-left:20px}
+
+.find-room_margin-top_70px{margin-top:70px}
+
+.find-room_margin-left_140px{margin-left:140px}
+
+.cards{display:flex;margin-top:150px;height:1350px}
+
+.cards__column{display:flex;flex-direction:column}
+
+.cards_margin-left_140px{margin-left:140px}
+
+.cards_margin-top_40px{margin-top:40px}
+
+.cards_margin-left_40px{margin-left:40px}
+
+.colors-and-type{display:flex;margin-bottom:200px;margin-top:145px}
+
+.colors-and-type__row{display:flex;margin-bottom:50px;width:320px}
+
+.colors-and-type__colors{margin-left:150px}
+
+.colors-and-type__type{margin-left:415px;width:436px}
+
+.sign-up{width:380px;height:646px;background:#FFFFFF;border:1px solid rgba(0,0,0,0.12);box-sizing:border-box;box-shadow:0px 0px 25px rgba(0,0,0,0.2);border-radius:4px;display:flex;flex-direction:column;align-items:center}
+
+.sign-up__row{display:flex;align-items:center;width:320px;justify-content:space-between}
+
+.sign-up__column{display:flex;flex-direction:column}
+
+.sign-up__row_margin-top_40px{margin-top:40px}
+
+.sign-up__row_margin-top_30px{margin-top:30px}
+
+.sign-up__row_margin-top_20px{margin-top:20px}
+
+.sign-up__row_margin-top_10px{margin-top:10px}
+
+.sign-up__row_width_320px{width:320px}
+
+.sign-up__row_height_25px{height:25px}
+
+.room{width:380px;height:512px;background:#FFFFFF;border:1px solid rgba(0,0,0,0.12);box-sizing:border-box;box-shadow:0px 0px 25px rgba(0,0,0,0.2);border-radius:4px;display:flex;flex-direction:column;align-items:center}
+
+.room__row{display:flex;align-items:center;justify-content:space-between;width:320px}
+
+.room__column{display:flex;flex-direction:column}
+
+.room__row_margin-top_10px{margin-top:10px}
+
+.room__row_margin-top_20px{margin-top:20px}
+
+.room__row_margin-top_30px{margin-top:30px}
+
+.room__row_margin-top_40px{margin-top:40px}
+
+.room__dashed-line{width:182px;height:1px;border:1px dashed rgba(31,32,65,0.25);box-sizing:border-box;align-self:flex-end;margin-bottom:5px}
+
+.room__info{position:relative;margin-right:auto;left:5px}
+
+.room__circle{width:20px;height:20px;border:1px solid rgba(31,32,65,0.25);box-sizing:border-box;border-radius:50%;position:relative}
+
+.room__i{font-weight:bold;font-size:12px;line-height:14px;color:rgba(31,32,65,0.25);position:absolute;left:50%;transform:translateX(-50%)}
+
+.room__info_align-self_flex-start{align-self:flex-start}
+
+.room__lux{margin-right:auto;margin-left:8px;align-self:flex-end;margin-bottom:3px}
+
+.room__number{font-weight:bold;font-size:24px;line-height:29px;color:#1F2041;margin-top:0px;margin-bottom:0px}
+
+.room__sign-number{font-weight:bold;font-size:14px;line-height:17px;color:#1F2041;margin-top:0px;margin-bottom:0px}
+
+.room__money{font-weight:bold;font-size:14px;line-height:18px;color:rgba(31,32,65,0.5);margin-top:0px;margin-bottom:0px;align-self:flex-end}
+
+.room__in-day{font-weight:normal;font-size:12px;line-height:18px;color:rgba(31,32,65,0.5);margin-top:0px;margin-bottom:0px}
+
+.sign-in{width:380px;height:358px;background:#FFFFFF;border:1px solid rgba(0,0,0,0.12);box-sizing:border-box;box-shadow:0px 0px 25px rgba(0,0,0,0.2);border-radius:4px;display:flex;align-items:center;flex-direction:column}
+
+.sign-in__row{display:flex;width:320px;align-items:center;justify-content:space-between}
+
+.sign-in__column{display:flex;flex-direction:column}
+
+.sign-in__row_margin-top_40px{margin-top:40px}
+
+.sign-in__row_margin-top_30px{margin-top:30px}
+
+.sign-in__row_margin-top_20px{margin-top:20px}
+
+.sign-in__row_margin-top_10px{margin-top:10px}
+
+.choose-room{width:270px;height:257px;background:#FFFFFF;box-shadow:0px 10px 20px rgba(31,32,65,0.05);border-radius:4px;display:flex;flex-direction:column;align-items:center}
+
+.choose-room__row{display:flex;width:234px;align-items:center;justify-content:space-between}
+
+.choose-room__line{background:rgba(31,32,65,0.1);height:1px;width:230px}
+
+.choose-room__img{width:100%;height:150px}
+
+.choose-room__img888-lux{background-image:url(assets/img/room888-lux.png)}
+
+.choose-room__img840{background-image:url(assets/img/room840.png)}
+
+.choose-room__row_margin-top_20px{margin-top:20px}
+
+.choose-room__row_margin-top_10px{margin-top:10px}
+
+.choose-room__row_margin-top_8px{margin-top:8px}
+
+.choose-room__number{font-weight:bold;font-size:19px;line-height:23px;color:#1F2041}
+
+.choose-room__sign-number{font-weight:bold;font-size:14px;line-height:17px;color:#1F2041;margin-top:0px;margin-bottom:0px}
+
+.choose-room__money{margin-top:0px;margin-bottom:0px;font-weight:bold;font-size:14px;line-height:18px;color:rgba(31,32,65,0.5)}
+
+.choose-room__in-day{font-weight:normal;font-size:12px}
+
+.choose-room__lux{margin-right:auto;margin-left:8px;align-self:flex-end;margin-bottom:3px}
+
+.choose-room__review-number{font-weight:bold;font-size:14px;line-height:18px;color:rgba(31,32,65,0.5)}
+
+.choose-room__review{font-weight:normal}
+
+.landing-page{width:1440px}
+
+.landing-page__background-img{background-image:url(assets/img/landing-page__background-img.png);width:100%;height:830px}
+
+.registration{width:1440px}
+
+.registration-page__background-img{background-image:url(assets/img/registration-page__background-img.png);width:100%;height:684px;display:flex;align-items:center;justify-content:center}
+
+.header{display:flex;align-items:center;justify-content:space-between;box-shadow:0px 10px 20px 0px #1F20410D}
+
+.expand-more{border:solid #1F204180;border-width:0 2px 2px 0;display:inline-block;padding:3px;-webkit-transform:rotate(45deg);transform:rotate(45deg);background-color:white}
+
+.expand-more__margin-left{margin-left:8px}
+
+.footer2{display:flex;justify-content:center;align-items:center;flex-direction:column;width:53.33%;height:367px;margin-left:25%;box-shadow:0px 10px 20px rgba(31,32,65,0.05)}
+
+.footer2__rights{margin-top:20px;margin-bottom:25px;font-size:14px;line-height:17px;color:rgba(31,32,65,0.75)}
+
+.contacts{display:flex;justify-content:space-between;width:112px}
+
+.contacts__margin{margin-right:140px}
 
