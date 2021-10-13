@@ -1,0 +1,20 @@
+extends ../../pug/layouts/main.pug
+include ../../blocks/header/header.pug
+include ../../blocks/logo/logo.pug
+include ../../blocks/button/button.pug
+include ../../blocks/toggle/toggle.pug
+include ../../blocks/text/text.pug
+include ../../blocks/sign-in/sign-in.pug
+include ../../blocks/logo/logo.pug
+include ../../blocks/input/input.pug
+include ../../blocks/contacts/contacts.pug
+
+block variables 
+    - var titlePage = 'sign-in'
+
+block content 
+    .sign-in-page 
+        +header(false)
+        main.sign-in-page__background-img
+            +sign-in
+        include ../../blocks/footer1/footer1.pug

@@ -32,12 +32,16 @@ module.exports = {
             template: './pages/ui-kit/ui-kit.pug'
         }),
         new HtmlWebpackPlugin({
-            filename: 'landing-page.html',
-            template: './pages/landing-page/landing-page.pug'
+            filename: 'landing.html',
+            template: './pages/landing/landing.pug'
         }),
         new HtmlWebpackPlugin({
             filename: 'registration.html',
             template: './pages/registration/registration.pug'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'sign-in.html',
+            template: './pages/sign-in/sign-in.pug'
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
