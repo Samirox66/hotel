@@ -38,4 +38,9 @@ mixin room
             .room__dashed-line 
             +text('38 081₽', 'h2', 'text__h2')
         .room__row.room__row_margin-top_20px 
-            +button('забронировать', 'button_height_44px button_width_320px button_border_none button_background-color_blue', 'button_color_white', '', true)
+            +button({
+                'text': 'забронировать',
+                'buttonClasses': 'button_height_44px button_width_320px button_border_none button_background-color_blue',
+                'textClasses': 'button_color_white',
+                'type': 'submit',
+                'hasArrow': true})

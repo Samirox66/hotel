@@ -4,38 +4,44 @@
     border-radius: 2px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    padding: 0px;
 
     .iqdropdown-menu {
-        padding-bottom: 7px;
         height: auto;
         border: 1px solid rgba(31, 32, 65, 0.5);
         border-bottom-left-radius: 2px;
         border-bottom-right-radius: 2px;
         box-shadow: none;
+
+        .dropdown__buttons_margin-left_14px {
+            margin-left: 14px;
+        }
+
+        .dropdown__buttons_margin-right_7px {
+            margin-right: 7px;
+        }
     }
 
     .iqdropdown-selection {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        p {
-            font-family: 'Montserrat', sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 24px;
-            text-transform: none;
-            color: rgba(31, 32, 65, 0.75);
-        }
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: none;
+        color: rgba(31, 32, 65, 0.75);
+        padding-left: 15px;
 
         &::after {
             height: 0px;
         }
     }
 
-    p {
-        font-family: Montserrat;
+    .dropdown__text {
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -63,13 +69,17 @@
     .iqdropdown-menu-option {
         justify-content: space-between;
         height: auto;
-        padding-top: 7px;
+        margin-top: 7px;
+        margin-bottom: 7px;
     }
 
     .iqdropdown-item-controls {
         align-items: center;
         margin-right: -8px;
         height: 30px;
+        width: 92px;
+        display: flex;
+        justify-content: space-between;
 
         .counter {
             border: none;
@@ -97,6 +107,10 @@
             height: 30px;
             padding: 0;
             border-radius: 50%;
+
+            .button-decrement_disabled {
+                border: 1px solid rgba(31, 32, 65, 0.25);
+            }
         }
     }
 }

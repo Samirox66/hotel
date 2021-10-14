@@ -137,16 +137,45 @@ block content
                     +range-slider('Range Slider')
                     +title-block('buttons', 'title-block_margin-bottom_16px title-block_margin-top_40px')
                     .form-elements__flex
-                        +button('Click me', 'button_height_44px button_width_99px button_background-color_blue button_border_none', 'button_color_white', '')
-                        +button('Click me', 'button_height_44px button_width_99px button_background-color_blue button_border_none button_opacity_50per', 'button_color_white', '')
+                        +button({
+                            'text': 'Click me',
+                            'buttonClasses': 'button_height_44px button_width_99px button_background-color_blue button_border_none',
+                            'textClasses': 'button_color_white',
+                            'type': 'button'})
+                        +button({
+                            'text': 'Click me',
+                            'buttonClasses': 'button_height_44px button_width_99px button_background-color_blue button_border_none button_opacity_50per',
+                            'textClasses': 'button_color_white',
+                            'type': 'button'})
                     .form-elements__flex.form-elements_margin-top_30px
-                        +button('click me', 'button_height_44px button_width_99px button_background-color_white button_border_blue', 'button_color_blue', '')
-                        +button('click me', 'button_height_44px button_width_99px button_background-color_white button_border_blue button_border-opacity_50per', 'button_color_blue', '')
+                        +button({
+                            'text': 'click me',
+                            'buttonClasses': 'button_height_44px button_width_99px button_background-color_white button_border_blue',
+                            'textClasses': 'button_color_blue',
+                            'type': 'button'})
+                        +button({
+                            'text': 'click me',
+                            'buttonClasses': 'button_height_44px button_width_99px button_background-color_white button_border_blue button_border-opacity_50per',
+                            'textClasses': 'button_color_blue',
+                            'type': 'button'})
                     .form-elements__flex.form-elements_margin-top_30px
-                        +button('click me', 'button_height_15px button_width_61px button_border_none button_background-color_white', 'button_color_blue', '')
-                        +button('click me', 'button_height_15px button_width_61px button_border_none button_background-color_white', 'button_color_dark', '')
+                        +button({
+                            'text': 'click me',
+                            'buttonClasses': 'button_height_15px button_width_61px button_border_none button_background-color_white',
+                            'textColor': 'button_color_blue',
+                            'type': 'button'})
+                        +button({
+                            'text': 'click me',
+                            'buttonClasses': 'button_height_15px button_width_61px button_border_none button_background-color_white',
+                            'textClasses': 'button_color_dark',
+                            'type': 'button'})
                     .form-elements_margin-top_30px
-                    +button('перейти к оплате', 'button_height_44px button_width_320px button_border_none button_background-color_blue', 'button_color_white', '', true)
+                    +button({
+                        'text': 'перейти к оплате',
+                        'buttonClasses': 'button_height_44px button_width_320px button_border_none button_background-color_blue',
+                        'textClasses': 'button_color_white', 
+                        'type': 'button',
+                        'hasArrow': true})
                     +title-block('pagination', 'title-block_margin-bottom_16px title-block_margin-top_40px')
                     +pagination(1)
             .form-elements__block.form-elements_margin-top_70px.form-elements_70px
