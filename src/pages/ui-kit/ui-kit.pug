@@ -78,7 +78,7 @@ block content
                             +date-dropdown('date-dropdown-ui-kit1', 'ДД.ММ.ГГГГ', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_width_103px date-dropdown__input_height_24px')
                         .form-elements__column
                             +title-block('date dropdown', 'title-block_margin-top_40px')
-                            +date-dropdown('date-dropdown-ui-kit2', '', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_width_103px date-dropdown__input_height_24px')
+                            +date-dropdown('date-dropdown-ui-kit1', '', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_width_103px date-dropdown__input_height_24px')
                     +title-block('filter date dropdown', 'title-block_margin-top_40px')
                     +date-dropdown('filter-date-dropdown-ui-kit', '', 'date-dropdown__label_width_266px date-dropdown__label_height_44px', 'date-dropdown__input_width_103px date-dropdown__input_height_24px')
                     +text('subscription text field', 'h3', 'text__h3 text__h3_margin-bottom_5px')
@@ -232,11 +232,11 @@ block content
                     +review('Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.', 'Мурад Сарафанов', '5 дней назад')
         .cards
             .cards__column.cards_margin-left_140px
-                +find-room
+                +find-room('', 'date-dropdown-ui-kit-cards2')
                 .cards_margin-top_40px 
                 +sign-up
             .cards__column.cards_margin-left_40px
-                +room
+                +room('date-dropdown-ui-kit-cards3')
                 .cards_margin-top_40px
                 +sign-in
             .cards__column.cards_margin-left_40px

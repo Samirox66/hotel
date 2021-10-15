@@ -1,4 +1,4 @@
-mixin room 
+mixin room(dateDropdownId) 
     .room
         .room__row.room__row_margin-top_40px 
             p.room__sign-number № 
@@ -10,10 +10,10 @@ mixin room
         .room__row.room__row_margin-top_20px 
             .room__column 
                 +text('прибытие', 'h3', 'text__h3 text__h3_margin-bottom_5px')
-                +date-dropdown('date-dropdown-ui-kit-cards3', '', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_width_103px date-dropdown__input_height_24px')
+                +date-dropdown(dateDropdownId, '', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_width_103px date-dropdown__input_height_24px')
             .room__column 
                 +text('выезд', 'h3', 'text__h3 text__h3_margin-bottom_5px')
-                +date-dropdown('date-dropdown-ui-kit-cards4', '', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_width_103px date-dropdown__input_height_24px')
+                +date-dropdown(dateDropdownId, '', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_width_103px date-dropdown__input_height_24px')
         .room__row.room__row_margin-top_20px 
             .room__column
                 +text('гости', 'h3', 'text__h3 text__h3_margin-bottom_5px')

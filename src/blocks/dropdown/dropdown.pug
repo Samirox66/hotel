@@ -8,16 +8,17 @@ mixin dropdown(hasSubmit, defaultText, items, width, menuOpen)
                     .iqdropdown-menu-option(data-id=item.id data-defaultcount=item.default)
                         p.iqdropdown-item=item.name
                 if (hasSubmit)
-                    .dropdown__buttons 
-                        .dropdown__buttons_margin-left_14px
-                            +button({
-                                'text': 'очистить',
-                                'buttonClasses': 'button_height_15px button_width_72px button_border_none button_background-color_white',
-                                'textClasses': 'button_color_blue',
-                                'type': 'button'})
-                        .dropdown__buttons_margin-right_7px
-                            +button({
-                                'text': 'применить',
-                                'buttonClasses': 'button_height_15px button_width_84px button_border_none button_background-color_white',
-                                'textClasses': 'button_color_blue',
-                                'type': 'button'})
+                    .iqdropdown-menu-option
+                        .dropdown__buttons 
+                            .button__clear
+                                +button({
+                                    'text': 'очистить',
+                                    'buttonClasses': 'button_height_15px button_width_72px button_border_none button_background-color_white',
+                                    'textClasses': 'button_color_blue',
+                                    'type': 'button'})
+                            .button__submit
+                                +button({
+                                    'text': 'применить',
+                                    'buttonClasses': 'button_height_15px button_width_84px button_border_none button_background-color_white',
+                                    'textClasses': 'button_color_blue',
+                                    'type': 'button'})

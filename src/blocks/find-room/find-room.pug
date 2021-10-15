@@ -1,14 +1,14 @@
-mixin find-room(findRoomClasses)
+mixin find-room(findRoomClasses, dateDropdownId)
     .find-room(class="" + findRoomClasses)
         .find-room__row.find-room__row_margin-top_40px
             +text('Найдём номера под ваши пожелания', 'h1', 'text__h1')
         .find-room__row.find-room__row_margin-top_21px
             .find-room__column
                 +text('прибытие', 'h3', 'text__h3 text__h3_margin-bottom_5px')
-                +date-dropdown('date-dropdown-ui-kit-cards1', 'ДД.ММ.ГГГГ', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_width_103px date-dropdown__input_height_24px')
+                +date-dropdown(dateDropdownId, 'ДД.ММ.ГГГГ', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_width_103px date-dropdown__input_height_24px')
             .find-room__column.find-room__column_margin-left_20px
                 +text('выезд', 'h3', 'text__h3 text__h3_margin-bottom_5px')
-                +date-dropdown('date-dropdown-ui-kit-cards2', 'ДД.ММ.ГГГГ', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_width_103px date-dropdown__input_height_24px')
+                +date-dropdown(dateDropdownId, 'ДД.ММ.ГГГГ', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_width_103px date-dropdown__input_height_24px')
         .find-room__row.find-room__row_margin-top_21px 
             .find-room__column
                 +text('гости', 'h3', 'text__h3 text__h3_margin-bottom_5px')

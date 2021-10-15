@@ -12,14 +12,6 @@
         border-bottom-left-radius: 2px;
         border-bottom-right-radius: 2px;
         box-shadow: none;
-
-        .dropdown__buttons_margin-left_14px {
-            margin-left: 14px;
-        }
-
-        .dropdown__buttons_margin-right_7px {
-            margin-right: 7px;
-        }
     }
 
     .iqdropdown-selection {
@@ -40,18 +32,9 @@
         }
     }
 
-    .dropdown__text {
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: uppercase;
-        color: #1F2041;
-    }
 
     .icon-decrement {
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: normal;
         color: rgba(31, 32, 65, 0.5);
@@ -71,19 +54,20 @@
         height: auto;
         margin-top: 7px;
         margin-bottom: 7px;
+        padding-right: 7px;
     }
 
     .iqdropdown-item-controls {
         align-items: center;
-        margin-right: -8px;
         height: 30px;
         width: 92px;
         display: flex;
         justify-content: space-between;
 
+
         .counter {
             border: none;
-            font-family: Montserrat;
+            font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 12px;
@@ -113,4 +97,11 @@
             }
         }
     }
+}
+
+.dropdown__buttons {
+    & ~ .iqdropdown-item-controls {
+        display: none;
+    }
+    
 }

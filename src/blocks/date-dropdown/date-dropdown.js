@@ -6,6 +6,7 @@ import "./date-dropdown__label_width_266px.scss"
 import "./date-dropdown__input.scss"
 import './date-dropdown__input_width_103px.scss'
 import './date-dropdown__input_height_24px.scss'
+import './air-datepicker.scss'
 
 let submitButton = {
     content: 'Применить',
@@ -47,7 +48,7 @@ new AirDatepicker("#date-dropdown-ui-kit-cards3", {
     buttons: ['clear', submitButton],
     selectedDates: [new Date(2019, 7, 19)]
 })
-new AirDatepicker("#date-dropdown-ui-kit-cards4", {
+new AirDatepicker('#landing', {
     buttons: ['clear', submitButton],
-    selectedDates: [new Date(2019, 7, 23)]
+    selectedDates: [new Date("19 авг"), new Date("23 авг")],
 })

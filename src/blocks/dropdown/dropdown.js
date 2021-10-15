@@ -2,6 +2,7 @@ import './dropdown_width_320px.scss'
 import './dropdown_width_266px.scss'
 import './iqdropdown.scss'
 import './dropdown__buttons.scss'
+import './dropdown__buttons_justify-content_flex-end.scss'
 
 document.addEventListener("DOMContentLoaded", function() {
     $('.iqdropdown').iqDropdown({
@@ -27,18 +28,19 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 guest = 'Сколько гостей';
             }
+            if (totalItems === 0) {
+                $('.dropdown__buttons').find('.button__clear').hide();
+            }
             return guest;
         },
         onChange: (id, count, totalItems) => {
             if (count === 0) {
-                console.log(count)
                 $('#' + id).find('.button-decrement').addClass('button-decrement_disabled')
             }
         },
     })
-    //$(this).find('.dropdown__buttons_margin-left_14px').hide();
-    $('.icon-decrement').text('-')
-    $('.icon-increment').text('+')
-    $('.iqdropdown-selection::after').addClass('material-icons').addClass('material-icons__expand-more').text('expand_more')
-    $('.iqdropdown.iqdropdown__checkbox-list').find('.iqdropdown-item-controls').addClass('checkbox-list__controls')
+    $('.icon-decrement').text('-');
+    $('.icon-increment').text('+');
+    $('.iqdropdown-selection::after').addClass('material-icons').addClass('material-icons__expand-more').text('expand_more');
+    $('.iqdropdown.iqdropdown__checkbox-list').find('.iqdropdown-item-controls').addClass('checkbox-list__controls');
 })
