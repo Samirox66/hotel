@@ -4,11 +4,15 @@
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    border-radius: 4px;
     --adp-day-cell-height: 40px;
     --adp-day-cell-width: 39.88px;
     --adp-padding: 30px 19.67px 20.44px 21.2px;
     --adp-btn-height: 15px;
+
+    &.-inline- {
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        
+    }
 }
 
 .air-datepicker-body--day-name {
@@ -49,7 +53,23 @@
         font-size: 12px;
         line-height: 15px;
     }
-    &::after.-range-from- {
+    &.-range-from-::after {
+        content: "";
+        position: absolute;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        opacity: 0.25;
+    }
+    &.-range-to-::after {
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         opacity: 0.25;
     }
@@ -88,4 +108,8 @@
     line-height: 15px;
     text-transform: uppercase;
     color: #BC9CFF;
+}
+
+.air-datepicker--pointer {
+    display: none;
 }

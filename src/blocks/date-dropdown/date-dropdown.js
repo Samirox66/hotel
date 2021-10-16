@@ -17,23 +17,44 @@ let submitButton = {
 }
 
 import AirDatepicker from "air-datepicker"
-new AirDatepicker("#date-dropdown-ui-kit1", {
-    buttons: ['clear', submitButton]
-})
-new AirDatepicker("#date-dropdown-ui-kit2", {
-    selectedDates: [new Date(2019, 7, 19)],
-    buttons: ['clear', submitButton]
-})
 new AirDatepicker("#filter-date-dropdown-ui-kit", {
+    navTitles: {
+        days: '<strong>MMMM yyyy</strong>',
+        months: 'Select month of <strong>yyyy</strong>' 
+    },
     range: true,
     multipleDatesSeparator: " - ",
     selectedDates: [new Date("19 авг"), new Date("23 авг")],
     buttons: ['clear', submitButton]
 })
-new AirDatepicker("#date-dropdown-ui-kit-cards1", {
+new AirDatepicker("#date-dropdown-ui-kit1", {
+    navTitles: {
+        days: '<strong>MMMM yyyy</strong>',
+        months: 'Select month of <strong>yyyy</strong>' 
+    },
     buttons: ['clear', submitButton]
 })
+new AirDatepicker("#date-dropdown-ui-kit-cards1", {
+    navTitles: {
+        days: '<strong>MMMM yyyy</strong>',
+        months: 'Select month of <strong>yyyy</strong>' 
+    },
+    buttons: ['clear', submitButton],
+    range: true,
+    prevHtml: `<div class="material-icons material-icons__arrow-back">arrow_back</div>`,
+    nextHtml: `<div class="material-icons material-icons__arrow-forward material-icons__arrow-forward_color_blue">arrow_forward</div>`,
+    onSelect: function(fd, d, picker) {
+        $(".date-dropdown__departure").val(fd.split("-")[0]);
+        $(".date-dropdown__arrival").val(fd.split("-")[1]);
+      }
+})
 new AirDatepicker("#date-dropdown-ui-kit-cards2", {
+    navTitles: {
+        days: '<strong>MMMM yyyy</strong>',
+        months: 'Select month of <strong>yyyy</strong>' 
+    },
+    range: true,
+    selectedDates: [new Date(2019, 7, 19), new Date(2019, 7, 23)],
     buttons: ['clear', submitButton]
 })
 new AirDatepicker('#static-date', {
@@ -44,11 +65,11 @@ new AirDatepicker('#static-date', {
     buttons: ['clear', submitButton],
     classes: ''
 })
-new AirDatepicker("#date-dropdown-ui-kit-cards3", {
-    buttons: ['clear', submitButton],
-    selectedDates: [new Date(2019, 7, 19)]
-})
 new AirDatepicker('#landing', {
+    navTitles: {
+        days: '<strong>MMMM yyyy</strong>',
+        months: 'Select month of <strong>yyyy</strong>' 
+    },
     buttons: ['clear', submitButton],
     selectedDates: [new Date("19 авг"), new Date("23 авг")],
 })

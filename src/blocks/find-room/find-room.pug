@@ -5,14 +5,19 @@ mixin find-room(findRoomClasses, dateDropdownId)
         .find-room__row.find-room__row_margin-top_21px
             .find-room__column
                 +text('прибытие', 'h3', 'text__h3 text__h3_margin-bottom_5px')
-                +date-dropdown(dateDropdownId, 'ДД.ММ.ГГГГ', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_width_103px date-dropdown__input_height_24px')
+                +date-dropdown(dateDropdownId, 'ДД.ММ.ГГГГ', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_height_24px date-dropdown__departure')
             .find-room__column.find-room__column_margin-left_20px
                 +text('выезд', 'h3', 'text__h3 text__h3_margin-bottom_5px')
-                +date-dropdown(dateDropdownId, 'ДД.ММ.ГГГГ', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_width_103px date-dropdown__input_height_24px')
+                +date-dropdown(dateDropdownId + '_arrival', 'ДД.ММ.ГГГГ', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_height_24px date-dropdown__ariival')
         .find-room__row.find-room__row_margin-top_21px 
             .find-room__column
                 +text('гости', 'h3', 'text__h3 text__h3_margin-bottom_5px')
                 +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px')
         .find-room__row.find-room__row_margin-top_31px 
-            +button('подобрать номер', 'button_height_44px button_width_320px button_border_none button_background-color_blue', 'button_color_white', '', true)
+            +button({
+                'text': 'подобрать номер',
+                'buttonClasses': 'button_height_44px button_width_320px button_border_none button_background-color_blue',
+                'textClasses': 'button_color_white',
+                'type': 'submit',
+                'hasArrow': true})
 
