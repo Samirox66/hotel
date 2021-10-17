@@ -1,0 +1,21 @@
+extends ../../pug/layouts/main.pug
+include ../../blocks/header/header.pug
+include ../../blocks/logo/logo.pug
+include ../../blocks/button/button.pug
+include ../../blocks/input/input.pug
+include ../../blocks/contacts/contacts.pug
+include ../../blocks/text/text.pug
+include ../../blocks/date-dropdown/date-dropdown.pug
+
+block variables 
+    - var titlePage = 'search room'
+
+block content 
+    .search-room-page 
+        +header(false)
+        main.search-room-page__wrapper 
+            .search-room-page__conditions 
+                +text('даты пребывания в отеле', 'h3', 'text__h3 text__h3_margin-bottom_5px')
+                +date-dropdown('filter-date-dropdown-search-room', '', 'date-dropdown__label_width_266px date-dropdown__label_height_44px', 'date-dropdown__input_height_24px')
+            .search-room-page__rooms
+        include ../../blocks/footer1/footer1.pug

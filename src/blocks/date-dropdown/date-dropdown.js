@@ -32,7 +32,12 @@ new AirDatepicker("#date-dropdown-ui-kit1", {
         days: '<strong>MMMM yyyy</strong>',
         months: 'Select month of <strong>yyyy</strong>' 
     },
-    buttons: ['clear', submitButton]
+    range: true,
+    buttons: ['clear', submitButton],
+    onSelect: function(fd, d, picker) {
+        $(".date-dropdown__departure").val(fd.split("-")[0]);
+        $(".date-dropdown__arrival").val(fd.split("-")[1]);
+    }
 })
 new AirDatepicker("#date-dropdown-ui-kit-cards1", {
     navTitles: {
@@ -46,7 +51,7 @@ new AirDatepicker("#date-dropdown-ui-kit-cards1", {
     onSelect: function(fd, d, picker) {
         $(".date-dropdown__departure").val(fd.split("-")[0]);
         $(".date-dropdown__arrival").val(fd.split("-")[1]);
-      }
+    }
 })
 new AirDatepicker("#date-dropdown-ui-kit-cards2", {
     navTitles: {
@@ -72,4 +77,14 @@ new AirDatepicker('#landing', {
     },
     buttons: ['clear', submitButton],
     selectedDates: [new Date("19 авг"), new Date("23 авг")],
+})
+new AirDatepicker("#filter-date-dropdown-search-room", {
+    navTitles: {
+        days: '<strong>MMMM yyyy</strong>',
+        months: 'Select month of <strong>yyyy</strong>' 
+    },
+    range: true,
+    multipleDatesSeparator: " - ",
+    selectedDates: [new Date("19 авг"), new Date("23 авг")],
+    buttons: ['clear', submitButton]
 })

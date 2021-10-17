@@ -43,6 +43,10 @@ module.exports = {
             filename: 'sign-in.html',
             template: './pages/sign-in/sign-in.pug'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'search-room.html',
+            template: './pages/search-room/search-room.pug'
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: '[name].css',

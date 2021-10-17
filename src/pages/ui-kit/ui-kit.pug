@@ -11,7 +11,6 @@ include ../../blocks/toggle/toggle.pug
 include ../../blocks/like-button/like-button.pug
 include ../../blocks/rate-button/rate-button.pug
 include ../../blocks/range-slider/range-slider.pug
-include ../../blocks/title-block/title-block.pug
 include ../../blocks/pagination/pagination.pug
 include ../../blocks/dropdown/dropdown.pug
 include ../../blocks/checkbox-list/checkbox-list.pug
@@ -68,23 +67,26 @@ block content
                         +text('Text Field', 'h3', 'text__h3')
                         +text('Hover / Focus', 'h3', 'text__h3 text_color-opacity_25per text_font-weight_normal')
                     +input('text', 'input_width_320px input_height_44px', 'This is pretty awesome')
-                    +title-block('dropdown', 'title-block_margin-top_40px')
+                    .form-elements__block.form-elements_margin-top_40px
+                        +text('dropdown', 'h3', 'text__h3 text__h3_margin-bottom_5px')
                     +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px')
                     +text('masked text field', 'h3', 'text__h3 text__h3_margin-bottom_5px')
                     +input('text', 'input_width_320px input_height_44px', 'ДД.ММ.ГГГГ')
-                    .form-elements__block
+                    .form-elements__block.form-elements_margin-top_40px
                         .form-elements__column
-                            +title-block('date dropdown', 'title-block_margin-top_40px')
+                            +text('date dropdown', 'h3', 'text__h3 text__h3_margin-bottom_5px')
                             +date-dropdown('date-dropdown-ui-kit1', 'ДД.ММ.ГГГГ', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_height_24px date-dropdown__departure')
                         .form-elements__column
-                            +title-block('date dropdown', 'title-block_margin-top_40px')
+                            +text('date dropdown', 'h3', 'text__h3 text__h3_margin-bottom_5px')
                             +date-dropdown('date-dropdown-ui-kit1', '', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_height_24px date-dropdown__arrival')
-                    +title-block('filter date dropdown', 'title-block_margin-top_40px')
+                    .form-elements__block.form-elements_margin-top_40px
+                        +text('filter date dropdown', 'h3', 'text__h3 text__h3_margin-bottom_5px')
                     +date-dropdown('filter-date-dropdown-ui-kit', '', 'date-dropdown__label_width_266px date-dropdown__label_height_44px', 'date-dropdown__input_height_24px')
-                    +text('subscription text field', 'h3', 'text__h3 text__h3_margin-bottom_5px')
+                    .form-elements__block.form-elements_margin-top_40px
+                        +text('subscription text field', 'h3', 'text__h3 text__h3_margin-bottom_5px')
                     +input('email', 'input_width_266px input_height_44px', 'Email', true)
                 .form-elements__column.form-elements_margin-left_130px 
-                    +title-block('Checkbox Buttons')
+                    +text('Checkbox Buttons', 'h3', 'text__h3 text__h3_margin-bottom_16px')
                     +chose-button({
                         'id':'isSmokingAllowed',
                         'text':'Можно курить',
@@ -105,7 +107,8 @@ block content
                         'checked': true,
                         'labelClasses': 'chose-button__fake-checkbox'
                         }, 'checkbox')
-                    +title-block('radio buttons')
+                    .form-elements__block.form-elements_margin-top_40px
+                        +text('radio buttons', 'h3', 'text__h3 text__h3_margin-bottom_16px')
                     .chose-button__container
                         +chose-button({
                             'id':'man',
@@ -122,20 +125,24 @@ block content
                             'value':'woman',
                             'labelClasses':'chose-button__fake-radio'
                             }, 'radio')
-                    .form-elements__title Toggle
+                    .form-elements__block.form-elements_margin-top_40px
+                        +text('toggle', 'h3', 'text__h3 text__h3_margin-bottom_16px')
                     +toggle(true, 'Получать спецпредложения')
                     +toggle(false, 'Получать спецпредложения')
-                    .form-elements__title like button
+                    .form-elements__block.form-elements_margin-top_40px
+                        +text('like button', 'h3', 'text__h3 text__h3_margin-bottom_16px')
                     .form-elements__flex
                         +like-button('material-icons__favorite-border', 'like-button__button', 'like-button__number', 2, 'favorite_border')
                         +like-button('material-icons__favorite', 'like-button__button like-button__button_active', 'like-button__number like-button__number_active', 12, 'favorite')
-                    .form-elements__title rate button
+                    .form-elements__block.form-elements_margin-top_40px
+                        +text('rate button', 'h3', 'text__h3 text__h3_margin-bottom_16px')
                     .form-elements__flex
                         +rate-button(4)
                         +rate-button(5, 'rate-button_margin-left_20')
                 .form-elements__column.form-elements_margin-left_130px 
                     +range-slider('Range Slider')
-                    +title-block('buttons', 'title-block_margin-bottom_16px title-block_margin-top_40px')
+                    .form-elements__block.form-elements_margin-top_40px
+                        +text('buttons', 'h3', 'text__h3 text__h3_margin-bottom_16px')
                     .form-elements__flex
                         +button({
                             'text': 'Click me',
@@ -162,7 +169,7 @@ block content
                         +button({
                             'text': 'click me',
                             'buttonClasses': 'button_height_15px button_width_61px button_border_none button_background-color_white',
-                            'textColor': 'button_color_blue',
+                            'textClasses': 'button_color_blue',
                             'type': 'button'})
                         +button({
                             'text': 'click me',
@@ -176,24 +183,25 @@ block content
                         'textClasses': 'button_color_white', 
                         'type': 'button',
                         'hasArrow': true})
-                    +title-block('pagination', 'title-block_margin-bottom_16px title-block_margin-top_40px')
+                    .form-elements__block.form-elements_margin-top_40px
+                        +text('pagination', 'h3', 'text__h3 text__h3_margin-bottom_16px')
                     +pagination(1)
             .form-elements__block.form-elements_margin-top_70px.form-elements_70px
                 .form-elements__column.form-elements_margin-left_130px
                     .form-elements__flex
-                        +title-block('dropdown')
+                        +text('dropdown', 'h3', 'text__h3 text__h3_margin-bottom_5px')
                         p.form-elements__title-description default
                     +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'dropdown_width_266px')
                     .ui-kit_margin-top_40px
                     .form-elements__flex
-                        +title-block('dropdown')
+                        +text('dropdown', 'h3', 'text__h3 text__h3_margin-bottom_5px')
                         p.form-elements__title-description expanded
                     +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'dropdown_width_266px', 'menu-open')
                 .form-elements__column.form-elements_margin-left_130px
-                    +title-block('dropdown')
+                    +text('dropdown', 'h3', 'text__h3 text__h3_margin-bottom_5px')
                     +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'menu-open')
                 .form-elements__column.form-elements_margin-left_130px
-                    +title-block('dropdown')
+                    +text('dropdown', 'h3', 'text__h3 text__h3_margin-bottom_5px')
                     +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '1'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'menu-open')
             .form-elements__block.form-elements_margin-top_70px.form-elements_70px 
                 .form-elements__column.form-elements_margin-left_130px
@@ -217,10 +225,20 @@ block content
                         {'id': 'shampoo2Ex', 'text': 'Шампунь', 'name': 'shampoo', 'labelClasses': 'chose-button__fake-checkbox'}],
                         'menu-open')
                 .form-elements__column.form-elements_margin-left_130px
-                    +title-block('rich checkbox button')
-                    +rich-checkbox-button([{'id': 'wide-hall', 'text': 'Широкий коридор', 'name': 'wide-hall', 'description': 'Ширина коридоров в номере не менее 91 см.', 'labelClasses': 'chose-button__title'}, {'id': 'invalid-helper', 'text': 'Помощник для инвалидов', 'name': 'wide-hall', 'description': 'На 1 этаже вас встретит специалист  и проводит до номера.', 'labelClasses': 'chose-button__title'}])
+                    +text('rich checkbox button', 'h3', 'text__h3 text__h3_margin-bottom_16px')
+                    +rich-checkbox-button([{
+                        'id': 'wide-hall',
+                        'text': 'Широкий коридор',
+                        'name': 'wide-hall',
+                        'description': 'Ширина коридоров в номере не менее 91 см.',
+                        'labelClasses': 'chose-button__fake-checkbox'},
+                        {'id': 'invalid-helper',
+                        'text': 'Помощник для инвалидов',
+                        'name': 'wide-hall',
+                        'description': 'На 1 этаже вас встретит специалист  и проводит до номера.',
+                        'labelClasses': 'chose-button__fake-checkbox'}])
                 .form-elements__column.form-elements_margin-left_130px
-                    +title-block('bullet list')
+                    +text('bullet list', 'h3', 'text__h3 text__h3_margin-bottom_16px')
                     +bullet-list('Нельзя с питомцами')
                     +bullet-list('Без вечеринок и мероприятий')
                     +bullet-list('Время прибытия — после 13:00, а выезд до 12:00')
