@@ -49,8 +49,8 @@ new AirDatepicker("#date-dropdown-ui-kit-cards1", {
     prevHtml: `<div class="material-icons material-icons__arrow-back">arrow_back</div>`,
     nextHtml: `<div class="material-icons material-icons__arrow-forward material-icons__arrow-forward_color_blue">arrow_forward</div>`,
     onSelect: function(fd, d, picker) {
-        $(".date-dropdown__departure").val(fd.split("-")[0]);
-        $(".date-dropdown__arrival").val(fd.split("-")[1]);
+        $(".date-dropdown__departure").val(fd[0]);
+        $(".date-dropdown__arrival").val(fd[1]);
     }
 })
 new AirDatepicker("#date-dropdown-ui-kit-cards2", {

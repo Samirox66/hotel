@@ -69,7 +69,7 @@ block content
                     +input('text', 'input_width_320px input_height_44px', 'This is pretty awesome')
                     .form-elements__block.form-elements_margin-top_40px
                         +text('dropdown', 'h3', 'text__h3 text__h3_margin-bottom_5px')
-                    +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px')
+                    +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'guest')
                     +text('masked text field', 'h3', 'text__h3 text__h3_margin-bottom_5px')
                     +input('text', 'input_width_320px input_height_44px', 'ДД.ММ.ГГГГ')
                     .form-elements__block.form-elements_margin-top_40px
@@ -81,7 +81,7 @@ block content
                             +date-dropdown('date-dropdown-ui-kit1', '', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_height_24px date-dropdown__arrival')
                     .form-elements__block.form-elements_margin-top_40px
                         +text('filter date dropdown', 'h3', 'text__h3 text__h3_margin-bottom_5px')
-                    +date-dropdown('filter-date-dropdown-ui-kit', '', 'date-dropdown__label_width_266px date-dropdown__label_height_44px', 'date-dropdown__input_height_24px')
+                    +date-dropdown('filter-date-dropdown-ui-kit', '', 'date-dropdown__label_width_266px date-dropdown__label_height_44px', 'date-dropdown__input_height_24px', true)
                     .form-elements__block.form-elements_margin-top_40px
                         +text('subscription text field', 'h3', 'text__h3 text__h3_margin-bottom_5px')
                     +input('email', 'input_width_266px input_height_44px', 'Email', true)
@@ -191,18 +191,18 @@ block content
                     .form-elements__flex
                         +text('dropdown', 'h3', 'text__h3 text__h3_margin-bottom_5px')
                         p.form-elements__title-description default
-                    +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'dropdown_width_266px')
+                    +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'dropdown_width_266px', 'furniture')
                     .ui-kit_margin-top_40px
                     .form-elements__flex
                         +text('dropdown', 'h3', 'text__h3 text__h3_margin-bottom_5px')
                         p.form-elements__title-description expanded
-                    +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'dropdown_width_266px', 'menu-open')
+                    +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'dropdown_width_266px', 'furniture', 'menu-open')
                 .form-elements__column.form-elements_margin-left_130px
                     +text('dropdown', 'h3', 'text__h3 text__h3_margin-bottom_5px')
-                    +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'menu-open')
+                    +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'guest', 'menu-open')
                 .form-elements__column.form-elements_margin-left_130px
                     +text('dropdown', 'h3', 'text__h3 text__h3_margin-bottom_5px')
-                    +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '1'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'menu-open')
+                    +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '1'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'guest', 'menu-open')
             .form-elements__block.form-elements_margin-top_70px.form-elements_70px 
                 .form-elements__column.form-elements_margin-left_130px
                     +checkbox-list(

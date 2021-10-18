@@ -5,7 +5,7 @@ import './dropdown__buttons.scss'
 import './dropdown__buttons_justify-content_flex-end.scss'
 
 document.addEventListener("DOMContentLoaded", function() {
-    $('.iqdropdown').iqDropdown({
+    $('.iqdropdown[data-id=guest]').iqDropdown({
         // max total items
         maxItems: Infinity,
         // min total items
@@ -35,9 +35,51 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         onChange: (id, count, totalItems) => {
             if (count === 0) {
-                $('#' + id).find('.button-decrement').addClass('button-decrement_disabled')
+                $(this).find('.button-decrement').prop('disabled', true)
             }
         },
+    }),
+    $('.iqdropdown[data-id=furniture]').iqDropdown({
+        // max total items
+        maxItems: 20,
+        // min total items
+        minItems: 0,
+        // buttons to increment/decrement
+        controls: {
+            position: 'right',
+            displayCls: 'iqdropdown-item-display',
+            controlsCls: 'iqdropdown-item-controls',
+            counterCls: 'counter'
+        },
+        onChange: (id, count, totalItems) => {
+            if (count === 0) {
+                //$(this).find('.button-decrement').prop('disabled', true)
+            }
+        },
+        setSelectionText: (itemCount, totalItems) => {
+            let furniture = '';
+            if (itemCount.rooms != 0) {
+                if (itemCount.rooms == 1) {
+                    furniture += itemCount.rooms + ' спальня'
+                } else if (itemCount.rooms >= 2 && itemCount.rooms <= 4) {
+                    furniture += itemCount.rooms + ' спальни'
+                } else {
+                    furniture += itemCount.rooms + ' спален'
+                }
+                if (itemCount.bed != 0) {
+                    furniture += ', '
+                }
+            }
+            if (itemCount.bed == 1) {
+                furniture += itemCount.bed + ' кровать'
+            } else if (itemCount.bed >= 2 && itemCount.bed <= 4) {
+                furniture += itemCount.bed + ' кровати'
+            } else if (itemCount.rooms > 4) {
+                furniture = itemCount.bed + ' кроватей'
+            }
+            furniture += '...'
+            return furniture
+        }
     })
     $('.icon-decrement').text('-');
     $('.icon-increment').text('+');
