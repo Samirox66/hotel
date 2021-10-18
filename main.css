@@ -363,12 +363,15 @@ html{box-sizing:border-box}html *{box-sizing:inherit}html *::after,html *::befor
 
 .range-slider__range{font-size:12px;line-height:15px;text-align:right;text-transform:uppercase;color:rgba(31,32,65,0.5)}
 
-
 .dropdown_width_320px{width:320px}
 
 .dropdown_width_266px{width:266px}
 
-.iqdropdown{background-color:white;border:1px solid rgba(31,32,65,0.5);border-radius:2px;border-bottom-left-radius:0px;border-bottom-right-radius:0px}.iqdropdown .iqdropdown-menu{padding-bottom:7px;height:auto;border:1px solid rgba(31,32,65,0.5);border-bottom-left-radius:2px;border-bottom-right-radius:2px;box-shadow:none}.iqdropdown .iqdropdown-selection{display:flex;align-items:center;justify-content:space-between}.iqdropdown .iqdropdown-selection p{font-family:'Montserrat', sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:24px;text-transform:none;color:rgba(31,32,65,0.75)}.iqdropdown .iqdropdown-selection::after{height:0px}.iqdropdown p{font-family:Montserrat;font-style:normal;font-weight:bold;font-size:12px;line-height:15px;text-transform:uppercase;color:#1F2041}.iqdropdown .icon-decrement{font-family:Montserrat;font-style:normal;font-weight:normal;color:rgba(31,32,65,0.5)}.iqdropdown .icon-decrement::after{height:0}.iqdropdown .icon-decrement.icon-increment::before{height:0}.iqdropdown .iqdropdown-menu-option{justify-content:space-between;height:auto;padding-top:7px}.iqdropdown .iqdropdown-item-controls{align-items:center;margin-right:-8px;height:30px}.iqdropdown .iqdropdown-item-controls .counter{border:none;font-family:Montserrat;font-style:normal;font-weight:bold;font-size:12px;line-height:15px;text-align:center;text-transform:uppercase;color:#1F2041;padding-left:10px;padding-right:10px}.iqdropdown .iqdropdown-item-controls button.button-increment{width:30px;height:30px;padding:0;border-radius:50%}.iqdropdown .iqdropdown-item-controls button.button-decrement{width:30px;height:30px;padding:0;border-radius:50%}
+.iqdropdown{background-color:white;border:1px solid rgba(31,32,65,0.5);border-radius:2px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;padding:0px}.iqdropdown .iqdropdown-menu{height:auto;border:1px solid rgba(31,32,65,0.5);border-bottom-left-radius:2px;border-bottom-right-radius:2px;box-shadow:none}.iqdropdown .iqdropdown-selection{display:flex;align-items:center;justify-content:space-between;font-family:'Montserrat', sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:24px;text-transform:none;color:rgba(31,32,65,0.75);padding-left:15px}.iqdropdown .iqdropdown-selection::after{height:0px}.iqdropdown .icon-decrement{font-family:'Montserrat', sans-serif;font-style:normal;font-weight:normal;color:rgba(31,32,65,0.5)}.iqdropdown .icon-decrement::after{height:0}.iqdropdown .icon-decrement.icon-increment::before{height:0}.iqdropdown .iqdropdown-menu-option{justify-content:space-between;height:auto;margin-top:7px;margin-bottom:7px;padding-right:7px}.iqdropdown .iqdropdown-item-controls{align-items:center;height:30px;width:92px;display:flex;justify-content:space-between}.iqdropdown .iqdropdown-item-controls .counter{border:none;font-family:'Montserrat', sans-serif;font-style:normal;font-weight:bold;font-size:12px;line-height:15px;text-align:center;text-transform:uppercase;color:#1F2041;padding-left:10px;padding-right:10px}.iqdropdown .iqdropdown-item-controls button.button-increment{width:30px;height:30px;padding:0;border-radius:50%;border:1px solid rgba(31,32,65,0.5)}.iqdropdown .iqdropdown-item-controls button.button-decrement{width:30px;height:30px;padding:0;border-radius:50%;border:1px solid rgba(31,32,65,0.5)}.iqdropdown .iqdropdown-item-controls button.button-decrement:disabled{border:1px solid rgba(31,32,65,0.25)}.dropdown__buttons ~ .iqdropdown-item-controls{display:none}
+
+.dropdown__buttons{display:flex;align-items:center;justify-content:space-between;margin-top:13px;margin-bottom:13px;width:100%}
+
+.dropdown__buttons_justify-content_flex-end{justify-content:flex-end}
 
 .iqdropdown.iqdropdown__checkbox-list{border:none;padding-left:0}.iqdropdown.iqdropdown__checkbox-list .iqdropdown-menu.checkbox-list_border_none{border:none}.iqdropdown .iqdropdown-selection p.checkbox-list__text{font-family:'Montserrat', sans-serif;font-style:normal;font-weight:bold;font-size:12px;line-height:15px;text-transform:uppercase;color:#1F2041}.iqdropdown .iqdropdown-item-controls.checkbox-list__controls{display:none}
 
@@ -418,6 +421,8 @@ html{box-sizing:border-box}html *{box-sizing:inherit}html *::after,html *::befor
 .form-elements__block_justify-content_space-between{justify-content:space-between}
 
 .form-elements_margin-top_30px{margin-top:30px}
+
+.form-elements_margin-top_40px{margin-top:40px}
 
 .input{display:flex;background:#FFFFFF;border:1px solid rgba(31,32,65,0.25);box-sizing:border-box;border-radius:4px}
 
@@ -469,6 +474,10 @@ html{box-sizing:border-box}html *{box-sizing:inherit}html *::after,html *::befor
 
 .button_width_61px{width:61px}
 
+.button_width_72px{width:72px}
+
+.button_width_84px{width:84px}
+
 .button_width_87px{width:87px}
 
 .button_width_99px{width:99px}
@@ -503,7 +512,7 @@ html{box-sizing:border-box}html *{box-sizing:inherit}html *::after,html *::befor
 
 .footer1__nav-item{list-style-type:none;margin-bottom:20px;color:#1F204180;font-size:14px;line-height:17px}
 
-.footer1__top{display:flex;height:372px;justify-content:center;box-shadow:0px 1px 0px rgba(31,32,65,0.1)}
+.footer1__top{display:flex;height:372px;justify-content:space-between;box-shadow:0px 1px 0px rgba(31,32,65,0.1);margin-left:140px;margin-right:140px}
 
 .footer1__bottom{height:70px;display:flex;align-items:center;justify-content:space-between;box-shadow:0px 10px 20px 0px #1F20410D}
 
@@ -525,13 +534,17 @@ html{box-sizing:border-box}html *{box-sizing:inherit}html *::after,html *::befor
 
 .material-icons__star-border{font-size:24px;line-height:20px;color:#BC9CFF;position:absolute;bottom:0px;left:-2px}
 
-.material-icons.material-icons__arrow-forward{font-size:24px;line-height:24px;width:40px;color:white;margin-left:auto}
+.material-icons__arrow-forward{font-size:24px;line-height:24px;width:40px;color:white;margin-left:auto}
 
 .material-icons__insert-emoticon{font-size:48px;line-height:41px;color:#8BA4F9}
 
 .material-icons__location-city{font-size:48px;line-height:41px;color:#8BA4F9}
 
 .material-icons__expand-more{width:44px;text-align:center}
+
+.material-icons__arrow-forward_color_blue{color:#bc9cff}
+
+.material-icons__arrow-back{font-size:24px;line-height:24px;width:40px;color:#bc9cff;margin-left:auto}
 
 .material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;display:inline-block;line-height:1;text-transform:none;letter-spacing:normal;word-wrap:normal;white-space:nowrap;direction:ltr;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;font-feature-settings:'liga'}
 
@@ -584,11 +597,7 @@ html{box-sizing:border-box}html *{box-sizing:inherit}html *::after,html *::befor
 
 .text_color_blue{color:#bc9cff}
 
-.title-block{font-weight:bold;font-size:12px;line-height:15px;text-transform:uppercase;color:#1F2041}
-
-.title-block_margin-bottom_16px{margin-bottom:16px}
-
-.title-block_margin-top_40px{margin-top:40px}
+.text__h3_margin-bottom_16px{margin-bottom:16px}
 
 .pagination{display:flex;flex-direction:column}
 
@@ -609,7 +618,7 @@ html{box-sizing:border-box}html *{box-sizing:inherit}html *::after,html *::befor
 .ui-kit{width:1440px;font-family:'Montserrat', sans-serif;font-style:normal;font-weight:normal}
 
 
-.rich-checkbox-button__description{margin-left:38px;width:203px;font-size:12px;line-height:14px;color:rgba(31,32,65,0.5)}
+.rich-checkbox-button__description{margin-left:30px;width:203px;font-size:12px;line-height:14px;color:rgba(31,32,65,0.5)}
 
 .bullet-list{display:flex;align-items:center;margin-bottom:10px}
 
@@ -651,11 +660,13 @@ html{box-sizing:border-box}html *{box-sizing:inherit}html *::after,html *::befor
 
 .date-dropdown__label_width_266px{width:266px}
 
-.date-dropdown__input{font-weight:normal;border:none}
+.date-dropdown__input{font-weight:normal;border:none;width:100%}
 
 .date-dropdown__input_width_103px{width:103px}
 
 .date-dropdown__input_height_24px{height:24px}
+
+.air-datepicker{width:320px;background:#FFFFFF;border:1px solid rgba(31,32,65,0.25);box-sizing:border-box;box-shadow:0px 10px 20px rgba(31,32,65,0.05);--adp-day-cell-height: 40px;--adp-day-cell-width: 39.88px;--adp-padding: 30px 19.67px 20.44px 21.2px;--adp-btn-height: 15px}.air-datepicker.-inline-{box-shadow:0px 10px 20px rgba(31,32,65,0.05)}.air-datepicker-body--day-name{color:#bc9cff;font-family:'Montserrat', sans-serif;font-style:normal;font-weight:bold;font-size:12px;line-height:15px}.air-datepicker-cell{font-family:'Montserrat', sans-serif;font-style:normal;font-weight:normal;font-size:12px;line-height:15px;display:flex;align-items:center;text-align:center;color:rgba(31,32,65,0.5)}.air-datepicker-cell.-selected-{background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);border-radius:50%}.air-datepicker-cell.-current-{background:linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);border-radius:50%;color:white}.air-datepicker-cell.-in-range-{background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);opacity:0.25;font-family:'Montserrat', sans-serif;color:rgba(31,32,65,0.5);font-style:normal;font-weight:normal;font-size:12px;line-height:15px}.air-datepicker-cell.-range-from-::after{content:"";position:absolute;border-bottom-left-radius:50%;border-top-left-radius:50%;width:100%;height:100%;background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);opacity:0.25}.air-datepicker-cell.-range-to-::after{border-bottom-right-radius:50%;border-top-right-radius:50%;content:"";position:absolute;width:100%;height:100%;background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);opacity:0.25}.air-datepicker--buttons{padding:0 20px 20px 20px;border:none}.air-datepicker-buttons{display:flex;justify-content:space-between}.air-datepicker-nav{border:none;padding:20px 20.67px 0 20.2px}.air-datepicker-nav--title{font-family:'Montserrat', sans-serif;font-style:normal;font-weight:bold;font-size:19px;line-height:23px;text-align:center;color:#1F2041}.air-datepicker-button{font-family:'Montserrat', sans-serif;font-style:normal;font-weight:bold;font-size:12px;line-height:15px;text-transform:uppercase;color:#BC9CFF}.air-datepicker--pointer{display:none}
 
 .find-room{display:flex;flex-direction:column;align-items:center;width:380px;height:374px;background:#FFFFFF;border:1px solid rgba(0,0,0,0.12);box-sizing:border-box;box-shadow:0px 0px 25px rgba(0,0,0,0.2);border-radius:4px}
 
@@ -793,7 +804,7 @@ html{box-sizing:border-box}html *{box-sizing:inherit}html *::after,html *::befor
 
 .landing-page{width:1440px}
 
-.landing-page__background-img{background-image:url(assets/img/landing-page__background-img.png);width:100%;height:830px}
+.landing-page__background-img{background-image:url(assets/img/landing-page__background-img.png);width:100%;height:830px;padding-top:70px}
 
 .registration{width:1440px}
 
@@ -802,6 +813,12 @@ html{box-sizing:border-box}html *{box-sizing:inherit}html *::after,html *::befor
 .sing-in-page{width:1440px}
 
 .sign-in-page__background-img{background-image:url(assets/img/sign-in-page__background-img.png);width:100%;height:684px;display:flex;align-items:center;justify-content:center}
+
+.search-room-page{width:1440px}
+
+.search-room-page__wrapper{display:flex;margin-left:140px;margin-right:140px;margin-top:30px}
+
+
 
 .header{display:flex;align-items:center;justify-content:space-between;box-shadow:0px 10px 20px 0px #1F20410D}
 
