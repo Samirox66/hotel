@@ -1,4 +1,5 @@
 extends ../../pug/layouts/main.pug
+include ../../blocks/dropdown/dropdown.pug
 include ../../blocks/header/header.pug
 include ../../blocks/logo/logo.pug
 include ../../blocks/button/button.pug
@@ -6,16 +7,44 @@ include ../../blocks/input/input.pug
 include ../../blocks/contacts/contacts.pug
 include ../../blocks/text/text.pug
 include ../../blocks/date-dropdown/date-dropdown.pug
+include ../../blocks/range-slider/range-slider.pug
+include ../../blocks/chose-button/chose-button.pug
 
 block variables 
     - var titlePage = 'search room'
 
-block content 
-    .search-room-page 
+block content
+    .search-room-page
         +header(false)
-        main.search-room-page__wrapper 
-            .search-room-page__conditions 
+        main.search-room-page__wrapper
+            .search-room-page__conditions
                 +text('даты пребывания в отеле', 'h3', 'text__h3 text__h3_margin-bottom_5px')
                 +date-dropdown('filter-date-dropdown-search-room', '', 'date-dropdown__label_width_266px date-dropdown__label_height_44px', 'date-dropdown__input_height_24px')
+                +text('гости', 'h3', 'text__h3 text__h3_margin-bottom_5px text__h3_margin-top_30px')
+                +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '1'}], 'dropdown_width_266px', 'guest')
+                +range-slider('диапазон цены', 'range-slider_margin-top_30px')
+                +text('Стоимость за сутки пребывания в номере', 'p', 'text__p text__p_margin-top_13px text_color-opacity_50per text_font-size_12px text_line-height_14px')
+                +text('правила дома', 'h3', 'text__h3 text__h3_margin-top_30px text__h3_margin-bottom_16px')
+                +chose-button({
+                    'id':'isSmokingAllowed',
+                    'text':'Можно курить',
+                    'name':'isSmokingAllowed',
+                    'fakeClasses':'chose-button__fake-checkbox'
+                    }, 'checkbox')
+                +chose-button({
+                    'id':'arePetAllowed',
+                    'text':'Можно с питомцами',
+                    'name':'arePetAllowed',
+                    'fakeClasses':'chose-button__fake-checkbox',
+                    'checked': true
+                    }, 'checkbox')   
+                +chose-button({
+                    'id':'areGuestsAllowed',
+                    'text':'Можно пригласить гостей (до 10 человек)',
+                    'name':'areGuestsAllowed',
+                    'checked': true,
+                    'fakeClasses': 'chose-button__fake-checkbox',
+                    'labelClasses': 'chose-button__label_width_192px'
+                    }, 'checkbox')
             .search-room-page__rooms
         include ../../blocks/footer1/footer1.pug

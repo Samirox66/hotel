@@ -32,13 +32,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 $('.dropdown__buttons').find('.button__clear').hide();
             }
             return guest;
-        },
-        onChange: (id, count, totalItems) => {
-            if (count === 0) {
-                $(this).find('.button-decrement').prop('disabled', true)
-            }
-        },
-    }),
+        }
+    })
     $('.iqdropdown[data-id=furniture]').iqDropdown({
         // max total items
         maxItems: 20,
@@ -50,11 +45,6 @@ document.addEventListener("DOMContentLoaded", function() {
             displayCls: 'iqdropdown-item-display',
             controlsCls: 'iqdropdown-item-controls',
             counterCls: 'counter'
-        },
-        onChange: (id, count, totalItems) => {
-            if (count === 0) {
-                //$(this).find('.button-decrement').prop('disabled', true)
-            }
         },
         setSelectionText: (itemCount, totalItems) => {
             let furniture = '';

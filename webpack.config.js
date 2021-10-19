@@ -14,6 +14,11 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         assetModuleFilename: 'assets/[name][ext]'
     },
+    optimization: {
+        splitChunks: {
+            chunks: 'all'
+        }
+    },
     plugins: [
         new CopyWebpackPlugin({
             patterns: [
@@ -28,12 +33,16 @@ module.exports = {
             ]
         }),
         new HtmlWebpackPlugin({
+            filename: 'landing.html',
+            template: './pages/landing/landing.pug'
+        }),
+        new HtmlWebpackPlugin({
             filename: 'ui-kit.html',
             template: './pages/ui-kit/ui-kit.pug'
         }),
         new HtmlWebpackPlugin({
-            filename: 'landing.html',
-            template: './pages/landing/landing.pug'
+            filename: 'search-room.html',
+            template: './pages/search-room/search-room.pug'
         }),
         new HtmlWebpackPlugin({
             filename: 'registration.html',
@@ -42,10 +51,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'sign-in.html',
             template: './pages/sign-in/sign-in.pug'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'search-room.html',
-            template: './pages/search-room/search-room.pug'
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({

@@ -91,13 +91,13 @@ block content
                         'id':'isSmokingAllowed',
                         'text':'Можно курить',
                         'name':'isSmokingAllowed',
-                        'labelClasses':'chose-button__fake-checkbox'
+                        'fakeClasses':'chose-button__fake-checkbox'
                         }, 'checkbox')
                     +chose-button({
                         'id':'arePetAllowed',
                         'text':'Можно с питомцами',
                         'name':'arePetAllowed',
-                        'labelClasses':'chose-button__fake-checkbox',
+                        'fakeClasses':'chose-button__fake-checkbox',
                         'checked': true
                         }, 'checkbox')   
                     +chose-button({
@@ -105,7 +105,8 @@ block content
                         'text':'Можно пригласить гостей (до 10 человек)',
                         'name':'areGuestsAllowed',
                         'checked': true,
-                        'labelClasses': 'chose-button__fake-checkbox'
+                        'fakeClasses': 'chose-button__fake-checkbox',
+                        'labelClasses': 'chose-button__label_width_192px'
                         }, 'checkbox')
                     .form-elements__block.form-elements_margin-top_40px
                         +text('radio buttons', 'h3', 'text__h3 text__h3_margin-bottom_16px')
@@ -116,14 +117,14 @@ block content
                             'name':'gender',
                             'value':'man',
                             'checked': true,
-                            'labelClasses':'chose-button__fake-radio'
+                            'fakeClasses':'chose-button__fake-radio'
                             }, 'radio')
                         +chose-button({
                             'id':'woman',
                             'text':'Женщина',
                             'name':'gender',
                             'value':'woman',
-                            'labelClasses':'chose-button__fake-radio'
+                            'fakeClasses':'chose-button__fake-radio'
                             }, 'radio')
                     .form-elements__block.form-elements_margin-top_40px
                         +text('toggle', 'h3', 'text__h3 text__h3_margin-bottom_16px')
@@ -206,23 +207,23 @@ block content
             .form-elements__block.form-elements_margin-top_70px.form-elements_70px 
                 .form-elements__column.form-elements_margin-left_130px
                     +checkbox-list(
-                        [{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast', 'labelClasses': 'chose-button__fake-checkbox'},
-                        {'id': 'write-table', 'text': 'Письменный стол', 'name': 'write-table', 'labelClasses': 'chose-button__fake-checkbox', 'checked': true},
-                        {'id': 'food-table', 'text': 'Стул для кормления', 'name': 'food-table', 'labelClasses': 'chose-button__fake-checkbox', 'checked': true},
-                        {'id': 'baby-bed', 'text': 'Кроватка', 'name': 'baby-bed', 'labelClasses': 'chose-button__fake-checkbox', 'checked': true},
-                        {'id': 'tv', 'text': 'Телевизор', 'name': 'tv', 'labelClasses': 'chose-button__fake-checkbox'},
-                        {'id': 'shampoo1', 'text': 'Шампунь', 'name': 'shampoo', 'labelClasses': 'chose-button__fake-checkbox'},
-                        {'id': 'tv', 'text': 'Телевизор', 'name': 'tv', 'labelClasses': 'chose-button__fake-checkbox'},
-                        {'id': 'shampoo2', 'text': 'Шампунь', 'name': 'shampoo', 'labelClasses': 'chose-button__fake-checkbox'}])
+                        [{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'chose-button__fake-checkbox'},
+                        {'id': 'write-table', 'text': 'Письменный стол', 'name': 'write-table', 'fakeClasses': 'chose-button__fake-checkbox', 'checked': true},
+                        {'id': 'food-table', 'text': 'Стул для кормления', 'name': 'food-table', 'fakeClasses': 'chose-button__fake-checkbox', 'checked': true},
+                        {'id': 'baby-bed', 'text': 'Кроватка', 'name': 'baby-bed', 'fakeClasses': 'chose-button__fake-checkbox', 'checked': true},
+                        {'id': 'tv', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'chose-button__fake-checkbox'},
+                        {'id': 'shampoo1', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'chose-button__fake-checkbox'},
+                        {'id': 'tv', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'chose-button__fake-checkbox'},
+                        {'id': 'shampoo2', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'chose-button__fake-checkbox'}])
                     +checkbox-list(
-                        [{'id': 'breakfastEx', 'text': 'Завтрак', 'name': 'breakfast', 'labelClasses': 'chose-button__fake-checkbox'},
-                        {'id': 'write-tableEx', 'text': 'Письменный стол', 'name': 'write-table', 'labelClasses': 'chose-button__fake-checkbox', 'checked': true},
-                        {'id': 'food-tableEx', 'text': 'Стул для кормления', 'name': 'food-table', 'labelClasses': 'chose-button__fake-checkbox', 'checked': true},
-                        {'id': 'baby-bedEx', 'text': 'Кроватка', 'name': 'baby-bed', 'labelClasses': 'chose-button__fake-checkbox', 'checked': true},
-                        {'id': 'tvEx', 'text': 'Телевизор', 'name': 'tv', 'labelClasses': 'chose-button__fake-checkbox'},
-                        {'id': 'shampoo1Ex', 'text': 'Шампунь', 'name': 'shampoo', 'labelClasses': 'chose-button__fake-checkbox'},
-                        {'id': 'tvEx', 'text': 'Телевизор', 'name': 'tv', 'labelClasses': 'chose-button__fake-checkbox'},
-                        {'id': 'shampoo2Ex', 'text': 'Шампунь', 'name': 'shampoo', 'labelClasses': 'chose-button__fake-checkbox'}],
+                        [{'id': 'breakfastEx', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'chose-button__fake-checkbox'},
+                        {'id': 'write-tableEx', 'text': 'Письменный стол', 'name': 'write-table', 'fakeClasses': 'chose-button__fake-checkbox', 'checked': true},
+                        {'id': 'food-tableEx', 'text': 'Стул для кормления', 'name': 'food-table', 'fakeClasses': 'chose-button__fake-checkbox', 'checked': true},
+                        {'id': 'baby-bedEx', 'text': 'Кроватка', 'name': 'baby-bed', 'fakeClasses': 'chose-button__fake-checkbox', 'checked': true},
+                        {'id': 'tvEx', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'chose-button__fake-checkbox'},
+                        {'id': 'shampoo1Ex', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'chose-button__fake-checkbox'},
+                        {'id': 'tvEx', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'chose-button__fake-checkbox'},
+                        {'id': 'shampoo2Ex', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'chose-button__fake-checkbox'}],
                         'menu-open')
                 .form-elements__column.form-elements_margin-left_130px
                     +text('rich checkbox button', 'h3', 'text__h3 text__h3_margin-bottom_16px')
@@ -231,12 +232,12 @@ block content
                         'text': 'Широкий коридор',
                         'name': 'wide-hall',
                         'description': 'Ширина коридоров в номере не менее 91 см.',
-                        'labelClasses': 'chose-button__fake-checkbox'},
+                        'fakeClasses': 'chose-button__fake-checkbox'},
                         {'id': 'invalid-helper',
                         'text': 'Помощник для инвалидов',
                         'name': 'wide-hall',
                         'description': 'На 1 этаже вас встретит специалист  и проводит до номера.',
-                        'labelClasses': 'chose-button__fake-checkbox'}])
+                        'fakeClasses': 'chose-button__fake-checkbox'}])
                 .form-elements__column.form-elements_margin-left_130px
                     +text('bullet list', 'h3', 'text__h3 text__h3_margin-bottom_16px')
                     +bullet-list('Нельзя с питомцами')
