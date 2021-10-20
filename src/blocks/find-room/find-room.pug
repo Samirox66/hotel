@@ -4,11 +4,10 @@ mixin find-room(findRoomClasses, dateDropdownId)
             +text('Найдём номера под ваши пожелания', 'h1', 'text__h1')
         .find-room__row.find-room__row_margin-top_21px
             .find-room__column
-                +text('прибытие', 'h3', 'text__h3 text__h3_margin-bottom_5px')
-                +date-dropdown(dateDropdownId, 'ДД.ММ.ГГГГ', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_height_24px date-dropdown__departure')
-            .find-room__column.find-room__column_margin-left_20px
-                +text('выезд', 'h3', 'text__h3 text__h3_margin-bottom_5px')
-                +date-dropdown(dateDropdownId + '_arrival', 'ДД.ММ.ГГГГ', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_height_24px date-dropdown__ariival')
+                .find-room__row
+                    +text('прибытие', 'h3', 'text__h3 text__h3_margin-bottom_5px text_width_150px')
+                    +text('выезд', 'h3', 'text__h3 text__h3_margin-bottom_5px text_width_150px text_margin-left_20px')
+                +date-dropdown(dateDropdownId, 'ДД.ММ.ГГГГ')
         .find-room__row.find-room__row_margin-top_21px 
             .find-room__column
                 +text('гости', 'h3', 'text__h3 text__h3_margin-bottom_5px')

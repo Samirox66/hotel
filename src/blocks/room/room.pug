@@ -8,12 +8,11 @@ mixin room(dateDropdownId)
             p.room__money 9 990₽ 
                 span.room__in-day в сутки
         .room__row.room__row_margin-top_20px 
-            .room__column 
-                +text('прибытие', 'h3', 'text__h3 text__h3_margin-bottom_5px')
-                +date-dropdown(dateDropdownId, '', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_height_24px date-dropdown__departure')
-            .room__column 
-                +text('выезд', 'h3', 'text__h3 text__h3_margin-bottom_5px')
-                +date-dropdown(dateDropdownId + '_arrival', '', 'date-dropdown__label_width_150px date-dropdown__label_height_44px', 'date-dropdown__input_height_24px date-dropdown__arrival')
+            .room__column
+                .room__row
+                    +text('прибытие', 'h3', 'text__h3 text__h3_margin-bottom_5px text_width_150px')
+                    +text('выезд', 'h3', 'text__h3 text__h3_margin-bottom_5px text_width_150px text_margin-left_20px')
+                +date-dropdown(dateDropdownId, '')
         .room__row.room__row_margin-top_20px 
             .room__column
                 +text('гости', 'h3', 'text__h3 text__h3_margin-bottom_5px')

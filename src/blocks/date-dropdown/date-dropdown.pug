@@ -1,5 +1,8 @@
-mixin date-dropdown(dateId, value, labelClasses, inputClasses, isFilter)
+mixin date-dropdown(dateId, value)
     form.date-dropdown
-        label.date-dropdown__label(class="" + labelClasses)
-            input.date-dropdown__input(class="" + inputClasses id=dateId type="text" value=value data-filter=Isfilter)
-            .material-icons.material-icons__expand-more expand_more  
+        label.date-dropdown__label
+            input.date-dropdown__input(id=dateId type="text" value=value data-class="departure" readonly)
+            .material-icons.material-icons__expand-more expand_more 
+        label.date-dropdown__label.date-dropdown__label_margin-left_20px
+            input.date-dropdown__input(id=dateId + "_arrival" type="text" value=value data-class="arrival" readonly)
+            .material-icons.material-icons__expand-more expand_more
