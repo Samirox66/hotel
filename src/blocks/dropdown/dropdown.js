@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 guest = 'Сколько гостей';
             }
             if (totalItems === 0) {
-                $('.dropdown__buttons').find('.button__clear').hide();
+                $('.dropdown__buttons .button__clear .button__button').hide();
             }
             return guest;
         }
@@ -75,4 +75,12 @@ document.addEventListener("DOMContentLoaded", function() {
     $('.icon-increment').text('+');
     $('.iqdropdown-selection::after').addClass('material-icons').addClass('material-icons__expand-more').text('expand_more');
     $('.iqdropdown.iqdropdown__checkbox-list').find('.iqdropdown-item-controls').addClass('checkbox-list__controls');
+})
+
+$('.iqdropdown .button__submit .button__button').on('click', function() {
+    $(this).parents('.iqdropdown').removeClass('menu-open')
+})
+
+$('.iqdropdown .button__clear .button__button').on('click', function() {
+    
 })

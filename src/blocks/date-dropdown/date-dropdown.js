@@ -24,13 +24,11 @@ new AirDatepicker("#date-dropdown-ui-kit1", {
     range: true,
     multipleDates: 2,
     showEvent: 'click',
-    container: 'date-dropdown__input',
     prevHtml: `<div class="material-icons material-icons__arrow-back">arrow_back</div>`,
     nextHtml: `<div class="material-icons material-icons__arrow-forward material-icons__arrow-forward_color_blue">arrow_forward</div>`,
     onSelect({date, formattedDate, datepicker}) {
-        console.log(formattedDate[0], formattedDate[1], datepicker)
-        $(".date-dropdown__input[data-id=departure]").text(formattedDate[0])
-        $(".date-dropdown__input[data-id=arrival]").text(formattedDate[1])
+        $('#date-dropdown-ui-kit1_arrival').val(formattedDate[1])
+        $('#date-dropdown-ui-kit1').val(formattedDate[0])
     }
 })
 new AirDatepicker("#date-dropdown-ui-kit-cards1", {
@@ -45,11 +43,12 @@ new AirDatepicker("#date-dropdown-ui-kit-cards1", {
     prevHtml: `<div class="material-icons material-icons__arrow-back">arrow_back</div>`,
     nextHtml: `<div class="material-icons material-icons__arrow-forward material-icons__arrow-forward_color_blue">arrow_forward</div>`,
     onSelect({date, formattedDate, datepicker}) {
-        
+        $('#date-dropdown-ui-kit-cards1_arrival').val(formattedDate[1])
+        $('#date-dropdown-ui-kit-cards1').val(formattedDate[0])
     }
 
 })
-new AirDatepicker("#date-dropdown-ui-kit-cards2", {
+let d = new AirDatepicker("#date-dropdown-ui-kit-cards2", {
     navTitles: {
         days: '<strong>MMMM yyyy</strong>',
         months: 'Select month of <strong>yyyy</strong>' 
@@ -61,9 +60,11 @@ new AirDatepicker("#date-dropdown-ui-kit-cards2", {
     prevHtml: `<div class="material-icons material-icons__arrow-back">arrow_back</div>`,
     nextHtml: `<div class="material-icons material-icons__arrow-forward material-icons__arrow-forward_color_blue">arrow_forward</div>`,
     onSelect({date, formattedDate, datepicker}) {
-        
+        $('#date-dropdown-ui-kit-cards2_arrival').val(formattedDate[1])
+        $('#date-dropdown-ui-kit-cards2').val(formattedDate[0])
     }
 })
+d.selectDate(['2019.08.17', '2019.08.23'])
 new AirDatepicker('#static-date', {
     navTitles: {
         days: '<strong>MMMM yyyy</strong>',
@@ -75,7 +76,7 @@ new AirDatepicker('#static-date', {
     nextHtml: `<div class="material-icons material-icons__arrow-forward material-icons__arrow-forward_color_blue">arrow_forward</div>`,
 
 })
-new AirDatepicker('#landing', {
+new AirDatepicker('#date-dropdown-landing', {
     navTitles: {
         days: '<strong>MMMM yyyy</strong>',
         months: 'Select month of <strong>yyyy</strong>' 
@@ -87,7 +88,8 @@ new AirDatepicker('#landing', {
     prevHtml: `<div class="material-icons material-icons__arrow-back">arrow_back</div>`,
     nextHtml: `<div class="material-icons material-icons__arrow-forward material-icons__arrow-forward_color_blue">arrow_forward</div>`,
     onSelect({date, formattedDate, datepicker}) {
-        console.log$(this)
+        $('#date-dropdown-landing_arrival').val(formattedDate[1])
+        $('#date-dropdown-landing').val(formattedDate[0])
     }
 })
 
