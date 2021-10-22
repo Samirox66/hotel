@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
     createGuestDropdown('guest1', ['гостей', 'гость', 'гостя', 'Сколько готсей']),
     createGuestDropdown('guest2', ['гостей', 'гость', 'гостя', 'Сколько готсей']),
     createGuestDropdown('guest3', ['гостей', 'гость', 'гостя', 'Сколько готсей']),
+    createGuestDropdown('guest-search-room', ['гостей', 'гость', 'гостя', 'Сколько готсей']),
     $('.iqdropdown[data-id=furniture]').iqDropdown({
         // max total items
         maxItems: 20,

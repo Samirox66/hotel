@@ -1,5 +1,6 @@
 .chose-button__fake-checkbox {
    border-radius: 4px;
+   align-self: flex-start;
    .chose-button__button:checked + &::before {
         content: '';
         display: inline-block;

@@ -6,9 +6,9 @@ mixin sign-up
             +input('text', 'input_width_320px input_height_44px', 'Имя')
         .sign-up__row.sign-up__row_margin-top_10px
             +input('text', 'input_width_320px input_height_44px', 'Фамилия')
-        .sign-up__row.sign-up__row_margin-top_10px.sign-up__row_height_25px
-            +chose-button({'id':'man', 'text':'Мужчина' ,'name':'gender', 'value':'man', 'checked': true}, 'radio')
-            +chose-button({'id':'woman', 'text':'Женщина', 'name':'gender', 'value':'woman'}, 'radio', 'chose-button_margin-left_20px')
+        .sign-up__row.sign-up__row_margin-top_10px.sign-up__row_height_25px.sign-up__row_justify-content_flex-start
+            +chose-button({'id':'men', 'text':'Мужчина' ,'name': 'gender', 'value':'man', 'checked': true, 'fakeClasses': 'chose-button__fake-radio'}, 'radio')
+            +chose-button({'id':'women', 'text':'Женщина', 'name': 'gender', 'value':'woman', 'fakeClasses': 'chose-button__fake-radio', 'buttonClasses': 'chose-button_margin-left_20px'}, 'radio')
         .sign-up__row.sign-up__row_margin-top_20px
             .sign-up__column 
                 +text('дата рождения', 'h3', 'text__h3 text__h3_margin-bottom_5px')

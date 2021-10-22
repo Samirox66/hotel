@@ -8,6 +8,12 @@
 }
 
 .iqdropdown {
+    .iqdropdown-selection.iqdropdown-selection__checkbox-list {
+        padding-left: 0;
+    }
+    .iqdropdown-menu-option.iqdropdown-menu-option__checkbox-list {
+        padding-left: 0;
+    }
     .iqdropdown-selection p.checkbox-list__text {
         font-family: 'Montserrat', sans-serif;
         font-style: normal;

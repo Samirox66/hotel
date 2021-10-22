@@ -20,7 +20,7 @@ new AirDatepicker("#filter-date-dropdown-ui-kit", {
     multipleDates: 2,
     multipleDatesSeparator: " - ",
     dateFormat: 'd MMM',
-    selectedDates: ["19 Авг", "23 Авг"],
+    selectedDates: ["2019.08.19", "2019.08.23"],
     buttons: ['clear', submitButton]
 })
 new AirDatepicker("#filter-date-dropdown-search-room", {
@@ -32,6 +32,6 @@ new AirDatepicker("#filter-date-dropdown-search-room", {
     multipleDates: 2,
     multipleDatesSeparator: " - ",
     dateFormat: 'd MMM',
-    selectedDates: ["19 Авг", "23 Авг"],
+    selectedDates: ["2019.08.19", "2019.08.23"],
     buttons: ['clear', submitButton]
 })

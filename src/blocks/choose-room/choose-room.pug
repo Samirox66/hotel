@@ -1,9 +1,9 @@
 mixin choose-room(room, reviewNumber, price)
-    .choose-room
+    .choose-room(class="" + room.roomClasses)
         .choose-room__img(class="" + room.img)
         .choose-room__row.choose-room__row_margin-top_20px
             p.choose-room__sign-number № 
-                span.choose-room__number 888
+                span.choose-room__number=room.number
             if (room.isLux)
                 .choose-room__lux
                     +text('люкс', 'h3', 'text__h3 text_color_blue')

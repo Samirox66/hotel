@@ -48,7 +48,7 @@ new AirDatepicker("#date-dropdown-ui-kit-cards1", {
     }
 
 })
-let d = new AirDatepicker("#date-dropdown-ui-kit-cards2", {
+new AirDatepicker("#date-dropdown-ui-kit-cards2", {
     navTitles: {
         days: '<strong>MMMM yyyy</strong>',
         months: 'Select month of <strong>yyyy</strong>' 
@@ -64,7 +64,6 @@ let d = new AirDatepicker("#date-dropdown-ui-kit-cards2", {
         $('#date-dropdown-ui-kit-cards2').val(formattedDate[0])
     }
 })
-d.selectDate(['2019.08.17', '2019.08.23'])
 new AirDatepicker('#static-date', {
     navTitles: {
         days: '<strong>MMMM yyyy</strong>',
