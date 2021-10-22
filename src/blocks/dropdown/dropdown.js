@@ -4,10 +4,10 @@ import './iqdropdown.scss'
 import './dropdown__buttons.scss'
 import './dropdown__buttons_justify-content_flex-end.scss'
 
-document.addEventListener("DOMContentLoaded", function() {
-    $('.iqdropdown[data-id=guest]').iqDropdown({
+let createGuestDropdown = function(dataId, strings) {
+    $('.iqdropdown[data-id=' + dataId + ']').iqDropdown({
         // max total items
-        maxItems: Infinity,
+        maxItems: 20,
         // min total items
         minItems: 0,
         // buttons to increment/decrement
@@ -20,20 +20,28 @@ document.addEventListener("DOMContentLoaded", function() {
         setSelectionText: (itemCount, totalItems) => {
             let guest;
             if (totalItems % 10 >= 5 || totalItems >= 10 && totalItems <= 20) {
-                guest = totalItems + ' гостей';
+                guest = totalItems + ' ' + strings[0];
             } else if (totalItems % 10 === 1 && totalItems !== 11) {
-                guest = totalItems + ' гость';
+                guest = totalItems + ' ' + strings[1];
             } else if (totalItems % 10 >= 2 && totalItems % 10 <= 4) {
-                guest = totalItems + ' гостя';
+                guest = totalItems + ' ' + strings[2];
             } else {
-                guest = 'Сколько гостей';
+                guest = strings[3];
             }
             if (totalItems === 0) {
-                $('.dropdown__buttons .button__clear .button__button').hide();
+                $('.iqdropdown[data-id=' + dataId + '] .button__clear .button__button').hide();
+            } else {
+                $('.iqdropdown[data-id=' + dataId + '] .button__clear .button__button').show();
             }
             return guest;
         }
     })
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    createGuestDropdown('guest1', ['гостей', 'гость', 'гостя', 'Сколько готсей']),
+    createGuestDropdown('guest2', ['гостей', 'гость', 'гостя', 'Сколько готсей']),
+    createGuestDropdown('guest3', ['гостей', 'гость', 'гостя', 'Сколько готсей']),
     $('.iqdropdown[data-id=furniture]').iqDropdown({
         // max total items
         maxItems: 20,
@@ -82,5 +90,13 @@ $('.iqdropdown .button__submit .button__button').on('click', function() {
 })
 
 $('.iqdropdown .button__clear .button__button').on('click', function() {
-    
+    let controlId = ['adults', 'kids', 'babies']
+    let dataId = $(this).parents('.iqdropdown').attr('data-id')
+    let itemCount = ($(this).parents('.iqdropdown-menu').find('.counter').text()).slice(0, -1).split('')
+    for (let i = 0; i < controlId.length; i++) {
+        while (itemCount[i] != 0) {
+            $(this).parents('.iqdropdown-menu').find('.iqdropdown-menu-option[data-id=' + controlId[i] + '] .button-decrement').trigger('click')
+            itemCount[i]--
+        }
+    }
 })
