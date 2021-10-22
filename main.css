@@ -45,7 +45,7 @@
 
 .dropdown__buttons_justify-content_flex-end{justify-content:flex-end}
 
-.iqdropdown.iqdropdown__checkbox-list{border:none;padding-left:0}.iqdropdown.iqdropdown__checkbox-list .iqdropdown-menu.checkbox-list_border_none{border:none}.iqdropdown .iqdropdown-selection p.checkbox-list__text{font-family:'Montserrat', sans-serif;font-style:normal;font-weight:bold;font-size:12px;line-height:15px;text-transform:uppercase;color:#1F2041}.iqdropdown .iqdropdown-item-controls.checkbox-list__controls{display:none}
+.iqdropdown.iqdropdown__checkbox-list{border:none;padding-left:0}.iqdropdown.iqdropdown__checkbox-list .iqdropdown-menu.checkbox-list_border_none{border:none}.iqdropdown .iqdropdown-selection.iqdropdown-selection__checkbox-list{padding-left:0}.iqdropdown .iqdropdown-menu-option.iqdropdown-menu-option__checkbox-list{padding-left:0}.iqdropdown .iqdropdown-selection p.checkbox-list__text{font-family:'Montserrat', sans-serif;font-style:normal;font-weight:bold;font-size:12px;line-height:15px;text-transform:uppercase;color:#1F2041}.iqdropdown .iqdropdown-item-controls.checkbox-list__controls{display:none}
 
 .color__example_background_green{background:#6FCF97;border-radius:6px;width:70px;height:70px}
 
@@ -116,7 +116,7 @@
 
 .chose-button__button{display:none}
 
-.chose-button__label{font-size:14px;line-height:18px;color:rgba(31,32,65,0.5);font-weight:normal;cursor:default;line-height:30px;vertical-align:middle}
+.chose-button__label{font-size:14px;line-height:18px;color:rgba(31,32,65,0.5);font-weight:normal;cursor:default;vertical-align:middle}
 
 .chose-button__flex-direction_column{flex-direction:column}
 
@@ -124,13 +124,15 @@
 
 .chose-button_margin-left_20px{margin-left:20px}
 
-.chose-button__fake-checkbox{border-radius:4px}.chose-button__button:checked+.chose-button__fake-checkbox::before{content:'';display:inline-block;position:relative;width:6px;height:2px;right:1px;bottom:4px;background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);transform:rotate(45deg)}.chose-button__button:checked+.chose-button__fake-checkbox::after{content:'';display:inline-block;position:relative;width:2px;height:8px;right:1px;bottom:2px;background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);transform:rotate(45deg)}
+.chose-button__fake-checkbox{border-radius:4px;align-self:flex-start}.chose-button__button:checked+.chose-button__fake-checkbox::before{content:'';display:inline-block;position:relative;width:6px;height:2px;right:1px;bottom:4px;background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);transform:rotate(45deg)}.chose-button__button:checked+.chose-button__fake-checkbox::after{content:'';display:inline-block;position:relative;width:2px;height:8px;right:1px;bottom:2px;background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);transform:rotate(45deg)}
 
 .chose-button__fake-radio{border-radius:50%}.chose-button__button:checked+.chose-button__fake-radio::before{content:'';color:#000;display:inline-block;position:relative;text-align:center;text-indent:0px;width:12px;height:12px;background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);box-sizing:border-box;border-radius:50%}
 
 .chose-button__fake-button{color:#000;display:inline-block;margin-right:9.74px;position:relative;text-align:center;text-indent:0px;width:20px;height:20px;background:#FFF;border:1px solid rgba(31,32,65,0.25);box-sizing:border-box;vertical-align:middle}.chose-button__button:checked+.chose-button__fake-button{border:1px solid #BC9CFF}
 
 .chose-button__label_width_192px{width:192px}
+
+.chose-button_margin-top_10px{margin-top:10px}
 
 .button{display:flex;align-items:center;justify-content:flex-start;box-sizing:border-box}
 
@@ -407,6 +409,8 @@
 
 .sign-up__row_height_25px{height:25px}
 
+.sign-up__row_justify-content_flex-start{justify-content:flex-start}
+
 .room{width:380px;height:512px;background:#FFFFFF;border:1px solid rgba(0,0,0,0.12);box-sizing:border-box;box-shadow:0px 0px 25px rgba(0,0,0,0.2);border-radius:4px;display:flex;flex-direction:column;align-items:center}
 
 .room__row{display:flex;align-items:center;width:320px}
@@ -467,6 +471,26 @@
 
 .choose-room__img840{background-image:url(assets/img/room840.png)}
 
+.choose-room__img350{background-image:url(assets/img/room350.png)}
+
+.choose-room__img352{background-image:url(assets/img/room352.png)}
+
+.choose-room__img444{background-image:url(assets/img/room444.png)}
+
+.choose-room__img450{background-image:url(assets/img/room450.png)}
+
+.choose-room__img666{background-image:url(assets/img/room666.png)}
+
+.choose-room__img678{background-image:url(assets/img/room678.png)}
+
+.choose-room__img740{background-image:url(assets/img/room740.png)}
+
+.choose-room__img856{background-image:url(assets/img/room856.png)}
+
+.choose-room__img980-lux{background-image:url(assets/img/room980-lux.png)}
+
+.choose-room__img982{background-image:url(assets/img/room982.png)}
+
 .choose-room__row_margin-top_20px{margin-top:20px}
 
 .choose-room__row_margin-top_10px{margin-top:10px}
@@ -487,6 +511,8 @@
 
 .choose-room__review{font-weight:normal}
 
+.choose-room_margin-left_12px{margin-left:12px}
+
 .landing-page{width:1440px}
 
 .landing-page__background-img{background-image:url(assets/img/landing-page__background-img.png);width:100%;height:830px;padding-top:70px}
@@ -504,6 +530,16 @@
 .search-room-page__wrapper{display:flex;margin-left:140px;margin-right:140px;margin-top:30px}
 
 
+
+.search-room-page__rooms_margin-left_60px{margin-left:60px}
+
+.search-room-page__rooms-row{display:flex}
+
+.search-room-page__rooms-row_margin-top_21px{margin-top:21px}
+
+.search-room-page__rooms-row_margin-top_40px{margin-top:40.5px}
+
+.search-room-page__rooms-row_justify-content_center{justify-content:center}
 
 
 .filter-date-dropdown__label{width:266px;height:44px;display:flex;border:1px solid rgba(31,32,65,0.25);border-radius:4px;align-items:center;justify-content:space-between}
