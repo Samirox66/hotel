@@ -178,7 +178,7 @@
 
 .button__button{cursor:pointer;padding:0;display:flex;border-radius:22px;align-items:center;justify-content:center;position:relative}
 
-.footer1{display:flex;flex-direction:column}
+.footer1{display:flex;flex-direction:column;width:100%}
 
 .footer1__logo{display:flex;flex-direction:column;width:18%;margin-top:100px}
 
@@ -188,9 +188,9 @@
 
 .footer1__nav-item{list-style-type:none;margin-bottom:20px;color:#1F204180;font-size:14px;line-height:17px}
 
-.footer1__top{display:flex;height:372px;justify-content:space-between;box-shadow:0px 1px 0px rgba(31,32,65,0.1);margin-left:140px;margin-right:140px}
+.footer1__top{height:372px;box-shadow:0px 1px 0px 0px rgba(31,32,65,0.1)}
 
-.footer1__bottom{height:70px;display:flex;align-items:center;justify-content:space-between;box-shadow:0px 10px 20px 0px #1F20410D}
+.footer1__bottom{height:70px;display:flex;align-items:center;justify-content:space-between;box-shadow:0px 10px 20px 0px rgba(31,32,65,0.05)}
 
 .footer1__nav_width_18{width:18%}
 
@@ -202,6 +202,8 @@
 
 .footer1__rights{font-size:14px;line-height:17px;color:rgba(31,32,65,0.75);margin-left:140px}
 
+.footer1__top-wrapper{display:flex;justify-content:space-between;margin-left:140px;margin-right:140px}
+
 .material-icons.material-icons__favorite{font-size:10px;color:#BC9CFF;line-height:9px}
 
 .material-icons.material-icons__favorite-border{font-size:10px;line-height:9px;color:#1F204140}
@@ -212,15 +214,17 @@
 
 .material-icons__arrow-forward{font-size:24px;line-height:24px;width:40px;color:white;margin-left:auto}
 
-.material-icons__insert-emoticon{font-size:48px;line-height:41px;color:#8BA4F9}
+.material-icons.material-icons__insert-emoticon{font-size:48px;line-height:41px;color:#8BA4F9}
 
-.material-icons__location-city{font-size:48px;line-height:41px;color:#8BA4F9}
+.material-icons.material-icons__location-city{font-size:48px;line-height:41px;color:#8BA4F9}
 
 .material-icons__expand-more{width:44px;text-align:center}
 
 .material-icons__arrow-forward_color_blue{color:#bc9cff}
 
 .material-icons__arrow-back{font-size:24px;line-height:24px;width:40px;color:#bc9cff;margin-left:auto}
+
+.material-icons.material-icons__whatshot{font-size:48px;line-height:41px;color:#8BA4F9}
 
 .material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;display:inline-block;line-height:1;text-transform:none;letter-spacing:normal;word-wrap:normal;white-space:nowrap;direction:ltr;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;font-feature-settings:'liga'}
 
@@ -251,13 +255,13 @@
 
 .text{display:flex}
 
-.text__h1{font-size:24px;line-height:29px;color:#1F2041;margin-top:0px;margin-bottom:0px}
+.text_h1{font-size:24px;line-height:29px;color:#1F2041;margin-top:0px;margin-bottom:0px}
 
-.text__h2{font-size:19px;line-height:23px;color:#1F2041;margin-top:0px;margin-bottom:0px}
+.text_h2{font-size:19px;line-height:23px;color:#1F2041;margin-top:0px;margin-bottom:0px}
 
-.text__h3{font-size:12px;line-height:15px;text-transform:uppercase;color:#1F2041;margin-top:0px;margin-bottom:0px}
+.text_h3{font-size:12px;line-height:15px;text-transform:uppercase;color:#1F2041;margin-top:0px;margin-bottom:0px}
 
-.text__p{font-size:14px;line-height:24px;color:rgba(31,32,65,0.75);margin-top:0px;margin-bottom:0px}
+.text_p{font-size:14px;line-height:24px;color:rgba(31,32,65,0.75);margin-top:0px;margin-bottom:0px}
 
 .text_color-opacity_25per{color:rgba(31,32,65,0.25)}
 
@@ -265,7 +269,7 @@
 
 .text_margin-left_30px{margin-left:30px}
 
-.text__h3_margin-bottom_5px{margin-bottom:5px}
+.text_margin-bottom_5px{margin-bottom:5px}
 
 .text_width_214px{width:214px}
 
@@ -273,9 +277,9 @@
 
 .text_color_blue{color:#bc9cff}
 
-.text__h3_margin-bottom_16px{margin-bottom:16px}
+.text_margin-bottom_16px{margin-bottom:16px}
 
-.text__h3_margin-top_30px{margin-top:30px}
+.text_margin-top_30px{margin-top:30px}
 
 .text_color-opacity_50per{color:rgba(31,32,65,0.5)}
 
@@ -283,11 +287,17 @@
 
 .text_line-height_14px{line-height:14px}
 
-.text__p_margin-top_13px{margin-top:13.56px}
+.text_margin-top_13px{margin-top:13.56px}
 
 .text_width_150px{width:150px}
 
 .text_margin-left_20px{margin-left:20px}
+
+.text_margin-bottom_20px{margin-bottom:20px}
+
+.text_margin-left_347px{margin-left:347px}
+
+.text_width_341px{width:341px}
 
 .pagination{display:flex;flex-direction:column}
 
@@ -318,19 +328,23 @@
 
 .advantage{display:flex;align-items:center}
 
-.advantage__title{font-weight:bold;font-size:14px;line-height:24px;color:rgba(31,32,65,0.75);margin-top:0px;margin-bottom:0px}
+.advantage__title{font-family:'Montserrat', sans-serif;font-weight:bold;font-size:14px;line-height:24px;color:rgba(31,32,65,0.75);margin-top:0px;margin-bottom:0px}
 
-.advantage__description{font-size:14px;line-height:24px;color:rgba(31,32,65,0.75);margin-top:0px;margin-bottom:0px}
+.advantage__description{font-family:'Montserrat', sans-serif;font-size:14px;line-height:24px;color:rgba(31,32,65,0.75);margin-top:0px;margin-bottom:0px}
 
 .advantage__text{display:flex;flex-direction:column;width:233px;margin-left:10px}
 
 .advantage__line{background:rgba(31,32,65,0.1);height:1px;margin-top:17px;margin-bottom:20px;width:280px}
 
+.advantage__text_width_233px{width:233px}
+
+.advantage__text_width_222px{width:222px}
+
 .review{display:flex;flex-direction:column}
 
 .review__person{display:flex;align-items:center}
 
-.review__person-avatar{background-image:url(assets/img/avatar.png);background-size:cover;width:48px;height:48px}
+.review__avatar{background-size:cover;width:48px;height:48px}
 
 
 .review__person-name{margin-bottom:0px;margin-top:0px;font-weight:bold;font-size:14px;line-height:24px}
@@ -340,6 +354,10 @@
 .review__review{display:flex;align-items:center}
 
 .review__text{font-size:14px;line-height:24px;color:rgba(31,32,65,0.75)}
+
+.review__avatar-murad{background-image:url(assets/img/avatar-murad.png)}
+
+.review__avatar-patricia{background-image:url(assets/img/avatar-patricia.png)}
 
 .date-dropdown{width:320px;display:flex}
 
@@ -413,7 +431,7 @@
 
 .room{width:380px;height:512px;background:#FFFFFF;border:1px solid rgba(0,0,0,0.12);box-sizing:border-box;box-shadow:0px 0px 25px rgba(0,0,0,0.2);border-radius:4px;display:flex;flex-direction:column;align-items:center}
 
-.room__row{display:flex;align-items:center;width:320px}
+.room__row{display:flex;align-items:center;justify-content:space-between;width:320px}
 
 .room__column{display:flex;flex-direction:column}
 
@@ -527,7 +545,7 @@
 
 .search-room-page{width:1440px;font-family:'Montserrat', sans-serif;font-style:normal;font-weight:normal}
 
-.search-room-page__wrapper{display:flex;margin-left:140px;margin-right:140px;margin-top:30px}
+.search-room-page__wrapper{display:flex;margin-left:140px;margin-right:140px;margin-top:30px;margin-bottom:70px}
 
 
 
@@ -541,10 +559,33 @@
 
 .search-room-page__rooms-row_justify-content_center{justify-content:center}
 
+.search-room-page__line{border:1px solid rgba(31,32,65,0.25);width:100%;height:0}
+
 
 .filter-date-dropdown__label{width:266px;height:44px;display:flex;border:1px solid rgba(31,32,65,0.25);border-radius:4px;align-items:center;justify-content:space-between}
 
 .filter-date-dropdown__input{border:none;width:103px;font-family:'Montserrat', sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:24px;text-transform:lowercase;color:rgba(31,32,65,0.75);margin-left:15px}
+
+.room-details-page{font-family:'Montserrat', sans-serif;width:1440px}
+
+.room-details-page__content{margin:70px 140px}
+
+.room-details-page__imgs{width:100%;display:flex;height:485px}
+
+.room-details-page__img1{background-image:url(assets/img/img1.png);width:981px}
+
+.room-details-page__img2{background-image:url(assets/img/img2.png);width:461px;height:243px}
+
+.room-details-page__img3{background-image:url(assets/img/img3.png);height:242px;width:461px}
+
+.room-details-page__small-imgs{height:100%}
+
+.room-details-page__row{display:flex}
+
+
+.room-details-page__column_margin-left_70px{margin-left:70px}
+
+.room-details-page__row_margin-top_30px{margin-top:30px}
 
 .header{display:flex;align-items:center;justify-content:space-between;box-shadow:0px 10px 20px 0px #1F20410D}
 
