@@ -38,6 +38,7 @@ import './blocks/registration-page/registration-page.js'
 import './blocks/sign-in-page/sign-in-page.js'
 import './blocks/search-room-page/search-room-page.js'
 import  './blocks/filter-date-dropdown/filter-date-dropdown.js'
+import './blocks/room-details-page/room-details-page.js'
 
 import './blocks/header/header.scss'
 

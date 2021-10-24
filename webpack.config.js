@@ -45,6 +45,10 @@ module.exports = {
             template: './pages/search-room/search-room.pug'
         }),
         new HtmlWebpackPlugin({
+            filename: 'room-details.html',
+            template: './pages/room-details/room-details.pug'
+        }),
+        new HtmlWebpackPlugin({
             filename: 'registration.html',
             template: './pages/registration/registration.pug'
         }),

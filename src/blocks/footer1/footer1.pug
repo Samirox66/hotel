@@ -7,17 +7,18 @@ mixin footerNav(head, items)
 
 .footer1
     .footer1__top
-        .footer1__logo
-            +logo
-            p.footer1__description Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-        +footerNav('навигация', ['О нас', 'Новости', 'Служба поддержки', 'Услуги'])
-        +footerNav('о нас', ['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'])
-        +footerNav('Служба поддержки', ['Соглашения', 'Сообщества', 'Связь с нами'])
-        ul.footer1__nav.footer1__nav_width_18
-            li.footer1__nav-head Подписка
-            li.footer1__nav-subscribe Получайте специальные предложения и новости сервиса
-            li.footer1__input
-                +input('email', 'input_width_266px input_height_44px', 'Email', true)
+        .footer1__top-wrapper
+            .footer1__logo
+                +logo
+                p.footer1__description Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+            +footerNav('навигация', ['О нас', 'Новости', 'Служба поддержки', 'Услуги'])
+            +footerNav('о нас', ['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'])
+            +footerNav('Служба поддержки', ['Соглашения', 'Сообщества', 'Связь с нами'])
+            ul.footer1__nav.footer1__nav_width_18
+                li.footer1__nav-head Подписка
+                li.footer1__nav-subscribe Получайте специальные предложения и новости сервиса
+                li.footer1__input
+                    +input('email', 'input_width_266px input_height_44px', 'Email', true)
     .footer1__bottom
         .footer1__rights Copyright © 2018 Toxin отель. Все права защищены.
         +contacts('contacts contacts__margin')

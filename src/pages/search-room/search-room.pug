@@ -17,7 +17,7 @@ include ../../blocks/rate-button/rate-button.pug
 include ../../blocks/pagination/pagination.pug
 
 block variables 
-    - var titlePage = 'search room'
+    - var titlePage = 'Search room'
 
 block content
     .search-room-page
@@ -98,4 +98,5 @@ block content
                     +choose-room({'img':'choose-room__img352', 'rate': 3, 'number': '352', 'roomClasses': 'choose-room_margin-left_12px'}, 55, '5 000₽ ')
                 .search-room-page__rooms-row.search-room-page__rooms-row_margin-top_40px.search-room-page__rooms-row_justify-content_center
                     +pagination(1)
+        .search-room-page__line
         include ../../blocks/footer1/footer1.pug

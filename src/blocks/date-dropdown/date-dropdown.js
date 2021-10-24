@@ -91,6 +91,22 @@ new AirDatepicker('#date-dropdown-landing', {
         $('#date-dropdown-landing').val(formattedDate[0])
     }
 })
+new AirDatepicker("#date-dropdown-room-details", {
+    navTitles: {
+        days: '<strong>MMMM yyyy</strong>',
+        months: 'Select month of <strong>yyyy</strong>' 
+    },
+    buttons: ['clear', submitButton],
+    range: true,
+    multipleDates: 2,
+    showEvent: 'click',
+    prevHtml: `<div class="material-icons material-icons__arrow-back">arrow_back</div>`,
+    nextHtml: `<div class="material-icons material-icons__arrow-forward material-icons__arrow-forward_color_blue">arrow_forward</div>`,
+    onSelect({date, formattedDate, datepicker}) {
+        $('#date-dropdown-room-details').val(formattedDate[1])
+        $('#date-dropdown-room-details').val(formattedDate[0])
+    }
+})
 
 $(".date-dropdown__input[data-class=arrival]").on('click', function() {
     $(this).parents(".date-dropdown").find(".date-dropdown__input[data-class=departure").trigger('click')

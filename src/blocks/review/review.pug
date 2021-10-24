@@ -1,7 +1,7 @@
-mixin review(reviewText, personName, personInfo) 
-    .review
+mixin review(reviewText, personName, personInfo, avatar, reviewClasses) 
+    .review(class="" + reviewClasses)
         .review__person
-            .review__person-avatar 
+            .review__avatar(class="" + avatar)
             .review__person-about 
                 p.review__person-name=personName 
                 p.review__person-info=personInfo

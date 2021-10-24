@@ -1,7 +1,7 @@
-mixin advantage(iconText, iconClasses, title, description, isLast)
+mixin advantage(iconText, iconClasses, title, description, textClasses, isLast)
     .advantage 
         .material-icons(class='' + iconClasses)=iconText 
-        .advantage__text 
+        .advantage__text(class="" + textClasses) 
             p.advantage__title=title
             p.advantage__description=description
     if (!isLast)
