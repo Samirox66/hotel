@@ -1,4 +1,4 @@
-mixin room(dateDropdownId) 
+mixin room(dateDropdownId, dropdownId) 
     .room
         .room__row.room__row_margin-top_40px 
             p.room__sign-number № 
@@ -16,7 +16,7 @@ mixin room(dateDropdownId)
         .room__row.room__row_margin-top_20px 
             .room__column
                 +text('гости', 'h3', 'text_h3 text_margin-bottom_5px')
-                +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '1'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px')
+                +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '1'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', dropdownId)
         .room__row.room__row_margin-top_20px 
             +text('9 990₽ х 4 суток', 'p','text_p')
             +text('39 960₽', 'p', 'text_p')

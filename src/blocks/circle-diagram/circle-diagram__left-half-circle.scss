@@ -1,9 +1,23 @@
 .circle-diagram__left-half-circle {
     width: 59px;
     height: 121px;
-    border: 4px solid;
-    border-radius: 125px;
+    border: 4px transparent;
+    border-top-left-radius: 125px;
+    border-bottom-left-radius: 125px;
     border-right: none;
-    border-image: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
-    border-image-slice: 1;
+    background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        left: 4px;
+        top: 4px;
+        width: 55px;
+        height: 113px;
+        background: white;
+        border: 4px transparent;
+        border-top-left-radius: 125px;
+        border-bottom-left-radius: 125px;
+        border-right: none;
+    }
 }

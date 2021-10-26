@@ -1,4 +1,5 @@
 import './bullet.scss'
+import './bullet_margin-bottom_10px.scss'
 import './bullet__bullet.scss'
 import './bullet__bullet_color_black.scss'
 import './bullet__bullet_color_green.scss'

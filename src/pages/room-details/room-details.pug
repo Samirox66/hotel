@@ -39,7 +39,6 @@ block content
                             +text('Впечатления от номера', 'h2', 'text_h2 text_margin-bottom_20px')
                             .room-details-page__row
                                 +circle-diagram(260)
-                                .room-details-page__bullet-list
                                 +bullet-list([{
                                     'text': 'Великолепно',
                                     'textClasses': 'text_p',
@@ -59,33 +58,47 @@ block content
                                     'text': 'Разочарован',
                                     'textClasses': 'text_p',
                                     'bulletClasses': 'bullet__bullet_margin-right_5px bullet__bullet_color_black'
-                                }])
-                    .room-details-page__row.room-details-page__row_margin-top_30px
-                        +text('Отзывы посетителей номера', 'h2', 'text_h2 text_margin-bottom_20px')
-                        +text('2 отзыва', 'p', 'text__p text_line-height_14px text_margin-left_347px')
-                    +review('Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.', 'Мурад Сарафанов', '5 дней назад', 'review__avatar-murad')
-                    +review('Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент', 'Патрисия Стёклышкова', 'Неделю назад', 'review__avatar-patricia', 'review_margin-top_22px')
+                                }], 'bullet-list_margin-top_29px bullet-list_margin-left_30px')
+                    .room-details-page__row.room-details-page__row_margin-top_30px.room-details-page__row_margin-bottom_20px
+                        +text('Отзывы посетителей номера', 'h2', 'text_h2')
+                        +text('2 отзыва', 'p', 'text_p text_line-height_14px text_margin-left_347px text_align-self_center')
+                    +review({
+                        'text': 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
+                        'personName': 'Мурад Сарафанов',
+                        'personInfo': '5 дней назад',
+                        'avatar': 'review__avatar-murad',
+                        'textClasses': 'text_p text_margin-left_14px'})
+                    +review({
+                        'text': 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент',
+                        'personName': 'Патрисия Стёклышкова',
+                        'personInfo': 'Неделю назад',
+                        'avatar': 'review__avatar-patricia',
+                        'classes': 'review_margin-top_22px',
+                        'textClasses': 'text_p text_margin-left_14px'})
                     .room-details-page__row.room-details-page__row_margin-top_30px
                         .room-details-page__column
                             +text('Правила', 'h2', 'text_h2 text_margin-bottom_20px')
                             +bullet-list([{
                                 'text': 'Нельзя с питомцами',
                                 'textClasses': 'text_p',
-                                'bulletClasses': 'bullet__bullet_margin-right_10px'
+                                'bulletClasses': 'bullet__bullet_margin-right_10px',
+                                'classes': 'bullet_margin-bottom_10px'
                             },
                             {
                                 'text': 'Без вечеринок и мероприятий',
                                 'textClasses': 'text_p',
-                                'bulletClasses': 'bullet__bullet_margin-right_10px'
+                                'bulletClasses': 'bullet__bullet_margin-right_10px',
+                                'classes': 'bullet_margin-bottom_10px'
                             },
                             {
                                 'text': 'Время прибытия — после 13:00, а выезд до 12:00',
                                 'textClasses': 'text_p text_width_271px',
-                                'bulletClasses': 'bullet__bullet_margin-right_10px'
+                                'bulletClasses': 'bullet__bullet_margin-right_10px',
                             }])
                         .room-details-page__column.room-details-page__column_margin-left_70px
-                            +text('Отмена', 'h2', 'text_h2')
+                            +text('Отмена', 'h2', 'text_h2 text_margin-bottom_20px')
                             +text('Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.', 'p', 'text_p text_width_341px')
                 .room-details-page__column.room-details-page__column_margin-left_70px
-                    +room('date-dropdown-room-details')
+                    +room('date-dropdown-room-details', 'guest-room-details')
+        .room-details-page__line
         include ../../blocks/footer1/footer1.pug

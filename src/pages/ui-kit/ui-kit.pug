@@ -250,14 +250,17 @@ block content
                     +advantage('insert_emoticon', 'material-icons__insert-emoticon', 'Комфорт', 'Шумопоглощающие стены', false)
                     +advantage('location_city', 'material-icons__location-city', 'Удобство', 'Окно в каждой из спален', true)
                 .form-elements__column.form-elements_margin-left_130px 
-                    +review('Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.', 'Мурад Сарафанов', '5 дней назад')
+                    +review({
+                        'text': 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
+                        'personName': 'Мурад Сарафанов',
+                        'personInfo': '5 дней назад'})
         .cards
             .cards__column.cards_margin-left_140px
                 +find-room('', 'date-dropdown-ui-kit-cards1')
                 .cards_margin-top_40px 
                 +sign-up
             .cards__column.cards_margin-left_40px
-                +room('date-dropdown-ui-kit-cards2')
+                +room('date-dropdown-ui-kit-cards2', 'ui-kit-room-guest')
                 .cards_margin-top_40px
                 +sign-in
             .cards__column.cards_margin-left_40px

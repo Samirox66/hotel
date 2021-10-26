@@ -103,7 +103,7 @@ new AirDatepicker("#date-dropdown-room-details", {
     prevHtml: `<div class="material-icons material-icons__arrow-back">arrow_back</div>`,
     nextHtml: `<div class="material-icons material-icons__arrow-forward material-icons__arrow-forward_color_blue">arrow_forward</div>`,
     onSelect({date, formattedDate, datepicker}) {
-        $('#date-dropdown-room-details').val(formattedDate[1])
+        $('#date-dropdown-room-details_arrival').val(formattedDate[1])
         $('#date-dropdown-room-details').val(formattedDate[0])
     }
 })

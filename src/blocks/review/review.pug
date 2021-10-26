@@ -1,10 +1,10 @@
-mixin review(reviewText, personName, personInfo, avatar, reviewClasses) 
-    .review(class="" + reviewClasses)
+mixin review(review) 
+    .review(class='' + review.classes)
         .review__person
-            .review__avatar(class="" + avatar)
+            .review__avatar(class='' + review.avatar)
             .review__person-about 
-                p.review__person-name=personName 
-                p.review__person-info=personInfo
+                p.review__person-name=review.personName 
+                p.review__person-info=review.personInfo
         .review__review 
             +like-button('material-icons__favorite', 'like-button__button like-button__button_active', 'like-button__number like-button__number_active', 12, 'favorite')
-            p.review__text=reviewText
+            +text(review.text, 'p', review.textClasses)
