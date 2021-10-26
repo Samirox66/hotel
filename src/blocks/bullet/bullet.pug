@@ -1,0 +1,4 @@
+mixin bullet(bullet)
+    .bullet(class='' + bullet.classes) 
+        .bullet__bullet(class='' + bullet.bulletClasses)
+        +text(bullet.text, 'p', bullet.textClasses)

@@ -6,7 +6,7 @@ mixin choose-room(room, reviewNumber, price)
                 span.choose-room__number=room.number
             if (room.isLux)
                 .choose-room__lux
-                    +text('люкс', 'h3', 'text__h3 text_color_blue')
+                    +text('люкс', 'h3', 'text_h3 text_color_blue')
             p.choose-room__money=price 
                 span.choose-room__in-day в сутки
         .choose-room__row.choose-room__row_margin-top_10px

@@ -4,38 +4,38 @@ mixin room(dateDropdownId)
             p.room__sign-number № 
                 span.room__number 888
             .room__lux
-                +text('люкс', 'h3', 'text__h3 text_color_blue')
+                +text('люкс', 'h3', 'text_h3 text_color_blue')
             p.room__money 9 990₽ 
                 span.room__in-day в сутки
         .room__row.room__row_margin-top_20px 
             .room__column
                 .room__row
-                    +text('прибытие', 'h3', 'text__h3 text__h3_margin-bottom_5px text_width_150px')
-                    +text('выезд', 'h3', 'text__h3 text__h3_margin-bottom_5px text_width_150px text_margin-left_20px')
+                    +text('прибытие', 'h3', 'text_h3 text_margin-bottom_5px text_width_150px')
+                    +text('выезд', 'h3', 'text_h3 text_margin-bottom_5px text_width_150px text_margin-left_20px')
                 +date-dropdown(dateDropdownId, '')
         .room__row.room__row_margin-top_20px 
             .room__column
-                +text('гости', 'h3', 'text__h3 text__h3_margin-bottom_5px')
+                +text('гости', 'h3', 'text_h3 text_margin-bottom_5px')
                 +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '1'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px')
         .room__row.room__row_margin-top_20px 
-            +text('9 990₽ х 4 суток', 'p','text__p')
-            +text('39 960₽', 'p', 'text__p')
+            +text('9 990₽ х 4 суток', 'p','text_p')
+            +text('39 960₽', 'p', 'text_p')
         .room__row.room__row_margin-top_10px
-            +text('Сбор за услуги: скидка 2 179₽', 'p','text__p text_width_214px')
+            +text('Сбор за услуги: скидка 2 179₽', 'p','text_p text_width_214px')
             .room__info
                 .room__circle 
                     .room__i i
-            +text('0₽', 'p', 'text__p')
+            +text('0₽', 'p', 'text_p')
         .room__row.room__row_margin-top_10px 
-            +text('Сбор за дополнительные услуги', 'p','text__p text_width_214px')
+            +text('Сбор за дополнительные услуги', 'p','text_p text_width_214px')
             .room__info.room__info_align-self_flex-start
                 .room__circle 
                     .room__i i
-            +text('300₽', 'p', 'text__p text_align-self_flex-start')
+            +text('300₽', 'p', 'text_p text_align-self_flex-start')
         .room__row.room__row_margin-top_30px 
-            +text('Итого', 'h2', 'text__h2')
+            +text('Итого', 'h2', 'text_h2')
             .room__dashed-line 
-            +text('38 081₽', 'h2', 'text__h2')
+            +text('38 081₽', 'h2', 'text_h2')
         .room__row.room__row_margin-top_20px 
             +button({
                 'text': 'забронировать',

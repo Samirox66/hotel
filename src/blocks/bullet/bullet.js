@@ -1,0 +1,8 @@
+import './bullet.scss'
+import './bullet__bullet.scss'
+import './bullet__bullet_color_black.scss'
+import './bullet__bullet_color_green.scss'
+import './bullet__bullet_color_yellow.scss'
+import './bullet__bullet_color_blue.scss'
+import './bullet__bullet_margin-right_10px.scss'
+import './bullet__bullet_margin-right_5px.scss'

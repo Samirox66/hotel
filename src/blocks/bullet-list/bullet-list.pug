@@ -1,4 +1,4 @@
-mixin bullet-list(text)
-    .bullet-list 
-        .bullet-list__bullet 
-        p.bullet-list__text=text
+mixin bullet-list(bullets)
+    .bullet-list
+        each bullet in bullets
+            +bullet(bullet)

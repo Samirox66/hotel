@@ -24,13 +24,13 @@ block content
         +header(false)
         main.search-room-page__wrapper
             .search-room-page__conditions
-                +text('даты пребывания в отеле', 'h3', 'text__h3 text__h3_margin-bottom_5px')
+                +text('даты пребывания в отеле', 'h3', 'text_h3 text_margin-bottom_5px')
                 +filter-date-dropdown('filter-date-dropdown-search-room', '')
-                +text('гости', 'h3', 'text__h3 text__h3_margin-bottom_5px text__h3_margin-top_30px')
+                +text('гости', 'h3', 'text_h3 text_margin-bottom_5px text_margin-top_30px')
                 +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '1'}], 'dropdown_width_266px', 'guest-search-room')
                 +range-slider('диапазон цены', 'range-slider_margin-top_30px')
-                +text('Стоимость за сутки пребывания в номере', 'p', 'text__p text__p_margin-top_13px text_color-opacity_50per text_font-size_12px text_line-height_14px')
-                +text('правила дома', 'h3', 'text__h3 text__h3_margin-top_30px text__h3_margin-bottom_16px')
+                +text('Стоимость за сутки пребывания в номере', 'p', 'text_p text_margin-top_13px text_color-opacity_50per text_font-size_12px text_line-height_14px')
+                +text('правила дома', 'h3', 'text__h3 text_margin-top_30px text_margin-bottom_16px')
                 +chose-button({
                     'id':'isSmokingAllowed',
                     'text':'Можно курить',
@@ -54,7 +54,7 @@ block content
                     'labelClasses': 'chose-button__label_width_192px',
                     'buttonClasses': 'chose-button_margin-top_10px'
                     }, 'checkbox')
-                +text('доступность', 'h3', 'text__h3 text__h3_margin-top_30px text__h3_margin-bottom_16px')
+                +text('доступность', 'h3', 'text_h3 text_margin-top_30px text_margin-bottom_16px')
                 +rich-checkbox-button([{
                         'id': 'wide-hall',
                         'text': 'Широкий коридор',
@@ -66,7 +66,7 @@ block content
                         'name': 'wide-hall',
                         'description': 'На 1 этаже вас встретит специалист  и проводит до номера.',
                         'fakeClasses': 'chose-button__fake-checkbox'}])
-                +text('доступность', 'h3', 'text__h3 text__h3_margin-top_30px text__h3_margin-bottom_5px')
+                +text('доступность', 'h3', 'text_h3 text_margin-top_30px text_margin-bottom_5px')
                 +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'dropdown_width_266px', 'furniture')
                 +checkbox-list(
                         [{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'chose-button__fake-checkbox'},
@@ -79,7 +79,7 @@ block content
                         {'id': 'shampoo2', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'chose-button__fake-checkbox'}],
                         'дополнительные удобства')
             .search-room-page__rooms.search-room-page__rooms_margin-left_60px
-                +text('Номера, которые мы для вас подобрали', 'h1', 'text__h1')
+                +text('Номера, которые мы для вас подобрали', 'h1', 'text_h1')
                 .search-room-page__rooms-row.search-room-page__rooms-row_margin-top_21px
                     +choose-room({'img':'choose-room__img888-lux', 'rate': 5, 'number': '888', 'isLux': true}, 145, '9 990₽ ')
                     +choose-room({'img':'choose-room__img840', 'rate': 4, 'number': '840', 'roomClasses': 'choose-room_margin-left_12px'}, 65, '9 900₽ ')
