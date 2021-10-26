@@ -299,6 +299,12 @@
 
 .text_width_341px{width:341px}
 
+.text_width_271px{width:271px}
+
+.text_align-self_center{align-self:center}
+
+.text_margin-left_14px{margin-left:14px}
+
 .pagination{display:flex;flex-direction:column}
 
 .pagination__button{width:40px;height:40px;background:white;border-radius:50%;border:none;cursor:pointer}
@@ -320,11 +326,11 @@
 
 .rich-checkbox-button__description{margin-left:30px;width:203px;font-size:12px;line-height:14px;color:rgba(31,32,65,0.5)}
 
-.bullet-list{display:flex;align-items:center;margin-bottom:10px}
+.bullet-list{display:flex;flex-direction:column}
 
-.bullet-list__bullet{width:10.43px;height:10px;background:rgba(31,32,65,0.25);border-radius:50%;margin-right:10.43px}
+.bullet-list_margin-top_29px{margin-top:29px}
 
-.bullet-list__text{font-size:14px;line-height:24px;color:rgba(31,32,65,0.75);margin-top:0;margin-bottom:0}
+.bullet-list_margin-left_30px{margin-left:30px}
 
 .advantage{display:flex;align-items:center}
 
@@ -344,20 +350,21 @@
 
 .review__person{display:flex;align-items:center}
 
-.review__avatar{background-size:cover;width:48px;height:48px}
+.review__avatar{width:48px;height:48px}
 
+.review__person-about{margin-left:12px}
 
 .review__person-name{margin-bottom:0px;margin-top:0px;font-weight:bold;font-size:14px;line-height:24px}
 
 .review__person-info{margin-bottom:0px;margin-top:0px;font-size:14px;line-height:24px}
 
-.review__review{display:flex;align-items:center}
+.review__review{display:flex;align-items:flex-start;margin-top:9px}
 
-.review__text{font-size:14px;line-height:24px;color:rgba(31,32,65,0.75)}
+.review__avatar-murad{background:url(assets/img/avatar-murad.png) no-repeat center}
 
-.review__avatar-murad{background-image:url(assets/img/avatar-murad.png)}
+.review__avatar-patricia{background:url(assets/img/avatar-patricia.jpg) no-repeat center}
 
-.review__avatar-patricia{background-image:url(assets/img/avatar-patricia.png)}
+.review_margin-top_22px{margin-top:22px}
 
 .date-dropdown{width:320px;display:flex}
 
@@ -586,6 +593,42 @@
 .room-details-page__column_margin-left_70px{margin-left:70px}
 
 .room-details-page__row_margin-top_30px{margin-top:30px}
+
+.room-details-page__bullet-list{margin-left:30px}
+
+.room-details-page__row_margin-bottom_20px{margin-bottom:20px}
+
+.room-details-page__line{border:1px solid rgba(31,32,65,0.25)}
+
+.circle-diagram{display:flex;position:relative;width:120px;height:120px}
+
+.circle-diagram__left-half-circle{width:59px;height:121px;border:4px transparent;border-top-left-radius:125px;border-bottom-left-radius:125px;border-right:none;background:linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);position:relative}.circle-diagram__left-half-circle::after{position:absolute;content:'';left:4px;top:4px;width:55px;height:113px;background:white;border:4px transparent;border-top-left-radius:125px;border-bottom-left-radius:125px;border-right:none}
+
+.circle-diagram__right-half-circle{margin-left:2px}
+
+.circle-diagram__up-quarter{width:59px;height:59px;border:4px transparent;border-bottom:none;border-left:none;border-top-right-radius:125px;background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);position:relative}.circle-diagram__up-quarter::after{position:absolute;content:'';height:55px;width:59px;top:4px;right:4px;border-top:none;border-left:none;border-top-right-radius:125px;background:white}
+
+.circle-diagram__down-quarter{width:59px;height:60px;border:4px transparent;border-top:none;border-left:none;border-bottom-right-radius:125px;margin-top:2px;background:linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);position:relative}.circle-diagram__down-quarter::after{position:absolute;content:'';height:56px;width:59px;right:4px;border-top:none;border-left:none;border-bottom-right-radius:125px;background:white}
+
+.circle-diagram__text{position:absolute;display:flex;flex-direction:column;align-items:center;width:64px;top:30%;left:25%}
+
+.bullet{display:flex;align-items:center}
+
+.bullet_margin-bottom_10px{margin-bottom:10px}
+
+.bullet__bullet{width:10.43px;height:10px;background:rgba(31,32,65,0.25);border-radius:50%}
+
+.bullet__bullet_color_black{background:linear-gradient(180deg, #919191 0%, #3D4975 100%)}
+
+.bullet__bullet_color_green{background:linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)}
+
+.bullet__bullet_color_yellow{background:linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%)}
+
+.bullet__bullet_color_blue{background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)}
+
+.bullet__bullet_margin-right_10px{margin-right:10.43px}
+
+.bullet__bullet_margin-right_5px{margin-right:5px}
 
 .header{display:flex;align-items:center;justify-content:space-between;box-shadow:0px 10px 20px 0px #1F20410D}
 
