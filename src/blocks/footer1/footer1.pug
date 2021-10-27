@@ -1,6 +1,7 @@
-mixin footerNav(head, items)
-    ul.footer1__nav
-        li.footer1__nav-head= head
+mixin footerNav(head, items, ulClasses)
+    ul.footer1__nav(class="" + ulClasses)
+        li.footer1__nav-head
+            +text(head, 'h3', 'text_h3')
         each item in items 
             li.footer1__nav-item= item
 
@@ -10,13 +11,15 @@ mixin footerNav(head, items)
         .footer1__top-wrapper
             .footer1__logo
                 +logo
-                p.footer1__description Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-            +footerNav('навигация', ['О нас', 'Новости', 'Служба поддержки', 'Услуги'])
-            +footerNav('о нас', ['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'])
-            +footerNav('Служба поддержки', ['Соглашения', 'Сообщества', 'Связь с нами'])
-            ul.footer1__nav.footer1__nav_width_18
-                li.footer1__nav-head Подписка
-                li.footer1__nav-subscribe Получайте специальные предложения и новости сервиса
+                +text('Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»', 'p', 'text_p text_margin-top_20px text_width_260px')
+            +footerNav('навигация', ['О нас', 'Новости', 'Служба поддержки', 'Услуги'], 'footer1__nav_margin-right_57px footer1__nav_width_143px')
+            +footerNav('о нас', ['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], "footer1__nav_margin-right_92px")
+            +footerNav('Служба поддержки', ['Соглашения', 'Сообщества', 'Связь с нами'], "footer1__nav_margin-right_51px")
+            ul.footer1__nav
+                li.footer1__nav-head
+                    +text('Подписка', 'h3', 'text_h3')
+                li.footer1__nav-subscribe
+                    +text('Получайте специальные предложения и новости сервиса', 'p', 'text_p')
                 li.footer1__input
                     +input('email', 'input_width_266px input_height_44px', 'Email', true)
     .footer1__bottom

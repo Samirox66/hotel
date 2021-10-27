@@ -1,4 +1,5 @@
-mixin logo(classes)   
+mixin logo(classes, logoClasses, uikit)   
     .logo(class="" + classes)
-        img.logo__img(src="assets/img/logo__img.svg", alt="Toxin")
-        img.logo__text(src="assets/img/logo__text.svg", alt="Toxin")
+        img.logo__img(class='' + logoClasses src='assets/img/logo__img.svg', alt='Toxin')
+        if(uikit == null)
+            img.logo__text(src='assets/img/logo__text.svg', alt='Toxin')

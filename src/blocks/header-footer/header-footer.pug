@@ -1,0 +1,9 @@
+.header-footer 
+    img.header-footer__logo(src="assets/img/logo.svg" alt="toxin")
+    +header(true, 'menu__link_bold', 'Юлий Цезарь')
+    .header-footer__space
+    +header(false, 'menu__link_bold')
+    .header-footer__space
+    include ../../blocks/footer1/footer1.pug
+    .header-footer__space
+    include ../../blocks/footer2/footer2.pug

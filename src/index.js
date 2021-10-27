@@ -41,6 +41,7 @@ import  './blocks/filter-date-dropdown/filter-date-dropdown.js'
 import './blocks/room-details-page/room-details-page.js'
 import './blocks/circle-diagram/circle-diagram.js'
 import './blocks/bullet/bullet.js'
+import './blocks/header-footer/header-footer.js'
 
 import './blocks/header/header.scss'
 

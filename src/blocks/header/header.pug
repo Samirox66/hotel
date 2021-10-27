@@ -1,24 +1,24 @@
-mixin header(hasUser, userName)
+mixin header(hasUser, aboutUsLinkClasses, userName)
     header.header
         +logo('logo__body')
         .menu
             ul.menu__list 
                 li.menu__item
-                    a.menu__link.menu__link_bold О нас
+                    a.menu__link(class="" + aboutUsLInkClasses href="gg.com") О нас
                 li.menu__item 
-                    a.menu__link Услуги
+                    a.menu__link(href="gg.com") Услуги
                     include ../expand-more/expand-more.pug
                 li.menu__item 
-                    a.menu__link Вакансии
+                    a.menu__link(href="gg.com") Вакансии
                 li.menu__item 
-                    a.menu__link Новости
+                    a.menu__link(href="gg.com") Новости
                 li.menu__item 
-                    a.menu__link Соглашения
+                    a.menu__link(href="gg.com") Соглашения
                     include ../expand-more/expand-more.pug
                 if (hasUser)
                     li.menu__item.menu__line
                     li.menu__item.menu__user
-                        a.menu__link= userName
+                        a.menu__link(href="gg.com")= userName
                 else
                     li.menu__item
                         +button({
