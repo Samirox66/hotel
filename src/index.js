@@ -42,6 +42,7 @@ import './blocks/room-details-page/room-details-page.js'
 import './blocks/circle-diagram/circle-diagram.js'
 import './blocks/bullet/bullet.js'
 import './blocks/header-footer/header-footer.js'
+import './blocks/contacts/contacts.js'
 
 import './blocks/header/header.scss'
 
@@ -51,5 +52,3 @@ import './blocks/expand-more/expand-more__margin-left.scss'
 import './blocks/footer2/footer2.scss'
 import './blocks/footer2/footer2__rights.scss'
 
-import './blocks/contacts/contacts.scss'
-import './blocks/contacts/contacts__margin.scss'

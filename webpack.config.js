@@ -33,6 +33,10 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, './src/blocks/ui-kit/img'),
                     to: path.resolve(__dirname, './dist/assets/img')
+                },
+                {
+                    from: path.resolve(__dirname, './README.md'),
+                    to: path.resolve(__dirname, './dist')
                 }
             ]
         }),
