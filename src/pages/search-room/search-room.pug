@@ -15,6 +15,7 @@ include ../../blocks/checkbox-list/checkbox-list.pug
 include ../../blocks/choose-room/choose-room.pug
 include ../../blocks/rate-button/rate-button.pug
 include ../../blocks/pagination/pagination.pug
+include ../../blocks/menu/menu.pug
 
 block variables 
     - var titlePage = 'Search room'
@@ -27,7 +28,7 @@ block content
                 +text('даты пребывания в отеле', 'h3', 'text_h3 text_margin-bottom_5px')
                 +filter-date-dropdown('filter-date-dropdown-search-room', '')
                 +text('гости', 'h3', 'text_h3 text_margin-bottom_5px text_margin-top_30px')
-                +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '1'}], 'dropdown_width_266px', 'guest-search-room')
+                +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '1'}], '', 'guest-search-room')
                 +range-slider('диапазон цены', 'range-slider_margin-top_30px')
                 +text('Стоимость за сутки пребывания в номере', 'p', 'text_p text_margin-top_13px text_color-opacity_50per text_font-size_12px text_line-height_14px')
                 +text('правила дома', 'h3', 'text__h3 text_margin-top_30px text_margin-bottom_16px')
@@ -67,7 +68,7 @@ block content
                         'description': 'На 1 этаже вас встретит специалист  и проводит до номера.',
                         'fakeClasses': 'chose-button__fake-checkbox'}])
                 +text('доступность', 'h3', 'text_h3 text_margin-top_30px text_margin-bottom_5px')
-                +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'dropdown_width_266px', 'furniture')
+                +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], '', 'furniture')
                 +checkbox-list(
                         [{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'chose-button__fake-checkbox'},
                         {'id': 'write-table', 'text': 'Письменный стол', 'name': 'write-table', 'fakeClasses': 'chose-button__fake-checkbox', 'checked': true},

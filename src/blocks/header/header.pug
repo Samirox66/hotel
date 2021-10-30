@@ -1,39 +1,8 @@
 mixin header(hasUser, aboutUsLinkClasses, userName)
     header.header
-        +logo('logo__body')
-        .menu
-            ul.menu__list 
-                li.menu__item
-                    a.menu__link(class="" + aboutUsLInkClasses href="gg.com") О нас
-                li.menu__item 
-                    a.menu__link(href="gg.com") Услуги
-                    include ../expand-more/expand-more.pug
-                li.menu__item 
-                    a.menu__link(href="gg.com") Вакансии
-                li.menu__item 
-                    a.menu__link(href="gg.com") Новости
-                li.menu__item 
-                    a.menu__link(href="gg.com") Соглашения
-                    include ../expand-more/expand-more.pug
-                if (hasUser)
-                    li.menu__item.menu__line
-                    li.menu__item.menu__user
-                        a.menu__link(href="gg.com")= userName
-                else
-                    li.menu__item
-                        +button({
-                            'text': 'Войти',
-                            'buttonClasses': 'button_background-color_white button_border_blue button_width_87px button_height_34px',
-                            'textClasses': 'button_color_blue',
-                            'type': 'submit',
-                            'action': 'sign-in.html'})
-                    li.menu__item
-                        +button({
-                            'text': 'Зарегистрироваться',
-                            'buttonClasses': 'button_color_white button_background-color_blue button_border_none button_width_196px button_height_34px',
-                            'textClasses': 'button_color_white',
-                            'type': 'submit',
-                            'action': 'registration.html'})
+        .header__wrapper
+            +logo('logo__body')
+            +menu((hasUser, aboutUsLinkClasses, userName))
 
 
 

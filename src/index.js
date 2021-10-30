@@ -43,8 +43,7 @@ import './blocks/circle-diagram/circle-diagram.js'
 import './blocks/bullet/bullet.js'
 import './blocks/header-footer/header-footer.js'
 import './blocks/contacts/contacts.js'
-
-import './blocks/header/header.scss'
+import './blocks/header/header.js'
 
 import './blocks/expand-more/expand-more.scss'
 import './blocks/expand-more/expand-more__margin-left.scss'
