@@ -51,3 +51,6 @@ import './blocks/expand-more/expand-more__margin-left.scss'
 import './blocks/footer2/footer2.scss'
 import './blocks/footer2/footer2__rights.scss'
 
+import './styles/font-size.scss'
+import './styles/line-height.scss'
+

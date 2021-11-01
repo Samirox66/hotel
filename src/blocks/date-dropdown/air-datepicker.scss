@@ -20,16 +20,16 @@
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 0.857rem;
+    line-height: 0.625rem;
 }
 
 .air-datepicker-cell {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 0.857rem;
+    line-height: 0.625rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -50,8 +50,8 @@
         color: rgba(31, 32, 65, 0.5);
         font-style: normal;
         font-weight: normal;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 0.857rem;
+    line-height: 0.625rem;
     }
     &.-range-from-::after {
         content: "";
@@ -94,8 +94,8 @@
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 23px;
+    font-size: 1.357rem;
+    line-height: 0.958rem;
     text-align: center;
     color: #1F2041;
 }
@@ -104,8 +104,8 @@
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 0.857rem;
+    line-height: 0.625rem;
     text-transform: uppercase;
     color: #BC9CFF;
 }
