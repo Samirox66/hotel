@@ -21,7 +21,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 0.857rem;
-    line-height: 0.625rem;
+    line-height: 1.071rem;
 }
 
 .air-datepicker-cell {
@@ -29,7 +29,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 0.857rem;
-    line-height: 0.625rem;
+    line-height: 1.071rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -51,7 +51,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 0.857rem;
-    line-height: 0.625rem;
+        line-height: 1.071rem;
     }
     &.-range-from-::after {
         content: "";
@@ -105,7 +105,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 0.857rem;
-    line-height: 0.625rem;
+    line-height: 1.071rem;
     text-transform: uppercase;
     color: #BC9CFF;
 }
