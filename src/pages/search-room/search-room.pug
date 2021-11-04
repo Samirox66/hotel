@@ -27,11 +27,11 @@ block content
             .search-room-page__conditions
                 +text('даты пребывания в отеле', 'h3', 'text_h3 text_margin-bottom_5px')
                 +filter-date-dropdown('filter-date-dropdown-search-room', '')
-                +text('гости', 'h3', 'text_h3 text_margin-bottom_5px text_margin-top_30px')
+                +text('гости', 'h3', 'text_h3 text_margin-bottom_5px text_margin-top_20px')
                 +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '1'}], '', 'guest-search-room')
                 +range-slider('диапазон цены', 'range-slider_margin-top_30px')
                 +text('Стоимость за сутки пребывания в номере', 'p', 'text_p text_margin-top_13px text_color-opacity_50per text_font-size_12px text_line-height_14px')
-                +text('правила дома', 'h3', 'text__h3 text_margin-top_30px text_margin-bottom_16px')
+                +text('правила дома', 'h3', 'text_h3 text_margin-top_30px text_margin-bottom_16px')
                 +chose-button({
                     'id':'isSmokingAllowed',
                     'text':'Можно курить',
