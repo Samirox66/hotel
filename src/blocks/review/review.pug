@@ -6,5 +6,5 @@ mixin review(review)
                 p.review__person-name=review.personName 
                 p.review__person-info=review.personInfo
         .review__review 
-            +like-button('material-icons__favorite', 'like-button__button like-button__button_active', 'like-button__number like-button__number_active', 12, 'favorite')
+            +like-button('material-icons__favorite', 'like-button__button like-button__button_active', 'like-button__number like-button__number_active', review.likes, 'favorite')
             +text(review.text, 'p', review.textClasses)
