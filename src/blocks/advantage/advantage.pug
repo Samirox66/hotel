@@ -1,8 +1,8 @@
-mixin advantage(iconText, iconClasses, title, description, textClasses, isLast)
+mixin advantage(advantage)
     .advantage 
-        .material-icons(class='' + iconClasses)=iconText 
-        .advantage__text(class="" + textClasses) 
-            p.advantage__title=title
-            p.advantage__description=description
-    if (!isLast)
+        .material-icons(class='' + advantage.iconClasses)=advantage.iconText 
+        .advantage__text(class="" + advantage.titleClasses) 
+            p.advantage__title=advantage.title
+            p.advantage__description=advantage.description
+    if (!advantage.isLast)
         .advantage__line

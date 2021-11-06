@@ -32,9 +32,27 @@ block content
                 .room-details-page__row 
                     .room-details-page__advantages
                         +text('Сведения о номере', 'h2', 'text_h2 text_margin-bottom_20px')
-                        +advantage('insert_emoticon', 'material-icons__insert-emoticon', 'Комфорт', 'Шумопоглощающие стены', 'advantage__text_width_233px', false)
-                        +advantage('location_city', 'material-icons__location-city', 'Удобство', 'Окно в каждой из спален', 'advantage__text_width_222px', false)
-                        +advantage('whatshot', 'material-icons__whatshot', 'Уют', 'Номер оснащён камином', 'advantage__text_width_222px', true)
+                        +advantage({
+                            'iconText': 'insert_emoticon',
+                            'iconClasses': 'material-icons__insert-emoticon',
+                            'title': 'Комфорт',
+                            'description': 'Шумопоглощающие стены',
+                            'titleClasses': 'advantage__title_width_233px',
+                            'isLast': false})
+                        +advantage({
+                            'iconText': 'location_city',
+                            'iconClasses': 'material-icons__location-city',
+                            'title': 'Удобство',
+                            'description': 'Окно в каждой из спален',
+                            'titleClasses': 'advantage__title_width_222px',
+                            'isLast': false})
+                        +advantage({
+                            'iconText': 'whatshot',
+                            'iconClasses': 'material-icons__whatshot',
+                            'title': 'Уют',
+                            'description': 'Номер оснащён камином',
+                            'titleClasses': 'advantage__text_width_222px',
+                            'isLast': true})
                     .room-details-page__impression 
                         +text('Впечатления от номера', 'h2', 'text_h2 text_margin-bottom_20px')
                         .room-details-page__row
@@ -79,7 +97,7 @@ block content
                     'likes': 2})
                 .room-details-page__row.room-details-page__row_margin-top_30px
                     .room-details-page__column
-                        +text('Правила', 'h2', 'text_h2 text_margin-bottom_20px')
+                        +text('Правила', 'h2', 'text_h2 text_margin-bottom_20px text_margin-left_20px')
                         +bullet-list([{
                             'text': 'Нельзя с питомцами',
                             'textClasses': 'text_p',

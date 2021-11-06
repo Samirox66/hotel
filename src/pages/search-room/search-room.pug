@@ -61,12 +61,14 @@ block content
                         'text': 'Широкий коридор',
                         'name': 'wide-hall',
                         'description': 'Ширина коридоров в номере не менее 91 см.',
-                        'fakeClasses': 'chose-button__fake-checkbox'},
+                        'fakeClasses': 'chose-button__fake-checkbox',
+                        'labelClasses': 'chose-button__label_bold'},
                         {'id': 'invalid-helper',
                         'text': 'Помощник для инвалидов',
                         'name': 'wide-hall',
                         'description': 'На 1 этаже вас встретит специалист  и проводит до номера.',
-                        'fakeClasses': 'chose-button__fake-checkbox'}])
+                        'fakeClasses': 'chose-button__fake-checkbox',
+                        'labelClasses': 'chose-button__label_bold'}])
                 +text('доступность', 'h3', 'text_h3 text_margin-top_30px text_margin-bottom_5px')
                 +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], '', 'furniture')
                 +checkbox-list(
