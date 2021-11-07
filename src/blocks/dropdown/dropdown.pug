@@ -10,13 +10,13 @@ mixin dropdown(hasSubmit, defaultText, items, width, iqdrpodownId, menuOpen)
                 if (hasSubmit)
                     .iqdropdown-menu-option
                         .dropdown__buttons 
-                            .button__clear
+                            .dropdown__clear-button
                                 +button({
                                     'text': 'очистить',
                                     'buttonClasses': 'button_height_15px button_width_72px button_border_none button_background-color_white',
                                     'textClasses': 'button_color_blue',
                                     'type': 'button'})
-                            .button__submit
+                            .dropdown__submit-button
                                 +button({
                                     'text': 'применить',
                                     'buttonClasses': 'button_height_15px button_width_84px button_border_none button_background-color_white',

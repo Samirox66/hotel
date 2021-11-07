@@ -33,13 +33,14 @@
                     'id':'isSmokingAllowed',
                     'text':'Можно курить',
                     'name':'isSmokingAllowed',
-                    'fakeClasses':'chose-button__fake-checkbox'
+                    'fakeClasses':'chose-button__fake-checkbox',
                     }, 'checkbox')
                 +chose-button({
                     'id':'arePetAllowed',
                     'text':'Можно с питомцами',
                     'name':'arePetAllowed',
                     'fakeClasses':'chose-button__fake-checkbox',
+                    'buttonClasses': 'chose-button_margin-top_10px',
                     'checked': true
                     }, 'checkbox')   
                 +chose-button({
@@ -48,26 +49,26 @@
                     'name':'areGuestsAllowed',
                     'checked': true,
                     'fakeClasses': 'chose-button__fake-checkbox',
-                    'labelClasses': 'chose-button__label_width_192px'
+                    'labelClasses': 'chose-button__label_width_192px',
+                    'buttonClasses': 'chose-button_margin-top_10px'
                     }, 'checkbox')
                 .form-elements__block.form-elements_margin-top_40px
                     +text('radio buttons', 'h3', 'text_h3 text_margin-bottom_16px')
                 .chose-button__container
                     +chose-button({
-                        'id':'man',
+                        'id':'men',
                         'text':'Мужчина',
-                        'name':'gender',
+                        'name': 'gender',
                         'value':'man',
                         'checked': true,
-                        'fakeClasses':'chose-button__fake-radio'
-                        }, 'radio')
+                        'fakeClasses': 'chose-button__fake-radio'}, 'radio')
                     +chose-button({
-                        'id':'woman',
+                        'id':'women',
                         'text':'Женщина',
-                        'name':'gender',
+                        'name': 'gender',
                         'value':'woman',
-                        'fakeClasses':'chose-button__fake-radio'
-                        }, 'radio')
+                        'fakeClasses': 'chose-button__fake-radio',
+                        'buttonClasses': 'chose-button_margin-left_20px'}, 'radio')
                 .form-elements__block.form-elements_margin-top_40px
                     +text('toggle', 'h3', 'text_h3 text_margin-bottom_16px')
                 +toggle(true, 'Получать спецпредложения')
@@ -86,46 +87,51 @@
                 +range-slider('Range Slider')
                 .form-elements__block.form-elements_margin-top_40px
                     +text('buttons', 'h3', 'text_h3 text_margin-bottom_16px')
-                .form-elements__flex
-                    +button({
-                        'text': 'Click me',
-                        'buttonClasses': 'button_height_44px button_width_99px button_background-color_blue button_border_none',
-                        'textClasses': 'button_color_white',
-                        'type': 'button'})
-                    +button({
-                        'text': 'Click me',
-                        'buttonClasses': 'button_height_44px button_width_99px button_background-color_blue button_border_none button_opacity_50per',
-                        'textClasses': 'button_color_white',
-                        'type': 'button'})
-                .form-elements__flex.form-elements_margin-top_30px
+                .form-elements__buttons
+                    .form-elements__button.form-elements__button_width_99px
+                        +button({
+                            'text': 'Click me',
+                            'buttonClasses': 'button_background-color_blue button_border_none',
+                            'textClasses': 'button_color_white',
+                            'type': 'button'})
+                    .form-elements__button.form-elements__button_width_99px
+                        +button({
+                            'text': 'Click me',
+                            'buttonClasses': 'button_background-color_blue button_border_none button_opacity_50per',
+                            'textClasses': 'button_color_white',
+                            'type': 'button'})
+                .form-elements__buttons.form-elements__buttons_margin-top_30px
+                    .form-elements__button.form-elements__button_width_99px
+                        +button({
+                            'text': 'click me',
+                            'buttonClasses': 'button_background-color_white button_border_blue',
+                            'textClasses': 'button_color_blue',
+                            'type': 'button'})
+                    .form-elements__button.form-elements__button_width_99px
+                        +button({
+                            'text': 'click me',
+                            'buttonClasses': 'button_background-color_white button_border_blue button_border-opacity_50per',
+                            'textClasses': 'button_color_blue',
+                            'type': 'button'})
+                .form-elements__buttons.form-elements__buttons_margin-top_30px
                     +button({
                         'text': 'click me',
-                        'buttonClasses': 'button_height_44px button_width_99px button_background-color_white button_border_blue',
+                        'buttonClasses': 'button_border_none button_background-color_white',
                         'textClasses': 'button_color_blue',
                         'type': 'button'})
                     +button({
                         'text': 'click me',
-                        'buttonClasses': 'button_height_44px button_width_99px button_background-color_white button_border_blue button_border-opacity_50per',
-                        'textClasses': 'button_color_blue',
-                        'type': 'button'})
-                .form-elements__flex.form-elements_margin-top_30px
-                    +button({
-                        'text': 'click me',
-                        'buttonClasses': 'button_height_15px button_width_61px button_border_none button_background-color_white',
-                        'textClasses': 'button_color_blue',
-                        'type': 'button'})
-                    +button({
-                        'text': 'click me',
-                        'buttonClasses': 'button_height_15px button_width_61px button_border_none button_background-color_white',
+                        'buttonClasses': 'button_border_none button_background-color_white',
                         'textClasses': 'button_color_dark',
                         'type': 'button'})
                 .form-elements_margin-top_30px
-                +button({
-                    'text': 'перейти к оплате',
-                    'buttonClasses': 'button_height_44px button_width_320px button_border_none button_background-color_blue',
-                    'textClasses': 'button_color_white', 
-                    'type': 'button',
-                    'hasArrow': true})
+                .form-elements__pay-button
+                    +button({
+                        'text': 'перейти к оплате',
+                        'buttonClasses': 'button_border_none button_background-color_blue',
+                        'textClasses': 'button_color_white', 
+                        'type': 'button',
+                        'hasArrow': true})
                 .form-elements__block.form-elements_margin-top_40px
                     +text('pagination', 'h3', 'text_h3 text_margin-bottom_16px')
                 +pagination(1)
@@ -141,11 +147,13 @@
                     p.form-elements__title-description expanded
                 +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'dropdown_width_266px', 'furniture', 'menu-open')
             .form-elements__column.form-elements_margin-left_130px
-                +text('dropdown', 'h3', 'text_h3 text_margin-bottom_5px')
-                +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'guest2', 'menu-open')
+                .form-elements__dropdown
+                    +text('dropdown', 'h3', 'text_h3 text_margin-bottom_5px')
+                    +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'guest2', 'menu-open')
             .form-elements__column.form-elements_margin-left_130px
-                +text('dropdown', 'h3', 'text_h3 text_margin-bottom_5px')
-                +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '1'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'guest3', 'menu-open')
+                .form-elements__dropdown
+                    +text('dropdown', 'h3', 'text_h3 text_margin-bottom_5px')
+                    +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '1'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'guest3', 'menu-open')
         .form-elements__block.form-elements_margin-top_70px.form-elements_70px 
             .form-elements__column.form-elements_margin-left_130px
                 +checkbox-list(
@@ -176,12 +184,14 @@
                     'text': 'Широкий коридор',
                     'name': 'wide-hall',
                     'description': 'Ширина коридоров в номере не менее 91 см.',
-                    'fakeClasses': 'chose-button__fake-checkbox'},
+                    'fakeClasses': 'chose-button__fake-checkbox',
+                    'labelClasses': 'chose-button__label_bold'},
                     {'id': 'invalid-helper',
                     'text': 'Помощник для инвалидов',
                     'name': 'wide-hall',
                     'description': 'На 1 этаже вас встретит специалист  и проводит до номера.',
-                    'fakeClasses': 'chose-button__fake-checkbox'}])
+                    'fakeClasses': 'chose-button__fake-checkbox',
+                    'labelClasses': 'chose-button__label_bold'}])
             .form-elements__column.form-elements_margin-left_130px
                 +text('bullet list', 'h3', 'text_h3 text_margin-bottom_16px')
                 +bullet-list([{

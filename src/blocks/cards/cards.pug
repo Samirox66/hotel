@@ -12,6 +12,8 @@
         .cards__column.cards_margin-left_40px
             div(id='static-date')
             .cards_margin-top_40px
-            +choose-room({'img':'choose-room__img888-lux', 'rate': 5, 'isLux': true}, 145, '9 990₽')
+            .cards__choose-room
+                +choose-room({'img':'choose-room__img888-lux', 'rate': 5, 'isLux': true}, 145, '9 990₽')
             .cards_margin-top_40px 
-            +choose-room({'img':'choose-room__img840', 'rate': 4}, 65, '9 900₽')
+            .cards__choose-room
+                +choose-room({'img':'choose-room__img840', 'rate': 4}, 65, '9 900₽')

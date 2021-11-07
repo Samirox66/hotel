@@ -7,8 +7,20 @@ mixin sign-up
         .sign-up__row.sign-up__row_margin-top_10px
             +input('text', 'input_width_320px input_height_44px', 'Фамилия')
         .sign-up__row.sign-up__row_margin-top_10px.sign-up__row_height_25px.sign-up__row_justify-content_flex-start
-            +chose-button({'id':'men', 'text':'Мужчина' ,'name': 'gender', 'value':'man', 'checked': true, 'fakeClasses': 'chose-button__fake-radio'}, 'radio')
-            +chose-button({'id':'women', 'text':'Женщина', 'name': 'gender', 'value':'woman', 'fakeClasses': 'chose-button__fake-radio', 'buttonClasses': 'chose-button_margin-left_20px'}, 'radio')
+            +chose-button({
+                'id':'men',
+                'text':'Мужчина',
+                'name': 'gender',
+                'value':'man',
+                'checked': true,
+                'fakeClasses': 'chose-button__fake-radio'}, 'radio')
+            +chose-button({
+                'id':'women',
+                'text':'Женщина',
+                'name': 'gender',
+                'value':'woman',
+                'fakeClasses': 'chose-button__fake-radio',
+                'buttonClasses': 'chose-button_margin-left_20px'}, 'radio')
         .sign-up__row.sign-up__row_margin-top_20px
             .sign-up__column 
                 +text('дата рождения', 'h3', 'text_h3 text_margin-bottom_5px')
@@ -22,18 +34,20 @@ mixin sign-up
         .sign-up__row.sign-up__row_margin-top_10px 
             +toggle(false, 'Получать спецпредложения')
         .sign-up__row.sign-up__row_margin-top_20px
-            +button({
-                'text': 'перейти к оплате',
-                'buttonClasses': 'button_height_44px button_width_320px button_border_none button_background-color_blue',
-                'textClasses': 'button_color_white',
-                'type': 'submit',
-                'hasArrow': true})
+            .sign-up__pay-button
+                +button({
+                    'text': 'перейти к оплате',
+                    'buttonClasses': 'button_height_44px button_width_320px button_border_none button_background-color_blue',
+                    'textClasses': 'button_color_white',
+                    'type': 'submit',
+                    'hasArrow': true})
         .sign-up__row.sign-up__row_margin-top_30px
             +text('Уже есть аккаунт на Toxin', 'p', 'text_p')
-            +button({
-                'text': 'войти',
-                'buttonClasses': 'button_height_44px button_width_99px  button_border_blue button_background-color_white',
-                'textClasses': 'button_color_blue',
-                'type': 'submit',
-                'action': 'sign-in.html'})
+            .sign-up__sign-in-button
+                +button({
+                    'text': 'войти',
+                    'buttonClasses': 'button_height_44px button_width_99px  button_border_blue button_background-color_white',
+                    'textClasses': 'button_color_blue',
+                    'type': 'submit',
+                    'action': 'sign-in.html'})
         

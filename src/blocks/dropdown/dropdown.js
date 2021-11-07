@@ -3,6 +3,8 @@ import './dropdown_width_266px.scss'
 import './iqdropdown.scss'
 import './dropdown__buttons.scss'
 import './dropdown__buttons_justify-content_flex-end.scss'
+import './dropdown__clear-button.scss'
+import './dropdown__submit-button.scss'
 
 let createGuestDropdown = function(dataId, strings) {
     $('.iqdropdown[data-id=' + dataId + ']').iqDropdown({

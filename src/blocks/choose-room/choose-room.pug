@@ -1,6 +1,14 @@
-mixin choose-room(room, reviewNumber, price)
+mixin choose-room(room, reviewNumber, price, expand)
     .choose-room(class="" + room.roomClasses)
         .choose-room__img(class="" + room.img)
+            if (expand)
+                .choose-room__expand-left.material-icons.material-icons__expand-more expand_more
+                .choose-room__expand-right.material-icons.material-icons__expand-more expand_more
+            .choose-room__dots
+                .choose-room__dot.choose-room__dot_background_white
+                .choose-room__dot
+                .choose-room__dot 
+                .choose-room__dot
         .choose-room__row.choose-room__row_margin-top_20px
             p.choose-room__sign-number № 
                 span.choose-room__number=room.number
