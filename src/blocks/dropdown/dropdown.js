@@ -41,12 +41,13 @@ let createGuestDropdown = function(dataId, strings) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    createGuestDropdown('guest1', ['гостей', 'гость', 'гостя', 'Сколько готсей']),
-    createGuestDropdown('guest2', ['гостей', 'гость', 'гостя', 'Сколько готсей']),
-    createGuestDropdown('guest3', ['гостей', 'гость', 'гостя', 'Сколько готсей']),
-    createGuestDropdown('guest-search-room', ['гостей', 'гость', 'гостя', 'Сколько готсей']),
-    createGuestDropdown('guest-room-details', ['гостей', 'гость', 'гостя', 'Сколько готсей']),
-    createGuestDropdown('ui-kit-room-guest', ['гостей', 'гость', 'гостя', 'Сколько готсей']),
+    createGuestDropdown('guest1', ['гостей', 'гость', 'гостя', 'Сколько гостей']),
+    createGuestDropdown('guest2', ['гостей', 'гость', 'гостя', 'Сколько гостей']),
+    createGuestDropdown('guest3', ['гостей', 'гость', 'гостя', 'Сколько гостей']),
+    createGuestDropdown('guest-search-room', ['гостей', 'гость', 'гостя', 'Сколько гостей']),
+    createGuestDropdown('guest-room-details', ['гостей', 'гость', 'гостя', 'Сколько гостей']),
+    createGuestDropdown('ui-kit-room-guest', ['гостей', 'гость', 'гостя', 'Сколько гостей']),
+    createGuestDropdown('landing-page-guest', ['гостей', 'гость', 'гостя', 'Сколько гостей']),
     $('.iqdropdown[data-id=furniture]').iqDropdown({
         // max total items
         maxItems: 20,

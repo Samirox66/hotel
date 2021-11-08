@@ -10,8 +10,7 @@ mixin pagination(activeButton)
 
 mixin pagination-button(next, text, activeButton)
     if (next === true)
-        button.pagination__button.pagination__next-button 
-            .material-icons.material-icons__arrow-forward arrow_forward
+        button.pagination__button.pagination__next-button.material-icons.material-icons__arrow-forward arrow_forward 
     else    
         if (text === activeButton)
             button.pagination__button.pagination__button_active(type='button')=text

@@ -24,14 +24,14 @@ if (slider != null) {
 if (slider != null) {
     slider.noUiSlider.on('update', function(){
         values = slider.noUiSlider.get()
-        values[0] = parseInt(values[0])
-        values[1] = parseInt(values[1])
-        if (values[0] / 1000 != 0) {
-            values[0] = values[0] / 1000 + ' ' + values[0] % 1000;
+        values[0] = String(Math.floor(parseInt(values[0])))
+        values[1] = String(Math.floor(parseInt(values[1])))
+        if (values[0].length > 3) {
+            values[0] = values[0].slice(0, -3) + ' ' + values[0].slice(-3)
         }
-        if (values[1] / 1000 != 0) {
-            values[1] = values[1] / 1000 + ' ' + values[1] % 1000;
+        if (values[1].length > 3) {
+            values[1] = values[1].slice(0, -3) + ' ' + values[1].slice(-3)
         }
-        $('.range-slider__range').text(parseInt(values[0]) + '₽' + ' - ' + parseInt(values[1]) + '₽')
+        $('.range-slider__range').text(values[0] + '₽' + ' - ' + values[1] + '₽')
     })
 }
