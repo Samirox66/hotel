@@ -1,12 +1,12 @@
 mixin sign-up 
-    .sign-up
+    section.sign-up
         .sign-up__row.sign-up__row_margin-top_40px 
             +text('Регистрация аккаунта', 'h1', 'text_h1')
         .sign-up__row.sign-up__row_margin-top_20px
             +input('text', 'input_width_320px input_height_44px', 'Имя')
         .sign-up__row.sign-up__row_margin-top_10px
             +input('text', 'input_width_320px input_height_44px', 'Фамилия')
-        .sign-up__row.sign-up__row_margin-top_10px.sign-up__row_height_25px.sign-up__row_justify-content_flex-start
+        section.sign-up__row.sign-up__row_margin-top_10px.sign-up__row_height_25px.sign-up__row_justify-content_flex-start
             +chose-button({
                 'id':'men',
                 'text':'Мужчина',
@@ -21,11 +21,11 @@ mixin sign-up
                 'value':'woman',
                 'fakeClasses': 'chose-button__fake-radio',
                 'buttonClasses': 'chose-button_margin-left_20px'}, 'radio')
-        .sign-up__row.sign-up__row_margin-top_20px
+        section.sign-up__row.sign-up__row_margin-top_20px
             .sign-up__column 
                 +text('дата рождения', 'h3', 'text_h3 text_margin-bottom_5px')
                 +input('text', 'input_width_320px input_height_44px', 'ДД.ММ.ГГГГ')
-        .sign-up__row.sign-up__row_margin-top_20px
+        section.sign-up__row.sign-up__row_margin-top_20px
             .sign-up__column
                 +text('данные для входа в сервис', 'h3', 'text_h3 text_margin-bottom_5px')
                 +input('email', 'input_width_320px input_height_44px', 'Email')
@@ -41,7 +41,7 @@ mixin sign-up
                     'textClasses': 'button_color_white',
                     'type': 'submit',
                     'hasArrow': true})
-        .sign-up__row.sign-up__row_margin-top_30px
+        section.sign-up__row.sign-up__row_margin-top_30px
             +text('Уже есть аккаунт на Toxin', 'p', 'text_p')
             .sign-up__sign-in-button
                 +button({

@@ -1,14 +1,14 @@
 mixin find-room(findRoomClasses, dateDropdownId, dropdownId)
-    .find-room(class="" + findRoomClasses)
+    article.find-room(class="" + findRoomClasses)
         .find-room__row.find-room__row_margin-top_40px
             +text('Найдём номера под ваши пожелания', 'h1', 'text_h1')
-        .find-room__row.find-room__row_margin-top_21px
+        section.find-room__row.find-room__row_margin-top_21px
             .find-room__column
                 .find-room__dates-titles
                     +text('прибытие', 'h3', 'text_h3 text_margin-bottom_5px text_width_150px')
                     +text('выезд', 'h3', 'text_h3 text_margin-bottom_5px text_width_150px text_margin-left_20px')
                 +date-dropdown(dateDropdownId, 'ДД.ММ.ГГГГ')
-        .find-room__row.find-room__row_margin-top_21px 
+        section.find-room__row.find-room__row_margin-top_21px 
             .find-room__column
                 +text('гости', 'h3', 'text_h3 text_margin-bottom_5px')
                 +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', dropdownId)

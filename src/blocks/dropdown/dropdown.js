@@ -91,11 +91,12 @@ document.addEventListener("DOMContentLoaded", function() {
     $('.iqdropdown.iqdropdown__checkbox-list').find('.iqdropdown-item-controls').addClass('checkbox-list__controls');
 })
 
-$('.iqdropdown .button__submit .button__button').on('click', function() {
+$('.iqdropdown .dropdown__submit-button .button__button').on('click', function() {
     $(this).parents('.iqdropdown').removeClass('menu-open')
+    console.log(4)
 })
 
-$('.iqdropdown .button__clear .button__button').on('click', function() {
+$('.iqdropdown .dropdown__clear-button .button__button').on('click', function() {
     let controlId = ['adults', 'kids', 'babies']
     let dataId = $(this).parents('.iqdropdown').attr('data-id')
     let itemCount = ($(this).parents('.iqdropdown-menu').find('.counter').text()).slice(0, -1).split('')

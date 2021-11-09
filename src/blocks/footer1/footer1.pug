@@ -1,16 +1,17 @@
 mixin footerNav(head, items, ulClasses, headClasses)
-    ul.footer1__nav(class="" + ulClasses)
-        li.footer1__nav-head
-            +text(head, 'h3', 'text_h3 ' + headClasses)
-        each item in items 
-            li.footer1__nav-item
-                +text(item.text, 'p', 'text_p text_line-height_17px text_color-opacity_50per ' + item.classes)
+    nav.footer1__nav(class="" + ulClasses)
+        ul.footer1__ul-nav
+            li.footer1__nav-head
+                +text(head, 'h3', 'text_h3 ' + headClasses)
+            each item in items 
+                li.footer1__nav-item
+                    +text(item.text, 'p', 'text_p text_line-height_17px text_color-opacity_50per ' + item.classes)
 
 
 .footer1
-    .footer1__top
+    section.footer1__top
         .footer1__top-wrapper
-            .footer1__logo
+            section.footer1__logo
                 +logo
                 +text('Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»', 'p', 'text_p text_margin-top_20px')
             +footerNav('навигация', [
@@ -30,13 +31,14 @@ mixin footerNav(head, items, ulClasses, headClasses)
                 {'text': 'Сообщества'},
                 {'text': 'Связь с нами'}],
                 'footer1__nav_margin-right_51px footer1__nav_width_149px', 'text_width_149px')
-            ul.footer1__nav.footer1__nav_width_260px
-                li.footer1__nav-head
-                    +text('Подписка', 'h3', 'text_h3')
-                li.footer1__nav-subscribe
-                    +text('Получайте специальные предложения и новости сервиса', 'p', 'text_p')
-                li.footer1__input
-                    +input('email', 'input_height_44px', 'Email', true)
-    .footer1__bottom
+            nav.footer1__nav.footer1__nav_width_260px
+                ul.footer1__ul-nav
+                    li.footer1__nav-head
+                        +text('Подписка', 'h3', 'text_h3')
+                    li.footer1__nav-subscribe
+                        +text('Получайте специальные предложения и новости сервиса', 'p', 'text_p')
+                    li.footer1__input
+                        +input('email', 'input_height_44px', 'Email', true)
+    section.footer1__bottom
         .footer1__rights Copyright © 2018 Toxin отель. Все права защищены.
         +contacts('contacts contacts__margin-right_140px')
