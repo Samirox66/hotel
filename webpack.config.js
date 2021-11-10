@@ -45,6 +45,22 @@ module.exports = {
             template: './pages/landing/landing.pug'
         }),
         new HtmlWebpackPlugin({
+            filename: 'header-footer.html',
+            template: './pages/ui-kit/header-footer.pug'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'cards.html',
+            template: './pages/ui-kit/cards.pug'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'form-elements.html',
+            template: './pages/ui-kit/form-elements.pug'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'colors-and-type.html',
+            template: './pages/ui-kit/colors-and-type.pug'
+        }),
+        new HtmlWebpackPlugin({
             filename: 'ui-kit.html',
             template: './pages/ui-kit/ui-kit.pug'
         }),
