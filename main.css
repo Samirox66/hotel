@@ -116,7 +116,7 @@
 
 .form-elements__pay-button{width:320px;height:44px}
 
-.input{display:flex;background:#FFFFFF;border:1px solid rgba(31,32,65,0.25);box-sizing:border-box;border-radius:4px;width:100%;padding-left:15px}
+.input{display:flex;background:#FFFFFF;border:1px solid rgba(31,32,65,0.25);box-sizing:border-box;border-radius:4px;width:100%;padding-left:15px;margin-bottom:0}
 
 .input__input{border:none;width:100%}.input__input:hover,.input__input:focus{font-size:1rem;line-height:1.714rem;color:rgba(31,32,65,0.75)}.input__input::placeholder{font-size:1rem;line-height:1.286rem;color:rgba(31,32,65,0.25)}
 
@@ -240,6 +240,8 @@
 
 .footer1__nav_width_260px{width:22.41379%}
 
+.footer1__ul-nav{padding-left:0;margin-bottom:0;margin-top:0}
+
 .material-icons.material-icons__favorite{color:#BC9CFF;font-size:0.714rem;line-height:0.643rem}
 
 .material-icons.material-icons__favorite-border{font-size:0.714rem;line-height:0.643rem;color:#1F204140}
@@ -277,7 +279,7 @@
 
 .menu__item{margin-right:2.60078%;list-style-type:none;display:flex;justify-content:center;align-items:center}
 
-.menu__link{color:rgba(31,32,65,0.5);font-size:1rem;line-height:1.214rem;text-decoration:none;display:table-cell;vertical-align:middle;font-family:'Montserrat', sans-serif}
+.menu__link{color:rgba(31,32,65,0.5);font-size:1rem;line-height:1.214rem;text-decoration:none;display:table-cell;vertical-align:middle;font-family:'Montserrat', sans-serif;box-sizing:content-box}
 
 .menu__line{border-left:1px solid #1F20411A;height:30px}
 
