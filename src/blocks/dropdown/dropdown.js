@@ -19,6 +19,13 @@ let createGuestDropdown = function(dataId, strings) {
             controlsCls: 'iqdropdown-item-controls',
             counterCls: 'counter'
         },
+        onChange: (id, count, totalItems) => {
+            $('.iqdropdown .button-increment').on('click', function() {
+                if ($(this).parents('.iqdropdown-menu').find('.dropdown__buttons') && $(this).parents('.iqdropdown-menu').find('.dropdown__clear-button').is(':hidden')) {
+                    $(this).parents('.iqdropdown-menu').find('.dropdown__clear-button').show()
+                }
+            })
+        },
         setSelectionText: (itemCount, totalItems) => {
             let guest;
             if (totalItems % 10 >= 5 || totalItems >= 10 && totalItems <= 20) {
@@ -29,6 +36,15 @@ let createGuestDropdown = function(dataId, strings) {
                 guest = totalItems + ' ' + strings[2];
             } else {
                 guest = strings[3];
+            }
+            if (itemCount.babies > 0) {
+                if (itemCount.babies % 10 >= 5 || itemCount.babies >= 10 && itemCount.babies <= 20) {
+                    guest += ', ' + itemCount.babies + ' младенцев'
+                } else if (itemCount.babies % 10 === 1 && itemCount.babies !== 11) {
+                    guest += ', ' + itemCount.babies + ' младенец'
+                } else if (itemCount.babies % 10 >= 2 && itemCount.babies % 10 <= 4) {
+                    guest += ', ' + itemCount.babies + ' младенца'
+                }
             }
             if (totalItems === 0) {
                 $('.iqdropdown[data-id=' + dataId + '] .button__clear .button__button').hide();
@@ -83,8 +99,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             furniture += '...'
             return furniture
-        }
-    })
+        },
+    }),
     $('.icon-decrement').text('-');
     $('.icon-increment').text('+');
     $('.iqdropdown-selection::after').addClass('material-icons').addClass('material-icons__expand-more').text('expand_more');
@@ -93,12 +109,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 $('.iqdropdown .dropdown__submit-button .button__button').on('click', function() {
     $(this).parents('.iqdropdown').removeClass('menu-open')
-    console.log(4)
 })
 
 $('.iqdropdown .dropdown__clear-button .button__button').on('click', function() {
     let controlId = ['adults', 'kids', 'babies']
-    let dataId = $(this).parents('.iqdropdown').attr('data-id')
     let itemCount = ($(this).parents('.iqdropdown-menu').find('.counter').text()).slice(0, -1).split('')
     for (let i = 0; i < controlId.length; i++) {
         while (itemCount[i] != 0) {
@@ -106,4 +120,5 @@ $('.iqdropdown .dropdown__clear-button .button__button').on('click', function() 
             itemCount[i]--
         }
     }
+    $(this).parents('.dropdown__clear-button').hide()
 })

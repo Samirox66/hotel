@@ -61,10 +61,6 @@ module.exports = {
             template: './pages/ui-kit/colors-and-type.pug'
         }),
         new HtmlWebpackPlugin({
-            filename: 'ui-kit.html',
-            template: './pages/ui-kit/ui-kit.pug'
-        }),
-        new HtmlWebpackPlugin({
             filename: 'search-room.html',
             template: './pages/search-room/search-room.pug'
         }),
