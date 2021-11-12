@@ -62,6 +62,13 @@ new AirDatepicker("#date-dropdown-ui-kit-cards2", {
         $('#date-dropdown-ui-kit-cards2_arrival').val(formattedDate[1])
         $('#date-dropdown-ui-kit-cards2').val(formattedDate[0])
     },
+    onRenderCell({date, cellType}) {
+        if (date.getDate() === 8 && date.getMonth() === 7) {
+            return {
+                classes: '-current-'
+            }
+        }
+    },
     startDate: '2019-08-08',
     selectedDates: ['2019-08-19', '2019-08-23']
 })
@@ -76,7 +83,14 @@ new AirDatepicker('#static-date', {
     range: true,
     selectedDates: ['2019-08-19', '2019-08-23'],
     prevHtml: `<div class="material-icons material-icons__arrow-back">arrow_back</div>`,
-    nextHtml: `<div class="material-icons material-icons__arrow-forward material-icons__arrow-forward_color_blue">arrow_forward</div>`
+    nextHtml: `<div class="material-icons material-icons__arrow-forward material-icons__arrow-forward_color_blue">arrow_forward</div>`,
+    onRenderCell({date, cellType}) {
+        if (date.getDate() === 8 && date.getMonth() === 7) {
+            return {
+                classes: '-current-'
+            }
+        }
+    }
 })
 new AirDatepicker('#date-dropdown-landing', {
     navTitles: {
@@ -109,8 +123,15 @@ new AirDatepicker("#date-dropdown-room-details", {
         $('#date-dropdown-room-details_arrival').val(formattedDate[1])
         $('#date-dropdown-room-details').val(formattedDate[0])
     },
-    startDate: '2019-08-05',
-    selectedDates: ['2019-08-19', '2019-08-23']
+    startDate: '2019-08-08',
+    selectedDates: ['2019-08-19', '2019-08-23'],
+    onRenderCell({date, cellType}) {
+        if (date.getDate() === 8 && date.getMonth() === 7) {
+            return {
+                classes: '-current-'
+            }
+        }
+    }
 })
 
 window.addEventListener("load", function() {
