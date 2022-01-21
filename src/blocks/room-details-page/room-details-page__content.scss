@@ -3,3 +3,10 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 900px) {
+    .room-details-page__content {
+        flex-direction: column;
+        align-items: center;
+    }
+}

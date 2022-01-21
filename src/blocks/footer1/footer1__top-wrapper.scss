@@ -3,3 +3,10 @@
     width: 80.5555556%;
     margin-top: 104px;
 }
+
+@media only screen and (max-width: 900px) {
+    .footer1__top-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}

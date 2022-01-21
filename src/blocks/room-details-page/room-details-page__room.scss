@@ -1,3 +1,10 @@
 .room-details-page__room {
     width: 380 / 1160 * 100%;
+    min-width: 300px;
+}
+
+@media only screen and (max-width: 900px) {
+    .room-details-page__room {
+        margin-top: 5%;
+    }
 }
