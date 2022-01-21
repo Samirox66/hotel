@@ -42,39 +42,48 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             filename: 'landing.html',
-            template: './pages/landing/landing.pug'
+            template: './pages/landing/landing.pug',
+            favicon: './assets/favicon.ico'
         }),
         new HtmlWebpackPlugin({
             filename: 'header-footer.html',
-            template: './pages/ui-kit/header-footer.pug'
+            template: './pages/ui-kit/header-footer.pug',
+            favicon: './assets/favicon.ico'
         }),
         new HtmlWebpackPlugin({
             filename: 'cards.html',
-            template: './pages/ui-kit/cards.pug'
+            template: './pages/ui-kit/cards.pug',
+            favicon: './assets/favicon.ico'
         }),
         new HtmlWebpackPlugin({
             filename: 'form-elements.html',
-            template: './pages/ui-kit/form-elements.pug'
+            template: './pages/ui-kit/form-elements.pug',
+            favicon: './assets/favicon.ico'
         }),
         new HtmlWebpackPlugin({
             filename: 'colors-and-type.html',
-            template: './pages/ui-kit/colors-and-type.pug'
+            template: './pages/ui-kit/colors-and-type.pug',
+            favicon: './assets/favicon.ico'
         }),
         new HtmlWebpackPlugin({
             filename: 'search-room.html',
-            template: './pages/search-room/search-room.pug'
+            template: './pages/search-room/search-room.pug',
+            favicon: './assets/favicon.ico'
         }),
         new HtmlWebpackPlugin({
             filename: 'room-details.html',
-            template: './pages/room-details/room-details.pug'
+            template: './pages/room-details/room-details.pug',
+            favicon: './assets/favicon.ico'
         }),
         new HtmlWebpackPlugin({
             filename: 'registration.html',
-            template: './pages/registration/registration.pug'
+            template: './pages/registration/registration.pug',
+            favicon: './assets/favicon.ico'
         }),
         new HtmlWebpackPlugin({
             filename: 'sign-in.html',
-            template: './pages/sign-in/sign-in.pug'
+            template: './pages/sign-in/sign-in.pug',
+            favicon: './assets/favicon.ico'
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
