@@ -1,3 +1,10 @@
 .search-room-page__rooms-row {
     display: flex;
 }
+
+@media only screen and (max-width: 1090px) {
+    .search-room-page__rooms-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}

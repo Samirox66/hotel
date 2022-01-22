@@ -1,3 +1,9 @@
 .search-room-page__conditions {
     width: 266 / 1160 * 100%;
 }
+
+@media only screen and (max-width: 1090px) {
+    .search-room-page__conditions {
+        margin-bottom: 10%;
+    }
+}

@@ -8,7 +8,7 @@ include ../../blocks/contacts/contacts.pug
 include ../../blocks/text/text.pug
 include ../../blocks/date-dropdown/date-dropdown.pug
 include ../../blocks/range-slider/range-slider.pug
-include ../../blocks/chose-button/chose-button.pug
+include ../../blocks/choose-button/choose-button.pug
 include ../../blocks/filter-date-dropdown/filter-date-dropdown.pug
 include ../../blocks/rich-checkbox-button/rich-checkbox-button.pug
 include ../../blocks/checkbox-list/checkbox-list.pug
@@ -32,28 +32,28 @@ block content
                 +range-slider('диапазон цены', 'range-slider_margin-top_30px')
                 +text('Стоимость за сутки пребывания в номере', 'p', 'text_p text_margin-top_13px text_color-opacity_50per text_font-size_12px text_line-height_14px')
                 +text('правила дома', 'h3', 'text_h3 text_margin-top_30px text_margin-bottom_16px')
-                +chose-button({
+                +choose-button({
                     'id':'isSmokingAllowed',
                     'text':'Можно курить',
                     'name':'isSmokingAllowed',
-                    'fakeClasses':'chose-button__fake-checkbox',
+                    'fakeClasses':'choose-button__fake-checkbox',
                     }, 'checkbox')
-                +chose-button({
+                +choose-button({
                     'id':'arePetAllowed',
                     'text':'Можно с питомцами',
                     'name':'arePetAllowed',
-                    'fakeClasses':'chose-button__fake-checkbox',
-                    'buttonClasses': 'chose-button_margin-top_10px',
+                    'fakeClasses':'choose-button__fake-checkbox',
+                    'buttonClasses': 'choose-button_margin-top_10px',
                     'checked': true
                     }, 'checkbox')   
-                +chose-button({
+                +choose-button({
                     'id':'areGuestsAllowed',
                     'text':'Можно пригласить гостей (до 10 человек)',
                     'name':'areGuestsAllowed',
                     'checked': true,
-                    'fakeClasses': 'chose-button__fake-checkbox',
-                    'labelClasses': 'chose-button__label_width_192px',
-                    'buttonClasses': 'chose-button_margin-top_10px'
+                    'fakeClasses': 'choose-button__fake-checkbox',
+                    'labelClasses': 'choose-button__label_width_192px',
+                    'buttonClasses': 'choose-button_margin-top_10px'
                     }, 'checkbox')
                 +text('доступность', 'h3', 'text_h3 text_margin-top_30px text_margin-bottom_16px')
                 +rich-checkbox-button([{
@@ -61,25 +61,25 @@ block content
                         'text': 'Широкий коридор',
                         'name': 'wide-hall',
                         'description': 'Ширина коридоров в номере не менее 91 см.',
-                        'fakeClasses': 'chose-button__fake-checkbox',
-                        'labelClasses': 'chose-button__label_bold'},
+                        'fakeClasses': 'choose-button__fake-checkbox',
+                        'labelClasses': 'choose-button__label_bold'},
                         {'id': 'invalid-helper',
                         'text': 'Помощник для инвалидов',
                         'name': 'wide-hall',
                         'description': 'На 1 этаже вас встретит специалист  и проводит до номера.',
-                        'fakeClasses': 'chose-button__fake-checkbox',
-                        'labelClasses': 'chose-button__label_bold'}])
+                        'fakeClasses': 'choose-button__fake-checkbox',
+                        'labelClasses': 'choose-button__label_bold'}])
                 +text('доступность', 'h3', 'text_h3 text_margin-top_30px text_margin-bottom_5px')
                 +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], '', 'furniture')
                 +checkbox-list(
-                        [{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'chose-button__fake-checkbox'},
-                        {'id': 'write-table', 'text': 'Письменный стол', 'name': 'write-table', 'fakeClasses': 'chose-button__fake-checkbox', 'checked': true},
-                        {'id': 'food-table', 'text': 'Стул для кормления', 'name': 'food-table', 'fakeClasses': 'chose-button__fake-checkbox', 'checked': true},
-                        {'id': 'baby-bed', 'text': 'Кроватка', 'name': 'baby-bed', 'fakeClasses': 'chose-button__fake-checkbox', 'checked': true},
-                        {'id': 'tv', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'chose-button__fake-checkbox'},
-                        {'id': 'shampoo1', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'chose-button__fake-checkbox'},
-                        {'id': 'tv', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'chose-button__fake-checkbox'},
-                        {'id': 'shampoo2', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'chose-button__fake-checkbox'}],
+                        [{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'choose-button__fake-checkbox'},
+                        {'id': 'write-table', 'text': 'Письменный стол', 'name': 'write-table', 'fakeClasses': 'choose-button__fake-checkbox', 'checked': true},
+                        {'id': 'food-table', 'text': 'Стул для кормления', 'name': 'food-table', 'fakeClasses': 'choose-button__fake-checkbox', 'checked': true},
+                        {'id': 'baby-bed', 'text': 'Кроватка', 'name': 'baby-bed', 'fakeClasses': 'choose-button__fake-checkbox', 'checked': true},
+                        {'id': 'tv', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'choose-button__fake-checkbox'},
+                        {'id': 'shampoo1', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'choose-button__fake-checkbox'},
+                        {'id': 'tv', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'choose-button__fake-checkbox'},
+                        {'id': 'shampoo2', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'choose-button__fake-checkbox'}],
                         'дополнительные удобства')
             .search-room-page__rooms.search-room-page__rooms_margin-left_60px
                 +text('Номера, которые мы для вас подобрали', 'h1', 'text_h1')
