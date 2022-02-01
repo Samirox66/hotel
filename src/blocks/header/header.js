@@ -1,2 +1,2 @@
-import './header.scss'
-import './header__wrapper.scss'
+import './header.scss';
+import './header__wrapper.scss';

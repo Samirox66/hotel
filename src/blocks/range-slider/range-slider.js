@@ -1,37 +1,40 @@
-import noUiSlider from 'nouislider'
-import 'nouislider/dist/nouislider.css'
-import './range-slider.scss'
-import './range-slider__head.scss'
-import './range-slider__title.scss'
-import './range-slider__slider.scss'
-import './range-slider__range.scss'
-import './range-slider_margin-top_30px.scss'
+import noUiSlider from 'nouislider';
 
-var slider = document.getElementById('range-slider1')
-var values = [5000, 10000]
+import 'nouislider/dist/nouislider.css';
+import './range-slider.scss';
+import './range-slider__head.scss';
+import './range-slider__title.scss';
+import './range-slider__slider.scss';
+import './range-slider__range.scss';
+import './range-slider_margin-top_30px.scss';
+
+const slider = document.getElementById('range-slider1');
+const values = [5000, 10000];
 if (slider != null) {
     noUiSlider.create(slider, {
-        start: [5000, 10000],
+        start: [value[0], values[1]],
         connect: true,
         step: 1,
         range: {
             'min': 0,
             'max': 15000
-        }
-    })
+        },
+    });
 }
 
 if (slider != null) {
     slider.noUiSlider.on('update', function(){
-        values = slider.noUiSlider.get()
-        values[0] = String(Math.floor(parseInt(values[0])))
-        values[1] = String(Math.floor(parseInt(values[1])))
+        values = slider.noUiSlider.get();
+        values[0] = String(Math.floor(Number(values[0])));
+        values[1] = String(Math.floor(Number(values[1])));
         if (values[0].length > 3) {
-            values[0] = values[0].slice(0, -3) + ' ' + values[0].slice(-3)
+            values[0] = values[0].slice(0, -3) + ' ' + values[0].slice(-3);
         }
+
         if (values[1].length > 3) {
-            values[1] = values[1].slice(0, -3) + ' ' + values[1].slice(-3)
+            values[1] = values[1].slice(0, -3) + ' ' + values[1].slice(-3);
         }
-        $('.range-slider__range').text(values[0] + '₽' + ' - ' + values[1] + '₽')
-    })
+
+        $('.range-slider__range').text(values[0] + '₽' + ' - ' + values[1] + '₽');
+    });
 }

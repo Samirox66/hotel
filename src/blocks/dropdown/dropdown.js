@@ -6,7 +6,7 @@ import './dropdown__buttons_justify-content_flex-end.scss'
 import './dropdown__clear-button.scss'
 import './dropdown__submit-button.scss'
 
-let createGuestDropdown = function(dataId, strings) {
+const createGuestDropdown = function(dataId, strings) {
     $('.iqdropdown[data-id=' + dataId + ']').iqDropdown({
         // max total items
         maxItems: 20,
@@ -22,9 +22,9 @@ let createGuestDropdown = function(dataId, strings) {
         onChange: (id, count, totalItems) => {
             $('.iqdropdown .button-increment').on('click', function() {
                 if ($(this).parents('.iqdropdown-menu').find('.dropdown__buttons') && $(this).parents('.iqdropdown-menu').find('.dropdown__clear-button').is(':hidden')) {
-                    $(this).parents('.iqdropdown-menu').find('.dropdown__clear-button').show()
+                    $(this).parents('.iqdropdown-menu').find('.dropdown__clear-button').show();
                 }
-            })
+            });
         },
         setSelectionText: (itemCount, totalItems) => {
             let guest;
@@ -37,6 +37,7 @@ let createGuestDropdown = function(dataId, strings) {
             } else {
                 guest = strings[3];
             }
+
             if (itemCount.babies > 0) {
                 if (itemCount.babies % 10 >= 5 || itemCount.babies >= 10 && itemCount.babies <= 20) {
                     guest += ', ' + itemCount.babies + ' младенцев'
@@ -46,15 +47,17 @@ let createGuestDropdown = function(dataId, strings) {
                     guest += ', ' + itemCount.babies + ' младенца'
                 }
             }
+
             if (totalItems === 0) {
                 $('.iqdropdown[data-id=' + dataId + '] .button__clear .button__button').hide();
             } else {
                 $('.iqdropdown[data-id=' + dataId + '] .button__clear .button__button').show();
             }
+
             return guest;
-        }
-    })
-}
+        },
+    });
+};
 
 document.addEventListener("DOMContentLoaded", function() {
     createGuestDropdown('guest1', ['гостей', 'гость', 'гостя', 'Сколько гостей']),
@@ -105,20 +108,20 @@ document.addEventListener("DOMContentLoaded", function() {
     $('.icon-increment').text('+');
     $('.iqdropdown-selection::after').addClass('material-icons').addClass('material-icons__expand-more').text('expand_more');
     $('.iqdropdown.iqdropdown__checkbox-list').find('.iqdropdown-item-controls').addClass('checkbox-list__controls');
-})
+});
 
 $('.iqdropdown .dropdown__submit-button .button__button').on('click', function() {
-    $(this).parents('.iqdropdown').removeClass('menu-open')
-})
+    $(this).parents('.iqdropdown').removeClass('menu-open');
+});
 
 $('.iqdropdown .dropdown__clear-button .button__button').on('click', function() {
-    let controlId = ['adults', 'kids', 'babies']
-    let itemCount = ($(this).parents('.iqdropdown-menu').find('.counter').text()).slice(0, -1).split('')
+    const controlId = ['adults', 'kids', 'babies'];
+    const itemCount = ($(this).parents('.iqdropdown-menu').find('.counter').text()).slice(0, -1).split('');
     for (let i = 0; i < controlId.length; i++) {
         while (itemCount[i] != 0) {
-            $(this).parents('.iqdropdown-menu').find('.iqdropdown-menu-option[data-id=' + controlId[i] + '] .button-decrement').trigger('click')
-            itemCount[i]--
+            $(this).parents('.iqdropdown-menu').find('.iqdropdown-menu-option[data-id=' + controlId[i] + '] .button-decrement').trigger('click');
+            itemCount[i] -= 1;
         }
     }
-    $(this).parents('.dropdown__clear-button').hide()
-})
+    $(this).parents('.dropdown__clear-button').hide();
+});
