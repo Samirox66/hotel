@@ -62,14 +62,17 @@ block content
                         'name': 'wide-hall',
                         'description': 'Ширина коридоров в номере не менее 91 см.',
                         'fakeClasses': 'choose-button__fake-checkbox',
-                        'labelClasses': 'choose-button__label_bold'},
-                        {'id': 'invalid-helper',
+                        'labelClasses': 'choose-button__label_bold'
+                        }, {
+                        'id': 'invalid-helper',
                         'text': 'Помощник для инвалидов',
                         'name': 'wide-hall',
                         'description': 'На 1 этаже вас встретит специалист  и проводит до номера.',
                         'fakeClasses': 'choose-button__fake-checkbox',
-                        'labelClasses': 'choose-button__label_bold'}])
-                +text('доступность', 'h3', 'text_h3 text_margin-top_30px text_margin-bottom_5px')
+                        'labelClasses': 'choose-button__label_bold',
+                        'buttonClasses': 'choose-button_margin-top_10px'
+                        }])
+                +text('удобства номера', 'h3', 'text_h3 text_margin-top_30px text_margin-bottom_5px')
                 +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], '', 'furniture')
                 +checkbox-list(
                         [{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'choose-button__fake-checkbox'},
@@ -80,7 +83,7 @@ block content
                         {'id': 'shampoo1', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'choose-button__fake-checkbox'},
                         {'id': 'tv', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'choose-button__fake-checkbox'},
                         {'id': 'shampoo2', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'choose-button__fake-checkbox'}],
-                        'дополнительные удобства')
+                        'дополнительные удобства', 'iqdropdown__checkbox-list_margin-top_30px')
             .search-room-page__rooms.search-room-page__rooms_margin-left_60px
                 +text('Номера, которые мы для вас подобрали', 'h1', 'text_h1')
                 .search-room-page__rooms-row.search-room-page__rooms-row_margin-top_21px

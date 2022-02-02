@@ -9,10 +9,10 @@ import './range-slider__range.scss';
 import './range-slider_margin-top_30px.scss';
 
 const slider = document.getElementById('range-slider1');
-const values = [5000, 10000];
+let values = [5000, 10000];
 if (slider != null) {
     noUiSlider.create(slider, {
-        start: [value[0], values[1]],
+        start: [values[0], values[1]],
         connect: true,
         step: 1,
         range: {
