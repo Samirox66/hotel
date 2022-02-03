@@ -5,6 +5,6 @@ import './search-room-page__rooms.scss';
 import './search-room-page__rooms_margin-left_60px.scss';
 import './search-room-page__rooms-row.scss';
 import './search-room-page__rooms-row_margin-top_21px.scss';
-import './search-room-page__rooms-row_margin-top_40px.scss';
-import './search-room-page__rooms-row_justify-content_center.scss';
+import './search-room-page__rooms-row_margin-top_41px.scss';
+import './search-room-page__rooms-row_margin-left_290px.scss'
 import './search-room-page__line.scss';

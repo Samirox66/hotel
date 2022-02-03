@@ -30,3 +30,6 @@ import './choose-room__dots.scss';
 import './choose-room__dot_background_white.scss';
 import './choose-room__expand-left.scss';
 import './choose-room__expand-right.scss';
+import './choose-room__information.scss';
+import './choose-room__img-expand.scss';
+import './choose-room__img-expand_transform_matrix.scss';

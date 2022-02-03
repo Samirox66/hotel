@@ -25,6 +25,7 @@ import './text_width_271px.scss';
 import './text_align-self_center.scss';
 import './text_margin-left_14px.scss';
 import './text_margin-top_20px.scss';
+import './text_margin-top_31px.scss';
 import './text_width_260px.scss';
 import './text_width_108px.scss';
 import './text_width_143px.scss';

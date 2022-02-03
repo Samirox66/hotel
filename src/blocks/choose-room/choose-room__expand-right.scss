@@ -1,8 +1,6 @@
 .choose-room__expand-right {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
     height: 44px;
+    width: 24px;
     color: white;
-    position: absolute;
-    bottom: 76 / 230 * 100%;
-    right: 0;
 }

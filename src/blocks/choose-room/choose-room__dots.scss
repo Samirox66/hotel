@@ -1,7 +1,8 @@
 .choose-room__dots {
+    position: absolute;
     display: flex;
-    padding-bottom: 15.11px;
-    margin-right: 15px;
+    bottom: 15.11px;
+    right: 15px;
     justify-content: space-between;
     width: 41.25px;
 }
