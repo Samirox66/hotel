@@ -1,6 +1,6 @@
 import './fonts/fonts.scss';
-import '../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.js';
-import '../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.css';
+import 'item-quantity-dropdown/lib/item-quantity-dropdown.min';
+import 'item-quantity-dropdown/lib/item-quantity-dropdown.min.css';
 import 'air-datepicker/air-datepicker.css';
 
 import './blocks/toggle/toggle';

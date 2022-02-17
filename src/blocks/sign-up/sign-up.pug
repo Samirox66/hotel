@@ -1,4 +1,4 @@
-mixin sign-up 
+mixin sign-up(payButtonText)
     section.sign-up
         .sign-up__row.sign-up__row_margin-top_40px 
             +text('Регистрация аккаунта', 'h1', 'text_h1')
@@ -36,7 +36,7 @@ mixin sign-up
         .sign-up__row.sign-up__row_margin-top_20px
             .sign-up__pay-button
                 +button({
-                    'text': 'зарегистрироваться',
+                    'text': payButtonText,
                     'buttonClasses': 'button_height_44px button_width_320px button_border_none button_background-color_blue',
                     'textClasses': 'button_color_white',
                     'type': 'submit',
