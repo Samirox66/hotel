@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 import './dropdown_width_320px.scss';
 import './dropdown_width_266px.scss';
 import './iqdropdown.scss';
@@ -94,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
           furniture += `${itemCount.rooms} спален`;
         }
-        
+
         if (itemCount.bed !== 0) {
           furniture += ', ';
         }
@@ -125,7 +127,9 @@ $('.iqdropdown .dropdown__submit-button .button__button').on('click', function (
 
 $('.iqdropdown .dropdown__clear-button .button__button').on('click', function () {
   const controlId = ['adults', 'kids', 'babies'];
-  const itemCount = ($(this).parents('.iqdropdown-menu').find('.counter').text()).slice(0, -1).split('');
+  const itemCount = ($(this).parents('.iqdropdown-menu').find('.counter').text())
+    .slice(0, -1)
+    .split('');
   for (let i = 0; i < controlId.length; i += 1) {
     while (itemCount[i] !== '0') {
       $(this).parents('.iqdropdown-menu').find(`.iqdropdown-menu-option[data-id=${controlId[i]}] .button-decrement`).trigger('click');

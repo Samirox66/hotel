@@ -1,4 +1,5 @@
 import noUiSlider from 'nouislider';
+import $ from 'jquery';
 
 import 'nouislider/dist/nouislider.css';
 import './range-slider.scss';

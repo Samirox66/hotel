@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 import './toggle.scss';
 import './toggle__input.scss';
 import './toggle__switch.scss';

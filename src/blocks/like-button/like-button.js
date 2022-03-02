@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 import './like-button.scss';
 import './like-button__button.scss';
 import './like-button__number.scss';

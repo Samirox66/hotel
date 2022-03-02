@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 import './checkbox-list.scss';
 
 $('.iqdropdown__checkbox-list').on('click', function () {
