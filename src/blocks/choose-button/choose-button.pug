@@ -1,5 +1,5 @@
 mixin choose-button(button, types)
-    label.choose-button(for=button.id class="" + button.buttonClasses) 
+    label.choose-button(for=button.id class='' + button.buttonClasses) 
         input.choose-button__button(type=types id=button.id name=button.name value=button.value checked=button.checked)
         span.choose-button__fake-button(class='' + button.fakeClasses)
         span.choose-button__label(class = '' + button.labelClasses)=button.text

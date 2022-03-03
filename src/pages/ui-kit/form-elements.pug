@@ -25,32 +25,34 @@ block content
         img.form-elements__logo(src='assets/img/logo__grey.svg' alt='toxin')
         .form-elements__wrapper
             .form-elements__block
-                .form-elements__column.form-elements_margin-left_130px
-                    .form-elements__block.form-elements__block_justify-content_space-between 
+                .form-elements__column
+                    .form-elements__block.form-elements__block_justify-content_space-between.form-elements__block_margin-bottom_5px 
                         +text('Text Field', 'h3', 'text_h3')
                         +text('Default', 'h3', 'text_h3 text_color-opacity_25per text_font-weight_normal')
                     +input('text', 'input_width_320px input_height_44px', 'Email')
-                    .form-elements__block.form-elements__block_justify-content_space-between 
+                    .form-elements__block.form-elements__block_justify-content_space-between.form-elements__block_margin-bottom_5px.form-elements__block_margin-top_20px
                         +text('Text Field', 'h3', 'text_h3')
                         +text('Hover / Focus', 'h3', 'text_h3 text_color-opacity_25per text_font-weight_normal')
                     +input('text', 'input_width_320px input_height_44px', 'This is pretty awesome')
-                    .form-elements__block.form-elements_margin-top_40px
+                    .form-elements__block.form-elements__block_margin-top_20px.form-elements__block_margin-bottom_5px
                         +text('dropdown', 'h3', 'text_h3 text_margin-bottom_5px')
                     +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'guest1')
+                    .form-elements__block.form-elements__block_margin-top_20px
                     +text('masked text field', 'h3', 'text_h3 text_margin-bottom_5px')
                     +input('text', 'input_width_320px input_height_44px', 'ДД.ММ.ГГГГ')
-                    .form-elements__block.form-elements_margin-top_40px
-                        +text('date dropdown', 'h3', 'text_h3 text_margin-bottom_5px text_width_150px')
-                        +text('date dropdown', 'h3', 'text_h3 text_margin-bottom_5px text_width_150px text_margin-left_20px')
+                    .form-elements__block.form-elements__block_margin-top_40px.form-elements__block_margin-bottom_5px
+                        +text('date dropdown', 'h3', 'text_h3 text_width_150px')
+                        +text('date dropdown', 'h3', 'text_h3 text_width_150px text_margin-left_20px')
                     .form-elements__block
                         +date-dropdown('date-dropdown-ui-kit1', 'ДД.ММ.ГГГГ')
-                    .form-elements__block.form-elements_margin-top_40px
+                    .form-elements__block.form-elements__block_margin-top_40px
                         +text('filter date dropdown', 'h3', 'text_h3 text_margin-bottom_5px')
-                    +filter-date-dropdown('filter-date-dropdown-ui-kit', '', '', 'date-dropdown__input_height_24px', true)
-                    .form-elements__block.form-elements_margin-top_40px
+                    .form-elements__filter-date-dropdown
+                        +filter-date-dropdown('filter-date-dropdown-ui-kit', '', '', 'date-dropdown__input_height_24px', true)
+                    .form-elements__block.form-elements__block_margin-top_40px
                         +text('subscription text field', 'h3', 'text_h3 text_margin-bottom_5px')
                     +input('email', 'input_width_266px input_height_44px', 'Email', true)
-                .form-elements__column.form-elements_margin-left_130px 
+                .form-elements__column.form-elements__column_margin-left_130px 
                     +text('Checkbox Buttons', 'h3', 'text_h3 text_margin-bottom_16px')
                     +choose-button({
                         'id':'isSmokingAllowed',
@@ -75,7 +77,7 @@ block content
                         'labelClasses': 'choose-button__label_width_192px',
                         'buttonClasses': 'choose-button_margin-top_10px'
                         }, 'checkbox')
-                    .form-elements__block.form-elements_margin-top_40px
+                    .form-elements__block.form-elements__block_margin-top_40px
                         +text('radio buttons', 'h3', 'text_h3 text_margin-bottom_16px')
                     .choose-button__container
                         +choose-button({
@@ -92,23 +94,23 @@ block content
                             'value':'woman',
                             'fakeClasses': 'choose-button__fake-radio',
                             'buttonClasses': 'choose-button_margin-left_20px'}, 'radio')
-                    .form-elements__block.form-elements_margin-top_40px
+                    .form-elements__block.form-elements__block_margin-top_40px
                         +text('toggle', 'h3', 'text_h3 text_margin-bottom_16px')
                     +toggle(true, 'Получать спецпредложения')
                     +toggle(false, 'Получать спецпредложения')
-                    .form-elements__block.form-elements_margin-top_40px
+                    .form-elements__block.form-elements__block_margin-top_40px
                         +text('like button', 'h3', 'text_h3 text_margin-bottom_16px')
                     .form-elements__flex
                         +like-button('material-icons__favorite-border', 'like-button__button', 'like-button__number', 2, 'favorite_border')
                         +like-button('material-icons__favorite', 'like-button__button like-button__button_active', 'like-button__number like-button__number_active', 12, 'favorite')
-                    .form-elements__block.form-elements_margin-top_40px
+                    .form-elements__block.form-elements__block_margin-top_40px
                         +text('rate button', 'h3', 'text_h3 text_margin-bottom_16px')
                     .form-elements__flex
                         +rate-button(4)
                         +rate-button(5, 'rate-button_margin-left_20')
-                .form-elements__column.form-elements_margin-left_130px 
+                .form-elements__column.form-elements__column_margin-left_130px 
                     +range-slider('Range Slider')
-                    .form-elements__block.form-elements_margin-top_40px
+                    .form-elements__block.form-elements__block_margin-top_40px
                         +text('buttons', 'h3', 'text_h3 text_margin-bottom_16px')
                     .form-elements__buttons
                         .form-elements__button.form-elements__button_width_99px
@@ -155,53 +157,52 @@ block content
                             'textClasses': 'button_color_white', 
                             'type': 'button',
                             'hasArrow': true})
-                    .form-elements__block.form-elements_margin-top_40px
+                    .form-elements__block.form-elements__block_margin-top_40px
                         +text('pagination', 'h3', 'text_h3 text_margin-bottom_16px')
                     +pagination(1)
-            .form-elements__block.form-elements_margin-top_70px.form-elements_70px
-                .form-elements__column.form-elements_margin-left_130px
-                    .form-elements__flex
+            .form-elements__block.form-elements__block_margin-top_100px
+                .form-elements__column
+                    .form-elements__block.form-elements__block_justify-content_space-between
                         +text('dropdown', 'h3', 'text_h3 text_margin-bottom_5px')
                         p.form-elements__title-description default
                     +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'dropdown_width_266px', 'furniture')
-                    .ui-kit_margin-top_40px
-                    .form-elements__flex
+                    .form-elements__block.form-elements__block_justify-content_space-between.form-elements__block_margin-top_20px
                         +text('dropdown', 'h3', 'text_h3 text_margin-bottom_5px')
                         p.form-elements__title-description expanded
                     +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'dropdown_width_266px', 'furniture', 'menu-open')
-                .form-elements__column.form-elements_margin-left_130px
+                .form-elements__column.form-elements__column_margin-left_180px
                     .form-elements__dropdown
                         +text('dropdown', 'h3', 'text_h3 text_margin-bottom_5px')
                         +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'guest2', 'menu-open')
-                .form-elements__column.form-elements_margin-left_130px
+                .form-elements__column.form-elements__column_margin-left_72px
                     .form-elements__dropdown
                         +text('dropdown', 'h3', 'text_h3 text_margin-bottom_5px')
                         +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '1'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'guest3', 'menu-open')
-            .form-elements__block.form-elements_margin-top_70px.form-elements_70px 
-                .form-elements__column.form-elements_margin-left_130px.form-elements__column_width_266px
+            .form-elements__block.form-elements__block_margin-top_172px
+                .form-elements__column.form-elements__column_width_266px
                     +checkbox-list(
-                        [{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'choose-button__fake-checkbox'},
-                        {'id': 'write-table', 'text': 'Письменный стол', 'name': 'write-table', 'fakeClasses': 'choose-button__fake-checkbox', 'checked': true},
-                        {'id': 'food-table', 'text': 'Стул для кормления', 'name': 'food-table', 'fakeClasses': 'choose-button__fake-checkbox', 'checked': true},
-                        {'id': 'baby-bed', 'text': 'Кроватка', 'name': 'baby-bed', 'fakeClasses': 'choose-button__fake-checkbox', 'checked': true},
-                        {'id': 'tv', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'choose-button__fake-checkbox'},
-                        {'id': 'shampoo1', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'choose-button__fake-checkbox'},
-                        {'id': 'tv', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'choose-button__fake-checkbox'},
-                        {'id': 'shampoo2', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'choose-button__fake-checkbox'}],
+                        [{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px'},
+                        {'id': 'write-table', 'text': 'Письменный стол', 'name': 'write-table', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px', 'checked': true},
+                        {'id': 'food-table', 'text': 'Стул для кормления', 'name': 'food-table', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px', 'checked': true},
+                        {'id': 'baby-bed', 'text': 'Кроватка', 'name': 'baby-bed', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px', 'checked': true},
+                        {'id': 'tv', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px'},
+                        {'id': 'shampoo1', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px'},
+                        {'id': 'tv', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px'},
+                        {'id': 'shampoo2', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px'}],
                         'expandable checkbox list')
                     +checkbox-list(
-                        [{'id': 'breakfastEx', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'choose-button__fake-checkbox'},
-                        {'id': 'write-tableEx', 'text': 'Письменный стол', 'name': 'write-table', 'fakeClasses': 'choose-button__fake-checkbox', 'checked': true},
-                        {'id': 'food-tableEx', 'text': 'Стул для кормления', 'name': 'food-table', 'fakeClasses': 'choose-button__fake-checkbox', 'checked': true},
-                        {'id': 'baby-bedEx', 'text': 'Кроватка', 'name': 'baby-bed', 'fakeClasses': 'choose-button__fake-checkbox', 'checked': true},
-                        {'id': 'tvEx', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'choose-button__fake-checkbox'},
-                        {'id': 'shampoo1Ex', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'choose-button__fake-checkbox'},
-                        {'id': 'tvEx', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'choose-button__fake-checkbox'},
-                        {'id': 'shampoo2Ex', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'choose-button__fake-checkbox'}],
+                        [{'id': 'breakfastEx', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px'},
+                        {'id': 'write-tableEx', 'text': 'Письменный стол', 'name': 'write-table', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px', 'checked': true},
+                        {'id': 'food-tableEx', 'text': 'Стул для кормления', 'name': 'food-table', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px', 'checked': true},
+                        {'id': 'baby-bedEx', 'text': 'Кроватка', 'name': 'baby-bed', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px', 'checked': true},
+                        {'id': 'tvEx', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px'},
+                        {'id': 'shampoo1Ex', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px'},
+                        {'id': 'tvEx', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px'},
+                        {'id': 'shampoo2Ex', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px'}],
                         'expandable checkbox list',
-                        'menu-open')
-                .form-elements__column.form-elements_margin-left_130px
-                    +text('rich checkbox button', 'h3', 'text_h3 text_margin-bottom_16px')
+                        'menu-open iqdropdown__checkbox-list_margin-top_49px')
+                .form-elements__column.form-elements__column_margin-left_180px.form-elements__column_width_266px
+                    +text('rich checkbox buttons', 'h3', 'text_h3 text_margin-bottom_16px')
                     +rich-checkbox-button([{
                         'id': 'wide-hall',
                         'text': 'Широкий коридор',
@@ -215,7 +216,7 @@ block content
                         'description': 'На 1 этаже вас встретит специалист  и проводит до номера.',
                         'fakeClasses': 'choose-button__fake-checkbox',
                         'labelClasses': 'choose-button__label_bold'}])
-                .form-elements__column.form-elements_margin-left_130px
+                .form-elements__column.form-elements__column_margin-left_130px.form-elements__column_margin-right_21px
                     +text('bullet list', 'h3', 'text_h3 text_margin-bottom_16px')
                     +bullet-list([{
                         'text': 'Нельзя с питомцами',
@@ -234,11 +235,11 @@ block content
                         'textClasses': 'text_p text_width_271px',
                         'bulletClasses': 'bullet__bullet_margin-right_10px',
                     }])
-            .form-elements__block.form-elements_margin-top_70px.form-elements_70px 
-                .form-elements__column.form-elements_margin-left_130px
+            .form-elements__block.form-elements__block_margin-top_222px
+                .form-elements__column.form-elements__column_margin-left_130px
                     +advantage('insert_emoticon', 'material-icons__insert-emoticon', 'Комфорт', 'Шумопоглощающие стены', false)
                     +advantage('location_city', 'material-icons__location-city', 'Удобство', 'Окно в каждой из спален', true)
-                .form-elements__column.form-elements_margin-left_130px 
+                .form-elements__column.form-elements__column_margin-left_130px 
                     +review({
                             'text': 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
                             'personName': 'Мурад Сарафанов',
