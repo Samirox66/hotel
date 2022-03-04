@@ -1,8 +1,8 @@
-mixin header(hasUser, aboutUsLinkClasses, userName)
+mixin header(hasUser, userName, menuClasses)
     header.header
         .header__wrapper
             +logo('logo__body')
-            +menu((hasUser, aboutUsLinkClasses, userName))
+            +menu(hasUser, userName, menuClasses)
 
 
 

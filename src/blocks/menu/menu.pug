@@ -1,12 +1,12 @@
-mixin menu(hasUser, aboutUsLinkClasses, userName)
-    nav.menu
+mixin menu(hasUser, userName, menuClasses)
+    nav.menu(class="" + menuClasses)
         ul.menu__list
-            li.menu__item
-                a.menu__link(class="" + aboutUsLInkClasses href="gg.com") О нас
-            li.menu__item 
+            li.menu__item.menu__item_width_43px
+                a.menu__link.menu__link_bold(href="gg.com") О нас
+            li.menu__item.menu__item_width_74px
                 a.menu__link(href="gg.com") Услуги
                 .material-icons.material-icons__expand-more.material-icons__expand-more_width_24px expand_more
-            li.menu__item 
+            li.menu__item.menu__item_width_72px
                 a.menu__link(href="gg.com") Вакансии
             li.menu__item 
                 a.menu__link(href="gg.com") Новости
@@ -16,7 +16,7 @@ mixin menu(hasUser, aboutUsLinkClasses, userName)
             if (hasUser)
                 li.menu__item.menu__line
                 li.menu__item.menu__user
-                    a.menu__link(href="gg.com")= userName
+                    a.menu__link(href="gg.com")=userName
             else
                 li.menu__item.menu__sign-in
                         +button({

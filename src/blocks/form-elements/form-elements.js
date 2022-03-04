@@ -28,3 +28,8 @@ import './form-elements__buttons_margin-top_30px.scss';
 import './form-elements__pay-button.scss';
 import './form-elements__column_width_266px.scss';
 import './form-elements__filter-date-dropdown.scss';
+import './form-elements__range-slider.scss';
+import './form-elements__pagination.scss';
+import './form-elements__button_margin-left_20px.scss';
+import './form-elements__button_width_61px.scss';
+import './form-elements__button_height_15px.scss';

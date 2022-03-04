@@ -28,11 +28,11 @@ block content
                 .form-elements__column
                     .form-elements__block.form-elements__block_justify-content_space-between.form-elements__block_margin-bottom_5px 
                         +text('Text Field', 'h3', 'text_h3')
-                        +text('Default', 'h3', 'text_h3 text_color-opacity_25per text_font-weight_normal')
+                        +text('Default', 'h3', 'text_h3 text_color-opacity_50per text_font-weight_normal')
                     +input('text', 'input_width_320px input_height_44px', 'Email')
                     .form-elements__block.form-elements__block_justify-content_space-between.form-elements__block_margin-bottom_5px.form-elements__block_margin-top_20px
                         +text('Text Field', 'h3', 'text_h3')
-                        +text('Hover / Focus', 'h3', 'text_h3 text_color-opacity_25per text_font-weight_normal')
+                        +text('Hover / Focus', 'h3', 'text_h3 text_color-opacity_50per text_font-weight_normal')
                     +input('text', 'input_width_320px input_height_44px', 'This is pretty awesome')
                     .form-elements__block.form-elements__block_margin-top_20px.form-elements__block_margin-bottom_5px
                         +text('dropdown', 'h3', 'text_h3 text_margin-bottom_5px')
@@ -108,8 +108,9 @@ block content
                     .form-elements__flex
                         +rate-button(4)
                         +rate-button(5, 'rate-button_margin-left_20')
-                .form-elements__column.form-elements__column_margin-left_130px 
-                    +range-slider('Range Slider')
+                .form-elements__column.form-elements__column_margin-left_130px
+                    .form-elements__range-slider
+                        +range-slider('Range Slider')
                     .form-elements__block.form-elements__block_margin-top_40px
                         +text('buttons', 'h3', 'text_h3 text_margin-bottom_16px')
                     .form-elements__buttons
@@ -119,7 +120,7 @@ block content
                                 'buttonClasses': 'button_background-color_blue button_border_none',
                                 'textClasses': 'button_color_white',
                                 'type': 'button'})
-                        .form-elements__button.form-elements__button_width_99px
+                        .form-elements__button.form-elements__button_width_99px.form-elements__button_margin-left_20px
                             +button({
                                 'text': 'Click me',
                                 'buttonClasses': 'button_background-color_blue button_border_none button_opacity_50per',
@@ -132,23 +133,25 @@ block content
                                 'buttonClasses': 'button_background-color_white button_border_blue',
                                 'textClasses': 'button_color_blue',
                                 'type': 'button'})
-                        .form-elements__button.form-elements__button_width_99px
+                        .form-elements__button.form-elements__button_width_99px.form-elements__button_margin-left_20px
                             +button({
                                 'text': 'click me',
                                 'buttonClasses': 'button_background-color_white button_border_blue button_border-opacity_50per',
                                 'textClasses': 'button_color_blue',
                                 'type': 'button'})
                     .form-elements__buttons.form-elements__buttons_margin-top_30px
-                        +button({
-                            'text': 'click me',
-                            'buttonClasses': 'button_border_none button_background-color_white',
-                            'textClasses': 'button_color_blue',
-                            'type': 'button'})
-                        +button({
-                            'text': 'click me',
-                            'buttonClasses': 'button_border_none button_background-color_white',
-                            'textClasses': 'button_color_dark',
-                            'type': 'button'})
+                        .form-elements__button.form-elements__button_width_61px.form-elements__button_height_15px
+                            +button({
+                                'text': 'click me',
+                                'buttonClasses': 'button_border_none button_background-color_white',
+                                'textClasses': 'button_color_blue',
+                                'type': 'button'})
+                        .form-elements__button.form-elements__button_width_61px.form-elements__button_height_15px.form-elements__button_margin-left_20px
+                            +button({
+                                'text': 'click me',
+                                'buttonClasses': 'button_border_none button_background-color_white',
+                                'textClasses': 'button_color_dark',
+                                'type': 'button'})
                     .form-elements_margin-top_30px
                     .form-elements__pay-button
                         +button({
@@ -159,7 +162,8 @@ block content
                             'hasArrow': true})
                     .form-elements__block.form-elements__block_margin-top_40px
                         +text('pagination', 'h3', 'text_h3 text_margin-bottom_16px')
-                    +pagination(1)
+                    .form-elements__pagination
+                        +pagination(1)
             .form-elements__block.form-elements__block_margin-top_100px
                 .form-elements__column
                     .form-elements__block.form-elements__block_justify-content_space-between

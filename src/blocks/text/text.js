@@ -20,6 +20,8 @@ import './text_width_150px.scss';
 import './text_margin-left_20px.scss';
 import './text_margin-bottom_20px.scss';
 import './text_margin-left_347px.scss';
+import './text_margin-left_10px.scss';
+import './text_margin-left_8px.scss';
 import './text_width_341px.scss';
 import './text_width_271px.scss';
 import './text_align-self_center.scss';
