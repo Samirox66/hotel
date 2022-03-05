@@ -1,8 +1,8 @@
-mixin date-dropdown(dateId, value)
+mixin date-dropdown(dateId, value, value2)
     form.date-dropdown
         label.date-dropdown__label
             input.date-dropdown__input(id=dateId type="text" value=value data-class="departure" readonly)
             .material-icons.material-icons__expand-more expand_more 
         label.date-dropdown__label.date-dropdown__label_margin-left_20px
-            input.date-dropdown__input(id=dateId + "_arrival" type="text" value=value data-class="arrival" readonly)
+            input.date-dropdown__input(id=dateId + "_arrival" type="text" value=value2 data-class="arrival" readonly)
             .material-icons.material-icons__expand-more expand_more

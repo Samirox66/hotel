@@ -7,6 +7,7 @@ import './toggle__text.scss';
 import './toggle_active.scss';
 import './toggle__switch_active.scss';
 import './toggle__form.scss';
+import './toggle_margin-bottom_10px.scss';
 
 const callback = function () {
   $('.toggle__form').each(function () {

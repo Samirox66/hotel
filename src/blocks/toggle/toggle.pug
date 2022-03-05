@@ -1,5 +1,5 @@
-mixin toggle(check, text)
-    .toggle
+mixin toggle(check, text, classes)
+    .toggle(class="" + classes)
         form.toggle__form(action='post')
             .toggle__switch
             if (check)

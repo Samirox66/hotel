@@ -1,5 +1,5 @@
-mixin like-button(iconState, buttonState, numberState, number, favorite) 
-    form.like-button(id='like-button')
+mixin like-button(iconState, buttonState, numberState, number, favorite ,likeButtonClasses) 
+    form.like-button(id='like-button' class=likeButtonClasses)
         button.like-button__button(type='button' class='' + buttonState form='like-button')
             .material-icons(class='' + iconState)=favorite
             .like-button__number(class='' + numberState)=number

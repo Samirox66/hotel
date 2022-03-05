@@ -1,11 +1,14 @@
 import './form-elements.scss';
+import './form-elements__review.scss';
 import './form-elements__block.scss';
 import './form-elements__block_margin-bottom_5px.scss';
 import './form-elements__column.scss';
-import './form-elements__column_margin-left_180px.scss';
-import './form-elements__column_margin-left_130px.scss';
+import './form-elements__column_margin-left_181px.scss';
+import './form-elements__column_margin-left_132px.scss';
+import './form-elements__column_margin-left_126px.scss';
 import './form-elements__column_margin-left_72px.scss';
 import './form-elements__column_margin-right_21px.scss';
+import './form-elements__column_margin-left_156px.scss';
 import './form-elements__date.scss';
 import './form-elements__title.scss';
 import './form-elements__flex.scss';
