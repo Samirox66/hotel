@@ -121,6 +121,17 @@ document.addEventListener('DOMContentLoaded', () => {
   $('.iqdropdown.iqdropdown__checkbox-list').find('.iqdropdown-item-controls').addClass('checkbox-list__controls');
 });
 
+$(function() {
+  const $dropdownMenus = $('.iqdropdown .dropdown__clear-button .button__button').parents('.iqdropdown-menu');
+  const itemCount = ($dropdownMenus.find('.counter').text()).split('');
+  for (let i = 0; i < itemCount.length; i += 4) {
+    const sumOfItems = itemCount[i] + itemCount[i + 1] + itemCount[i + 2];
+    if (sumOfItems === '000') {
+      console.log($dropdownMenus[i / 4]);
+    }
+  }
+})
+
 $('.iqdropdown .dropdown__submit-button .button__button').on('click', function () {
   $(this).parents('.iqdropdown').removeClass('menu-open');
 });

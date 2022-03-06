@@ -1,5 +1,5 @@
 mixin button(button)
-    form.button(action=button.action)
+    form.button(action=button.action class="" + button.classes)
         button.button__button(class="" + button.buttonClasses type=button.type)
             p.button__text(class="" + button.textClasses)=button.text
             if (button.hasArrow)

@@ -1,6 +1,6 @@
-mixin input(formType, inputClasses, text, hasArrow)
+mixin input(formType, inputClasses, placeholder, hasArrow, value)
     form.input(class="" + inputClasses)
-        input.input__input(type=formType placeholder=text)
+        input.input__input(type=formType placeholder=placeholder value=value)
         if (hasArrow)
             button(type='submit').input__arrow-forward
                 .material-icons.material-icons__arrow-forward.input__arrow-forward_color_blue arrow_forward

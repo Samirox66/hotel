@@ -33,7 +33,7 @@ block content
                     .form-elements__block.form-elements__block_justify-content_space-between.form-elements__block_margin-bottom_5px.form-elements__block_margin-top_20px
                         +text('Text Field', 'h3', 'text_h3')
                         +text('Hover / Focus', 'h3', 'text_h3 text_color-opacity_50per text_font-weight_normal')
-                    +input('text', 'input_width_320px input_height_44px', 'This is pretty awesome')
+                    +input('text', 'input_width_320px input_height_44px', '', false,'This is pretty awesome')
                     .form-elements__block.form-elements__block_margin-top_20px.form-elements__block_margin-bottom_5px
                         +text('dropdown', 'h3', 'text_h3 text_margin-bottom_5px')
                     +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'guest1')
@@ -219,8 +219,9 @@ block content
                         'name': 'wide-hall',
                         'description': 'На 1 этаже вас встретит специалист  и проводит до номера.',
                         'fakeClasses': 'choose-button__fake-checkbox',
-                        'labelClasses': 'choose-button__label_bold'}])
-                .form-elements__column.form-elements__column_margin-left_126px.form-elements__column_margin-right_21px
+                        'labelClasses': 'choose-button__label_bold',
+                        'buttonClasses': 'choose-button_margin-top_10px'}])
+                .form-elements__column.form-elements__column_margin-left_126px.form-elements__column_margin-right_28px
                     +text('bullet list', 'h3', 'text_h3 text_margin-bottom_16px')
                     +bullet-list([{
                         'text': 'Нельзя с питомцами',
@@ -253,7 +254,7 @@ block content
                         title: 'Удобство',
                         description: 'Окно в каждой из спален',
                         isLast: true})
-                .form-elements__column.form-elements__column_margin-left_156px
+                .form-elements__column.form-elements__column_margin-left_156px.form-elements__column_align-self_flex-end
                     .form-elements__review
                         +review({
                                 'text': 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
