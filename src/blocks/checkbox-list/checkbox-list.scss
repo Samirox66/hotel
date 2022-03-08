@@ -1,10 +1,10 @@
 .iqdropdown.iqdropdown__checkbox-list {
     border: none;
     padding-left: 0;
-    height: 15px;
+    height: 44px;
     
-    &_margin-top_49px {
-        margin-top: 49px;
+    &_margin-top_20px {
+        margin-top: 20px;
     }
 
     .iqdropdown-menu.checkbox-list_border_none {
@@ -23,6 +23,8 @@
     }
     .iqdropdown-menu-option.iqdropdown-menu-option__checkbox-list {
         padding-left: 0;
+        margin-top: 3px;
+        margin-bottom: 10px;
     }
     .iqdropdown-selection p.checkbox-list__text {
         font-family: 'Montserrat', sans-serif;

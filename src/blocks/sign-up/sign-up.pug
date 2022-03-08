@@ -13,14 +13,16 @@ mixin sign-up(payButtonText)
                 'name': 'gender',
                 'value':'man',
                 'checked': true,
-                'fakeClasses': 'choose-button__fake-radio'}, 'radio')
+                'fakeClasses': 'choose-button__fake-radio',
+                'labelClasses': 'choose-button__label_line-height_24px'}, 'radio')
             +choose-button({
                 'id':'women',
                 'text':'Женщина',
                 'name': 'gender',
                 'value':'woman',
                 'fakeClasses': 'choose-button__fake-radio',
-                'buttonClasses': 'choose-button_margin-left_20px'}, 'radio')
+                'buttonClasses': 'choose-button_margin-left_20px',
+                'labelClasses':'choose-button__label_line-height_24px'}, 'radio')
         section.sign-up__row.sign-up__row_margin-top_20px
             .sign-up__column 
                 +text('дата рождения', 'h3', 'text_h3 text_margin-bottom_5px')

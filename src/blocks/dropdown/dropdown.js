@@ -23,8 +23,21 @@ const createGuestDropdown = function (dataId, strings) {
     },
     onChange: () => {
       $('.iqdropdown .button-increment').on('click', function () {
-        if ($(this).parents('.iqdropdown-menu').find('.dropdown__buttons') && $(this).parents('.iqdropdown-menu').find('.dropdown__clear-button').is(':hidden')) {
-          $(this).parents('.iqdropdown-menu').find('.dropdown__clear-button').show();
+        const $menu = $(this).parents('.iqdropdown-menu')
+        if ($menu.find('.dropdown__buttons') && $menu.find('.dropdown__clear-button .button__button').is(':hidden')) {
+          $menu.find('.dropdown__clear-button .button__button').show();
+        }
+
+        const $buttonDecrement = $(this).parents('.iqdropdown-item-controls').find('.button-decrement');
+        
+        if ($buttonDecrement.hasClass('button-decrement_inactive')) {
+            $buttonDecrement.removeClass('button-decrement_inactive')
+        }
+      });
+      $('.iqdropdown .button-decrement').on('click', function () {
+        const itemCount = $(this).parents('.iqdropdown-item-controls').find('.counter').text();
+        if (itemCount === '0' && !$(this).hasClass('button-decrement_inactive')) {
+          $(this).addClass('button-decrement_inactive');
         }
       });
     },
@@ -53,7 +66,6 @@ const createGuestDropdown = function (dataId, strings) {
           guest += `, ${itemCount.babies} младенца`;
         }
       }
-
       if (totalItems === 0) {
         $(`.iqdropdown[data-id=${dataId}] .button__clear .button__button`).hide();
       } else {
@@ -65,7 +77,7 @@ const createGuestDropdown = function (dataId, strings) {
   });
 };
 
-document.addEventListener('DOMContentLoaded', () => {
+$(function() {
   createGuestDropdown('guest1', ['гостей', 'гость', 'гостя', 'Сколько гостей']);
   createGuestDropdown('guest2', ['гостей', 'гость', 'гостя', 'Сколько гостей']);
   createGuestDropdown('guest3', ['гостей', 'гость', 'гостя', 'Сколько гостей']);
@@ -84,6 +96,20 @@ document.addEventListener('DOMContentLoaded', () => {
       displayCls: 'iqdropdown-item-display',
       controlsCls: 'iqdropdown-item-controls',
       counterCls: 'counter',
+    },
+    onChange: () => {
+      $('.iqdropdown .button-increment').on('click', function () {
+        const $buttonDecrement = $(this).parents('.iqdropdown-item-controls').find('.button-decrement'); 
+        if ($buttonDecrement.hasClass('button-decrement_inactive')) {
+            $buttonDecrement.removeClass('button-decrement_inactive')
+        }
+      });
+      $('.iqdropdown .button-decrement').on('click', function () {
+        const itemCount = $(this).parents('.iqdropdown-item-controls').find('.counter').text();
+        if (itemCount === '0' && !$(this).hasClass('button-decrement_inactive')) {
+          $(this).addClass('button-decrement_inactive');
+        }
+      });
     },
     setSelectionText: (itemCount) => {
       let furniture = '';
@@ -123,13 +149,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 $(function() {
   const $dropdownMenus = $('.iqdropdown .dropdown__clear-button .button__button').parents('.iqdropdown-menu');
-  const itemCount = ($dropdownMenus.find('.counter').text()).split('');
-  for (let i = 0; i < itemCount.length; i += 4) {
-    const sumOfItems = itemCount[i] + itemCount[i + 1] + itemCount[i + 2];
-    if (sumOfItems === '000') {
-      console.log($dropdownMenus[i / 4]);
+  for (let dropdownMenu of $dropdownMenus) {
+    const itemCount = ($(dropdownMenu).find('.counter').text()).slice(0, -1).split('');
+    const sum = itemCount.reduce((sum, current) => sum + current);
+    if (sum === '000') {
+      $(dropdownMenu).find('.dropdown__clear-button .button__button').hide();
     }
   }
+
+  $('.iqdropdown .counter').each(function() {
+    if ($(this).text() === '0') {
+      $(this).parent().find('.button-decrement').addClass('button-decrement_inactive');
+    }
+  });
 })
 
 $('.iqdropdown .dropdown__submit-button .button__button').on('click', function () {
@@ -148,5 +180,6 @@ $('.iqdropdown .dropdown__clear-button .button__button').on('click', function ()
     }
   }
 
-  $(this).parents('.dropdown__clear-button').hide();
+  $(this).parents('.iqdropdown-menu').find('.button-decrement').addClass('button-decrement_inactive');
+  $(this).hide();
 });

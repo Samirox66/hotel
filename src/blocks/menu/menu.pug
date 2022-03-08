@@ -1,8 +1,8 @@
-mixin menu(hasUser, userName, menuClasses)
+mixin menu(hasUser, userName, menuClasses, bold)
     nav.menu(class="" + menuClasses)
         ul.menu__list
             li.menu__item.menu__item_width_43px
-                a.menu__link.menu__link_bold(href="gg.com") О нас
+                a.menu__link(class="" + bold href="gg.com") О нас
             li.menu__item.menu__item_width_74px
                 a.menu__link(href="gg.com") Услуги
                 .material-icons.material-icons__expand-more.material-icons__expand-more_width_24px expand_more

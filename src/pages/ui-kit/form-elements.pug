@@ -182,7 +182,7 @@ block content
                     .form-elements__dropdown
                         +text('dropdown', 'h3', 'text_h3 text_margin-bottom_5px')
                         +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '1'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'guest3', 'menu-open')
-            .form-elements__block.form-elements__block_margin-top_172px
+            .form-elements__block.form-elements__block_margin-top_158px
                 .form-elements__column.form-elements__column_width_266px
                     +checkbox-list(
                         [{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px'},
@@ -204,8 +204,8 @@ block content
                         {'id': 'tvEx', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px'},
                         {'id': 'shampoo2Ex', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px'}],
                         'expandable checkbox list',
-                        'menu-open iqdropdown__checkbox-list_margin-top_49px')
-                .form-elements__column.form-elements__column_margin-left_181px.form-elements__column_width_266px
+                        'menu-open iqdropdown__checkbox-list_margin-top_20px')
+                .form-elements__column.form-elements__column_margin-left_181px.form-elements__column_width_266px.form-elements__column_margin-top_14px
                     +text('rich checkbox buttons', 'h3', 'text_h3 text_margin-bottom_16px')
                     +rich-checkbox-button([{
                         'id': 'wide-hall',
@@ -213,7 +213,8 @@ block content
                         'name': 'wide-hall',
                         'description': 'Ширина коридоров в номере не менее 91 см.',
                         'fakeClasses': 'choose-button__fake-checkbox',
-                        'labelClasses': 'choose-button__label_bold'},
+                        'labelClasses': 'choose-button__label_bold',
+                        'descriptionClasses': 'rich-checkbox-button__description_width_203px'},
                         {'id': 'invalid-helper',
                         'text': 'Помощник для инвалидов',
                         'name': 'wide-hall',
@@ -221,7 +222,7 @@ block content
                         'fakeClasses': 'choose-button__fake-checkbox',
                         'labelClasses': 'choose-button__label_bold',
                         'buttonClasses': 'choose-button_margin-top_10px'}])
-                .form-elements__column.form-elements__column_margin-left_126px.form-elements__column_margin-right_28px
+                .form-elements__column.form-elements__column_margin-left_126px.form-elements__column_margin-right_28px.form-elements__column_margin-top_14px
                     +text('bullet list', 'h3', 'text_h3 text_margin-bottom_16px')
                     +bullet-list([{
                         'text': 'Нельзя с питомцами',

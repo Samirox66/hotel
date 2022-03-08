@@ -11,3 +11,4 @@ import './choose-button__label_width_192px.scss';
 import './choose-button_margin-top_10px.scss';
 import './choose-button__label_bold.scss';
 import './choose-button__label_line-height_18px.scss';
+import './choose-button__label_line-height_24px.scss';

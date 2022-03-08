@@ -10,6 +10,7 @@ import './form-elements__column_margin-left_72px.scss';
 import './form-elements__column_margin-right_28px.scss';
 import './form-elements__column_margin-left_156px.scss';
 import './form-elements__column_align-self_flex-end.scss';
+import './form-elements__column_margin-top_14px.scss';
 import './form-elements__date.scss';
 import './form-elements__title.scss';
 import './form-elements__flex.scss';
@@ -20,7 +21,7 @@ import './form-elements__block_justify-content_space-between.scss';
 import './form-elements__block_margin-top_20px.scss'
 import './form-elements_margin-top_30px.scss';
 import './form-elements__block_margin-top_40px.scss';
-import './form-elements__block_margin-top_172px.scss';
+import './form-elements__block_margin-top_158px.scss';
 import './form-elements__block_margin-top_222px.scss';
 import './form-elements__logo.scss';
 import './form-elements__wrapper.scss';
