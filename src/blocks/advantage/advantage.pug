@@ -1,8 +1,8 @@
-mixin advantage(advantage)
-    .advantage 
-        .material-icons(class="" + advantage.iconClasses)=advantage.iconText 
-        .advantage__text(class="" + advantage.titleClasses) 
-            p.advantage__title=advantage.title
-            p.advantage__description=advantage.description
-    if (!advantage.isLast)
-        .advantage__line
+mixin advantage(advantage = { 'iconClasses': 'material-icons__location-city', 'titleClasses': '', 'title': 'Удобство', 'description': 'Обеспечит вам преимущество', 'iconText' :'location_city', 'isLast': false})
+  .advantage 
+    .material-icons(class="" + advantage.iconClasses)=advantage.iconText 
+    .advantage__text(class="" + advantage.titleClasses) 
+        p.advantage__title=advantage.title
+        p.advantage__description=advantage.description
+  if (!advantage.isLast)
+      .advantage__line

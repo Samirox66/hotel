@@ -1,4 +1,4 @@
-mixin button(button)
+mixin button(button = { 'action': 'submit', 'classes': '', 'buttonClasses': '', 'type': 'button', 'textClasses': 'text_p', 'text': 'кнопка', 'hasArrow': false })
     form.button(action=button.action class="" + button.classes)
         button.button__button(class="" + button.buttonClasses type=button.type)
             p.button__text(class="" + button.textClasses)=button.text

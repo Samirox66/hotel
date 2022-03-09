@@ -36,6 +36,6 @@ if (slider != null) {
       values[1] = `${values[1].slice(0, -3)} ${values[1].slice(-3)}`;
     }
 
-    $('.range-slider__range').text(`${values[0]}₽ - ${values[1]}₽`);
+    $('.js-range-slider__range').text(`${values[0]}₽ - ${values[1]}₽`);
   });
 }

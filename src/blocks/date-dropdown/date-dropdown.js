@@ -141,6 +141,6 @@ window.addEventListener('load', () => {
   $('#date-dropdown-ui-kit-cards2').val('19.08.2019');
 });
 
-$('.date-dropdown__input[data-class=arrival]').on('click', function () {
+$('.js-date-dropdown__input[data-class=arrival]').on('click', function () {
   $(this).parents('.date-dropdown').find('.date-dropdown__input[data-class=departure').trigger('click');
 });

@@ -1,4 +1,4 @@
-mixin choose-button(button, types)
+mixin choose-button(button = { 'id': '', 'buttonClasses': '', 'name': '', 'value': '', 'checked': false, 'fakeClasses': '', 'labelClasses': '', 'text': 'кнопка'}, types = 'radio')
     label.choose-button(for=button.id class="" + button.buttonClasses) 
         input.choose-button__button(type=types id=button.id name=button.name value=button.value checked=button.checked)
         span.choose-button__fake-button(class="" + button.fakeClasses)

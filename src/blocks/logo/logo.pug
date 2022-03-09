@@ -1,4 +1,4 @@
-mixin logo(classes, logoClasses, uikit)   
+mixin logo(classes = '', logoClasses = '', uikit = null)   
     section.logo(class="" + classes)
         img.logo__img(class='' + logoClasses src='assets/img/logo__img.svg', alt='Toxin')
         if(uikit == null)

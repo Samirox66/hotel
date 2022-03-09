@@ -1,4 +1,4 @@
-mixin input(formType, inputClasses, placeholder, hasArrow, value)
+mixin input(formType = 'button', inputClasses = '', placeholder = 'input', hasArrow = false, value = '')
     form.input(class="" + inputClasses)
         input.input__input(type=formType placeholder=placeholder value=value)
         if (hasArrow)

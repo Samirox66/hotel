@@ -1,4 +1,4 @@
-mixin rich-checkbox-button(buttons, buttonClasses)
+mixin rich-checkbox-button(buttons = [], buttonClasses = '')
     .rich-checkbox-button(class="" + buttonClasses)
         each button in buttons
             +choose-button(button, 'checkbox')

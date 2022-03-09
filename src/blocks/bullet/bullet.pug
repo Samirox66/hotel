@@ -1,4 +1,4 @@
-mixin bullet(bullet)
+mixin bullet(bullet = { 'classes': '', 'bulletClasses': '', 'textClasses': 'text_p', 'text': 'выбор за тобой'})
     .bullet(class='' + bullet.classes) 
         .bullet__bullet(class='' + bullet.bulletClasses)
         +text(bullet.text, 'p', bullet.textClasses)

@@ -1,4 +1,4 @@
-mixin choose-room(room, reviewNumber, price, expand)
+mixin choose-room(room = { 'roomClasses': '', 'img': '', 'isLux': false, 'rate': 5 }, reviewNumber = 0, price = '5000', expand = false)
     .choose-room(class="" + room.roomClasses)
         .choose-room__img(class="" + room.img)
             if (expand)

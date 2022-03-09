@@ -1,4 +1,4 @@
-mixin menu(hasUser, userName, menuClasses, bold)
+mixin menu(hasUser = false, userName = '', menuClasses = '', bold = '')
     nav.menu(class="" + menuClasses)
         ul.menu__list
             li.menu__item.menu__item_width_43px

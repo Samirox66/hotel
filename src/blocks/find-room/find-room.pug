@@ -1,4 +1,4 @@
-mixin find-room(findRoomClasses, dateDropdownId, dropdownId)
+mixin find-room(findRoomClasses='', dateDropdownId='', dropdownId='')
     article.find-room(class="" + findRoomClasses)
         .find-room__row.find-room__row_margin-top_40px
             +text('Найдём номера под ваши пожелания', 'h1', 'text_h1')

@@ -1,4 +1,4 @@
-mixin room(dateDropdownId, dropdownId, date) 
+mixin room(dateDropdownId = '', dropdownId = '', date = { 'departure': '01.01.1970', 'arrival': '18.01.1970'}) 
     .room
         .room__row.room__row_margin-top_40px 
             p.room__sign-number № 
@@ -12,7 +12,7 @@ mixin room(dateDropdownId, dropdownId, date)
                 .room__dates-titles
                     +text('прибытие', 'h3', 'text_h3 text_margin-bottom_5px text_width_150px')
                     +text('выезд', 'h3', 'text_h3 text_margin-bottom_5px text_width_150px text_margin-left_20px')
-                +date-dropdown(dateDropdownId, date.arrival, date.arrival)
+                +date-dropdown(dateDropdownId, date.departure, date.arrival)
         .room__row.room__row_margin-top_20px 
             .room__column
                 +text('гости', 'h3', 'text_h3 text_margin-bottom_5px')

@@ -1,4 +1,4 @@
-mixin rate-button(rate, formClasses) 
+mixin rate-button(rate = 3, formClasses = '') 
     .rate-button(class='' + formClasses)
         - for(var i = 0; i < rate; i++)
             .material-icons.material-icons__star star
