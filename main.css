@@ -368,6 +368,8 @@
 
 .text_margin-bottom_5px{margin-bottom:5px}
 
+.text_margin-bottom_21px{margin-bottom:21px}
+
 .text_width_214px{width:214px}
 
 .text_align-self_flex-start{align-self:flex-start}
@@ -377,6 +379,8 @@
 .text_margin-bottom_16px{margin-bottom:16px}
 
 .text_margin-top_30px{margin-top:30px}
+
+.text_margin-top_1px{margin-top:1px}
 
 .text_color-opacity_50per{color:rgba(31,32,65,0.5)}
 
@@ -780,21 +784,17 @@
 
 .circle-diagram{display:flex;position:relative;width:120px;height:120px}
 
-.circle-diagram__left-half-circle{width:59px;height:121px;border:4px transparent;border-top-left-radius:125px;border-bottom-left-radius:125px;border-right:none;background:linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);position:relative}.circle-diagram__left-half-circle::after{position:absolute;content:'';left:4px;top:4px;width:55px;height:113px;background:white;border:4px transparent;border-top-left-radius:125px;border-bottom-left-radius:125px;border-right:none}
+.circle-diagram__chart{width:100%;height:100%}
 
-.circle-diagram__right-half-circle{margin-left:2px}
+.circle-diagram__unit{fill:none;stroke-width:4px}
 
-.circle-diagram__up-quarter{width:59px;height:59px;border:4px transparent;border-bottom:none;border-left:none;border-top-right-radius:125px;background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);position:relative}.circle-diagram__up-quarter::after{position:absolute;content:'';height:55px;width:59px;top:4px;right:4px;border-top:none;border-left:none;border-top-right-radius:125px;background:white}
-
-.circle-diagram__down-quarter{width:59px;height:60px;border:4px transparent;border-top:none;border-left:none;border-bottom-right-radius:125px;margin-top:2px;background:linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);position:relative}.circle-diagram__down-quarter::after{position:absolute;content:'';height:56px;width:59px;right:4px;border-top:none;border-left:none;border-bottom-right-radius:125px;background:white}
-
-.circle-diagram__text{position:absolute;display:flex;flex-direction:column;align-items:center;width:64px;top:30%;left:25%}
+.circle-diagram__text{position:absolute;display:flex;flex-direction:column;align-items:center;width:64px;top:30%;left:23%}
 
 .bullet{display:flex;min-width:140px}
 
 .bullet_margin-bottom_10px{margin-bottom:10px}
 
-.bullet__bullet{min-width:10.43px;height:10px;background:rgba(31,32,65,0.25);border-radius:50%;margin-top:6px}
+.bullet__bullet{min-width:10px;height:10px;background:rgba(31,32,65,0.25);border-radius:50%;margin-top:6px}
 
 .bullet__bullet_color_black{background:linear-gradient(180deg, #919191 0%, #3D4975 100%)}
 
