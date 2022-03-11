@@ -7,6 +7,7 @@ import './text_color-opacity_25per.scss';
 import './text_font-weight_normal.scss';
 import './text_margin-left_30px.scss';
 import './text_margin-bottom_5px.scss';
+import './text_margin-bottom_21px.scss';
 import './text_width_214px.scss';
 import './text_align-self_flex-start.scss';
 import './text_color_blue.scss';

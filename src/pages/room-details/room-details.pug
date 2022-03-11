@@ -54,9 +54,9 @@ block content
                             'titleClasses': 'advantage__text_width_222px',
                             'isLast': true})
                     .room-details-page__impression 
-                        +text('Впечатления от номера', 'h2', 'text_h2 text_margin-bottom_20px')
+                        +text('Впечатления от номера', 'h2', 'text_h2 text_margin-bottom_21px')
                         .room-details-page__row
-                            +circle-diagram(260)
+                            +circle-diagram(260, {great: 50, good: 25, okay: 25, bad: 0})
                             +bullet-list([{
                                 'text': 'Великолепно',
                                 'textClasses': 'text_p',
@@ -68,7 +68,7 @@ block content
                                 'bulletClasses': 'bullet__bullet_margin-right_5px bullet__bullet_color_green'
                             },
                             {
-                                'text': 'Удовлитворительно',
+                                'text': 'Удовлетворительно',
                                 'textClasses': 'text_p',
                                 'bulletClasses': 'bullet__bullet_margin-right_5px bullet__bullet_color_blue'
                             },

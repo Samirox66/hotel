@@ -1,9 +1,47 @@
-mixin circle-diagram(number)
-    .circle-diagram
-        .circle-diagram__left-half-circle 
-        .circle-diagram__right-half-circle 
-            .circle-diagram__up-quarter 
-            .circle-diagram__down-quarter
-        .circle-diagram__text
-            +text('260', 'h1', 'text_h1 text_color_blue')
-            +text('голосов', 'h3', 'text_h3 text_color_blue')
+mixin circle-diagram(number = 1, percent = { 'great': 50, 'good': 30, 'okay': 10, 'bad': 10})
+  .circle-diagram
+    svg.circle-diagram__chart(viewBox="0 0 120px 120px")
+      defs
+        linearGradient(id="green" x1="0%" y1="0%" x2="100%" y2="0%")
+          stop(offset="0%"   stop-color="#05a")
+          stop(offset="50%"  stop-color="#a55")
+          stop(offset="100%" stop-color="#0a5")
+        linearGradient(id="orange" x1="0%" y1="0%" x2="100%" y2="0%")
+          stop(offset="0%"   stop-color="#05a")
+          stop(offset="50%"  stop-color="#a55")
+          stop(offset="100%" stop-color="#0a5")
+        linearGradient(id="blue" x1="0%" y1="0%" x2="100%" y2="0%")
+          stop(offset="0%"   stop-color="#05a")
+          stop(offset="50%"  stop-color="#a55")
+          stop(offset="100%" stop-color="#0a5")
+        linearGradient(id="black" x1="0%" y1="0%" x2="100%" y2="0%")
+          stop(offset="0%"   stop-color="#05a")
+          stop(offset="50%"  stop-color="#a55")
+          stop(offset="100%" stop-color="#0a5")
+      circle.circle-diagram__unit(
+        r="48%"
+        cx="50%"
+        cy="50%"
+        style="stroke-dasharray: " + (percent.good * 3.64 - 3) + " 364; stroke-dashoffset: -1;"
+        stroke="url(#green)")
+      circle.circle-diagram__unit(
+        r="48%"
+        cx="50%"
+        cy="50%"
+        style="stroke-dasharray: " + (percent.great * 3.64 - 2) + " 364; stroke-dashoffset: -" + (percent.good * 3.64) + ";"
+        stroke="url(#orange)")
+      circle.circle-diagram__unit(
+        r="48%"
+        cx="50%"
+        cy="50%"
+        style="stroke-dasharray: " + (percent.okay * 3.64 - 3) + " 364; stroke-dashoffset: -" + ((percent.great + percent.good) * 3.64) + ";"
+        stroke="url(#blue)")
+      circle.circle-diagram__unit(
+        r="48%"
+        cx="50%"
+        cy="50%"
+        style="stroke-dasharray: " + (percent.bad * 3.64) + " 364; stroke-dashoffset: -" + ((percent.great + percent.good + percent.okay) * 3.64) + ";"
+        stroke="url(#black)")
+    .circle-diagram__text
+      +text(number, 'h1', 'text_h1 text_color_blue')
+      +text('голосов', 'h3', 'text_h3 text_color_blue')

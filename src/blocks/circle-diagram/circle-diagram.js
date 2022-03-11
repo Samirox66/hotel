@@ -1,6 +1,8 @@
 import './circle-diagram.scss';
-import './circle-diagram__left-half-circle.scss';
-import './circle-diagram__right-half-circle.scss';
-import './circle-diagram__up-quarter.scss';
-import './circle-diagram__down-quarter.scss';
+import './circle-diagram__chart.scss';
+import './circle-diagram__unit.scss';
+import './circle-diagram__unit_color_black.scss';
+import './circle-diagram__unit_color_orange.scss';
+import './circle-diagram__unit_color_green.scss';
+import './circle-diagram__unit_color_blue.scss';
 import './circle-diagram__text.scss';
