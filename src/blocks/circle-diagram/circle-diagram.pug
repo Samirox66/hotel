@@ -2,22 +2,18 @@ mixin circle-diagram(number = 1, percent = { 'great': 50, 'good': 30, 'okay': 10
   .circle-diagram
     svg.circle-diagram__chart(viewBox="0 0 120px 120px")
       defs
-        linearGradient(id="green" x1="0%" y1="0%" x2="100%" y2="0%")
-          stop(offset="0%"   stop-color="#05a")
-          stop(offset="50%"  stop-color="#a55")
-          stop(offset="100%" stop-color="#0a5")
-        linearGradient(id="orange" x1="0%" y1="0%" x2="100%" y2="0%")
-          stop(offset="0%"   stop-color="#05a")
-          stop(offset="50%"  stop-color="#a55")
-          stop(offset="100%" stop-color="#0a5")
-        linearGradient(id="blue" x1="0%" y1="0%" x2="100%" y2="0%")
-          stop(offset="0%"   stop-color="#05a")
-          stop(offset="50%"  stop-color="#a55")
-          stop(offset="100%" stop-color="#0a5")
-        linearGradient(id="black" x1="0%" y1="0%" x2="100%" y2="0%")
-          stop(offset="0%"   stop-color="#05a")
-          stop(offset="50%"  stop-color="#a55")
-          stop(offset="100%" stop-color="#0a5")
+        linearGradient(id="green")
+          stop(offset="100%" stop-color="#6FCF97")
+          stop(offset="0%" stop-color="#66D2EA")
+        linearGradient(id="orange" x1="0%" x2="0%" y1="0%" y2="100%")
+          stop(offset="0%" stop-color="#FFE39C")
+          stop(offset="100%" stop-color="#FFBA9C")
+        linearGradient(id="blue")
+          stop(offset="0%" stop-color="#BC9CFF")
+          stop(offset="100%" stop-color="#8BA4F9")
+        linearGradient(id="black")
+          stop(offset="0%" stop-color="#919191")
+          stop(offset="100%" stop-color="#3D4975")
       circle.circle-diagram__unit(
         r="48%"
         cx="50%"
@@ -44,4 +40,4 @@ mixin circle-diagram(number = 1, percent = { 'great': 50, 'good': 30, 'okay': 10
         stroke="url(#black)")
     .circle-diagram__text
       +text(number, 'h1', 'text_h1 text_color_blue')
-      +text('голосов', 'h3', 'text_h3 text_color_blue')
+      +text('голосов', 'h3', 'text_h3 text_color_blue text_margin-top_1px')
