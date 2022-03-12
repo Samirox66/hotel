@@ -1,34 +1,34 @@
 mixin menu(hasUser = false, userName = '', menuClasses = '', bold = '')
-    nav.menu(class="" + menuClasses)
-        ul.menu__list
-            li.menu__item.menu__item_width_43px
-                a.menu__link(class="" + bold href="gg.com") О нас
-            li.menu__item.menu__item_width_74px
-                a.menu__link(href="gg.com") Услуги
-                .material-icons.material-icons__expand-more.material-icons__expand-more_width_24px expand_more
-            li.menu__item.menu__item_width_72px
-                a.menu__link(href="gg.com") Вакансии
-            li.menu__item 
-                a.menu__link(href="gg.com") Новости
-            li.menu__item 
-                a.menu__link(href="gg.com") Соглашения
-                .material-icons.material-icons__expand-more.material-icons__expand-more_width_24px expand_more
-            if (hasUser)
-                li.menu__item.menu__line
-                li.menu__item.menu__user
-                    a.menu__link(href="gg.com")=userName
-            else
-                li.menu__item.menu__sign-in
-                        +button({
-                            'text': 'Войти',
-                            'buttonClasses': 'button_background-color_white button_border_blue',
-                            'textClasses': 'button_color_blue',
-                            'type': 'submit',
-                            'action': 'sign-in.html'})
-                li.menu__item.menu__sign-up
-                        +button({
-                            'text': 'Зарегистрироваться',
-                            'buttonClasses': 'button_color_white button_background-color_blue button_border_none',
-                            'textClasses': 'button_color_white',
-                            'type': 'submit',
-                            'action': 'registration.html'})
+  nav.menu(class="" + menuClasses)
+    ul.menu__list
+      li.menu__item.menu__item_width_43px
+        a.menu__link(class="" + bold href="gg.com") О нас
+      li.menu__item.menu__item_width_74px
+        a.menu__link(href="gg.com") Услуги
+        .material-icons.material-icons__expand-more.material-icons__expand-more_width_24px expand_more
+      li.menu__item.menu__item_width_72px
+        a.menu__link(href="gg.com") Вакансии
+      li.menu__item 
+        a.menu__link(href="gg.com") Новости
+      li.menu__item 
+        a.menu__link(href="gg.com") Соглашения
+        .material-icons.material-icons__expand-more.material-icons__expand-more_width_24px expand_more
+      if (hasUser)
+        li.menu__item.menu__line
+        li.menu__item.menu__user
+          a.menu__link(href="gg.com")=userName
+      else
+        li.menu__item.menu__sign-in
+          +button({
+            'text': 'Войти',
+            'buttonClasses': 'button_background-color_white button_border_blue',
+            'textClasses': 'button_color_blue',
+            'type': 'submit',
+            'action': 'sign-in.html'})
+        li.menu__item.menu__sign-up
+          +button({
+            'text': 'Зарегистрироваться',
+            'buttonClasses': 'button_color_white button_background-color_blue button_border_none',
+            'textClasses': 'button_color_white',
+            'type': 'submit',
+            'action': 'registration.html'})

@@ -1,10 +1,5 @@
 mixin header(hasUser = false, userName = '', menuClasses = '', bold = '')
-    header.header
-        .header__wrapper
-            +logo('logo__body')
-            +menu(hasUser, userName, menuClasses, bold)
-
-
-
-
-
+  header.header
+    .header__wrapper
+      +logo('logo__body')
+      +menu(hasUser, userName, menuClasses, bold)

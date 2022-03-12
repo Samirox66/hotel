@@ -8,5 +8,4 @@ import './color__example_background_dark-shade-5.scss';
 import './color__description.scss';
 import './color__body.scss';
 import './color__text.scss';
-import './color__hex.scss';
 import './color.scss';

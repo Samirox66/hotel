@@ -1,28 +1,28 @@
 mixin choose-room(room = { 'roomClasses': '', 'img': '', 'isLux': false, 'rate': 5 }, reviewNumber = 0, price = '5000', expand = false)
-    .choose-room(class="" + room.roomClasses)
-        .choose-room__img(class="" + room.img)
-            if (expand)
-                .choose-room__img-expand
-                    .choose-room__expand-left.material-icons.material-icons__expand-more expand_more
-                .choose-room__img-expand.choose-room__img-expand_transform_matrix
-                    .choose-room__expand-right.material-icons.material-icons__expand-more expand_more
-            .choose-room__dots
-                .choose-room__dot.choose-room__dot_background_white
-                .choose-room__dot
-                .choose-room__dot 
-                .choose-room__dot
-        .choose-room__information
-            .choose-room__row.choose-room__row_margin-top_20px
-                p.choose-room__sign-number № 
-                    span.choose-room__number=room.number
-                if (room.isLux)
-                    .choose-room__lux
-                        +text('люкс', 'h3', 'text_h3 text_color_blue')
-                p.choose-room__money=price 
-                    span.choose-room__in-day в сутки
-            .choose-room__row.choose-room__row_margin-top_10px
-                .choose-room__line
-            .choose-room__row.choose-room__row_margin-top_8px
-                +rate-button(room.rate)
-                p.choose-room__review-number=reviewNumber
-                    span.choose-room__review  Отзывов
+  .choose-room(class="" + room.roomClasses)
+    .choose-room__img(class="" + room.img)
+        if (expand)
+          .choose-room__img-expand
+            .choose-room__expand-left.material-icons.material-icons__expand-more expand_more
+          .choose-room__img-expand.choose-room__img-expand_transform_matrix
+            .choose-room__expand-right.material-icons.material-icons__expand-more expand_more
+        .choose-room__dots
+          .choose-room__dot.choose-room__dot_background_white
+          .choose-room__dot
+          .choose-room__dot 
+          .choose-room__dot
+    .choose-room__information
+      .choose-room__row.choose-room__row_margin-top_20px
+        p.choose-room__sign-number № 
+            span.choose-room__number=room.number
+        if (room.isLux)
+            .choose-room__lux
+                +text('люкс', 'h3', 'text_h3 text_color_blue')
+        p.choose-room__money=price 
+            span.choose-room__in-day в сутки
+      .choose-room__row.choose-room__row_margin-top_10px
+        .choose-room__line
+      .choose-room__row.choose-room__row_margin-top_8px
+        +rate-button(room.rate)
+        p.choose-room__review-number=reviewNumber
+          span.choose-room__review  Отзывов

@@ -1,18 +1,18 @@
 .input__input {
-    font-family: 'Montserrat';
-    width: 100%;
-    border: none;
+  font-family: 'Montserrat';
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  line-height: 1.286rem;
+  padding-left: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  &:hover, &:focus {
     font-size: 1rem;
-    line-height: 1.286rem;
-    padding-left: 14px;
+    line-height: 1.714rem;
     color: rgba(31, 32, 65, 0.75);
-    &:hover, &:focus {
-        font-size: 1rem;
-        line-height: 1.714rem;
-        color: rgba(31, 32, 65, 0.75);
-    }
-    &::placeholder {
-        color: rgba(31, 32, 65, 0.25);
-    }
-    
+  }
+  &::placeholder {
+    color: rgba(31, 32, 65, 0.25);
+  }
+  
 }
