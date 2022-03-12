@@ -11,13 +11,13 @@ include ../../blocks/sign-up/sign-up.pug
 include ../../blocks/menu/menu.pug
 
 block variables 
-    - var titlePage = registration
+  - var titlePage = registration
 
 block content 
-    .registration
-        +header(false)
-        main.registration-page__background-img
-            .registration-page__sign-up
-                +sign-up('зарегистрироваться')
-        include ../../blocks/footer1/footer1.pug
+  .registration
+    +header(false)
+    main.registration-page__background-img
+      .registration-page__sign-up
+        +sign-up('зарегистрироваться')
+    include ../../blocks/footer1/footer1.pug
 

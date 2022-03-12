@@ -1,6 +1,6 @@
 mixin rate-button(rate = 3, formClasses = '') 
-    .rate-button(class='' + formClasses)
-        - for(var i = 0; i < rate; i++)
-            .material-icons.material-icons__star star
-        - for(var i = 0; i < 5 - rate; i++)
-            .material-icons.material-icons__star-border star_border
+  .rate-button(class='' + formClasses)
+    - for(var i = 0; i < rate; i++)
+      .material-icons.material-icons__star star
+    - for(var i = 0; i < 5 - rate; i++)
+      .material-icons.material-icons__star-border star_border

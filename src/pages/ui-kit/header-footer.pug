@@ -7,15 +7,15 @@ include ../../blocks/input/input.pug
 include ../../blocks/menu/menu.pug
 
 block variables 
-    - var titlePage = "Headers & Footers"
+  - var titlePage = "Headers & Footers"
 
 block content
-    .header-footer 
-        img.header-footer__logo(src="assets/img/logo__grey.svg" alt="toxin")
-        +header(false, '', '', 'menu__link_bold')
-        .header-footer__space
-        +header(true, 'Юлий Цезарь', 'menu_width_588px', 'menu__link_bold')
-        .header-footer__space
-        include ../../blocks/footer1/footer1.pug
-        .header-footer__space
-        include ../../blocks/footer2/footer2.pug
+  .header-footer 
+    img.header-footer__logo(src="assets/img/logo__grey.svg" alt="toxin")
+    +header(false, '', '', 'menu__link_bold')
+    .header-footer__space
+    +header(true, 'Юлий Цезарь', 'menu_width_588px', 'menu__link_bold')
+    .header-footer__space
+    include ../../blocks/footer1/footer1.pug
+    .header-footer__space
+    include ../../blocks/footer2/footer2.pug

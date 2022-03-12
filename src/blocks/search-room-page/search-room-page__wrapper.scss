@@ -1,14 +1,14 @@
 .search-room-page__wrapper {
-    display: flex;
-    margin-left: 140 / 1440 * 100%;
-    margin-right: 140 / 1440 * 100%;
-    margin-top: 30 / 1440 * 100%;
-    margin-bottom: 70 / 1440 * 100%;
+  display: flex;
+  margin-left: 140 / 1440 * 100%;
+  margin-right: 140 / 1440 * 100%;
+  margin-top: 30 / 1440 * 100%;
+  margin-bottom: 70 / 1440 * 100%;
 }
 
 @media only screen and (max-width: 1090px) {
-    .search-room-page__wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
+  .search-room-page__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 }

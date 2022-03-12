@@ -18,92 +18,92 @@ include ../../blocks/pagination/pagination.pug
 include ../../blocks/menu/menu.pug
 
 block variables 
-    - var titlePage = 'Search room'
+  - var titlePage = 'Search room'
 
 block content
-    .search-room-page
-        +header(false)
-        main.search-room-page__wrapper
-            .search-room-page__conditions
-                +text('даты пребывания в отеле', 'h3', 'text_h3 text_margin-bottom_5px')
-                +filter-date-dropdown('filter-date-dropdown-search-room', '')
-                +text('гости', 'h3', 'text_h3 text_margin-bottom_5px text_margin-top_20px')
-                +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '1'}], '', 'guest-search-room')
-                +range-slider('диапазон цены', 'range-slider_margin-top_30px')
-                +text('Стоимость за сутки пребывания в номере', 'p', 'text_p text_margin-top_13px text_color-opacity_50per text_font-size_12px text_line-height_14px')
-                +text('правила дома', 'h3', 'text_h3 text_margin-top_30px text_margin-bottom_16px')
-                +choose-button({
-                    'id':'isSmokingAllowed',
-                    'text':'Можно курить',
-                    'name':'isSmokingAllowed',
-                    'fakeClasses':'choose-button__fake-checkbox',
-                    }, 'checkbox')
-                +choose-button({
-                    'id':'arePetAllowed',
-                    'text':'Можно с питомцами',
-                    'name':'arePetAllowed',
-                    'fakeClasses':'choose-button__fake-checkbox',
-                    'buttonClasses': 'choose-button_margin-top_10px',
-                    'checked': true
-                    }, 'checkbox')   
-                +choose-button({
-                    'id':'areGuestsAllowed',
-                    'text':'Можно пригласить гостей (до 10 человек)',
-                    'name':'areGuestsAllowed',
-                    'checked': true,
-                    'fakeClasses': 'choose-button__fake-checkbox',
-                    'labelClasses': 'choose-button__label_width_192px',
-                    'buttonClasses': 'choose-button_margin-top_10px'
-                    }, 'checkbox')
-                +text('доступность', 'h3', 'text_h3 text_margin-top_31px text_margin-bottom_16px')
-                +rich-checkbox-button([{
-                        'id': 'wide-hall',
-                        'text': 'Широкий коридор',
-                        'name': 'wide-hall',
-                        'description': 'Ширина коридоров в номере не менее 91 см.',
-                        'fakeClasses': 'choose-button__fake-checkbox',
-                        'labelClasses': 'choose-button__label_bold',
-                        'descriptionClasses': 'rich-checkbox-button__description_width_203px',
-                        }, {
-                        'id': 'invalid-helper',
-                        'text': 'Помощник для инвалидов',
-                        'name': 'wide-hall',
-                        'description': 'На 1 этаже вас встретит специалист  и проводит до номера.',
-                        'fakeClasses': 'choose-button__fake-checkbox',
-                        'labelClasses': 'choose-button__label_bold',
-                        'buttonClasses': 'choose-button_margin-top_10px',
-                        }])
-                +text('удобства номера', 'h3', 'text_h3 text_margin-top_30px text_margin-bottom_5px')
-                +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], '', 'furniture')
-                +checkbox-list(
-                        [{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'choose-button__fake-checkbox'},
-                        {'id': 'write-table', 'text': 'Письменный стол', 'name': 'write-table', 'fakeClasses': 'choose-button__fake-checkbox', 'checked': true},
-                        {'id': 'food-table', 'text': 'Стул для кормления', 'name': 'food-table', 'fakeClasses': 'choose-button__fake-checkbox', 'checked': true},
-                        {'id': 'baby-bed', 'text': 'Кроватка', 'name': 'baby-bed', 'fakeClasses': 'choose-button__fake-checkbox', 'checked': true},
-                        {'id': 'tv', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'choose-button__fake-checkbox'},
-                        {'id': 'shampoo1', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'choose-button__fake-checkbox'},
-                        {'id': 'tv', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'choose-button__fake-checkbox'},
-                        {'id': 'shampoo2', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'choose-button__fake-checkbox'}],
-                        'дополнительные удобства', 'iqdropdown__checkbox-list_margin-top_16px')
-            .search-room-page__rooms.search-room-page__rooms_margin-left_60px
-                +text('Номера, которые мы для вас подобрали', 'h1', 'text_h1')
-                .search-room-page__rooms-row.search-room-page__rooms-row_margin-top_21px
-                    +choose-room({'img':'choose-room__img888-lux', 'rate': 5, 'number': '888', 'isLux': true}, 145, '9 990₽ ', true)
-                    +choose-room({'img':'choose-room__img840', 'rate': 4, 'number': '840', 'roomClasses': 'choose-room_margin-left_12px'}, 65, '9 900₽ ')
-                    +choose-room({'img':'choose-room__img980-lux', 'rate': 3, 'number': '980', 'roomClasses': 'choose-room_margin-left_12px', 'isLux': true}, 35, '8 500₽ ')
-                .search-room-page__rooms-row.search-room-page__rooms-row_margin-top_21px
-                    +choose-room({'img':'choose-room__img856', 'rate': 5, 'number': '856'}, 19, '7 300₽ ')
-                    +choose-room({'img':'choose-room__img740', 'rate': 4, 'number': '740', 'roomClasses': 'choose-room_margin-left_12px'}, 44, '6 000₽ ')
-                    +choose-room({'img':'choose-room__img982', 'rate': 3, 'number': '982', 'roomClasses': 'choose-room_margin-left_12px'}, 56, '5 800₽ ')
-                .search-room-page__rooms-row.search-room-page__rooms-row_margin-top_21px
-                    +choose-room({'img':'choose-room__img678', 'rate': 5, 'number': '678'}, 45, '5 500₽ ')
-                    +choose-room({'img':'choose-room__img450', 'rate': 4, 'number': '450', 'roomClasses': 'choose-room_margin-left_12px'}, 39, '5 300₽ ')
-                    +choose-room({'img':'choose-room__img350', 'rate': 3, 'number': '350', 'roomClasses': 'choose-room_margin-left_12px'}, 77, '5 000₽ ')
-                .search-room-page__rooms-row.search-room-page__rooms-row_margin-top_21px
-                    +choose-room({'img':'choose-room__img666', 'rate': 5, 'number': '666'}, 25, '5 000₽ ')
-                    +choose-room({'img':'choose-room__img444', 'rate': 3, 'number': '444', 'roomClasses': 'choose-room_margin-left_12px'}, 15, '5 000₽ ')
-                    +choose-room({'img':'choose-room__img352', 'rate': 3, 'number': '352', 'roomClasses': 'choose-room_margin-left_12px'}, 55, '5 000₽ ')
-                .search-room-page__rooms-row.search-room-page__rooms-row_margin-top_41px.search-room-page__rooms-row_margin-left_290px
-                    +pagination(1)
-        .search-room-page__line
-        include ../../blocks/footer1/footer1.pug
+  .search-room-page
+    +header(false)
+    main.search-room-page__wrapper
+      .search-room-page__conditions
+        +text('даты пребывания в отеле', 'h3', 'text_h3 text_margin-bottom_5px')
+        +filter-date-dropdown('filter-date-dropdown-search-room', '')
+        +text('гости', 'h3', 'text_h3 text_margin-bottom_5px text_margin-top_20px')
+        +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '1'}], '', 'guest-search-room')
+        +range-slider('диапазон цены', 'range-slider_margin-top_30px')
+        +text('Стоимость за сутки пребывания в номере', 'p', 'text_p text_margin-top_13px text_color-opacity_50per text_font-size_12px text_line-height_14px')
+        +text('правила дома', 'h3', 'text_h3 text_margin-top_30px text_margin-bottom_16px')
+        +choose-button({
+          'id':'isSmokingAllowed',
+          'text':'Можно курить',
+          'name':'isSmokingAllowed',
+          'fakeClasses':'choose-button__fake-checkbox',
+          }, 'checkbox')
+        +choose-button({
+          'id':'arePetAllowed',
+          'text':'Можно с питомцами',
+          'name':'arePetAllowed',
+          'fakeClasses':'choose-button__fake-checkbox',
+          'buttonClasses': 'choose-button_margin-top_10px',
+          'checked': true
+          }, 'checkbox')   
+        +choose-button({
+          'id':'areGuestsAllowed',
+          'text':'Можно пригласить гостей (до 10 человек)',
+          'name':'areGuestsAllowed',
+          'checked': true,
+          'fakeClasses': 'choose-button__fake-checkbox',
+          'labelClasses': 'choose-button__label_width_192px',
+          'buttonClasses': 'choose-button_margin-top_10px'
+          }, 'checkbox')
+        +text('доступность', 'h3', 'text_h3 text_margin-top_31px text_margin-bottom_16px')
+        +rich-checkbox-button([{
+          'id': 'wide-hall',
+          'text': 'Широкий коридор',
+          'name': 'wide-hall',
+          'description': 'Ширина коридоров в номере не менее 91 см.',
+          'fakeClasses': 'choose-button__fake-checkbox',
+          'labelClasses': 'choose-button__label_bold',
+          'descriptionClasses': 'rich-checkbox-button__description_width_203px',
+          }, {
+          'id': 'invalid-helper',
+          'text': 'Помощник для инвалидов',
+          'name': 'wide-hall',
+          'description': 'На 1 этаже вас встретит специалист  и проводит до номера.',
+          'fakeClasses': 'choose-button__fake-checkbox',
+          'labelClasses': 'choose-button__label_bold',
+          'buttonClasses': 'choose-button_margin-top_10px',
+          }])
+        +text('удобства номера', 'h3', 'text_h3 text_margin-top_30px text_margin-bottom_5px')
+        +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], '', 'furniture')
+        +checkbox-list(
+          [{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'choose-button__fake-checkbox'},
+          {'id': 'write-table', 'text': 'Письменный стол', 'name': 'write-table', 'fakeClasses': 'choose-button__fake-checkbox', 'checked': true},
+          {'id': 'food-table', 'text': 'Стул для кормления', 'name': 'food-table', 'fakeClasses': 'choose-button__fake-checkbox', 'checked': true},
+          {'id': 'baby-bed', 'text': 'Кроватка', 'name': 'baby-bed', 'fakeClasses': 'choose-button__fake-checkbox', 'checked': true},
+          {'id': 'tv', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'choose-button__fake-checkbox'},
+          {'id': 'shampoo1', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'choose-button__fake-checkbox'},
+          {'id': 'tv', 'text': 'Телевизор', 'name': 'tv', 'fakeClasses': 'choose-button__fake-checkbox'},
+          {'id': 'shampoo2', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'choose-button__fake-checkbox'}],
+          'дополнительные удобства', 'iqdropdown__checkbox-list_margin-top_16px')
+      .search-room-page__rooms.search-room-page__rooms_margin-left_60px
+        +text('Номера, которые мы для вас подобрали', 'h1', 'text_h1')
+        .search-room-page__rooms-row.search-room-page__rooms-row_margin-top_21px
+          +choose-room({'img':'choose-room__img888-lux', 'rate': 5, 'number': '888', 'isLux': true}, 145, '9 990₽ ', true)
+          +choose-room({'img':'choose-room__img840', 'rate': 4, 'number': '840', 'roomClasses': 'choose-room_margin-left_12px'}, 65, '9 900₽ ')
+          +choose-room({'img':'choose-room__img980-lux', 'rate': 3, 'number': '980', 'roomClasses': 'choose-room_margin-left_12px', 'isLux': true}, 35, '8 500₽ ')
+        .search-room-page__rooms-row.search-room-page__rooms-row_margin-top_21px
+          +choose-room({'img':'choose-room__img856', 'rate': 5, 'number': '856'}, 19, '7 300₽ ')
+          +choose-room({'img':'choose-room__img740', 'rate': 4, 'number': '740', 'roomClasses': 'choose-room_margin-left_12px'}, 44, '6 000₽ ')
+          +choose-room({'img':'choose-room__img982', 'rate': 3, 'number': '982', 'roomClasses': 'choose-room_margin-left_12px'}, 56, '5 800₽ ')
+        .search-room-page__rooms-row.search-room-page__rooms-row_margin-top_21px
+          +choose-room({'img':'choose-room__img678', 'rate': 5, 'number': '678'}, 45, '5 500₽ ')
+          +choose-room({'img':'choose-room__img450', 'rate': 4, 'number': '450', 'roomClasses': 'choose-room_margin-left_12px'}, 39, '5 300₽ ')
+          +choose-room({'img':'choose-room__img350', 'rate': 3, 'number': '350', 'roomClasses': 'choose-room_margin-left_12px'}, 77, '5 000₽ ')
+        .search-room-page__rooms-row.search-room-page__rooms-row_margin-top_21px
+          +choose-room({'img':'choose-room__img666', 'rate': 5, 'number': '666'}, 25, '5 000₽ ')
+          +choose-room({'img':'choose-room__img444', 'rate': 3, 'number': '444', 'roomClasses': 'choose-room_margin-left_12px'}, 15, '5 000₽ ')
+          +choose-room({'img':'choose-room__img352', 'rate': 3, 'number': '352', 'roomClasses': 'choose-room_margin-left_12px'}, 55, '5 000₽ ')
+        .search-room-page__rooms-row.search-room-page__rooms-row_margin-top_41px.search-room-page__rooms-row_margin-left_290px
+          +pagination(1)
+    .search-room-page__line
+    include ../../blocks/footer1/footer1.pug

@@ -1,23 +1,23 @@
 mixin sign-in 
-    .sign-in
-        .sign-in__row.sign-in__row_margin-top_40px
-            +text('Войти', 'h1', 'text_h1')
-        .sign-in__row.sign-in__row_margin-top_20px 
-            +input('email', 'input_width_320px input_height_44px', 'Email')
-        .sign-in__row.sign-in__row_margin-top_10px
-            +input('password', 'input_width_320px input_height_44px', 'Пароль')
-        .sign-in__row.sign-in__row_margin-top_20px.sign-in__sign-in-button
-            +button({
-                'text': 'войти',
-                'buttonClasses': 'button_height_44px button_width_320px button_border_none button_background-color_blue',
-                'textClasses': 'button_color_white',
-                'type': 'submit',
-                'hasArrow': true})
-        .sign-in__row.sign-in__row_margin-top_30px    
-            +text('Нет аккаунта на Toxin?', 'p', 'text_p text_color_black text_line-height_18px')
-            .sign-in__create-button
-                +button({
-                    'text': 'создать',
-                    'buttonClasses': 'button_border_blue button_background-color_white',
-                    'textClasses': 'button_color_blue',
-                    'type': 'submit'})
+  .sign-in
+    .sign-in__row.sign-in__row_margin-top_40px
+      +text('Войти', 'h1', 'text_h1')
+    .sign-in__row.sign-in__row_margin-top_20px 
+      +input('email', 'input_width_320px input_height_44px', 'Email')
+    .sign-in__row.sign-in__row_margin-top_10px
+      +input('password', 'input_width_320px input_height_44px', 'Пароль')
+    .sign-in__row.sign-in__row_margin-top_20px.sign-in__sign-in-button
+      +button({
+        'text': 'войти',
+        'buttonClasses': 'button_height_44px button_width_320px button_border_none button_background-color_blue',
+        'textClasses': 'button_color_white',
+        'type': 'submit',
+        'hasArrow': true})
+    .sign-in__row.sign-in__row_margin-top_30px    
+      +text('Нет аккаунта на Toxin?', 'p', 'text_p text_color_black text_line-height_18px')
+      .sign-in__create-button
+        +button({
+          'text': 'создать',
+          'buttonClasses': 'button_border_blue button_background-color_white',
+          'textClasses': 'button_color_blue',
+          'type': 'submit'})

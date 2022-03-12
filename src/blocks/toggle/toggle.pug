@@ -1,10 +1,10 @@
 mixin toggle(check = false, text = 'выбор', classes = '')
-    .toggle(class="" + classes)
-        form.toggle__form.js-toggle__form(action='post')
-            .toggle__switch.js-toggle__switch
-            if (check)
-                input.toggle__input.js-toggle__input(type='checkbox' checked)
-            else
-                input.toggle__input.js-toggle__input(type='checkbox')
-        .toggle__text
-            +text(text, 'p', 'text_p')
+  .toggle(class="" + classes)
+    form.toggle__form.js-toggle__form(action='post')
+      .toggle__switch.js-toggle__switch
+      if (check)
+        input.toggle__input.js-toggle__input(type='checkbox' checked)
+      else
+        input.toggle__input.js-toggle__input(type='checkbox')
+    .toggle__text
+      +text(text, 'p', 'text_p')

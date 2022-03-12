@@ -12,15 +12,15 @@ include ../../blocks/contacts/contacts.pug
 include ../../blocks/menu/menu.pug
 
 block variables 
-    - var titlePage = "Landing page"
+  - var titlePage = "Landing page"
 
 block content
-    .landing-page
-        +header(false)
-        main.landing-page__background-img
-            .landing-page__find-room.landing-page__find-room_margin-left_140px
-                +find-room('', 'date-dropdown-landing', 'landing-page-guest')
-            .landing-page__info 
-                +text('Лучшие номера для вашей работы, отдыха и просто вдохновения', 'p', 'text_p')
-        include ../../blocks/footer1/footer1.pug
-            
+  .landing-page
+    +header(false)
+    main.landing-page__background-img
+      .landing-page__find-room.landing-page__find-room_margin-left_140px
+        +find-room('', 'date-dropdown-landing', 'landing-page-guest')
+      .landing-page__info 
+        +text('Лучшие номера для вашей работы, отдыха и просто вдохновения', 'p', 'text_p')
+    include ../../blocks/footer1/footer1.pug
+          

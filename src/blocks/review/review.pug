@@ -1,10 +1,10 @@
 mixin review(review = { 'classes': '', 'avatar': '', 'personName': 'имя', 'personInfo': 'информация', 'iconState': '', 'buttonState': '', 'numberState': '', 'likes': 0, 'favorite': '', 'text': 'супер', 'textClasses': 'text_p'}) 
-    .review(class='' + review.classes)
-        .review__person
-            .review__avatar(class='' + review.avatar)
-            .review__person-about 
-                p.review__person-name=review.personName 
-                p.review__person-info=review.personInfo
-        .review__review 
-            +like-button(review.iconState, review.buttonState, review.numberState, review.likes, review.favorite)
-            +text(review.text, 'p', review.textClasses)
+  .review(class='' + review.classes)
+    .review__person
+      .review__avatar(class='' + review.avatar)
+      .review__person-about 
+        p.review__person-name=review.personName 
+        p.review__person-info=review.personInfo
+    .review__review 
+      +like-button(review.iconState, review.buttonState, review.numberState, review.likes, review.favorite)
+      +text(review.text, 'p', review.textClasses)
