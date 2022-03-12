@@ -76,7 +76,6 @@
 
 .color__text{font-weight:bold;font-size:1.357rem;line-height:2rem}
 
-
 .color{display:flex}
 
 .form-elements{width:1440px;height:1853px;font-family:'Montserrat', sans-serif}
@@ -191,7 +190,7 @@
 
 .choose-button__fake-checkbox{border-radius:4px;align-self:flex-start;position:relative}.choose-button__button:checked+.choose-button__fake-checkbox::before{content:'';display:inline-block;position:absolute;width:6px;height:2px;left:3px;bottom:8px;background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);transform:rotate(45deg)}.choose-button__button:checked+.choose-button__fake-checkbox::after{content:'';display:inline-block;position:absolute;width:2px;height:8px;left:10px;bottom:7px;background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);transform:rotate(45deg)}
 
-.choose-button__fake-radio{border-radius:50%}.choose-button__button:checked+.choose-button__fake-radio::before{content:'';color:#000;display:inline-block;position:relative;text-align:center;text-indent:0px;width:12px;height:12px;background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);box-sizing:border-box;border-radius:50%;top:1px}
+.choose-button__fake-radio{position:relative;border-radius:50%}.choose-button__button:checked+.choose-button__fake-radio::before{content:'';color:#000;display:inline-block;position:absolute;text-align:center;text-indent:0px;width:12px;height:12px;background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);box-sizing:border-box;border-radius:50%;top:3px;left:3px}
 
 .choose-button__fake-button{color:#000;display:inline-block;margin-right:9.74px;text-align:center;text-indent:0px;min-width:20px;height:20px;background:#FFF;border:1px solid rgba(31,32,65,0.25);box-sizing:border-box;vertical-align:middle}.choose-button__button:checked+.choose-button__fake-button{border:1px solid #BC9CFF}
 
@@ -316,7 +315,6 @@
 .material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:1.714rem;display:inline-block;line-height:1;text-transform:none;letter-spacing:normal;word-wrap:normal;white-space:nowrap;direction:ltr;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;font-feature-settings:'liga'}
 
 .logo{display:flex;align-items:center}
-
 
 .logo__text{margin-left:12.5px}
 
