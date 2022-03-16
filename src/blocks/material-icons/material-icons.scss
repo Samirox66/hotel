@@ -2,7 +2,7 @@
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 1.714rem;  /* Preferred icon size */
+  font-size: 1.714rem;
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -10,15 +10,85 @@
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-
-  /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
   text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
   font-feature-settings: 'liga';
+
+  &__arrow-back {
+    font-size: 1.714rem;
+    line-height: 1.714rem;
+    width: 40px;
+    color: rgba(188, 156, 255, 1);
+    margin-left: auto;
+  }
+
+  &__arrow-forward {
+    font-size: 1.714rem;
+    line-height: 1.714rem;
+    width: 44px;
+    color: white;
+    margin-left: auto;
+
+    &_color_blue {
+      color: rgba(188, 156, 255, 1);
+    }
+  }
+
+  &__expand-more {
+    width: 44px;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+
+    &_width_24px {
+      width: 24px;
+    }
+  }
+}
+
+.material-icons.material-icons {
+  &__whatshot {
+    font-size: 3.429rem;
+    line-height: 2.929rem;
+    color:#8BA4F9;
+    width: 48px;
+  }
+
+  &__star {
+    font-size: 1.714rem;
+    line-height: 1.429rem;
+    color: #BC9CFF;
+  }
+
+  &__star-border {
+    font-size: 1.714rem;
+    line-height: 1.429rem;
+    color: #BC9CFF;
+  }
+
+  &__location-city {
+    font-size: 3.429rem;
+    line-height: 2.929rem;
+    color:#8BA4F9;
+    width: 48px;
+  }
+
+  &__insert-emoticon {
+    font-size: 3.429rem;
+    line-height: 2.929rem;
+    color:#8BA4F9;
+    width: 48px;
+  }
+
+  &__favorite {
+    color: #BC9CFF;
+    font-size: 0.714rem;
+    line-height: 0.643rem;
+  }
+
+  &__favorite-border {
+    font-size: 0.714rem;
+    line-height: 0.643rem;
+    color: #1F204140;
+  }
 }

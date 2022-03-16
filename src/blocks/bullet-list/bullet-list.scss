@@ -1,4 +1,12 @@
 .bullet-list {
   display: flex;
   flex-direction: column;
+
+  &_margin-top_29px {
+    margin-top: 29px;
+  }
+
+  &_margin-left_30px {
+    margin-left: 30px;
+  }
 }

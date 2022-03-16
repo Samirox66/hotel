@@ -4,4 +4,75 @@
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: normal;
+  margin: 0 auto;
+
+  &__wrapper {
+    display: flex;
+    margin-left: 140 / 1440 * 100%;
+    margin-right: 140 / 1440 * 100%;
+    margin-top: 30 / 1440 * 100%;
+    margin-bottom: 70 / 1440 * 100%;
+  }
+  
+  @media only screen and (max-width: 1090px) {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__rooms {
+    width: 834 / 1160 * 100%;
+    
+    &_margin-left_60px {
+      margin-left: 60 / 1160 * 100%;
+    }
+  }
+
+  &__rooms-row {
+    display: flex;
+
+    &_margin-top_41px {
+      margin-top: 41 / 834 * 100%;
+    }
+
+    &_margin-top_21px {
+      margin-top: 21 / 834 * 100%;
+    }
+
+    &_margin-left_290px {
+      margin-left: 290 / 834 * 100%;
+    }
+
+    &_margin-left_60px {
+      margin-left: 60 / 1160 * 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 1090px) {
+    &__rooms-row {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &_margin-left_60px {
+      margin-left: 0;
+    }
+  }
+
+  &__line {
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    width: 100%;
+    height: 0;
+  }
+
+  &__conditions {
+    width: 266 / 1160 * 100%;
+  }
+  
+  @media only screen and (max-width: 1090px) {
+    &__conditions {
+      margin-bottom: 10%;
+    }
+  }
 }

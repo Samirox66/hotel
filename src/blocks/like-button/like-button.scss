@@ -1,3 +1,35 @@
 .like-button {
   margin-bottom: 0px;
+
+  &_margin-left_10px {
+    margin-left: 10px;
+  }
+
+  &__number {
+    margin-left: 5px;
+    font-size: 0.714rem;
+    line-height: 1rem;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.25);
+
+    &_active {
+      color: #BC9CFF;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+
+    &_active {
+      border: 1px solid #BC9CFF;
+    }
+  }
 }

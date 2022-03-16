@@ -2,11 +2,6 @@ import AirDatepicker from 'air-datepicker';
 import $ from 'jquery';
 
 import './date-dropdown.scss';
-import './date-dropdown__label.scss';
-import './date-dropdown__input.scss';
-import './date-dropdown__input_width_103px.scss';
-import './date-dropdown__input_height_24px.scss';
-import './date-dropdown__label_margin-left_20px.scss';
 import './air-datepicker.scss';
 
 const submitButton = {

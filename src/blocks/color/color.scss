@@ -1,3 +1,62 @@
+@mixin color__example($background) {
+  background: $background;
+  border-radius: 6px;
+  width: 70px;
+  height: 70px;
+}
+
 .color {
   display: flex;
+
+  &__text {
+    font-weight: bold;
+    font-size: 1.357rem;
+    line-height: 2rem;
+  }
+
+  &__example {
+    border-radius: 6px;
+    width: 70px;
+    height: 70px;
+
+    &_background_purple {
+      background: #BC9CFF;
+    }
+
+    &_background_green {
+      background: #6FCF97;
+    }
+
+    &_background_dark-shade-5 {
+      background: #1F20410D;
+    }
+
+    &_background_dark-shade-25 {
+      background: #1F204140;
+    }
+
+    &_background_dark-shade-50 {
+      background: #1F204180;
+    }
+
+    &_background_dark-shade-75 {
+      background: #1F2041BF;
+    }
+
+    &_background_dark-shade-100 {
+      background: #1F2041;
+    }
+  }
+
+  &__description {
+    font-size: 1.357rem;
+    line-height: 2rem;
+    padding-left: 40px;
+    align-self: center;
+    color: #1F2041;
+  }
+
+  &__body {
+    padding-bottom: 20px;
+  }
 }

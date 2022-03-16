@@ -1,4 +1,45 @@
 .toggle {
   display: flex;
   align-items: center;
+
+  &_margin-bottom_10px {
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    margin-left: 10px;
+  }
+
+  &__switch {
+    background: #1F204140;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: 0.4s;
+
+    &_active {
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    }
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__form {
+    height: 20px;
+    width: 40px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 3px;
+    border-radius: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    margin-bottom: 0;
+  }
+}
+
+.toggle__form.toggle__form_active {
+  border: 1px solid #BC9CFF;
 }

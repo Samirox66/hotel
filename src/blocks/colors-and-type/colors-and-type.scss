@@ -2,4 +2,35 @@
   font-family: 'Montserrat';
   width: 1440px;
   height: 900px;
+  margin: 0 auto;
+  
+  &__wrapper {
+    display: flex;
+    margin-top: 67px;
+    margin-left: 150px;
+  }
+
+  &__type {
+    margin-left: 415px;
+    width: 436px;
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: 51px;
+    width: 436px;
+
+    &_width_368px {
+      width: 368px;
+    }
+  }
+
+  &__logo {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  &__colors {
+    width: 281px;
+  }
 }

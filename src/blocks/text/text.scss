@@ -1,3 +1,181 @@
 .text {
   display: flex;
+
+  &_h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.857rem;
+    line-height: 1.071rem;
+    text-transform: uppercase;
+    color: #1F2041;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  &_h2 {
+    font-size: 1.357rem;
+    line-height: 1.643rem;
+    color: #1F2041;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  &_h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.714rem;
+    line-height: 2.072rem;
+    color: #1F2041;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  &_p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.714rem;
+    color: rgba(31, 32, 65, 0.75);
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  &_width_341px {
+    width: 341px;
+  }
+
+  &_width_271px {
+    width: 271px;
+  }
+
+  &_width_260px {
+    width: 18.0555556%;
+  }
+
+  &_width_243px {
+    width: 243px;
+  }
+
+  &_width_214px {
+    width: 214px;
+  }
+
+  &_width_150px {
+    width: 150px;
+  }
+
+  &_width_149px {
+    width: 149px;
+  }
+
+  &_width_143px {
+    width: 143px;
+  }
+
+  &_width_108px {
+    width: 108px;
+  }
+
+  &_margin-top_31px {
+    margin-top: 30.88px;
+  }
+
+  &_margin-top_30px {
+    margin-top: 30px;
+  }
+
+  &_margin-top_20px {
+    margin-top: 20px;
+  }
+
+  &_margin-top_13px {
+    margin-top: 13.56px;
+  }
+
+  &_margin-top_1px {
+    margin-top: 1px;
+  }
+
+  &_margin-left_347px {
+    margin-left: 347px;
+  }
+
+  &_margin-left_30px {
+    margin-left: 30px;
+  }
+
+  &_margin-left_20px {
+    margin-left: 20px;
+  }
+
+  &_margin-left_14px {
+    margin-left: 14px;
+  }
+
+  &_margin-left_10px {
+    margin-left: 10px;
+  }
+
+  &_margin-left_8px {
+    margin-left: 8px;
+  }
+
+  &_margin-bottom_21px {
+    margin-bottom: 21px;
+  }
+
+  &_margin-bottom_20px {
+    margin-bottom: 20px;
+  }
+
+  &_margin-bottom_16px {
+    margin-bottom: 16px;
+  }
+
+  &_margin-bottom_5px {
+    margin-bottom: 5px;
+  }
+
+  &_line-height_18px {
+    line-height: 1.286rem;
+  }
+
+  &_line-height_17px {
+    line-height: 1.214rem;
+  }
+
+  &_line-height_14px {
+    line-height: 1rem;
+  }
+
+  &_font-weight_normal {
+    font-weight: normal;
+  }
+
+  &_font-size_12px {
+    font-size: 0.857rem;
+  }
+
+  &_color-opacity_50per {
+    color: rgba(31, 32, 65, 0.5); 
+  }
+
+  &_color-opacity_25per {
+    color: rgba(31, 32, 65, 0.25);
+  }
+
+  &_color_blue {
+    color: rgba(188, 156, 255, 1);
+  }
+
+  &_color_black {
+    color: black
+  }
+
+  &_align-self_flex-start {
+    align-self: flex-start;
+  }
+
+  &_align-self_center {
+    align-self: center;
+  }
 }

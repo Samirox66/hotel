@@ -3,11 +3,6 @@ import $ from 'jquery';
 
 import 'nouislider/dist/nouislider.css';
 import './range-slider.scss';
-import './range-slider__head.scss';
-import './range-slider__title.scss';
-import './range-slider__slider.scss';
-import './range-slider__range.scss';
-import './range-slider_margin-top_30px.scss';
 
 const slider = document.getElementById('range-slider1');
 let values = [5000, 10000];

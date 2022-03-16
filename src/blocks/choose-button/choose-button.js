@@ -1,14 +1,1 @@
 import './choose-button.scss';
-import './choose-button__button.scss';
-import './choose-button__label.scss';
-import './choose-button__flex-direction_column.scss';
-import './choose-button__container.scss';
-import './choose-button_margin-left_20px.scss';
-import './choose-button__fake-checkbox.scss';
-import './choose-button__fake-radio.scss';
-import './choose-button__fake-button.scss';
-import './choose-button__label_width_192px.scss';
-import './choose-button_margin-top_10px.scss';
-import './choose-button__label_bold.scss';
-import './choose-button__label_line-height_18px.scss';
-import './choose-button__label_line-height_24px.scss';

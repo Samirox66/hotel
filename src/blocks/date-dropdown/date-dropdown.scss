@@ -3,4 +3,38 @@
   display: flex;
   min-width: 150px;
   margin-bottom: 0;
+
+  &__label {
+    width: 150px;
+    height: 44px;
+    display: flex;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: space-between;
+
+    &_margin-left_20px {
+      margin-left: 20px;
+    }
+  }
+
+  &__input {
+    border: none;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.714rem;
+    color: rgba(31, 32, 65, 0.75);
+    padding-left: 15px;
+
+    &_width_103px {
+      width: 103 / 320 * 100%;
+    }
+
+    &_height_24px {
+      height: 24px;
+    }
+  }
 }

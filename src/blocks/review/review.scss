@@ -1,4 +1,53 @@
 .review {
   display: flex;
   flex-direction: column;
+
+  &_margin-top_22px {
+    margin-top: 22px;
+  }
+
+  &__review {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 9px;
+    margin-left: 2px;
+  }
+
+  &__person {
+    display: flex;
+    align-items: center;
+  }
+
+  &__person-name {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.714rem;
+  }
+
+  &__person-info {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 1rem;
+    line-height: 1.714rem;
+  }
+
+  &__person-about {
+    margin-left: 10px;
+    margin-top: 3px;
+  }
+
+  &__avatar {
+    width: 48px;
+    height: 48px;
+  }
+
+  &__avatar-patricia {
+    background: url('./img/avatar-patricia.jpg') no-repeat center;
+  }
+
+  &__avatar-murad {
+    background: url('./img/avatar-murad.png') no-repeat center;
+  }
 }

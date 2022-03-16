@@ -1,13 +1,1 @@
 import './menu.scss';
-import './menu_width_588px.scss';
-import './menu__list.scss';
-import './menu__item.scss';
-import './menu__item_width_43px.scss';
-import './menu__item_width_72px.scss';
-import './menu__item_width_74px.scss';
-import './menu__link.scss';
-import './menu__line.scss';
-import './menu__link_bold.scss';
-import './menu__sign-in.scss';
-import './menu__sign-up.scss';
-import './menu__user.scss';

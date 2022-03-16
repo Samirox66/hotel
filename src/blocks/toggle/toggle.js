@@ -1,13 +1,6 @@
 import $ from 'jquery';
 
 import './toggle.scss';
-import './toggle__input.scss';
-import './toggle__switch.scss';
-import './toggle__text.scss';
-import './toggle__form_active.scss';
-import './toggle__switch_active.scss';
-import './toggle__form.scss';
-import './toggle_margin-bottom_10px.scss';
 
 $(function() {
   $('.js-toggle__form').each(function () {

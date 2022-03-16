@@ -2,4 +2,38 @@
   font-family: 'Montserrat';
   width: 1440px;
   height: 1350px;
+  margin: 0 auto;
+
+  &_margin-top_40px {
+    margin-top: 40px;
+  }
+
+  &_margin-left_140px {
+    margin-left: 140px;
+  }
+
+  &_margin-left_40px {
+    margin-left: 40px;
+  }
+
+  &__wrapper {
+    display: flex;
+    margin-top: 72px;
+    margin-left: 140px;
+  }
+
+  &__logo {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+  }
+
+  &__choose-room {
+    width: 270px;
+  }
 }

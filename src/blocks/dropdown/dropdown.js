@@ -1,12 +1,7 @@
 import $ from 'jquery';
 
-import './dropdown_width_320px.scss';
-import './dropdown_width_266px.scss';
 import './iqdropdown.scss';
-import './dropdown__buttons.scss';
-import './dropdown__buttons_justify-content_flex-end.scss';
-import './dropdown__clear-button.scss';
-import './dropdown__submit-button.scss';
+import './dropdown.scss';
 
 const createGuestDropdown = function (dataId, strings) {
   $(`.js-iqdropdown[data-id=${dataId}]`).iqDropdown({

@@ -1,8 +1,6 @@
 import AirDatepicker from 'air-datepicker';
 
 import './filter-date-dropdown.scss';
-import './filter-date-dropdown__label.scss';
-import './filter-date-dropdown__input.scss';
 
 const submitButton = {
   content: 'Применить',

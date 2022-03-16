@@ -5,4 +5,13 @@
   box-shadow: 0px 10px 20px 0px #1F20410D;
   background-color: #fff;
   width: 100%;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 1160 / 1440 * 100%;
+  }
 }

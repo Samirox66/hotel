@@ -43,12 +43,7 @@ import './blocks/bullet/bullet';
 import './blocks/header-footer/header-footer';
 import './blocks/contacts/contacts';
 import './blocks/header/header';
-
-import './blocks/expand-more/expand-more.scss';
-import './blocks/expand-more/expand-more__margin-left.scss';
-
-import './blocks/footer2/footer2.scss';
-import './blocks/footer2/footer2__rights.scss';
+import './blocks/footer2/footer2.js';
 
 import './styles/font-size.scss';
 import './styles/line-height.scss';

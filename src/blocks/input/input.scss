@@ -6,7 +6,59 @@
   border-radius: 4px;
   width: 100%;
   margin-bottom: 0;
+
   &:hover, &:focus {
     border: 1px solid rgba(31, 32, 65, 0.5);
   }
+
+  &_width_320px {
+    width: 100%;
+  }
+
+  &_width_266px {
+    width: 266px;
+  }
+
+  &_width_260px {
+    width: 260px;
+  }
+
+  &_width_150px {
+    width: 150px;
+  }
+
+  &_height_44px {
+    height: 44px;
+  }
+
+  &__input {
+    font-family: 'Montserrat';
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    line-height: 1.286rem;
+    padding-left: 14px;
+    color: rgba(31, 32, 65, 0.75);
+
+    &:hover, &:focus {
+      font-size: 1rem;
+      line-height: 1.714rem;
+      color: rgba(31, 32, 65, 0.75);
+    }
+
+    &::placeholder {
+      color: rgba(31, 32, 65, 0.25);
+    }
+  }
+
+  &__arrow-forward {
+    background: white;
+    border: none;
+    width: 44px;
+    padding: 0;
+  }
+}
+
+.material-icons.material-icons__arrow-forward.input__arrow-forward_color_blue {
+  color:#8BA4F9;
 }

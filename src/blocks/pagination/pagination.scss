@@ -1,4 +1,42 @@
 .pagination {
   display: flex;
   flex-direction: column;
+
+  &__text {
+    font-size: 1rem;
+    line-height: 1.714rem;
+    color: rgba(31, 32, 65, 0.75);
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+
+  &__next-button {
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  &__button {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+    &_inactive {
+      font-size: 0.857rem;
+      line-height: 1.071rem;
+      color: rgba(31, 32, 65, 0.5);
+    }
+
+    &_active {
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      color: white;
+    }
+  }
 }

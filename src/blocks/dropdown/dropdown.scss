@@ -1,0 +1,30 @@
+.dropdown {
+  width: 100%;
+
+  &_width_266px {
+    width: 266px;
+  }
+
+  &__submit-button {
+    width: 84px;
+    height: 15px;
+  }
+
+  &__clear-button {
+    width: 72px;
+    height: 15px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 13px;
+    margin-bottom: 6px;
+    width: 100%;
+
+    &_justify-content_flex-end {
+      justify-content: flex-end;
+    }
+  }
+}

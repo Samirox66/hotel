@@ -1,11 +1,6 @@
 import $ from 'jquery';
 
 import './like-button.scss';
-import './like-button_margin-left_10px.scss';
-import './like-button__button.scss';
-import './like-button__number.scss';
-import './like-button__button_active.scss';
-import './like-button__number_active.scss';
 
 $('.js-like-button__button').on('click', function () {
   const text = $(this).find('.js-like-button__number').text();

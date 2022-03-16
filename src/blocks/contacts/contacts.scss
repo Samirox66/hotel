@@ -2,4 +2,8 @@
   display: flex;
   justify-content: space-between;
   width: 112px;
+
+  &_margin-right_140px {
+    margin-right: 140 / 1440 * 100%;
+  }
 }
