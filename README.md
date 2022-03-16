@@ -1,5 +1,5 @@
 # Второе задание в учебной программе от metalamp
-
+Проект разработан на node.js 14.7.6 и npm 6.14.15
 ## Цель проекта:
 Познакомиться с технологиями Frontend разработки. Стек технологий: HTML | CSS | JS | JQuery | SCSS | PUG | Webpack | GIT | FIGMA | Responsive | Pixel Perfect.
 ## Страницы проекта:
