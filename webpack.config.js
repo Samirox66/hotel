@@ -81,6 +81,11 @@ module.exports = {
       template: './pages/sign-in/sign-in.pug',
       favicon: './assets/favicon.ico',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: './pages/main/main.pug',
+      favicon: './assets/favicon.ico',
+    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css',
@@ -98,11 +103,13 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [{
-          loader: MiniCssExtractPlugin.loader,
-          options: { publicPath: '' },
-        },
-        'css-loader'],
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: { publicPath: '' },
+          },
+          'css-loader',
+        ],
       },
       {
         test: /\.s[ac]ss$/,
@@ -112,7 +119,8 @@ module.exports = {
             options: { publicPath: '' },
           },
           'css-loader',
-          'sass-loader'],
+          'sass-loader',
+        ],
       },
       {
         test: /\.pug$/,
