@@ -18,15 +18,15 @@ const createGuestDropdown = function (dataId, strings) {
     },
     onChange: () => {
       $('.js-iqdropdown .button-increment').on('click', function () {
-        const $menu = $(this).parents('.js-iqdropdown-menu')
+        const $menu = $(this).parents('.js-iqdropdown-menu');
         if ($menu.find('.dropdown__buttons') && $menu.find('.dropdown__clear-button .button__button').is(':hidden')) {
           $menu.find('.dropdown__clear-button .button__button').show();
         }
 
         const $buttonDecrement = $(this).parents('.iqdropdown-item-controls').find('.button-decrement');
-        
+
         if ($buttonDecrement.hasClass('button-decrement_inactive')) {
-            $buttonDecrement.removeClass('button-decrement_inactive')
+          $buttonDecrement.removeClass('button-decrement_inactive');
         }
       });
       $('.js-iqdropdown .button-decrement').on('click', function () {
@@ -72,7 +72,7 @@ const createGuestDropdown = function (dataId, strings) {
   });
 };
 
-$(function() {
+$(() => {
   createGuestDropdown('guest1', ['гостей', 'гость', 'гостя', 'Сколько гостей']);
   createGuestDropdown('guest2', ['гостей', 'гость', 'гостя', 'Сколько гостей']);
   createGuestDropdown('guest3', ['гостей', 'гость', 'гостя', 'Сколько гостей']);
@@ -94,9 +94,9 @@ $(function() {
     },
     onChange: () => {
       $('.js-iqdropdown .button-increment').on('click', function () {
-        const $buttonDecrement = $(this).parents('.iqdropdown-item-controls').find('.button-decrement'); 
+        const $buttonDecrement = $(this).parents('.iqdropdown-item-controls').find('.button-decrement');
         if ($buttonDecrement.hasClass('button-decrement_inactive')) {
-            $buttonDecrement.removeClass('button-decrement_inactive')
+          $buttonDecrement.removeClass('button-decrement_inactive');
         }
       });
       $('.js-iqdropdown .button-decrement').on('click', function () {
@@ -142,22 +142,23 @@ $(function() {
   $('.js-iqdropdown.js-iqdropdown__checkbox-list').find('.iqdropdown-item-controls').addClass('checkbox-list__controls');
 });
 
-$(function() {
+$(() => {
   const $dropdownMenus = $('.js-iqdropdown .dropdown__clear-button .button__button').parents('.iqdropdown-menu');
-  for (let dropdownMenu of $dropdownMenus) {
-    const itemCount = ($(dropdownMenu).find('.counter').text()).slice(0, -1).split('');
+  for (const dropdownMenu of $dropdownMenus) {
+    const itemCount = ($(dropdownMenu).find('.counter').text()).slice(0, -1)
+      .split('');
     const sum = itemCount.reduce((sum, current) => sum + current);
     if (sum === '000') {
       $(dropdownMenu).find('.dropdown__clear-button .button__button').hide();
     }
   }
 
-  $('.js-iqdropdown .counter').each(function() {
+  $('.js-iqdropdown .counter').each(function () {
     if ($(this).text() === '0') {
       $(this).parent().find('.button-decrement').addClass('button-decrement_inactive');
     }
   });
-})
+});
 
 $('.js-iqdropdown .dropdown__submit-button .button__button').on('click', function () {
   $(this).parents('.iqdropdown').removeClass('menu-open');

@@ -11,14 +11,14 @@
   }
 
   &__switch {
-    background: #1F204140;
+    background: #1f204140;
     width: 12px;
     height: 12px;
     border-radius: 50%;
     transition: 0.4s;
 
     &_active {
-      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     }
   }
 
@@ -41,5 +41,5 @@
 }
 
 .toggle__form.toggle__form_active {
-  border: 1px solid #BC9CFF;
+  border: 1px solid #bc9cff;
 }
