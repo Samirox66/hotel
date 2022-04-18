@@ -1,5 +1,5 @@
 .room-details-page {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
   max-width: 1440px;
   min-width: 320px;
   margin: 0 auto;
@@ -24,18 +24,18 @@
       justify-content: space-between;
     }
   }
-  
+
   @media only screen and (max-width: 900px) {
     &__row {
       flex-direction: column;
-    }   
+    }
   }
 
   &__room {
     width: 380 / 1160 * 100%;
     min-width: 300px;
   }
-  
+
   @media only screen and (max-width: 900px) {
     &__room {
       margin-top: 5%;
@@ -43,7 +43,7 @@
   }
 
   &__line {
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1px solid rgba(31, 32, 65, 25%);
   }
 
   &__impression {
@@ -83,7 +83,7 @@
     display: flex;
     justify-content: space-between;
   }
-  
+
   @media only screen and (max-width: 900px) {
     &__content {
       flex-direction: column;

@@ -1,8 +1,11 @@
 {
   "root": true,
-  "extends": ["eslint:recommended", "airbnb-base"],
+  "extends": ["eslint:recommended", "airbnb-base", "prettier"],
   "rules": {
     "linebreak-style": ["error", "windows"]
   },
-  "plugins": ["fsd"]
+  "plugins": ["fsd", "prettier"],
+  "env": {
+    "browser": "true"
+  }
 }

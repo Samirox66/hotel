@@ -21,13 +21,15 @@
     height: 15px;
     padding-left: 0;
   }
+
   .iqdropdown-menu-option.iqdropdown-menu-option__checkbox-list {
     padding-left: 0;
     margin-top: 3px;
     margin-bottom: 10px;
   }
+
   .iqdropdown-selection p.checkbox-list__text {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 0.857rem;
@@ -35,6 +37,7 @@
     text-transform: uppercase;
     color: #1F2041;
   }
+
   .iqdropdown-item-controls.checkbox-list__controls {
     display: none;
   }

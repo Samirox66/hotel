@@ -27,7 +27,7 @@
     width: 84px;
   }
 
-  &_width_72px { 
+  &_width_72px {
     width: 72px;
   }
 
@@ -56,15 +56,15 @@
   }
 
   &_color_dark {
-    color: rgba(31, 32, 65, 0.5);
+    color: rgba(31, 32, 65, 50%);
   }
 
   &_color_blue {
-    color: #BC9CFF;
+    color: #bc9cff;
   }
 
   &_border-opacity_50per {
-    border: 2px solid rgba(188, 156, 255, 0.5);
+    border: 2px solid rgba(188, 156, 255, 50%);
   }
 
   &_border_none {
@@ -72,7 +72,7 @@
   }
 
   &_border_blue {
-    border: 2px solid #BC9CFF;
+    border: 2px solid #bc9cff;
   }
 
   &_background-color_white {
@@ -80,17 +80,17 @@
   }
 
   &_background-color_blue {
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   }
 
   &__text {
     font-weight: bold;
-    font-family: 'Montserrat';
+    font-family: Montserrat, sans-serif;
     font-size: 0.857rem;
     line-height: 1.071rem;
     text-transform: uppercase;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
     position: absolute;
   }
 

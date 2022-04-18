@@ -15,15 +15,15 @@
     display: flex;
     justify-content: center;
     min-height: 372px;
-    box-shadow: 0px 1px 0px 0px rgba(31, 32, 65, 0.1);
+    box-shadow: 0 1px 0 0 rgba(31, 32, 65, 10%);
   }
 
   &__top-wrapper {
     display: flex;
-    width: 80.5555556%;
+    width: 80.5556%;
     margin-top: 100px;
   }
-  
+
   @media only screen and (max-width: 900px) {
     &__top-wrapper {
       flex-direction: column;
@@ -34,7 +34,7 @@
   &__rights {
     font-size: 1rem;
     line-height: 1.214rem;
-    color: rgba(31, 32, 65, 0.75);
+    color: rgba(31, 32, 65, 75%);
     margin-left: 140 / 1440 * 100%;
   }
 
@@ -89,45 +89,43 @@
   &__description {
     font-size: 1rem;
     line-height: 1.714rem;
-    color: #1F2041BF;
+    color: #1f2041bf;
   }
-    
+
   &__bottom {
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+    box-shadow: 0 10px 20px 0 rgba(31, 32, 65, 5%);
   }
-  
+
   @media only screen and (max-width: 900px) {
     &__nav {
       margin-bottom: 5%;
-    }   
+    }
   }
 
   &__nav-subscribe {
     font-size: 1rem;
     line-height: 1.714rem;
-    color: rgba(31, 32, 65, 0.75);
+    color: rgba(31, 32, 65, 75%);
     list-style-type: none;
     margin-bottom: 20px;
   }
 
   &__nav-item {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     list-style-type: none;
     margin-top: 20px;
-    color: #1F204180;
+    color: #1f204180;
     font-size: 1rem;
     line-height: 1.214rem;
     height: 18px;
   }
 
   &__nav-head {
-    list-style-type: none;  
+    list-style-type: none;
     margin-bottom: 21px;
   }
-
-
 }

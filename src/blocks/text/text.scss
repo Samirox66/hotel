@@ -2,41 +2,41 @@
   display: flex;
 
   &_h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 0.857rem;
     line-height: 1.071rem;
     text-transform: uppercase;
-    color: #1F2041;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    color: #1f2041;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   &_h2 {
     font-size: 1.357rem;
     line-height: 1.643rem;
-    color: #1F2041;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    color: #1f2041;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   &_h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1.714rem;
     line-height: 2.072rem;
-    color: #1F2041;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    color: #1f2041;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   &_p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1rem;
     line-height: 1.714rem;
-    color: rgba(31, 32, 65, 0.75);
-    margin-top: 0px;
-    margin-bottom: 0px;
+    color: rgba(31, 32, 65, 75%);
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   &_width_341px {
@@ -48,7 +48,7 @@
   }
 
   &_width_260px {
-    width: 18.0555556%;
+    width: 18.0556%;
   }
 
   &_width_243px {
@@ -156,19 +156,19 @@
   }
 
   &_color-opacity_50per {
-    color: rgba(31, 32, 65, 0.5); 
+    color: rgba(31, 32, 65, 50%);
   }
 
   &_color-opacity_25per {
-    color: rgba(31, 32, 65, 0.25);
+    color: rgba(31, 32, 65, 25%);
   }
 
   &_color_blue {
-    color: rgba(188, 156, 255, 1);
+    color: rgba(188, 156, 255, 100%);
   }
 
   &_color_black {
-    color: black
+    color: black;
   }
 
   &_align-self_flex-start {

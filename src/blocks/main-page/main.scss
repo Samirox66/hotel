@@ -1,10 +1,11 @@
 .main {
   max-width: 1440px;
   min-width: 320px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
   margin: 0 auto;
+
   &__information {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 2rem;
     font-weight: bold;
   }
@@ -16,7 +17,7 @@
 
   &__link {
     margin-top: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1rem;
     font-weight: normal;
     text-decoration: none;

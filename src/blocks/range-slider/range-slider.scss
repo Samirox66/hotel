@@ -24,7 +24,7 @@
     line-height: 1.071rem;
     text-align: right;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5);
+    color: rgba(31, 32, 65, 50%);
   }
 
   &__head {
@@ -39,10 +39,11 @@
 
 .noUi-handle {
   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-  border: 2px solid #FFFFFF;
+  border: 2px solid #FFF;
   border-radius: 10px;
   box-shadow: none;
   left: 13 / 26.6 * 100%;
+
   &::before, &::after {
     display: none;
   }
@@ -55,7 +56,7 @@
 
 .noUi-target {
   background: white;
-  border: 1px solid rgba(31, 32, 65, 0.25);;
+  border: 1px solid rgba(31, 32, 65, 25%);;
   border-radius: 3px;
   box-sizing: border-box;
   box-shadow: none;

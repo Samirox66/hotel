@@ -1,17 +1,17 @@
 .iqdropdown {
   background-color: white;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid rgba(31, 32, 65, 25%);
   border-radius: 2px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  padding: 0px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0;
   width: 100%;
   min-width: 150px;
   height: 44px;
 
   .iqdropdown-menu {
     height: auto;
-    border: 1px solid rgba(31, 32, 65, 0.5);
+    border: 1px solid rgba(31, 32, 65, 50%);
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     box-shadow: none;
@@ -20,47 +20,47 @@
 
   .iqdropdown-item {
     margin-bottom: 5px;
-    font-family: 'Montserrat';
+    font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #1F2041;
+    color: #1f2041;
   }
 
   .iqdropdown-selection {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1rem;
     line-height: 1.714rem;
     text-transform: none;
-    color: rgba(31, 32, 65, 0.75);
+    color: rgba(31, 32, 65, 75%);
     padding-left: 15px;
 
     &::after {
-      height: 0px;
+      height: 0;
     }
   }
 
-
   .icon-decrement {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: normal;
-    color: rgba(31, 32, 65, 0.5);
+    color: rgba(31, 32, 65, 50%);
+
     &::after {
-        height: 0;
+      height: 0;
     }
   }
 
   .icon-decrement.icon-increment {
     &::before {
-        height: 0;
+      height: 0;
     }
   }
 
@@ -79,17 +79,16 @@
     display: flex;
     justify-content: space-between;
 
-
     .counter {
       border: none;
-      font-family: 'Montserrat', sans-serif;
+      font-family: Montserrat, sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 0.857rem;
       line-height: 1.071rem;
       text-align: center;
       text-transform: uppercase;
-      color: #1F2041;
+      color: #1f2041;
       padding-left: 10px;
       padding-right: 10px;
     }
@@ -99,7 +98,7 @@
       height: 30px;
       padding: 0;
       border-radius: 50%;
-      border: 1px solid rgba(31, 32, 65, 0.5);
+      border: 1px solid rgba(31, 32, 65, 50%);
     }
 
     button.button-decrement {
@@ -107,10 +106,10 @@
       height: 30px;
       padding: 0;
       border-radius: 50%;
-      border: 1px solid rgba(31, 32, 65, 0.5);
+      border: 1px solid rgba(31, 32, 65, 50%);
 
       &_inactive {
-        border: 1px solid rgba(31, 32, 65, 0.25);
+        border: 1px solid rgba(31, 32, 65, 25%);
       }
     }
   }
@@ -120,5 +119,4 @@
   & ~ .iqdropdown-item-controls {
     display: none;
   }
-  
 }

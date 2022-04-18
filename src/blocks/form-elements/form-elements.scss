@@ -1,7 +1,7 @@
 .form-elements {
   width: 1440px;
   height: 1853px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
   margin: 0 auto;
 
   &_margin-top_30px {
@@ -32,7 +32,7 @@
     font-size: 0.857rem;
     line-height: 1.071rem;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5);
+    color: rgba(31, 32, 65, 50%);
     margin-top: 0;
     margin-bottom: 0;
   }
