@@ -1,9 +1,11 @@
+/* stylelint-disable scss/at-mixin-pattern */
 @mixin color__example($background) {
   background: $background;
   border-radius: 6px;
   width: 70px;
   height: 70px;
 }
+/* stylelint-enable scss/at-mixin-pattern */
 
 .color {
   display: flex;
@@ -20,31 +22,31 @@
     height: 70px;
 
     &_background_purple {
-      background: #BC9CFF;
+      background: #bc9cff;
     }
 
     &_background_green {
-      background: #6FCF97;
+      background: #6fcf97;
     }
 
     &_background_dark-shade-5 {
-      background: #1F20410D;
+      background: #1f20410d;
     }
 
     &_background_dark-shade-25 {
-      background: #1F204140;
+      background: #1f204140;
     }
 
     &_background_dark-shade-50 {
-      background: #1F204180;
+      background: #1f204180;
     }
 
     &_background_dark-shade-75 {
-      background: #1F2041BF;
+      background: #1f2041bf;
     }
 
     &_background_dark-shade-100 {
-      background: #1F2041;
+      background: #1f2041;
     }
   }
 
@@ -53,7 +55,7 @@
     line-height: 2rem;
     padding-left: 40px;
     align-self: center;
-    color: #1F2041;
+    color: #1f2041;
   }
 
   &__body {
