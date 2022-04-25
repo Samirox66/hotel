@@ -231,6 +231,15 @@ $('.js-iqdropdown .dropdown__submit-button .button__button').on(
   }
 );
 
+$(document).mouseup(function (e) {
+  let $dropdowns = $('.iqdropdown');
+  [...$dropdowns].forEach((dropdown) => {
+    if (!$(dropdown).is(e.target) && $(dropdown).has(e.target).length === 0) {
+      $(dropdown).removeClass('menu-open');
+    }
+  });
+});
+
 $('.js-iqdropdown .dropdown__clear-button .button__button').on(
   'click',
   function () {

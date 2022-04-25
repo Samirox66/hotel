@@ -169,6 +169,7 @@ window.addEventListener('load', () => {
 $('.js-date-dropdown__input[data-class=arrival]').on('click', function () {
   $(this)
     .parents('.date-dropdown')
-    .find('.date-dropdown__input[data-class=departure')
+    .find('.date-dropdown__label')
+    .first()
     .trigger('click');
 });
