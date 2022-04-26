@@ -231,7 +231,7 @@ $('.js-iqdropdown .dropdown__submit-button .button__button').on(
   }
 );
 
-$(document).mouseup(function (e) {
+$(document).on('mouseup', function (e) {
   let $dropdowns = $('.iqdropdown');
   [...$dropdowns].forEach((dropdown) => {
     if (!$(dropdown).is(e.target) && $(dropdown).has(e.target).length === 0) {

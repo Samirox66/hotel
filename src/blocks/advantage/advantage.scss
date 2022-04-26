@@ -6,13 +6,13 @@
     font-family: Montserrat, sans-serif;
     font-size: 1rem;
     line-height: 1.7143rem;
-    color: rgba(31, 32, 65, 75%);
+    color: rgba(31, 32, 65, 0.75);
     margin-top: 0;
     margin-bottom: 0;
   }
 
   &__line {
-    background: rgba(31, 32, 65, 10%);
+    background: rgba(31, 32, 65, 0.1);
     height: 1px;
     margin-top: 17px;
     margin-bottom: 20px;
@@ -40,7 +40,7 @@
     font-weight: bold;
     font-size: 1rem;
     line-height: 1.7143rem;
-    color: rgba(31, 32, 65, 75%);
+    color: rgba(31, 32, 65, 0.75);
     margin-top: 0;
     margin-bottom: 0;
   }

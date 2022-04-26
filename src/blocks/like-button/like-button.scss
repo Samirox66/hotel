@@ -10,7 +10,7 @@
     font-size: 0.714rem;
     line-height: 1rem;
     text-align: center;
-    color: rgba(31, 32, 65, 25%);
+    color: rgba(31, 32, 65, 0.25);
 
     &_active {
       color: #BC9CFF;
@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     background: #FFF;
-    border: 1px solid rgba(31, 32, 65, 25%);
+    border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 10px;
     width: 40px;
