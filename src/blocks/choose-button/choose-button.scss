@@ -17,7 +17,7 @@
   &__label {
     font-size: 1rem;
     line-height: 1.286rem;
-    color: rgba(31, 32, 65, 50%);
+    color: rgba(31, 32, 65, 0.5);
     font-weight: normal;
     cursor: default;
     vertical-align: middle;
@@ -36,7 +36,7 @@
 
     &_bold {
       font-weight: bold;
-      color: rgba(31, 32, 65, 75%);
+      color: rgba(31, 32, 65, 0.75);
     }
   }
 
@@ -100,7 +100,7 @@
     min-width: 20px;
     height: 20px;
     background: #fff;
-    border: 1px solid rgba(31, 32, 65, 25%);
+    border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     vertical-align: middle;
     /* stylelint-disable-next-line */
