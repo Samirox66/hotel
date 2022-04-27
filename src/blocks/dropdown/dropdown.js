@@ -208,7 +208,6 @@ $(() => {
       .slice(0, -1)
       .split('');
     const sum = itemCount.reduce((res, current) => res + current);
-    console.log(dropdownMenu);
     if (sum === '000') {
       $(dropdownMenu).find('.dropdown__clear-button .button__button').hide();
     }

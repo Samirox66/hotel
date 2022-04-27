@@ -24,5 +24,9 @@
     text-transform: lowercase;
     color: rgba(31, 32, 65, 0.75);
     margin-left: 15px;
+
+    &:focus-visible {
+      outline: none;
+    }
   }
 }

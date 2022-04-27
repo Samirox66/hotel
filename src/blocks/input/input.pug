@@ -1,7 +1,9 @@
 mixin input(formType = 'button', inputClasses = '', placeholder = 'input', hasArrow = false, value = '')
-  form.input(class="" + inputClasses)
-    input.input__input(type=formType placeholder=placeholder value=value)
+  label.input(class="" + inputClasses)
     if (hasArrow)
+      input.input__input.input__input_arrow(type=formType placeholder=placeholder value=value)
       button(type='submit').input__arrow-forward
         .material-icons.material-icons__arrow-forward.input__arrow-forward_color_blue arrow_forward
+    else
+      input.input__input(type=formType placeholder=placeholder value=value)
                   
