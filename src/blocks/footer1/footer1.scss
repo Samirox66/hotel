@@ -36,12 +36,20 @@
     line-height: 1.214rem;
     color: rgba(31, 32, 65, 0.75);
     margin-left: 140 / 1440 * 100%;
+
+    @media only screen and (max-width: 900px) {
+      padding-right: 10px;
+    }
   }
 
   &__nav {
     padding-left: 0;
     margin-bottom: 0;
     margin-top: 4px;
+    @media only screen and (max-width: 900px) {
+      padding-top: 20px;
+      margin-bottom: 0;
+    }
 
     &_width_260px {
       width: 260 / 1160 * 100%;
@@ -122,6 +130,11 @@
     font-size: 1rem;
     line-height: 1.214rem;
     height: 18px;
+
+    @media only screen and (max-width: 900px) {
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
   }
 
   &__nav-head {

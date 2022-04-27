@@ -25,7 +25,7 @@
     }
   }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1400px) {
     &__row {
       flex-direction: column;
     }
@@ -92,6 +92,10 @@
   }
 
   &__column {
+    @media only screen and (max-width: 1400px) {
+      margin-top: 20px;
+    }
+
     &_width_341px {
       width: 341px;
     }

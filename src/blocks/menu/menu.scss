@@ -5,6 +5,12 @@
     width: 588 / 1160 * 100%;
   }
 
+  @media only screen and (max-width: 900px) {
+    &__item {
+      padding-top: 10px;
+    }
+  }
+
   &__item {
     margin-right: 20px;
     list-style-type: none;
@@ -39,8 +45,8 @@
     margin-bottom: 0;
   }
 
-  &__link { 
-    color: rgba(31, 32, 65, 0.5);   
+  &__link {
+    color: rgba(31, 32, 65, 0.5);
     font-size: 1rem;
     line-height: 1.214rem;
     text-decoration: none;
@@ -51,12 +57,12 @@
 
     &_bold {
       font-weight: bold;
-      color: #1F2041BF;
+      color: #1f2041bf;
     }
   }
 
   &__line {
-    border-left: 1px solid #1F20411A;
+    border-left: 1px solid #1f20411a;
     height: 30px;
   }
 
@@ -70,5 +76,11 @@
 
   &_width_43px {
     width: 43px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .menu {
+    padding-left: 10px;
   }
 }
