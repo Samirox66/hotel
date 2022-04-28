@@ -16,7 +16,7 @@ mixin room(dateDropdownId = '', dropdownId = '', date = { 'departure': '01.01.19
     .room__row.room__row_margin-top_20px 
       .room__column
         +text('гости', 'h3', 'text_h3 text_margin-bottom_5px')
-        +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '1'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], '', dropdownId)
+        +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2', 'first': true}, {'id': 'kids', 'name': 'дети', 'default': '1'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], '', dropdownId)
     .room__row.room__row_margin-top_20px 
       +text('9 990₽ х 4 суток', 'p','text_p')
       +text('39 960₽', 'p', 'text_p')

@@ -5,5 +5,9 @@ mixin checkbox-list(buttons = [], text = 'список', classes = '')
       .material-icons.material-icons__expand-more expand_more
     .iqdropdown-menu.checkbox-list_border_none
       each button in buttons
-        .iqdropdown-menu-option.iqdropdown-menu-option__checkbox-list
-          +choose-button(button, 'checkbox')
+        if (button.first)
+          .iqdropdown-menu-option.iqdropdown-menu-option__checkbox-list.iqdropdown-menu-option__checkbox-list_first
+            +choose-button(button, 'checkbox')
+        else 
+          .iqdropdown-menu-option.iqdropdown-menu-option__checkbox-list
+              +choose-button(button, 'checkbox')

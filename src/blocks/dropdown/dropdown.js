@@ -108,6 +108,12 @@ $(() => {
     'гостя',
     'Сколько гостей',
   ]);
+  createGuestDropdown('ui-kit-find-room-guest', [
+    'гостей',
+    'гость',
+    'гостя',
+    'Сколько гостей',
+  ]);
   createGuestDropdown('ui-kit-room-guest', [
     'гостей',
     'гость',

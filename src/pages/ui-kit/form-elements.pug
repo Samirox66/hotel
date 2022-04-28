@@ -36,7 +36,7 @@ block content
           +input('text', 'input_width_320px input_height_44px', '', false,'This is pretty awesome')
           .form-elements__block.form-elements__block_margin-top_20px.form-elements__block_margin-bottom_5px
             +text('dropdown', 'h3', 'text_h3 text_margin-bottom_5px')
-          +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'guest1')
+          +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0', 'first': true}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'guest1')
           .form-elements__block.form-elements__block_margin-top_20px
           +text('masked text field', 'h3', 'text_h3 text_margin-bottom_5px')
           +input('text', 'input_width_320px input_height_44px', 'ДД.ММ.ГГГГ')
@@ -169,23 +169,23 @@ block content
           .form-elements__block.form-elements__block_justify-content_space-between
             +text('dropdown', 'h3', 'text_h3 text_margin-bottom_5px')
             p.form-elements__title-description default
-          +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'dropdown_width_266px', 'furniture')
+          +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2', 'first': true}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'dropdown_width_266px', 'furniture')
           .form-elements__block.form-elements__block_justify-content_space-between.form-elements__block_margin-top_20px
             +text('dropdown', 'h3', 'text_h3 text_margin-bottom_5px')
             p.form-elements__title-description expanded
-          +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'dropdown_width_266px', 'furniture', 'menu-open')
+          +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2', 'first': true}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], 'dropdown_width_266px', 'furniture', 'menu-open')
         .form-elements__column.form-elements__column_margin-left_181px
           .form-elements__dropdown
             +text('dropdown', 'h3', 'text_h3 text_margin-bottom_5px')
-            +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'guest2', 'menu-open')
+            +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0', 'first': true}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'guest2', 'menu-open')
         .form-elements__column.form-elements__column_margin-left_72px
           .form-elements__dropdown
             +text('dropdown', 'h3', 'text_h3 text_margin-bottom_5px')
-            +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '1'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'guest3', 'menu-open')
+            +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2', 'first': true}, {'id': 'kids', 'name': 'дети', 'default': '1'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', 'guest3', 'menu-open')
       .form-elements__block.form-elements__block_margin-top_158px
         .form-elements__column.form-elements__column_width_266px
           +checkbox-list(
-            [{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px'},
+            [{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px', 'first': true},
             {'id': 'write-table', 'text': 'Письменный стол', 'name': 'write-table', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px', 'checked': true},
             {'id': 'food-table', 'text': 'Стул для кормления', 'name': 'food-table', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px', 'checked': true},
             {'id': 'baby-bed', 'text': 'Кроватка', 'name': 'baby-bed', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px', 'checked': true},
@@ -195,7 +195,7 @@ block content
             {'id': 'shampoo2', 'text': 'Шампунь', 'name': 'shampoo', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px'}],
             'expandable checkbox list')
           +checkbox-list(
-            [{'id': 'breakfastEx', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px'},
+            [{'id': 'breakfastEx', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px', 'first': true},
             {'id': 'write-tableEx', 'text': 'Письменный стол', 'name': 'write-table', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px', 'checked': true},
             {'id': 'food-tableEx', 'text': 'Стул для кормления', 'name': 'food-table', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px', 'checked': true},
             {'id': 'baby-bedEx', 'text': 'Кроватка', 'name': 'baby-bed', 'fakeClasses': 'choose-button__fake-checkbox', 'labelClasses': 'choose-button__label_line-height_18px', 'checked': true},

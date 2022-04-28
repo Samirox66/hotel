@@ -28,7 +28,7 @@ block content
         +text('даты пребывания в отеле', 'h3', 'text_h3 text_margin-bottom_5px')
         +filter-date-dropdown('filter-date-dropdown-search-room', '')
         +text('гости', 'h3', 'text_h3 text_margin-bottom_5px text_margin-top_20px')
-        +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '1'}], '', 'guest-search-room')
+        +dropdown(true, '3 гостя', [{'id': 'adults', 'name': 'взрослые', 'default': '2', 'first': true}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '1'}], '', 'guest-search-room')
         +range-slider('диапазон цены', 'range-slider_margin-top_30px')
         +text('Стоимость за сутки пребывания в номере', 'p', 'text_p text_margin-top_13px text_color-opacity_50per text_font-size_12px text_line-height_14px')
         +text('правила дома', 'h3', 'text_h3 text_margin-top_30px text_margin-bottom_16px')
@@ -74,7 +74,7 @@ block content
           'buttonClasses': 'choose-button_margin-top_10px',
           }])
         +text('удобства номера', 'h3', 'text_h3 text_margin-top_30px text_margin-bottom_5px')
-        +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2'}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], '', 'furniture')
+        +dropdown(false, '2 спальни, 2 кровати...', [{'name':'спальни', 'id': 'rooms', 'default' : '2', 'first': true}, {'name':'кровати', 'id': 'bed', 'default' : '2'}, {'name':'ванные комнаты', 'id': 'baths', 'default' : '0'}], '', 'furniture')
         +checkbox-list(
           [{'id': 'breakfast', 'text': 'Завтрак', 'name': 'breakfast', 'fakeClasses': 'choose-button__fake-checkbox'},
           {'id': 'write-table', 'text': 'Письменный стол', 'name': 'write-table', 'fakeClasses': 'choose-button__fake-checkbox', 'checked': true},

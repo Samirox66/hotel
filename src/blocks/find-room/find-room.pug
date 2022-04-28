@@ -11,7 +11,7 @@ mixin find-room(findRoomClasses='', dateDropdownId='', dropdownId='')
     section.find-room__row.find-room__row_margin-top_21px 
       .find-room__column
         +text('гости', 'h3', 'text_h3 text_margin-bottom_5px')
-        +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0'}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', dropdownId)
+        +dropdown(true, 'Сколько гостей', [{'id': 'adults', 'name': 'взрослые', 'default': '0', 'first': true}, {'id': 'kids', 'name': 'дети', 'default': '0'}, {'id': 'babies', 'name': 'младенцы', 'default': '0'}], 'dropdown_width_320px', dropdownId)
     .find-room__find-button.find-room__find-button_margin-top_31px 
       +button({
         'text': 'подобрать номер',

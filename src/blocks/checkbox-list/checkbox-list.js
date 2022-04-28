@@ -2,8 +2,11 @@ import $ from 'jquery';
 
 import './checkbox-list.scss';
 
-$('.js-iqdropdown__checkbox-list').on('click', function () {
-  if ($(this).hasClass('menu-open')) {
+$('.js-iqdropdown__checkbox-list').on('click', function (event) {
+  if (
+    $(this).hasClass('menu-open') &&
+    !$(event.target).parents().hasClass('iqdropdown-menu')
+  ) {
     $(this)
       .removeClass('menu-open')
       .find('.material-icons')

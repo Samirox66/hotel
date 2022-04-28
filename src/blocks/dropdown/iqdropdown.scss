@@ -23,7 +23,6 @@
   }
 
   .iqdropdown-item {
-    margin-bottom: 5px;
     font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -71,9 +70,12 @@
   .iqdropdown-menu-option {
     justify-content: space-between;
     height: auto;
-    margin-bottom: 7px;
-    margin-top: 7px;
+    padding-bottom: 7px;
     padding-right: 7px;
+
+    &_first {
+      padding-top: 7px;
+    }
   }
 
   .iqdropdown-item-controls {
