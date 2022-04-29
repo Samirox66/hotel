@@ -1,15 +1,15 @@
 mixin choose-room(room = { 'roomClasses': '', 'img': '', 'isLux': false, 'rate': 5 }, reviewNumber = 0, price = '5000')
   .choose-room(class="" + room.roomClasses)
-    .choose-room__img(class="" + room.img)
-        .choose-room__img-expand
+    .js-choose-room__img.choose-room__img(class="" + room.img)
+        .js-choose-room__img-expand.choose-room__img-expand.choose-room__img-expand_display_none
           .choose-room__expand-left.material-icons.material-icons__expand-more expand_more
-        .choose-room__img-expand.choose-room__img-expand_transform_matrix
+        .js-choose-room__img-expand.choose-room__img-expand.choose-room__img-expand_transform_matrix.choose-room__img-expand_display_none
           .choose-room__expand-right.material-icons.material-icons__expand-more expand_more
-        .choose-room__dots
-          .choose-room__dot.choose-room__dot_background_white
-          .choose-room__dot
-          .choose-room__dot 
-          .choose-room__dot
+        .choose-room__dots.choose-room__dots_display_none
+          .js-choose-room__dot.choose-room__dot.choose-room__dot_background_white(data-class=room.img)
+          .js-choose-room__dot.choose-room__dot(data-class="choose-room__img856")
+          .js-choose-room__dot.choose-room__dot(data-class="choose-room__img840")
+          .js-choose-room__dot.choose-room__dot(data-class="choose-room__img740")
     .choose-room__information
       .choose-room__row.choose-room__row_margin-top_20px
         p.choose-room__sign-number № 

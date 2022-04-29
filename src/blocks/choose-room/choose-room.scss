@@ -160,6 +160,10 @@
     display: flex;
     align-items: center;
 
+    &_display_none {
+      display: none;
+    }
+
     &_transform_matrix {
       transform: matrix(-1, 0, 0, 1, 0, 0);
     }
@@ -187,6 +191,10 @@
     right: 15px;
     justify-content: space-between;
     width: 41.25px;
+
+    &_display_none {
+      display: none;
+    }
   }
 
   &__dot {
