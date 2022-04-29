@@ -1,8 +1,8 @@
 mixin date-dropdown(dateId = '', value = '01.01.1970', value2 = '01.01.1970')
   form.date-dropdown
     label.date-dropdown__label
-      input.date-dropdown__input.js-date-dropdown__input(id=dateId type="text" value=value data-class="departure" readonly)
+      input.date-dropdown__input.js-date-dropdown__input(id=dateId type="text" placeholder="ДД.ММ.ГГГГ" value=value data-class="departure" readonly)
       .material-icons.material-icons__expand-more expand_more 
     label.date-dropdown__label.date-dropdown__label_margin-left_20px
-      input.date-dropdown__input.js-date-dropdown__input(id=dateId + "_arrival" type="text" value=value2 data-class="arrival" readonly)
+      input.date-dropdown__input.js-date-dropdown__input(id=dateId + "_arrival" type="text" placeholder="ДД.ММ.ГГГГ" value=value2 data-class="arrival" readonly)
       .material-icons.material-icons__expand-more expand_more

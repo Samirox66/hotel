@@ -26,7 +26,7 @@ mixin sign-up(payButtonText='Оплатите')
     section.sign-up__row.sign-up__row_margin-top_20px
       .sign-up__column 
         +text('дата рождения', 'h3', 'text_h3 text_margin-bottom_5px')
-        +input('text', 'input_width_320px input_height_44px', 'ДД.ММ.ГГГГ')
+        +input('text', 'input_width_320px input_height_44px', 'ДД.ММ.ГГГГ', '', false, 'date')
     section.sign-up__row.sign-up__row_margin-top_20px
       .sign-up__column
         +text('данные для входа в сервис', 'h3', 'text_h3 text_margin-bottom_5px')
