@@ -16,7 +16,8 @@ const createGuestDropdown = function (dataId, strings) {
       controlsCls: 'iqdropdown-item-controls',
       counterCls: 'counter',
     },
-    onChange: () => {
+    onChange: (id) => {
+      console.log(id);
       $('.js-iqdropdown .button-increment').on('click', function () {
         const $menu = $(this).parents('.js-iqdropdown-menu');
         if (
@@ -127,38 +128,13 @@ $(() => {
     'Сколько гостей',
   ]);
   $('.js-iqdropdown[data-id=furniture]').iqDropdown({
-    // max total items
     maxItems: 20,
-    // min total items
     minItems: 0,
-    // buttons to increment/decrement
     controls: {
       position: 'right',
       displayCls: 'iqdropdown-item-display',
       controlsCls: 'iqdropdown-item-controls',
       counterCls: 'counter',
-    },
-    onChange: () => {
-      $('.js-iqdropdown .button-increment').on('click', function () {
-        const $buttonDecrement = $(this)
-          .parents('.iqdropdown-item-controls')
-          .find('.button-decrement');
-        if ($buttonDecrement.hasClass('button-decrement_inactive')) {
-          $buttonDecrement.removeClass('button-decrement_inactive');
-        }
-      });
-      $('.js-iqdropdown .button-decrement').on('click', function () {
-        const itemCount = $(this)
-          .parents('.iqdropdown-item-controls')
-          .find('.counter')
-          .text();
-        if (
-          itemCount === '0' &&
-          !$(this).hasClass('button-decrement_inactive')
-        ) {
-          $(this).addClass('button-decrement_inactive');
-        }
-      });
     },
     setSelectionText: (itemCount) => {
       let furniture = '';
@@ -206,7 +182,7 @@ $(() => {
 $(() => {
   const $dropdownMenus = $(
     '.js-iqdropdown .dropdown__clear-button .button__button'
-  ).parents('.iqdropdown-menu');
+  ).parents('.js-iqdropdown-menu');
   [...$dropdownMenus].forEach((dropdownMenu) => {
     const itemCount = $(dropdownMenu)
       .find('.counter')
@@ -225,6 +201,45 @@ $(() => {
         .parent()
         .find('.button-decrement')
         .addClass('button-decrement_inactive');
+    }
+  });
+
+  $('.js-iqdropdown .button-increment').on('click', function () {
+    const $menu = $(this).parents('.js-iqdropdown-menu');
+    if (
+      $menu.find('.dropdown__buttons') &&
+      $menu.find('.dropdown__clear-button .button__button').is(':hidden')
+    ) {
+      $menu.find('.dropdown__clear-button .button__button').show();
+    }
+
+    const $buttonDecrement = $(this)
+      .parents('.iqdropdown-item-controls')
+      .find('.button-decrement');
+
+    if ($buttonDecrement.hasClass('button-decrement_inactive')) {
+      $buttonDecrement.removeClass('button-decrement_inactive');
+    }
+  });
+
+  $('.js-iqdropdown .button-decrement').on('click', function () {
+    const itemCount = $(this)
+      .parents('.iqdropdown-item-controls')
+      .find('.counter')
+      .text();
+    if (itemCount === '0' && !$(this).hasClass('button-decrement_inactive')) {
+      $(this).addClass('button-decrement_inactive');
+    }
+
+    const $dropdownMenu = $(this).parents('.js-iqdropdown-menu');
+    const itemsCount = $dropdownMenu
+      .find('.counter')
+      .text()
+      .slice(0, -1)
+      .split('');
+    const sum = itemsCount.reduce((res, current) => res + current);
+    if (sum === '000') {
+      $dropdownMenu.find('.dropdown__clear-button .button__button').hide();
     }
   });
 });
