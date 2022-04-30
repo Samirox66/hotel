@@ -24,15 +24,24 @@
   }
 
   &__sign-up {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 196 / 769 * 100%;
-    min-width: 135px;
+    min-width: 155px;
     margin-right: 0;
     height: 34px;
   }
 
   &__sign-in {
+    margin-right: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 87 / 769 * 100%;
-    min-width: 45px;
+    min-width: 70px;
     height: 34px;
   }
 

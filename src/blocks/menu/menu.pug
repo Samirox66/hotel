@@ -18,14 +18,14 @@ mixin menu(hasUser = false, userName = '', menuClasses = '', bold = '')
         li.menu__item.menu__user
           a.menu__link(href="gg.com")=userName
       else
-        li.menu__item.menu__sign-in
+        li.menu__sign-in
           +button({
             'text': 'Войти',
             'buttonClasses': 'button_background-color_white button_border_blue',
             'textClasses': 'button_color_blue',
             'type': 'submit',
             'action': 'sign-in.html'})
-        li.menu__item.menu__sign-up
+        li.menu__sign-up
           +button({
             'text': 'Зарегистрироваться',
             'buttonClasses': 'button_color_white button_background-color_blue button_border_none',
